@@ -34,6 +34,7 @@
   month         = jun,
   pages         = {249--258},
   publisher     = {{IEEE Computer Society Press}},
+  doi           = {10.1109/LICS.2005.1},
   archiveprefix = {arXiv},
   eprint        = {quant-ph/0409065},
   timestamp     = {2021-04-18}
@@ -49,8 +50,9 @@
   editor    = {Mackie, Ian and Gay, Simon},
   isbn      = {978-0-521-51374-6},
   pages     = {173--205},
-  abstract  = {AbstractThe quantum IO monad is a purely functional interface to quantum programming implemented as a Haskell library. At the same time it provides a constructive semantics of quantum programming. The QIO monad separates reversible (i.e., unitary) and irreversible (i.e., probabilistic) computations and provides a reversible let operation (ulet), allowing us to use ancillas (auxiliary qubits) in a modular fashion. QIO programs can be simulated either by calculating a probability distribution or by embedding it into the IO monad using the random number generator. As an example we present a complete implementation of Shor's algorithm.5.1 IntroductionWe present an interface from a pure functional programming language, Haskell, to quantum programming: the quantum IO monad, and use it to implement Shor's factorization algorithm. The implementation of the QIO monad provides a constructive semantics for quantum programming, i.e., a functional program that can also be understood as a mathematical model of quantum computing. Actually, the Haskell QIO library is only a first approximation of such a semantics; we would like to move to a more expressive language that is also logically sound. Here we are thinking of a language such as Agda (Norell 2007), which is based on Martin L\"of's type theory. We have already investigated this approach of functional specifications of effects in a classical context (Swierstra and Altenkirch 2007, 2008; Swierstra 2008). At the same time the QIO monad provides a high-level interface to a hypothetical quantum computer.},
+  abstract  = {The quantum IO monad is a purely functional interface to quantum programming implemented as a Haskell library. At the same time it provides a constructive semantics of quantum programming. The QIO monad separates reversible (i.e., unitary) and irreversible (i.e., probabilistic) computations and provides a reversible let operation (ulet), allowing us to use ancillas (auxiliary qubits) in a modular fashion. QIO programs can be simulated either by calculating a probability distribution or by embedding it into the IO monad using the random number generator. As an example we present a complete implementation of Shor's algorithm.5.1 IntroductionWe present an interface from a pure functional programming language, Haskell, to quantum programming: the quantum IO monad, and use it to implement Shor's factorization algorithm. The implementation of the QIO monad provides a constructive semantics for quantum programming, i.e., a functional program that can also be understood as a mathematical model of quantum computing. Actually, the Haskell QIO library is only a first approximation of such a semantics; we would like to move to a more expressive language that is also logically sound. Here we are thinking of a language such as Agda (Norell 2007), which is based on Martin L\"of's type theory. We have already investigated this approach of functional specifications of effects in a classical context (Swierstra and Altenkirch 2007, 2008; Swierstra 2008). At the same time the QIO monad provides a high-level interface to a hypothetical quantum computer.},
   doi       = {10.1017/CBO9781139193313.006},
+  url       = {https://www.cs.nott.ac.uk/~psztxa/g5xnsc/chapter.pdf},
   timestamp = {2021-04-18}
 }
 
@@ -148,6 +150,7 @@
   doi        = {10.1145/3385412.3386007},
   isbn       = {978-1-4503-7613-6},
   shorttitle = {Silq},
+  url        = {https://files.sri.inf.ethz.ch/website/papers/pldi20-silq.pdf},
   timestamp  = {2021-04-18}
 }
 
@@ -168,7 +171,7 @@
 }
 
 @unpublished{Chareton2020,
-  author        = {Chareton, Christophe and Bardin, S{\'e}bastien and Bobot, Fran{\c c}ois and Perrelle, Valentin and Valiron, Benoit},
+  author        = {Chareton, Christophe and Bardin, S{\'e}bastien and Bobot, Fran{\c c}ois and Perrelle, Valentin and Valiron, Beno{\^i}t},
   note          = {Extended version of: \href{http://dx.doi.org/10.1007/978-3-030-72019-3_6}{An Automated Deductive Verification Framework for Circuit-building Quantum Programs} presented at ESOP 2021},
   title         = {A {{Deductive Verification Framework}} for {{Circuit}}-Building {{Quantum Programs}}},
   month         = mar,
@@ -307,6 +310,7 @@
   abstract      = {We introduce dependently typed Proto-Quipper, or Proto-Quipper-D for short, an experimental quantum circuit programming language with linear dependent types. We give several examples to illustrate how linear dependent types can help in the construction of correct quantum circuits. Specifically, we show how dependent types enable programming families of circuits, and how dependent types solve the problem of type-safe uncomputation of garbage qubits. We also discuss other language features along the way.},
   eprint        = {2005.08396},
   archiveprefix = {arxiv},
+  doi           = {10.1007/978-3-030-52482-1_9},
   isbn          = {978-3-030-52482-1},
   timestamp     = {2021-04-18}
 }
@@ -349,14 +353,15 @@
 }
 
 @article{Gay2006,
-  author  = {Simon J. Gay},
-  title   = {Quantum Programming Languages: Survey and Bibliography},
-  journal = {Mathematical Structures in Computer Science},
-  volume  = {16},
-  number  = {4},
-  year    = {2006},
-  doi     = {10.1017/S0960129506005378},
-  url     = {http://www.dcs.gla.ac.uk/~simon/quantum/}
+  author   = {Simon J. Gay},
+  title    = {Quantum Programming Languages: Survey and Bibliography},
+  abstract = {The field of quantum programming languages is developing rapidly and there is a surprisingly large literature. Research in this area includes the design of programming languages for quantum computing, the application of established semantic and logical techniques to the foundations of quantum mechanics, and the design of compilers for quantum programming languages. This article justifies the study of quantum programming languages, presents the basics of quantum computing, surveys the literature in quantum programming languages, and indicates directions for future research.},
+  journal  = {Mathematical Structures in Computer Science},
+  volume   = {16},
+  number   = {4},
+  year     = {2006},
+  doi      = {10.1017/S0960129506005378},
+  url      = {http://www.dcs.gla.ac.uk/~simon/quantum/}
 }
 
 @book{Gay2009,
@@ -381,21 +386,23 @@
 }
 
 @inproceedings{Green2013,
-  author     = {Green, Alexander S. and Lumsdaine, Peter LeFanu and Ross, Neil J. and Selinger, Peter and Valiron, Beno{\^i}t},
-  booktitle  = {Proceedings of the 34th {{ACM SIGPLAN Conference}} on {{Programming Language Design}} and {{Implementation}}},
-  title      = {Quipper: {{A Scalable Quantum Programming Language}}},
-  year       = {2013},
-  address    = {{New York, NY, USA}},
-  month      = jun,
-  pages      = {333--342},
-  publisher  = {{ACM}},
-  series     = {{{PLDI}} '13},
-  volume     = {48},
-  abstract   = {The field of quantum algorithms is vibrant. Still, there is currently a lack of programming languages for describing quantum computation on a practical scale, i.e., not just at the level of toy problems. We address this issue by introducing Quipper, a scalable, expressive, functional, higher-order quantum programming language. Quipper has been used to program a diverse set of non-trivial quantum algorithms, and can generate quantum gate representations using trillions of gates. It is geared towards a model of computation that uses a classical computer to control a quantum device, but is not dependent on any particular model of quantum hardware. Quipper has proven effective and easy to use, and opens the door towards using formal methods to analyze quantum algorithms.},
-  doi        = {10.1145/2491956.2462177},
-  isbn       = {978-1-4503-2014-6},
-  shorttitle = {Quipper},
-  timestamp  = {2021-04-18}
+  author        = {Green, Alexander S. and Lumsdaine, Peter LeFanu and Ross, Neil J. and Selinger, Peter and Valiron, Beno{\^i}t},
+  booktitle     = {Proceedings of the 34th {{ACM SIGPLAN Conference}} on {{Programming Language Design}} and {{Implementation}}},
+  title         = {Quipper: {{A Scalable Quantum Programming Language}}},
+  year          = {2013},
+  address       = {{New York, NY, USA}},
+  month         = jun,
+  pages         = {333--342},
+  publisher     = {{ACM}},
+  series        = {{{PLDI}} '13},
+  volume        = {48},
+  abstract      = {The field of quantum algorithms is vibrant. Still, there is currently a lack of programming languages for describing quantum computation on a practical scale, i.e., not just at the level of toy problems. We address this issue by introducing Quipper, a scalable, expressive, functional, higher-order quantum programming language. Quipper has been used to program a diverse set of non-trivial quantum algorithms, and can generate quantum gate representations using trillions of gates. It is geared towards a model of computation that uses a classical computer to control a quantum device, but is not dependent on any particular model of quantum hardware. Quipper has proven effective and easy to use, and opens the door towards using formal methods to analyze quantum algorithms.},
+  doi           = {10.1145/2491956.2462177},
+  isbn          = {978-1-4503-2014-6},
+  shorttitle    = {Quipper},
+  eprint        = {1304.3390},
+  archiveprefix = {arXiv},
+  timestamp     = {2021-04-18}
 }
 
 @inproceedings{Green2013a,
@@ -506,8 +513,7 @@
   abstract    = {A few conventions for thinking about and writing quantum pseudocode are proposed. The conventions can be used for presenting any quantum algorithm down to the lowest level and are consistent with a quantum random access machine (QRAM) model for quantum computing. In principle a formal version of quantum pseudocode could be used in a future extension of a conventional language.},
   doi         = {10.2172/366453},
   institution = {{Los Alamos National Laboratory}},
-  timestamp   = {2021-04-18},
-  url         = {https://www.osti.gov/biblio/366453-conventions-quantum-pseudocode}
+  timestamp   = {2021-04-18}
 }
 
 @article{LaRose2019,
@@ -652,6 +658,7 @@
   volume    = {52},
   doi       = {10.1145/3009837.3009894},
   isbn      = {978-1-4503-4660-3},
+  url       = {https://jpaykin.github.io/papers/prz_qwire_2017.pdf},
   timestamp = {2021-04-18}
 }
 
@@ -672,7 +679,7 @@
   title         = {Verification {{Logics}} for {{Quantum Programs}}},
   year          = {2016},
   month         = mar,
-  note          = {Comment: Originally submitted in March 2016 as a qualifying examination (WPE-II) for the PhD program at the University of Pennsylvania},
+  note          = {Submitted as a qualifying examination (WPE-II) for the PhD program at the University of Pennsylvania},
   abstract      = {We survey the landscape of Hoare logics for quantum programs. We review three papers: "Reasoning about imperative quantum programs" by Chadha, Mateus and Sernadas; "A logic for formal verification of quantum programs" by Yoshihiko Kakutani; and "Floyd-hoare logic for quantum programs" by Mingsheng Ying. We compare the mathematical foundations of the logics, their underlying languages, and the expressivity of their assertions. We also use the languages to verify the Deutsch-Jozsa Algorithm, and discuss their relative usability in practice.},
   eprint        = {1904.04304},
   archiveprefix = {arxiv},
@@ -848,7 +855,7 @@
 }
 
 @article{Selinger2006,
-  author    = {Selinger, Peter and Valiron, Benoit},
+  author    = {Selinger, Peter and Valiron, Beno{\^i}t},
   journal   = {Mathematical Structures in Computer Science},
   title     = {A Lambda Calculus for Quantum Computation with Classical Control},
   year      = {2006},
@@ -863,7 +870,7 @@
 }
 
 @incollection{Selinger2009,
-  author    = {Selinger, Peter and Valiron, Benoît},
+  author    = {Selinger, Peter and Valiron, Beno{\^i}t},
   booktitle = {Semantic {{Techniques}} in {{Quantum Computation}}},
   publisher = {{Cambridge University Press}},
   title     = {Quantum {{Lambda Calculus}}},
@@ -904,20 +911,22 @@
 }
 
 @inproceedings{Svore2018,
-  author     = {Svore, Krysta and Geller, Alan and Troyer, Matthias and Azariah, John and Granade, Christopher and Heim, Bettina and Kliuchnikov, Vadym and Mykhailova, Mariia and Paz, Andres and Roetteler, Martin},
-  booktitle  = {Proceedings of the {{Real World Domain Specific Languages Workshop}} 2018},
-  title      = {Q\#: {{Enabling Scalable Quantum Computing}} and {{Development}} with a {{High}}-Level {{DSL}}},
-  year       = {2018},
-  address    = {{New York, NY, USA}},
-  month      = feb,
-  pages      = {7:1--7:10},
-  publisher  = {{ACM}},
-  series     = {{{RWDSL2018}}},
-  abstract   = {Quantum computing exploits quantum phenomena such as superposition and entanglement to realize a form of parallelism that is not available to traditional computing. It offers the potential of significant computational speed-ups in quantum chemistry, materials science, cryptography, and machine learning. The dominant approach to programming quantum computers is to provide an existing high-level language with libraries that allow for the expression of quantum programs. This approach can permit computations that are meaningless in a quantum context; prohibits succint expression of interaction between classical and quantum logic; and does not provide important constructs that are required for quantum programming. We present Q\#, a quantum-focused domain-specific language explicitly designed to correctly, clearly and completely express quantum algorithms. Q\# provides a type system; a tightly constrained environment to safely interleave classical and quantum computations; specialized syntax; symbolic code manipulation to automatically generate correct transformations of quantum operations; and powerful functional constructs which aid composition.},
-  doi        = {10.1145/3183895.3183901},
-  isbn       = {978-1-4503-6355-6},
-  shorttitle = {Q\#},
-  timestamp  = {2021-04-18}
+  author        = {Svore, Krysta and Geller, Alan and Troyer, Matthias and Azariah, John and Granade, Christopher and Heim, Bettina and Kliuchnikov, Vadym and Mykhailova, Mariia and Paz, Andres and Roetteler, Martin},
+  booktitle     = {Proceedings of the {{Real World Domain Specific Languages Workshop}} 2018},
+  title         = {Q\#: {{Enabling Scalable Quantum Computing}} and {{Development}} with a {{High}}-Level {{DSL}}},
+  year          = {2018},
+  address       = {{New York, NY, USA}},
+  month         = feb,
+  pages         = {7:1--7:10},
+  publisher     = {{ACM}},
+  series        = {{{RWDSL2018}}},
+  abstract      = {Quantum computing exploits quantum phenomena such as superposition and entanglement to realize a form of parallelism that is not available to traditional computing. It offers the potential of significant computational speed-ups in quantum chemistry, materials science, cryptography, and machine learning. The dominant approach to programming quantum computers is to provide an existing high-level language with libraries that allow for the expression of quantum programs. This approach can permit computations that are meaningless in a quantum context; prohibits succint expression of interaction between classical and quantum logic; and does not provide important constructs that are required for quantum programming. We present Q\#, a quantum-focused domain-specific language explicitly designed to correctly, clearly and completely express quantum algorithms. Q\# provides a type system; a tightly constrained environment to safely interleave classical and quantum computations; specialized syntax; symbolic code manipulation to automatically generate correct transformations of quantum operations; and powerful functional constructs which aid composition.},
+  doi           = {10.1145/3183895.3183901},
+  isbn          = {978-1-4503-6355-6},
+  shorttitle    = {Q\#},
+  eprint        = {1803.00652},
+  archiveprefix = {arxiv},
+  timestamp     = {2021-04-18}
 }
 
 @article{Unruh2019,
