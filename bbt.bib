@@ -592,21 +592,19 @@
 }
 
 @inproceedings{Paolini2019,
-  author        = {Paolini, Luca and Roversi, Luca and Zorzi, Margherita},
-  booktitle     = {Proceedings Joint International Workshop on Linearity \& Trends in Linear Logic and Applications, Oxford, {{UK}}, 7-8 July 2018},
-  title         = {Quantum {{Programming Made Easy}}},
-  year          = {2019},
-  editor        = {Ehrhard, Thomas and Fern{\'a}ndez, Maribel and de Paiva, Valeria and {Tortora de Falco}, Lorenzo},
-  month         = apr,
-  pages         = {133--147},
-  publisher     = {{Open Publishing Association}},
-  series        = {Electronic Proceedings in Theoretical Computer Science},
-  volume        = {292},
-  abstract      = {We present IQu, namely a quantum programming language that extends Reynold's Idealized Algol, the paradigmatic core of Algol-like languages. IQu combines imperative programming with high-order features, mediated by a simple type theory. IQu mildly merges its quantum features with the classical programming style that we can experiment through Idealized Algol, the aim being to ease a transition towards the quantum programming world. The proposed extension is done along two main directions. First, IQu makes the access to quantum co-processors by means of quantum stores. Second, IQu includes some support for the direct manipulation of quantum circuits, in accordance with recent trends in the development of quantum programming languages. Finally, we show that IQu is quite effective in expressing well-known quantum algorithms.},
-  doi           = {10.4204/EPTCS.292.8},
-  eprint        = {1711.00774},
-  archiveprefix = {arxiv},
-  timestamp     = {2021-04-18}
+  author    = {Paolini, Luca and Roversi, Luca and Zorzi, Margherita},
+  booktitle = {Proceedings Joint International Workshop on Linearity \& Trends in Linear Logic and Applications, Oxford, {{UK}}, 7-8 July 2018},
+  title     = {Quantum {{Programming Made Easy}}},
+  year      = {2019},
+  editor    = {Ehrhard, Thomas and Fern{\'a}ndez, Maribel and de Paiva, Valeria and {Tortora de Falco}, Lorenzo},
+  month     = apr,
+  pages     = {133--147},
+  publisher = {{Open Publishing Association}},
+  series    = {Electronic Proceedings in Theoretical Computer Science},
+  volume    = {292},
+  abstract  = {We present IQu, namely a quantum programming language that extends Reynold's Idealized Algol, the paradigmatic core of Algol-like languages. IQu combines imperative programming with high-order features, mediated by a simple type theory. IQu mildly merges its quantum features with the classical programming style that we can experiment through Idealized Algol, the aim being to ease a transition towards the quantum programming world. The proposed extension is done along two main directions. First, IQu makes the access to quantum co-processors by means of quantum stores. Second, IQu includes some support for the direct manipulation of quantum circuits, in accordance with recent trends in the development of quantum programming languages. Finally, we show that IQu is quite effective in expressing well-known quantum algorithms.},
+  doi       = {10.4204/EPTCS.292.8},
+  timestamp = {2021-04-18}
 }
 
 @article{Paolini2019a,
@@ -669,20 +667,18 @@
 }
 
 @inproceedings{Rand2018,
-  author        = {Rand, Robert and Paykin, Jennifer and Zdancewic, Steve},
-  booktitle     = {Proceedings 14th International Conference on Quantum Physics and Logic, Nijmegen, the Netherlands, 3-7 July 2017},
-  title         = {{{QWIRE}} Practice: {{Formal}} Verification of Quantum Circuits in Coq},
-  abstract      = {We describe an embedding of the QWIRE quantum circuit language in the Coq proof assistant. This allows programmers to write quantum circuits using high-level abstractions and to prove properties of those circuits using Coq's theorem proving features. The implementation uses higher-order abstract syntax to represent variable binding and provides a type-checking algorithm for linear wire types, ensuring that quantum circuits are well-formed. We formalize a denotational semantics that interprets QWIRE circuits as superoperators on density matrices, and prove the correctness of some simple quantum programs.},
-  year          = {2018},
-  editor        = {Coecke, Bob and Kissinger, Aleks},
-  pages         = {119--132},
-  publisher     = {{Open Publishing Association}},
-  series        = {Electronic Proceedings in Theoretical Computer Science},
-  volume        = {266},
-  doi           = {10.4204/EPTCS.266.8},
-  eprint        = {1803.00699},
-  archiveprefix = {arxiv},
-  timestamp     = {2021-04-18}
+  author    = {Rand, Robert and Paykin, Jennifer and Zdancewic, Steve},
+  booktitle = {Proceedings 14th International Conference on Quantum Physics and Logic, Nijmegen, the Netherlands, 3-7 July 2017},
+  title     = {{{QWIRE}} Practice: {{Formal}} Verification of Quantum Circuits in Coq},
+  abstract  = {We describe an embedding of the QWIRE quantum circuit language in the Coq proof assistant. This allows programmers to write quantum circuits using high-level abstractions and to prove properties of those circuits using Coq's theorem proving features. The implementation uses higher-order abstract syntax to represent variable binding and provides a type-checking algorithm for linear wire types, ensuring that quantum circuits are well-formed. We formalize a denotational semantics that interprets QWIRE circuits as superoperators on density matrices, and prove the correctness of some simple quantum programs.},
+  year      = {2018},
+  editor    = {Coecke, Bob and Kissinger, Aleks},
+  pages     = {119--132},
+  publisher = {{Open Publishing Association}},
+  series    = {Electronic Proceedings in Theoretical Computer Science},
+  volume    = {266},
+  doi       = {10.4204/EPTCS.266.8},
+  timestamp = {2021-04-18}
 }
 
 @phdthesis{Rand2018a,
@@ -717,19 +713,17 @@
 }
 
 @article{Rand2019,
-  author        = {Rand, Robert and Paykin, Jennifer and Lee, Dong-Ho and Zdancewic, Steve},
-  journal       = {Electronic Proceedings in Theoretical Computer Science},
-  title         = {{{ReQWIRE}}: {{Reasoning}} about {{Reversible Quantum Circuits}}},
-  year          = {2019},
-  month         = jan,
-  pages         = {299--312},
-  volume        = {287},
-  abstract      = {Common quantum algorithms make heavy use of ancillae: scratch qubits that are initialized at some state and later returned to that state and discarded. Existing quantum circuit languages let programmers assert that a qubit has been returned to the |0{$>$} state before it is discarded, allowing for a range of optimizations. However, existing languages do not provide the tools to verify these assertions, introducing a potential source of errors. In this paper we present methods for verifying that ancillae are discarded in the desired state, and use these methods to implement a verified compiler from classical functions to quantum oracles.},
-  doi           = {10.4204/EPTCS.287.17},
-  eprint        = {1901.10118},
-  archiveprefix = {arxiv},
-  shorttitle    = {{{ReQWIRE}}},
-  timestamp     = {2021-04-18}
+  author     = {Rand, Robert and Paykin, Jennifer and Lee, Dong-Ho and Zdancewic, Steve},
+  journal    = {Electronic Proceedings in Theoretical Computer Science},
+  title      = {{{ReQWIRE}}: {{Reasoning}} about {{Reversible Quantum Circuits}}},
+  year       = {2019},
+  month      = jan,
+  pages      = {299--312},
+  volume     = {287},
+  abstract   = {Common quantum algorithms make heavy use of ancillae: scratch qubits that are initialized at some state and later returned to that state and discarded. Existing quantum circuit languages let programmers assert that a qubit has been returned to the |0{$>$} state before it is discarded, allowing for a range of optimizations. However, existing languages do not provide the tools to verify these assertions, introducing a potential source of errors. In this paper we present methods for verifying that ancillae are discarded in the desired state, and use these methods to implement a verified compiler from classical functions to quantum oracles.},
+  doi        = {10.4204/EPTCS.287.17},
+  shorttitle = {{{ReQWIRE}}},
+  timestamp  = {2021-04-18}
 }
 
 @article{Rennela2018,
@@ -748,20 +742,18 @@
 }
 
 @inproceedings{Rios2018,
-  author        = {Rios, Francisco and Selinger, Peter},
-  booktitle     = {Proceedings 14th International Conference on Quantum Physics and Logic, Nijmegen, the Netherlands, 3-7 July 2017},
-  title         = {A Categorical Model for a Quantum Circuit Description Language (Extended Abstract)},
-  abstract      = {Quipper is a practical programming language for describing families of quantum circuits. In this paper, we formalize a small, but useful fragment of Quipper called Proto-Quipper-M. Unlike its parent Quipper, this language is type-safe and has a formal denotational and operational semantics. Proto-Quipper-M is also more general than Quipper, in that it can describe families of morphisms in any symmetric monoidal category, of which quantum circuits are but one example. We design Proto-Quipper-M from the ground up, by first giving a general categorical model of parameters and state. The distinction between parameters and state is also known from hardware description languages. A parameter is a value that is known at circuit generation time, whereas a state is a value that is known at circuit execution time. After finding some interesting categorical structures in the model, we then define the programming language to fit the model. We cement the connection between the language and the model by proving type safety, soundness, and adequacy properties.},
-  year          = {2018},
-  editor        = {Coecke, Bob and Kissinger, Aleks},
-  pages         = {164--178},
-  publisher     = {{Open Publishing Association}},
-  series        = {Electronic Proceedings in Theoretical Computer Science},
-  volume        = {266},
-  doi           = {10.4204/EPTCS.266.11},
-  eprint        = {1706.02630},
-  archiveprefix = {arxiv},
-  timestamp     = {2021-04-18}
+  author    = {Rios, Francisco and Selinger, Peter},
+  booktitle = {Proceedings 14th International Conference on Quantum Physics and Logic, Nijmegen, the Netherlands, 3-7 July 2017},
+  title     = {A Categorical Model for a Quantum Circuit Description Language (Extended Abstract)},
+  abstract  = {Quipper is a practical programming language for describing families of quantum circuits. In this paper, we formalize a small, but useful fragment of Quipper called Proto-Quipper-M. Unlike its parent Quipper, this language is type-safe and has a formal denotational and operational semantics. Proto-Quipper-M is also more general than Quipper, in that it can describe families of morphisms in any symmetric monoidal category, of which quantum circuits are but one example. We design Proto-Quipper-M from the ground up, by first giving a general categorical model of parameters and state. The distinction between parameters and state is also known from hardware description languages. A parameter is a value that is known at circuit generation time, whereas a state is a value that is known at circuit execution time. After finding some interesting categorical structures in the model, we then define the programming language to fit the model. We cement the connection between the language and the model by proving type safety, soundness, and adequacy properties.},
+  year      = {2018},
+  editor    = {Coecke, Bob and Kissinger, Aleks},
+  pages     = {164--178},
+  publisher = {{Open Publishing Association}},
+  series    = {Electronic Proceedings in Theoretical Computer Science},
+  volume    = {266},
+  doi       = {10.4204/EPTCS.266.11},
+  timestamp = {2021-04-18}
 }
 
 @phdthesis{Ross2015,
