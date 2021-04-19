@@ -1,0 +1,177 @@
+@techreport{Knill1996,
+  author      = {Knill, Emmanuel},
+  title       = {Conventions for Quantum Pseudocode},
+  year        = {1996},
+  month       = jun,
+  number      = {LA-UR-96-2724},
+  abstract    = {A few conventions for thinking about and writing quantum pseudocode are proposed. The conventions can be used for presenting any quantum algorithm down to the lowest level and are consistent with a quantum random access machine (QRAM) model for quantum computing. In principle a formal version of quantum pseudocode could be used in a future extension of a conventional language.},
+  doi         = {10.2172/366453},
+  institution = {{Los Alamos National Laboratory}}
+}
+
+@article{Selinger2004,
+  author    = {Selinger, Peter},
+  journal   = {Mathematical Structures in Computer Science},
+  title     = {Towards a Quantum Programming Language},
+  year      = {2004},
+  month     = aug,
+  number    = {4},
+  pages     = {527--586},
+  volume    = {14},
+  abstract  = {We propose the design of a programming language for quantum computing. Traditionally, quantum algorithms are frequently expressed at the hardware level, for instance in terms of the quantum circuit model or quantum Turing machines. These approaches do not encourage structured programming or abstractions such as data types. In this paper, we describe the syntax and semantics of a simple quantum programming language with high-level features such as loops, recursive procedures, and structured data types. The language is functional in nature, statically typed, free of run-time errors, and has an interesting denotational semantics in terms of complete partial orders of superoperators.},
+  doi       = {10.1017/S0960129504004256},
+  url       = {https://www.mathstat.dal.ca/~selinger/papers/papers/qpl.pdf},
+  publisher = {{Cambridge University Press}}
+}
+
+@inproceedings{Gay2005,
+  author        = {Gay, Simon J. and Nagarajan, Rajagopal},
+  booktitle     = {Proceedings of the 32nd {{ACM SIGPLAN}}-{{SIGACT}} Symposium on {{Principles}} of Programming Languages},
+  title         = {Communicating Quantum Processes},
+  year          = {2005},
+  address       = {{New York, NY, USA}},
+  month         = jan,
+  pages         = {145--157},
+  publisher     = {{Association for Computing Machinery}},
+  series        = {{{POPL}} '05},
+  abstract      = {We define a language CQP (Communicating Quantum Processes) for modelling systems which combine quantum and classical communication and computation. CQP combines the communication primitives of the pi-calculus with primitives for measurement and transformation of quantum state; in particular, quantum bits (qubits) can be transmitted from process to process along communication channels. CQP has a static type system which classifies channels, distinguishes between quantum and classical data, and controls the use of quantum state. We formally define the syntax, operational semantics and type system of CQP, prove that the semantics preserves typing, and prove that typing guarantees that each qubit is owned by a unique process within a system. We illustrate CQP by defining models of several quantum communication systems, and outline our plans for using CQP as the foundation for formal analysis and verification of combined quantum and classical systems.},
+  doi           = {10.1145/1040305.1040318},
+  isbn          = {978-1-58113-830-6},
+  eprint        = {quant-ph/0409052},
+  archiveprefix = {arxiv}
+}
+
+@inproceedings{Altenkirch2005,
+  author        = {Altenkirch, Thorsten and Grattage, Jonathan},
+  abstract      = {We introduce the language QML, a functional language for quantum computations on finite types. Its design is guided by its categorical semantics: QML programs are interpreted by morphisms in the category FQC of finite quantum computations, which provides a constructive semantics of irreversible quantum computations realisable as quantum gates. QML integrates reversible and irreversible quantum computations in one language, using first order strict linear logic to make weakenings explicit. Strict programs are free from decoherence and hence preserve superpositions and entanglement - which is essential for quantum parallelism.},
+  booktitle     = {Proceedings of the Twentieth Annual {{IEEE}} Symposium on Logic in Computer Science ({{LICS}} 2005)},
+  title         = {A Functional Quantum Programming Language},
+  year          = {2005},
+  address       = {{Chicago, USA}},
+  month         = jun,
+  pages         = {249--258},
+  publisher     = {{IEEE Computer Society Press}},
+  doi           = {10.1109/LICS.2005.1},
+  archiveprefix = {arXiv},
+  eprint        = {quant-ph/0409065}
+}
+
+@incollection{Altenkirch2009,
+  author    = {Altenkirch, Thorsten and Green, Alexander S.},
+  booktitle = {Semantic {{Techniques}} in {{Quantum Computation}}},
+  publisher = {{Cambridge University Press}},
+  title     = {The {{Quantum IO Monad}}},
+  year      = {2009},
+  address   = {{Cambridge}},
+  editor    = {Mackie, Ian and Gay, Simon},
+  isbn      = {978-0-521-51374-6},
+  pages     = {173--205},
+  abstract  = {The quantum IO monad is a purely functional interface to quantum programming implemented as a Haskell library. At the same time it provides a constructive semantics of quantum programming. The QIO monad separates reversible (i.e., unitary) and irreversible (i.e., probabilistic) computations and provides a reversible let operation (ulet), allowing us to use ancillas (auxiliary qubits) in a modular fashion. QIO programs can be simulated either by calculating a probability distribution or by embedding it into the IO monad using the random number generator. As an example we present a complete implementation of Shor's algorithm.5.1 IntroductionWe present an interface from a pure functional programming language, Haskell, to quantum programming: the quantum IO monad, and use it to implement Shor's factorization algorithm. The implementation of the QIO monad provides a constructive semantics for quantum programming, i.e., a functional program that can also be understood as a mathematical model of quantum computing. Actually, the Haskell QIO library is only a first approximation of such a semantics; we would like to move to a more expressive language that is also logically sound. Here we are thinking of a language such as Agda (Norell 2007), which is based on Martin L\"of's type theory. We have already investigated this approach of functional specifications of effects in a classical context (Swierstra and Altenkirch 2007, 2008; Swierstra 2008). At the same time the QIO monad provides a high-level interface to a hypothetical quantum computer.},
+  doi       = {10.1017/CBO9781139193313.006},
+  url       = {https://www.cs.nott.ac.uk/~psztxa/g5xnsc/chapter.pdf}
+}
+
+@inproceedings{Green2013,
+  author        = {Green, Alexander S. and Lumsdaine, Peter LeFanu and Ross, Neil J. and Selinger, Peter and Valiron, Beno{\^i}t},
+  booktitle     = {Proceedings of the 34th {{ACM SIGPLAN Conference}} on {{Programming Language Design}} and {{Implementation}}},
+  title         = {Quipper: {{A Scalable Quantum Programming Language}}},
+  year          = {2013},
+  address       = {{New York, NY, USA}},
+  month         = jun,
+  pages         = {333--342},
+  publisher     = {{ACM}},
+  series        = {{{PLDI}} '13},
+  volume        = {48},
+  abstract      = {The field of quantum algorithms is vibrant. Still, there is currently a lack of programming languages for describing quantum computation on a practical scale, i.e., not just at the level of toy problems. We address this issue by introducing Quipper, a scalable, expressive, functional, higher-order quantum programming language. Quipper has been used to program a diverse set of non-trivial quantum algorithms, and can generate quantum gate representations using trillions of gates. It is geared towards a model of computation that uses a classical computer to control a quantum device, but is not dependent on any particular model of quantum hardware. Quipper has proven effective and easy to use, and opens the door towards using formal methods to analyze quantum algorithms.},
+  doi           = {10.1145/2491956.2462177},
+  isbn          = {978-1-4503-2014-6},
+  shorttitle    = {Quipper},
+  eprint        = {1304.3390},
+  archiveprefix = {arXiv}
+}
+
+@inproceedings{Green2013a,
+  author        = {Green, Alexander S. and Lumsdaine, Peter LeFanu and Ross, Neil J. and Selinger, Peter and Valiron, Beno{\^i}t},
+  booktitle     = {Reversible {{Computation}}},
+  title         = {An {{Introduction}} to {{Quantum Programming}} in {{Quipper}}},
+  year          = {2013},
+  editor        = {Dueck, Gerhard W. and Miller, D. Michael},
+  month         = apr,
+  pages         = {110--124},
+  publisher     = {{Springer Berlin Heidelberg}},
+  series        = {Lecture {{Notes}} in {{Computer Science}}},
+  volume        = {7948},
+  abstract      = {Quipper is a recently developed programming language for expressing quantum computations. This paper gives a brief tutorial introduction to the language, through a demonstration of how to make use of some of its key features. We illustrate many of Quipper's language features by developing a few well known examples of Quantum computation, including quantum teleportation, the quantum Fourier transform, and a quantum circuit for addition.},
+  doi           = {10.1007/978-3-642-38986-3_10},
+  eprint        = {1304.5485},
+  archiveprefix = {arxiv},
+  isbn          = {978-3-642-38986-3}
+}
+
+@article{JavadiAbhari2015,
+  author    = {{Javadi-Abhari}, Ali and Patil, Shruti and Kudrow, Daniel and Heckey, Jeff and Lvov, Alexey and Chong, Frederic T. and Martonosi, Margaret},
+  journal   = {Parallel Computing},
+  title     = {{{ScaffCC}}: {{Scalable Compilation}} and {{Analysis}} of {{Quantum Programs}}},
+  year      = {2015},
+  pages     = {2--17},
+  volume    = {45},
+  abstract  = {We present ScaffCC, a scalable compilation and analysis framework based on LLVM (Lattner and Adve, 2004), which can be used for compiling quantum computing applications at the logical level. Drawing upon mature compiler technologies, we discuss similarities and differences between compilation of classical and quantum programs, and adapt our methods to optimizing the compilation time and output for the quantum case. Our work also integrates a reversible-logic synthesis tool in the compiler to facilitate coding of quantum circuits. Lastly, we present some useful quantum program analysis scenarios and discuss their implications, specifically with an elaborate discussion of timing analysis for critical path estimation. Our work focuses on bridging the gap between high-level quantum algorithm specifications and low-level physical implementations, while providing good scalability to larger and more interesting problems.},
+  doi       = {10.1016/j.parco.2014.12.001}
+}
+
+@inproceedings{Bichsel2020,
+  author     = {Bichsel, Benjamin and Baader, Maximilian and Gehr, Timon and Vechev, Martin},
+  booktitle  = {Proceedings of the 41st {{ACM SIGPLAN Conference}} on {{Programming Language Design}} and {{Implementation}}},
+  title      = {Silq: A High-Level Quantum Language with Safe Uncomputation and Intuitive Semantics},
+  year       = {2020},
+  address    = {{New York, NY, USA}},
+  month      = jun,
+  pages      = {286--300},
+  publisher  = {{Association for Computing Machinery}},
+  series     = {{{PLDI}} 2020},
+  abstract   = {Existing quantum languages force the programmer to work at a low level of abstraction leading to unintuitive and cluttered code. A fundamental reason is that dropping temporary values from the program state requires explicitly applying quantum operations that safely uncompute these values. We present Silq, the first quantum language that addresses this challenge by supporting safe, automatic uncomputation. This enables an intuitive semantics that implicitly drops temporary values, as in classical computation. To ensure physicality of Silq's semantics, its type system leverages novel annotations to reject unphysical programs. Our experimental evaluation demonstrates that Silq programs are not only easier to read and write, but also significantly shorter than equivalent programs in other quantum languages (on average -46\% for Q\#, -38\% for Quipper), while using only half the number of quantum primitives.},
+  doi        = {10.1145/3385412.3386007},
+  isbn       = {978-1-4503-7613-6},
+  shorttitle = {Silq},
+  url        = {https://files.sri.inf.ethz.ch/website/papers/pldi20-silq.pdf}
+}
+
+@article{Hietala2021,
+  author    = {Hietala, Kesha and Rand, Robert and Hung, Shih-Han and Wu, Xiaodi and Hicks, Michael},
+  journal   = {Proceedings of the ACM on Programming Languages},
+  title     = {A Verified Optimizer for {{Quantum}} Circuits},
+  year      = {2021},
+  month     = jan,
+  number    = {POPL},
+  pages     = {37:1--37:29},
+  volume    = {5},
+  abstract  = {We present VOQC, the first fully verified optimizer for quantum circuits, written using the Coq proof assistant. Quantum circuits are expressed as programs in a simple, low-level language called SQIR, a simple quantum intermediate representation, which is deeply embedded in Coq. Optimizations and other transformations are expressed as Coq functions, which are proved correct with respect to a semantics of SQIR programs. SQIR uses a semantics of matrices of complex numbers, which is the standard for quantum computation, but treats matrices symbolically in order to reason about programs that use an arbitrary number of quantum bits. SQIR's careful design and our provided automation make it possible to write and verify a broad range of optimizations in VOQC, including full-circuit transformations from cutting-edge optimizers.},
+  doi       = {10.1145/3434318}
+}
+
+@incollection{Baez2011,
+  author        = {Baez, J. and Stay, M.},
+  booktitle     = {New Structures for Physics},
+  publisher     = {{Springer Berlin Heidelberg}},
+  title         = {Physics, Topology, Logic and Computation: {{A}} Rosetta Stone},
+  year          = {2011},
+  address       = {{Berlin, Heidelberg}},
+  editor        = {Coecke, Bob},
+  isbn          = {978-3-642-12821-9_2},
+  pages         = {95--172},
+  abstract      = {In physics, Feynman diagrams are used to reason about quantum processes. In the 1980s, it became clear that underlying these diagrams is a powerful analogy between quantum physics and topology. Namely, a linear operator behaves very much like a ``cobordism'': a manifold representing spacetime, going between two manifolds representing space. This led to a burst of work on topological quantum field theory and ``quantum topology''. But this was just the beginning: similar diagrams can be used to reason about logic, where they represent proofs, and computation, where they represent programs. With the rise of interest in quantum cryptography and quantum computation, it became clear that there is extensive network of analogies between physics, topology, logic and computation. In this expository paper, we make some of these analogies precise using the concept of ``closed symmetric monoidal category''. We assume no prior knowledge of category theory, proof theory or computer science.},
+  doi           = {10.1007/978-3-642-12821-9},
+  archiveprefix = {arxiv},
+  eprint        = {0903.0340}
+}
+
+@unpublished{Paykin2019,
+  author        = {Paykin, Jennifer and Zdancewic, Steve},
+  note          = {Talk at Quantum Physics and Logic, Chapman University, June 2019},
+  title         = {A {{HoTT Quantum Equational Theory}} ({{Extended Version}})},
+  month         = apr,
+  year          = {2019},
+  abstract      = {This paper presents an equational theory for the QRAM model of quantum computation, formulated as an embedded language inside of homotopy type theory. The embedded language approach is highly expressive, and reflects the style of state-of-the art quantum languages like Quipper and QWIRE. The embedding takes advantage of features of homotopy type theory to encode unitary transformations as higher inductive paths, simplifying the presentation of an equational theory. We prove that this equational theory is sound and complete with respect to established models of quantum computation.},
+  eprint        = {1904.04371},
+  archiveprefix = {arxiv}
+}
