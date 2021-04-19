@@ -119,17 +119,19 @@
 }
 
 @article{Bettelli2003,
-  author    = {Bettelli, S. and Calarco, T. and Serafini, L.},
-  journal   = {European Physical Journal D: Atomic, Molecular, Optical and Plasma Physics},
-  title     = {Toward an Architecture for Quantum Programming},
-  year      = {2003},
-  month     = aug,
-  number    = {2},
-  pages     = {181--200},
-  volume    = {25},
-  abstract  = {It is becoming increasingly clear that, if a useful device for quantum computation will ever be built, it will be embodied by a classical computing machine with control over a truly quantum subsystem, this apparatus performing a mixture of classical and quantum computation. This paper investigates a possible approach to the problem of programming such machines: a template high level quantum language is presented which complements a generic general purpose classical language with a set of quantum primitives. The underlying scheme involves a run-time environment which calculates the byte-code for the quantum operations and pipes it to a quantum device controller or to a simulator. This language can compactly express existing quantum algorithms and reduce them to sequences of elementary operations; it also easily lends itself to automatic, hardware independent, circuit simplification. A publicly available preliminary implementation of the proposed ideas has been realised using the language.},
-  doi       = {10.1140/epjd/e2003-00242-2},
-  timestamp = {2021-04-18}
+  author        = {Bettelli, S. and Calarco, T. and Serafini, L.},
+  journal       = {European Physical Journal D: Atomic, Molecular, Optical and Plasma Physics},
+  title         = {Toward an Architecture for Quantum Programming},
+  year          = {2003},
+  month         = aug,
+  number        = {2},
+  pages         = {181--200},
+  volume        = {25},
+  abstract      = {It is becoming increasingly clear that, if a useful device for quantum computation will ever be built, it will be embodied by a classical computing machine with control over a truly quantum subsystem, this apparatus performing a mixture of classical and quantum computation. This paper investigates a possible approach to the problem of programming such machines: a template high level quantum language is presented which complements a generic general purpose classical language with a set of quantum primitives. The underlying scheme involves a run-time environment which calculates the byte-code for the quantum operations and pipes it to a quantum device controller or to a simulator. This language can compactly express existing quantum algorithms and reduce them to sequences of elementary operations; it also easily lends itself to automatic, hardware independent, circuit simplification. A publicly available preliminary implementation of the proposed ideas has been realised using the language.},
+  doi           = {10.1140/epjd/e2003-00242-2},
+  archiveprefix = {arxiv},
+  eprint        = {cs/0103009},
+  timestamp     = {2021-04-18}
 }
 
 @inproceedings{Bichsel2020,
@@ -289,6 +291,7 @@
   volume    = {16},
   abstract  = {We develop a notion of predicate transformer and, in particular, the weakest precondition, appropriate for quantum computation. We show that there is a Stone-type duality between the usual state-transformer semantics and the weakest precondition semantics. Rather than trying to reduce quantum computation to probabilistic programming, we develop a notion that is directly taken from concepts used in quantum computation. The proof that weakest preconditions exist for completely positive maps follows immediately from the Kraus representation theorem. As an example, we give the semantics of Selinger's language in terms of our weakest preconditions. We also cover some specific situations and exhibit an interesting link with stabilisers.},
   doi       = {10.1017/S0960129506005251},
+  url       = {https://www.cs.mcgill.ca/~prakash/Pubs/weakest_mscs.pdf},
   timestamp = {2021-04-18}
 }
 
@@ -328,19 +331,32 @@
 }
 
 @inproceedings{Gay2005,
-  author    = {Gay, Simon J. and Nagarajan, Rajagopal},
-  booktitle = {Proceedings of the 32nd {{ACM SIGPLAN}}-{{SIGACT}} Symposium on {{Principles}} of Programming Languages},
-  title     = {Communicating Quantum Processes},
-  year      = {2005},
-  address   = {{New York, NY, USA}},
-  month     = jan,
-  pages     = {145--157},
-  publisher = {{Association for Computing Machinery}},
-  series    = {{{POPL}} '05},
-  abstract  = {We define a language CQP (Communicating Quantum Processes) for modelling systems which combine quantum and classical communication and computation. CQP combines the communication primitives of the pi-calculus with primitives for measurement and transformation of quantum state; in particular, quantum bits (qubits) can be transmitted from process to process along communication channels. CQP has a static type system which classifies channels, distinguishes between quantum and classical data, and controls the use of quantum state. We formally define the syntax, operational semantics and type system of CQP, prove that the semantics preserves typing, and prove that typing guarantees that each qubit is owned by a unique process within a system. We illustrate CQP by defining models of several quantum communication systems, and outline our plans for using CQP as the foundation for formal analysis and verification of combined quantum and classical systems.},
-  doi       = {10.1145/1040305.1040318},
-  isbn      = {978-1-58113-830-6},
-  timestamp = {2021-04-18}
+  author        = {Gay, Simon J. and Nagarajan, Rajagopal},
+  booktitle     = {Proceedings of the 32nd {{ACM SIGPLAN}}-{{SIGACT}} Symposium on {{Principles}} of Programming Languages},
+  title         = {Communicating Quantum Processes},
+  year          = {2005},
+  address       = {{New York, NY, USA}},
+  month         = jan,
+  pages         = {145--157},
+  publisher     = {{Association for Computing Machinery}},
+  series        = {{{POPL}} '05},
+  abstract      = {We define a language CQP (Communicating Quantum Processes) for modelling systems which combine quantum and classical communication and computation. CQP combines the communication primitives of the pi-calculus with primitives for measurement and transformation of quantum state; in particular, quantum bits (qubits) can be transmitted from process to process along communication channels. CQP has a static type system which classifies channels, distinguishes between quantum and classical data, and controls the use of quantum state. We formally define the syntax, operational semantics and type system of CQP, prove that the semantics preserves typing, and prove that typing guarantees that each qubit is owned by a unique process within a system. We illustrate CQP by defining models of several quantum communication systems, and outline our plans for using CQP as the foundation for formal analysis and verification of combined quantum and classical systems.},
+  doi           = {10.1145/1040305.1040318},
+  isbn          = {978-1-58113-830-6},
+  eprint        = {quant-ph/0409052},
+  archiveprefix = {arxiv},
+  timestamp     = {2021-04-18}
+}
+
+@article{Gay2006,
+  author  = {Simon J. Gay},
+  title   = {Quantum Programming Languages: Survey and Bibliography},
+  journal = {Mathematical Structures in Computer Science},
+  volume  = {16},
+  number  = {4},
+  year    = {2006},
+  doi     = {10.1017/S0960129506005378},
+  url     = {http://www.dcs.gla.ac.uk/~simon/quantum/}
 }
 
 @book{Gay2009,
@@ -482,14 +498,14 @@
 }
 
 @techreport{Knill1996,
-  author      = {Knill, E.},
+  author      = {Knill, Emmanuel},
   title       = {Conventions for Quantum Pseudocode},
   year        = {1996},
   month       = jun,
   number      = {LA-UR-96-2724},
   abstract    = {A few conventions for thinking about and writing quantum pseudocode are proposed. The conventions can be used for presenting any quantum algorithm down to the lowest level and are consistent with a quantum random access machine (QRAM) model for quantum computing. In principle a formal version of quantum pseudocode could be used in a future extension of a conventional language.},
   doi         = {10.2172/366453},
-  institution = {{Los Alamos National Lab., NM (United States)}},
+  institution = {{Los Alamos National Laboratory}},
   timestamp   = {2021-04-18},
   url         = {https://www.osti.gov/biblio/366453-conventions-quantum-pseudocode}
 }
@@ -810,13 +826,14 @@
   volume    = {14},
   abstract  = {We propose the design of a programming language for quantum computing. Traditionally, quantum algorithms are frequently expressed at the hardware level, for instance in terms of the quantum circuit model or quantum Turing machines. These approaches do not encourage structured programming or abstractions such as data types. In this paper, we describe the syntax and semantics of a simple quantum programming language with high-level features such as loops, recursive procedures, and structured data types. The language is functional in nature, statically typed, free of run-time errors, and has an interesting denotational semantics in terms of complete partial orders of superoperators.},
   doi       = {10.1017/S0960129504004256},
+  url       = {https://www.mathstat.dal.ca/~selinger/papers/papers/qpl.pdf},
   publisher = {{Cambridge University Press}},
   timestamp = {2021-04-18}
 }
 
 @inproceedings{Selinger2004a,
   author    = {Selinger, Peter},
-  booktitle = {Functional and {{Logic Programming}}},
+  booktitle = {Proceedings of the 7th {International Symposium} on {Functional} and {{Logic Programming}}},
   title     = {A {{Brief Survey}} of {{Quantum Programming Languages}}},
   year      = {2004},
   address   = {{Berlin, Heidelberg}},
@@ -841,6 +858,7 @@
   volume    = {16},
   abstract  = {In this paper we develop a functional programming language for quantum computers by extending the simply-typed lambda calculus with quantum types and operations. The design of this language adheres to the `quantum data, classical control' paradigm, following the first author's work on quantum flow-charts. We define a call-by-value operational semantics, and give a type system using affine intuitionistic linear logic. The main results of this paper are the safety properties of the language and the development of a type inference algorithm.},
   doi       = {10.1017/S0960129506005238},
+  url       = {https://www.mscs.dal.ca/~selinger/papers/papers/qlambda-mscs.pdf},
   timestamp = {2021-04-18}
 }
 
