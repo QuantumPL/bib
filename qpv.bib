@@ -62,6 +62,7 @@
   publisher = {{Cambridge University Press}},
   title     = {The {{Quantum IO Monad}}},
   year      = {2009},
+  month     = nov,
   address   = {{Cambridge}},
   editor    = {Mackie, Ian and Gay, Simon},
   isbn      = {978-0-521-51374-6},
@@ -108,20 +109,6 @@
   isbn          = {978-3-642-38986-3}
 }
 
-@article{JavadiAbhari2015,
-  author        = {{Javadi-Abhari}, Ali and Patil, Shruti and Kudrow, Daniel and Heckey, Jeff and Lvov, Alexey and Chong, Frederic T. and Martonosi, Margaret},
-  journal       = {Parallel Computing},
-  title         = {{{ScaffCC}}: {{Scalable Compilation}} and {{Analysis}} of {{Quantum Programs}}},
-  year          = {2015},
-  month         = jun,
-  pages         = {2--17},
-  volume        = {45},
-  abstract      = {We present ScaffCC, a scalable compilation and analysis framework based on LLVM (Lattner and Adve, 2004), which can be used for compiling quantum computing applications at the logical level. Drawing upon mature compiler technologies, we discuss similarities and differences between compilation of classical and quantum programs, and adapt our methods to optimizing the compilation time and output for the quantum case. Our work also integrates a reversible-logic synthesis tool in the compiler to facilitate coding of quantum circuits. Lastly, we present some useful quantum program analysis scenarios and discuss their implications, specifically with an elaborate discussion of timing analysis for critical path estimation. Our work focuses on bridging the gap between high-level quantum algorithm specifications and low-level physical implementations, while providing good scalability to larger and more interesting problems.},
-  doi           = {10.1016/j.parco.2014.12.001},
-  eprint        = {1507.01902},
-  archiveprefix = {arxiv}
-}
-
 @inproceedings{Bichsel2020,
   author     = {Bichsel, Benjamin and Baader, Maximilian and Gehr, Timon and Vechev, Martin},
   booktitle  = {Proceedings of the 41st {{ACM SIGPLAN Conference}} on {{Programming Language Design}} and {{Implementation}}},
@@ -139,6 +126,21 @@
   url        = {https://files.sri.inf.ethz.ch/website/papers/pldi20-silq.pdf}
 }
 
+@inproceedings{Amy2019a,
+  author    = {Amy, Matthew},
+  booktitle = {Proceedings of the 15th International Conference on Quantum Physics and Logic, Halifax, Canada, 3-7th June 2018},
+  title     = {Towards Large-Scale Functional Verification of Universal Quantum Circuits},
+  abstract  = {We introduce a framework for the formal specification and verification of quantum circuits based on the Feynman path integral. Our formalism, built around exponential sums of polynomial functions, provides a structured and natural way of specifying quantum operations, particularly for quantum implementations of classical functions. Verification of circuits over all levels of the Clifford hierarchy with respect to either a specification or reference circuit is enabled by a novel rewrite system for exponential sums with free variables. Our algorithm is further shown to give a polynomial-time decision procedure for checking the equivalence of Clifford group circuits. We evaluate our methods by performing automated verification of optimized Clifford+T circuits with up to 100 qubits and thousands of T gates, as well as the functional verification of quantum algorithms using hundreds of qubits. Our experiments culminate in the automated verification of the Hidden Shift algorithm for a class of Boolean functions in a fraction of the time it has taken recent algorithms to simulate.},
+  year      = {2019},
+  month     = jan,
+  editor    = {Selinger, Peter and Chiribella, Giulio},
+  pages     = {1--21},
+  publisher = {{Open Publishing Association}},
+  series    = {Electronic Proceedings in Theoretical Computer Science},
+  volume    = {287},
+  doi       = {10.4204/EPTCS.287.1}
+}
+
 @article{Hietala2021,
   author   = {Hietala, Kesha and Rand, Robert and Hung, Shih-Han and Wu, Xiaodi and Hicks, Michael},
   journal  = {Proceedings of the ACM on Programming Languages},
@@ -152,12 +154,13 @@
   doi      = {10.1145/3434318}
 }
 
-@incollection{Baez2011,
+@incollection{Baez2010,
   author        = {Baez, J. and Stay, M.},
   booktitle     = {New Structures for Physics},
   publisher     = {{Springer Berlin Heidelberg}},
   title         = {Physics, Topology, Logic and Computation: {{A}} Rosetta Stone},
-  year          = {2011},
+  year          = {2010},
+  month         = jul,
   address       = {{Berlin, Heidelberg}},
   editor        = {Coecke, Bob},
   isbn          = {978-3-642-12821-9},
