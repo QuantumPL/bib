@@ -30,6 +30,7 @@
   abstract      = {We introduce the language QML, a functional language for quantum computations on finite types. Its design is guided by its categorical semantics: QML programs are interpreted by morphisms in the category FQC of finite quantum computations, which provides a constructive semantics of irreversible quantum computations realisable as quantum gates. QML integrates reversible and irreversible quantum computations in one language, using first order strict linear logic to make weakenings explicit. Strict programs are free from decoherence and hence preserve superpositions and entanglement - which is essential for quantum parallelism.},
   booktitle     = {Proceedings of the Twentieth Annual {{IEEE}} Symposium on Logic in Computer Science ({{LICS}} 2005)},
   title         = {A Functional Quantum Programming Language},
+  note          = {Introduces QML},
   year          = {2005},
   address       = {{Chicago, USA}},
   month         = jun,
@@ -60,6 +61,22 @@
 }
 
 @inproceedings{Amy2019,
+  author    = {Amy, Matthew},
+  booktitle = {Proceedings of the 15th International Conference on Quantum Physics and Logic, Halifax, Canada, 3--7th June 2018},
+  title     = {Towards Large-Scale Functional Verification of Universal Quantum Circuits},
+  abstract  = {We introduce a framework for the formal specification and verification of quantum circuits based on the Feynman path integral. Our formalism, built around exponential sums of polynomial functions, provides a structured and natural way of specifying quantum operations, particularly for quantum implementations of classical functions. Verification of circuits over all levels of the Clifford hierarchy with respect to either a specification or reference circuit is enabled by a novel rewrite system for exponential sums with free variables. Our algorithm is further shown to give a polynomial-time decision procedure for checking the equivalence of Clifford group circuits. We evaluate our methods by performing automated verification of optimized Clifford+T circuits with up to 100 qubits and thousands of T gates, as well as the functional verification of quantum algorithms using hundreds of qubits. Our experiments culminate in the automated verification of the Hidden Shift algorithm for a class of Boolean functions in a fraction of the time it has taken recent algorithms to simulate.},
+  year      = {2019},
+  month     = jan,
+  editor    = {Selinger, Peter and Chiribella, Giulio},
+  pages     = {1--21},
+  publisher = {{Open Publishing Association}},
+  series    = {Electronic Proceedings in Theoretical Computer Science},
+  volume    = {287},
+  doi       = {10.4204/EPTCS.287.1},
+  timestamp = {2021-04-18}
+}
+
+@inproceedings{Amy2019a,
   author        = {Amy, Matthew},
   booktitle     = {Reversible {{Computation}}},
   title         = {Sized {{Types}} for {{Low}}-{{Level Quantum Metaprogramming}}},
@@ -76,22 +93,6 @@
   archiveprefix = {arxiv},
   isbn          = {978-3-030-21500-2},
   timestamp     = {2021-04-18}
-}
-
-@inproceedings{Amy2019a,
-  author    = {Amy, Matthew},
-  booktitle = {Proceedings of the 15th International Conference on Quantum Physics and Logic, Halifax, Canada, 3--7th June 2018},
-  title     = {Towards Large-Scale Functional Verification of Universal Quantum Circuits},
-  abstract  = {We introduce a framework for the formal specification and verification of quantum circuits based on the Feynman path integral. Our formalism, built around exponential sums of polynomial functions, provides a structured and natural way of specifying quantum operations, particularly for quantum implementations of classical functions. Verification of circuits over all levels of the Clifford hierarchy with respect to either a specification or reference circuit is enabled by a novel rewrite system for exponential sums with free variables. Our algorithm is further shown to give a polynomial-time decision procedure for checking the equivalence of Clifford group circuits. We evaluate our methods by performing automated verification of optimized Clifford+T circuits with up to 100 qubits and thousands of T gates, as well as the functional verification of quantum algorithms using hundreds of qubits. Our experiments culminate in the automated verification of the Hidden Shift algorithm for a class of Boolean functions in a fraction of the time it has taken recent algorithms to simulate.},
-  year      = {2019},
-  month     = jan,
-  editor    = {Selinger, Peter and Chiribella, Giulio},
-  pages     = {1--21},
-  publisher = {{Open Publishing Association}},
-  series    = {Electronic Proceedings in Theoretical Computer Science},
-  volume    = {287},
-  doi       = {10.4204/EPTCS.287.1},
-  timestamp = {2021-04-18}
 }
 
 @inproceedings{Badescu2015,
@@ -313,24 +314,6 @@
 }
 
 @inproceedings{Fu2020,
-  author        = {Fu, Peng and Kishida, Kohei and Ross, Neil J. and Selinger, Peter},
-  booktitle     = {Reversible Computation},
-  title         = {A Tutorial Introduction to Quantum Circuit Programming in Dependently Typed Proto-Quipper},
-  year          = {2020},
-  month         = jul,
-  address       = {{Cham}},
-  editor        = {Lanese, Ivan and Rawski, Mariusz},
-  pages         = {153--168},
-  publisher     = {{Springer International Publishing}},
-  abstract      = {We introduce dependently typed Proto-Quipper, or Proto-Quipper-D for short, an experimental quantum circuit programming language with linear dependent types. We give several examples to illustrate how linear dependent types can help in the construction of correct quantum circuits. Specifically, we show how dependent types enable programming families of circuits, and how dependent types solve the problem of type-safe uncomputation of garbage qubits. We also discuss other language features along the way.},
-  eprint        = {2005.08396},
-  archiveprefix = {arxiv},
-  doi           = {10.1007/978-3-030-52482-1_9},
-  isbn          = {978-3-030-52482-1},
-  timestamp     = {2021-04-18}
-}
-
-@inproceedings{Fu2020a,
   author        = {Fu, Peng and Kishida, Kohei and Selinger, Peter},
   booktitle     = {Proceedings of the 35th {{Annual ACM}}/{{IEEE Symposium}} on {{Logic}} in {{Computer Science}}},
   title         = {Linear {{Dependent Type Theory}} for {{Quantum Programming Languages}}: {{Extended Abstract}}},
@@ -346,6 +329,24 @@
   archiveprefix = {arxiv},
   isbn          = {978-1-4503-7104-9},
   shorttitle    = {Linear {{Dependent Type Theory}} for {{Quantum Programming Languages}}},
+  timestamp     = {2021-04-18}
+}
+
+@inproceedings{Fu2020a,
+  author        = {Fu, Peng and Kishida, Kohei and Ross, Neil J. and Selinger, Peter},
+  booktitle     = {Reversible Computation},
+  title         = {A Tutorial Introduction to Quantum Circuit Programming in Dependently Typed Proto-Quipper},
+  year          = {2020},
+  month         = jul,
+  address       = {{Cham}},
+  editor        = {Lanese, Ivan and Rawski, Mariusz},
+  pages         = {153--168},
+  publisher     = {{Springer International Publishing}},
+  abstract      = {We introduce dependently typed Proto-Quipper, or Proto-Quipper-D for short, an experimental quantum circuit programming language with linear dependent types. We give several examples to illustrate how linear dependent types can help in the construction of correct quantum circuits. Specifically, we show how dependent types enable programming families of circuits, and how dependent types solve the problem of type-safe uncomputation of garbage qubits. We also discuss other language features along the way.},
+  eprint        = {2005.08396},
+  archiveprefix = {arxiv},
+  doi           = {10.1007/978-3-030-52482-1_9},
+  isbn          = {978-3-030-52482-1},
   timestamp     = {2021-04-18}
 }
 
@@ -633,6 +634,7 @@
   author    = {{\"O}mer, Bernhard},
   school    = {Vienna University of Technology},
   title     = {Structured {{Quantum Programming}}},
+  note      = {Describes QCL},
   year      = {2003},
   month     = may,
   timestamp = {2021-04-18},
@@ -760,7 +762,7 @@
   year      = {2018},
   month     = nov,
   address   = {{Philadelphia, PA, USA}},
-  note      = {Publicly Accessible Penn Dissertations. 3175},
+  note      = {Publicly Accessible Penn Dissertations. 3175. See Ch. 3 for "A Brief History of Quantum Programming and Verification", which is an excellent recent survey of the area},
   type      = {{{PhD Thesis}}},
   timestamp = {2021-04-18},
   url       = {https://repository.upenn.edu/edissertations/3175}
@@ -872,23 +874,7 @@
   timestamp = {2021-04-18}
 }
 
-@article{Selinger2004,
-  author    = {Selinger, Peter},
-  journal   = {Mathematical Structures in Computer Science},
-  title     = {Towards a Quantum Programming Language},
-  year      = {2004},
-  month     = aug,
-  number    = {4},
-  pages     = {527--586},
-  volume    = {14},
-  abstract  = {We propose the design of a programming language for quantum computing. Traditionally, quantum algorithms are frequently expressed at the hardware level, for instance in terms of the quantum circuit model or quantum Turing machines. These approaches do not encourage structured programming or abstractions such as data types. In this paper, we describe the syntax and semantics of a simple quantum programming language with high-level features such as loops, recursive procedures, and structured data types. The language is functional in nature, statically typed, free of run-time errors, and has an interesting denotational semantics in terms of complete partial orders of superoperators.},
-  doi       = {10.1017/S0960129504004256},
-  url       = {https://www.mathstat.dal.ca/~selinger/papers/papers/qpl.pdf},
-  publisher = {{Cambridge University Press}},
-  timestamp = {2021-04-18}
-}
-
-@inproceedings{Selinger2004a,
+@inproceedings{Selinger2004,
   author    = {Selinger, Peter},
   booktitle = {Proceedings of the 7th {International Symposium} on {Functional} and {{Logic Programming}}},
   title     = {A {{Brief Survey}} of {{Quantum Programming Languages}}},
@@ -902,6 +888,23 @@
   abstract  = {This article is a brief and subjective survey of quantum programming language research.},
   doi       = {10.1007/978-3-540-24754-8_1},
   isbn      = {978-3-540-24754-8},
+  timestamp = {2021-04-18}
+}
+
+@article{Selinger2004a,
+  author    = {Selinger, Peter},
+  journal   = {Mathematical Structures in Computer Science},
+  title     = {Towards a Quantum Programming Language},
+  note      = {Introduces Quantum Flow Charts (QFC) and QPL},
+  year      = {2004},
+  month     = aug,
+  number    = {4},
+  pages     = {527--586},
+  volume    = {14},
+  abstract  = {We propose the design of a programming language for quantum computing. Traditionally, quantum algorithms are frequently expressed at the hardware level, for instance in terms of the quantum circuit model or quantum Turing machines. These approaches do not encourage structured programming or abstractions such as data types. In this paper, we describe the syntax and semantics of a simple quantum programming language with high-level features such as loops, recursive procedures, and structured data types. The language is functional in nature, statically typed, free of run-time errors, and has an interesting denotational semantics in terms of complete partial orders of superoperators.},
+  doi       = {10.1017/S0960129504004256},
+  url       = {https://www.mathstat.dal.ca/~selinger/papers/papers/qpl.pdf},
+  publisher = {{Cambridge University Press}},
   timestamp = {2021-04-18}
 }
 
@@ -939,6 +942,8 @@
 @misc{Smith2016,
   author        = {Smith, Robert S. and Curtis, Michael J. and Zeng, William J.},
   title         = {A {{Practical Quantum Instruction Set Architecture}}},
+  note          = {Introduces Quil, a quantum instruction language},
+  url           = {https://github.com/rigetti/quil},
   month         = aug,
   year          = {2016},
   abstract      = {We introduce an abstract machine architecture for classical/quantum computations---including compilation---along with a quantum instruction language called Quil for explicitly writing these computations. With this formalism, we discuss concrete implementations of the machine and non-trivial algorithms targeting them. The introduction of this machine dovetails with ongoing development of quantum computing technology, and makes possible portable descriptions of recent classical/quantum algorithms.},
