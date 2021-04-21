@@ -5,4 +5,4 @@ qpv:
 	bibtex2html -both -s owens_web -css https://latex.now.sh/style.css -t "Quantum Programming and Verification" --header "Ordered by class schedule" qpv.bib
 
 clean:
-	rm -f *.html
+	rm -f bbt*.html qpv*.html
