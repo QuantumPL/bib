@@ -127,19 +127,31 @@
   url        = {https://files.sri.inf.ethz.ch/website/papers/pldi20-silq.pdf}
 }
 
-@inproceedings{Amy2019,
-  author    = {Amy, Matthew},
-  booktitle = {Proceedings of the 15th International Conference on Quantum Physics and Logic, Halifax, Canada, 3-7th June 2018},
-  title     = {Towards Large-Scale Functional Verification of Universal Quantum Circuits},
-  abstract  = {We introduce a framework for the formal specification and verification of quantum circuits based on the Feynman path integral. Our formalism, built around exponential sums of polynomial functions, provides a structured and natural way of specifying quantum operations, particularly for quantum implementations of classical functions. Verification of circuits over all levels of the Clifford hierarchy with respect to either a specification or reference circuit is enabled by a novel rewrite system for exponential sums with free variables. Our algorithm is further shown to give a polynomial-time decision procedure for checking the equivalence of Clifford group circuits. We evaluate our methods by performing automated verification of optimized Clifford+T circuits with up to 100 qubits and thousands of T gates, as well as the functional verification of quantum algorithms using hundreds of qubits. Our experiments culminate in the automated verification of the Hidden Shift algorithm for a class of Boolean functions in a fraction of the time it has taken recent algorithms to simulate.},
-  year      = {2019},
-  month     = jan,
-  editor    = {Selinger, Peter and Chiribella, Giulio},
-  pages     = {1--21},
-  publisher = {{Open Publishing Association}},
-  series    = {Electronic Proceedings in Theoretical Computer Science},
-  volume    = {287},
-  doi       = {10.4204/EPTCS.287.1}
+@inproceedings{Chareton2021,
+  title     = {An Automated Deductive Verification Framework for Circuit-Building Quantum Programs},
+  author    = {Chareton, Christophe and Bardin, S{\'e}bastien and Bobot, Fran{\c c}ois and Perrelle, Valentin and Valiron, Beno{\^i}t},
+  year      = {2021},
+  month     = mar,
+  booktitle = {Programming Languages and Systems},
+  editor    = {Yoshida, Nobuko},
+  publisher = {{Springer International Publishing}},
+  address   = {{Cham}},
+  pages     = {148--177},
+  doi       = {10.1007/978-3-030-72019-3_6},
+  abstract  = {While recent progress in quantum hardware open the door for significant speedup in certain key areas, quantum algorithms are still hard to implement right, and the validation of such quantum programs is a challenge. In this paper we propose Qbricks, a formal verification environment for circuit-building quantum programs, featuring both parametric specifications and a high degree of proof automation. We propose a logical framework based on first-order logic, and develop the main tool we rely upon for achieving the automation of proofs of quantum specification: PPS, a parametric extension of the recently developed path sum semantics. To back-up our claims, we implement and verify parametric versions of several famous and non-trivial quantum algorithms, including the quantum parts of Shor's integer factoring, quantum phase estimation (QPE) and Grover's search.},
+  note      = {See extended version~\cite{Chareton2020} for additional technical material.}
+}
+
+@misc{Chareton2020,
+  title         = {A {{Deductive Verification Framework}} for {{Circuit}}-Building {{Quantum Programs}}},
+  author        = {Chareton, Christophe and Bardin, S{\'e}bastien and Bobot, Fran{\c c}ois and Perrelle, Valentin and Valiron, Beno{\^i}t},
+  year          = {2020},
+  month         = jul,
+  crossref      = {Chareton2021},
+  archiveprefix = {arxiv},
+  eprint        = {2003.05841},
+  abstract      = {While recent progress in quantum hardware open the door for significant speedup in certain key areas, quantum algorithms are still hard to implement right, and the validation of such quantum programs is a challenge. Early attempts either suffer from the lack of automation or parametrized reasoning, or target high-level abstract algorithm description languages far from the current de facto consensus of circuit-building quantum programming languages. As a consequence, no significant quantum algorithm implementation has been currently verified in a scale-invariant manner. We propose Qbricks, the first formal verification environment for circuit-building quantum programs, featuring clear separation between code and proof, parametric specifications and proofs, high degree of proof automation and allowing to encode quantum programs in a natural way, i.e. close to textbook style. Qbricks builds on best practice of formal verification for the classical case and tailor them to the quantum case: we bring a new domain-specific circuit-building language for quantum programs, namely Qbricks-DSL, together with a new logical specification language Qbricks-Spec and a dedicated Hoare-style deductive verification rule named Hybrid Quantum Hoare Logic. Especially, we introduce and intensively build upon HOPS, a higher-order extension of the recent path-sum symbolic representation, used for both specification and automation. To illustrate the opportunity of Qbricks, we implement the first verified parametric implementations of several famous and non-trivial quantum algorithms, including the quantum part of Shor integer factoring (Order Finding - Shor-OF), quantum phase estimation (QPE) - a basic building block of many quantum algorithms, and Grover search. These breakthroughs were amply facilitated by the specification and automated deduction principles introduced within Qbricks.},
+  note          = {Extended version of \cite{Chareton2021}}
 }
 
 @article{Hietala2021,
