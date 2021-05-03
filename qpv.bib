@@ -84,9 +84,21 @@
   editor    = {Mackie, Ian and Gay, Simon},
   isbn      = {978-0-521-51374-6},
   pages     = {173--205},
-  abstract  = {The quantum IO monad is a purely functional interface to quantum programming implemented as a Haskell library. At the same time it provides a constructive semantics of quantum programming. The QIO monad separates reversible (i.e., unitary) and irreversible (i.e., probabilistic) computations and provides a reversible let operation (ulet), allowing us to use ancillas (auxiliary qubits) in a modular fashion. QIO programs can be simulated either by calculating a probability distribution or by embedding it into the IO monad using the random number generator. As an example we present a complete implementation of Shor's algorithm.5.1 IntroductionWe present an interface from a pure functional programming language, Haskell, to quantum programming: the quantum IO monad, and use it to implement Shor's factorization algorithm. The implementation of the QIO monad provides a constructive semantics for quantum programming, i.e., a functional program that can also be understood as a mathematical model of quantum computing. Actually, the Haskell QIO library is only a first approximation of such a semantics; we would like to move to a more expressive language that is also logically sound. Here we are thinking of a language such as Agda (Norell 2007), which is based on Martin L\"of's type theory. We have already investigated this approach of functional specifications of effects in a classical context (Swierstra and Altenkirch 2007, 2008; Swierstra 2008). At the same time the QIO monad provides a high-level interface to a hypothetical quantum computer.},
+  abstract  = {The quantum IO monad is a purely functional interface to quantum programming implemented as a Haskell library. At the same time it provides a constructive semantics of quantum programming. The QIO monad separates reversible (i.e., unitary) and irreversible (i.e., probabilistic) computations and provides a reversible let operation (ulet), allowing us to use ancillas (auxiliary qubits) in a modular fashion. QIO programs can be simulated either by calculating a probability distribution or by embedding it into the IO monad using the random number generator. As an example we present a complete implementation of Shor's algorithm.},
   doi       = {10.1017/CBO9781139193313.006},
+  note      = {Also see \cite{Green2010} for a reimplementation in Agda.},
   url       = {https://www.cs.nott.ac.uk/~psztxa/g5xnsc/chapter.pdf}
+}
+
+@phdthesis{Green2010,
+  title     = {Towards a Formally Verified Functional Quantum Programming Language},
+  author    = {Green, Alexander S.},
+  year      = {2010},
+  month     = jul,
+  school    = {University of Nottingham},
+  url       = {http://eprints.nottingham.ac.uk/11457/},
+  abstract  = {This thesis looks at the development of a framework for a functional quantum programming language. The framework is first developed in Haskell, looking at how a monadic structure can be used to explicitly deal with the side-effects inherent in the measurement of quantum systems, and goes on to look at how a dependently-typed reimplementation in Agda gives us the basis for a formally verified quantum programming language. The two implementations are not in themselves fully developed quantum programming languages, as they are embedded in their respective parent languages, but are a major step towards the development of a full formally verified, functional quantum programming language. Dubbed the ``Quantum IO Monad'', this framework is designed following a structural approach as given by a categorical model of quantum computation.},
+  timestamp = {2021-04-18}
 }
 
 @inproceedings{Green2013,
