@@ -430,13 +430,12 @@
   publisher     = {{Association for Computing Machinery}},
   address       = {{New York, NY, USA}},
   series        = {{{PLDI}} '13},
-  volume        = {48},
   pages         = {333--342},
   doi           = {10.1145/2491956.2462177},
   archiveprefix = {arXiv},
   eprint        = {1304.3390},
   abstract      = {The field of quantum algorithms is vibrant. Still, there is currently a lack of programming languages for describing quantum computation on a practical scale, i.e., not just at the level of toy problems. We address this issue by introducing Quipper, a scalable, expressive, functional, higher-order quantum programming language. Quipper has been used to program a diverse set of non-trivial quantum algorithms, and can generate quantum gate representations using trillions of gates. It is geared towards a model of computation that uses a classical computer to control a quantum device, but is not dependent on any particular model of quantum hardware. Quipper has proven effective and easy to use, and opens the door towards using formal methods to analyze quantum algorithms.},
-  timestamp     = {2021-04-18}
+  timestamp     = {2021-07-15}
 }
 
 @inproceedings{Green2013a,
@@ -1164,6 +1163,31 @@
   address   = {{Amsterdam}},
   doi       = {10.1016/C2014-0-02660-3},
   timestamp = {2021-04-18}
+}
+
+@inproceedings{Yu2021,
+  title     = {Quantum Abstract Interpretation},
+  author    = {Yu, Nengkun and Palsberg, Jens},
+  year      = {2021},
+  month     = jun,
+  booktitle = {Proceedings of the 42nd ACM SIGPLAN International Conference on Programming Language Design and Implementation},
+  location  = {Virtual, Canada},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  series    = {{{PLDI}} '21},
+  pages     = {542--558},
+  numpages  = {17},
+  doi       = {10.1145/3453483.3454061},
+  abstract  = {In quantum computing, the basic unit of information is a qubit. Simulation of a general
+quantum program takes exponential time in the number of qubits, which makes simulation
+infeasible beyond 50 qubits on current supercomputers. So, for the understanding of
+larger programs, we turn to static techniques. In this paper, we present an abstract
+interpretation of quantum programs and we use it to automatically verify assertions
+in polynomial time. Our key insight is to let an abstract state be a tuple of projections.
+For such domains, we present abstraction and concretization functions that form a
+Galois connection and we use them to define abstract operations. Our experiments on
+a laptop have verified assertions about the Bernstein-Vazirani, GHZ, and Grover benchmarks
+with 300 qubits.}
 }
 
 @inproceedings{Zhou2019,
