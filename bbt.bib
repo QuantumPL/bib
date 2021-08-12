@@ -586,6 +586,34 @@
   timestamp = {2021-04-18}
 }
 
+@article{Li2017,
+  title    = {Algorithmic Analysis of Termination Problems for Quantum Programs},
+  author   = {Li, Yangjia and Ying, Mingsheng},
+  year     = {2017},
+  month    = dec,
+  journal  = {Proceedings of the ACM on Programming Languages},
+  volume   = {2},
+  number   = {POPL},
+  pages    = {35},
+  numpages = {29},
+  doi      = {10.1145/3158123},
+  abstract = {We introduce the notion of linear ranking super-martingale (LRSM) for quantum programs
+(with nondeterministic choices, namely angelic and demonic choices). Several termination
+theorems are established showing that the existence of the LRSMs of a quantum program
+implies its termination. Thus, the termination problems of quantum programs is reduced
+to realisability and synthesis of LRSMs. We further show that the realisability and
+synthesis problem of LRSMs for quantum programs can be reduced to an SDP (Semi-Definite
+Programming) problem, which can be settled with the existing SDP solvers. The techniques
+developed in this paper are used to analyse the termination of several example quantum
+programs, including quantum random walks and quantum Bernoulli factory for random
+number generation. This work is essentially a generalisation of constraint-based approach
+to the corresponding problems for probabilistic programs developed in the recent literature
+by adding two novel ideas: (1) employing the fundamental Gleason's theorem in quantum
+mechanics to guide the choices of templates; and (2) a generalised Farkas' lemma in
+terms of observables (Hermitian operators) in quantum physics.},
+  keywords = {SDP (Semi-Definite Programming), quantum Bernoulli factory, quantum programming, quantum random walk, ranking function, super-martingale, termination}
+}
+
 @article{Li2020,
   title    = {Projection-Based Runtime Assertions for Testing and Debugging Quantum Programs},
   author   = {Li, Gushu and Zhou, Li and Yu, Nengkun and Ding, Yufei and Ying, Mingsheng and Xie, Yuan},
@@ -1233,6 +1261,17 @@ quantum algorithms, the Harrow-Hassidim-Lloyd algorithm and Shor's algorithm.}
   timestamp     = {2021-04-18}
 }
 
+@misc{Ying2014a,
+  title         = {Quantum Recursion and Second Quantisation},
+  author        = {Mingsheng Ying},
+  year          = {2014},
+  month         = may,
+  archiveprefix = {arXiv},
+  eprint        = {1405.4443},
+  abstract      = {This paper introduces a new notion of quantum recursion of which the control flow of the computation is quantum rather than classical as in the notions of recursion considered in the previous studies of quantum programming. A typical example is recursive quantum walks, which are obtained by slightly modifying the construction of the ordinary quantum walks. The operational and denotational semantics of quantum recursions are defined by employing the second quantisation method, and they are proved to be equivalent.},
+  note          = {Talk at Tsinghua Software Day 2014}
+}
+
 @book{Ying2016,
   title     = {Foundations of Quantum Programming},
   author    = {Ying, Mingsheng},
@@ -1242,6 +1281,59 @@ quantum algorithms, the Harrow-Hassidim-Lloyd algorithm and Shor's algorithm.}
   address   = {{Amsterdam}},
   doi       = {10.1016/C2014-0-02660-3},
   timestamp = {2021-04-18}
+}
+
+@inproceedings{Ying2017,
+  title     = {Invariants of Quantum Programs: Characterisations and Generation},
+  author    = {Ying, Mingsheng and Ying, Shenggang and Wu, Xiaodi},
+  year      = {2017},
+  month     = jan,
+  booktitle = {Proceedings of the 44th ACM SIGPLAN Symposium on Principles of Programming Languages},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  series    = {{POPL} '17},
+  pages     = {818--832},
+  doi       = {10.1145/3009837.3009840},
+  url       = {https://opus.lib.uts.edu.au/bitstream/10453/127333/4/p818-ying.pdf},
+  abstract  = { Program invariant is a fundamental notion widely used in program verification and
+analysis. The aim of this paper is twofold: (i) find an appropriate definition of
+invariants for quantum programs; and (ii) develop an effective technique of invariant
+generation for verification and analysis of quantum programs.  Interestingly, the
+notion of invariant can be defined for quantum programs in two different ways -- additive
+invariants and multiplicative invariants -- corresponding to two interpretations of
+implication in a continuous valued logic: the Lukasiewicz implication and the Godel
+implication. It is shown that both of them can be used to establish partial correctness
+of quantum programs.  The problem of generating additive invariants of quantum programs
+is addressed by reducing it to an SDP (Semidefinite Programming) problem. This approach
+is applied with an SDP solver to generate invariants of two important quantum algorithms
+-- quantum walk and quantum Metropolis sampling. Our examples show that the generated
+invariants can be used to verify correctness of these algorithms and are helpful in
+optimising quantum Metropolis sampling.  To our knowledge, this paper is the first
+attempt to define the notion of invariant and to develop a method of invariant generation
+for quantum programs. },
+  numpages  = {15},
+  keywords  = {Inductive assertions, Quantum programming, Partial correctness, Invariant generation, Program invariants},
+  location  = {Paris, France}
+}
+
+@misc{Ying2018,
+  title         = {Reasoning about Parallel Quantum Programs},
+  author        = {Mingsheng Ying and Li Zhou and Yangjia Li},
+  year          = {2018},
+  month         = oct,
+  archiveprefix = {arXiv},
+  eprint        = {1810.11334},
+  abstract      = {We initiate the study of parallel quantum programming by defining the operational and denotational semantics of parallel quantum programs. The technical contributions of this paper include: (1) find a series of useful proof rules for reasoning about correctness of parallel quantum programs; (2) prove a (relative) completeness of our proof rules for partial correctness of disjoint parallel quantum programs; and (3) prove a strong soundness theorem of the proof rules showing that partial correctness is well maintained at each step of transitions in the operational semantics of a general parallel quantum program (with shared variables). This is achieved by partially overcoming the following conceptual challenges that are never present in classical parallel programming: (i) the intertwining of nondeterminism caused by quantum measurements and introduced by parallelism; (ii) entanglement between component quantum programs; and (iii) combining quantum predicates in the overlap of state Hilbert spaces of component quantum programs with shared variables. Applications of the techniques developed in this paper are illustrated by a formal verification of Bravyi-Gosset-König's parallel quantum algorithm solving a linear algebra problem, which gives for the first time an unconditional proof of a computational quantum advantage.}
+}
+
+@book{Ying2021,
+  title     = {Model Checking Quantum Systems: Principles and Algorithms},
+  author    = {Ying, Mingsheng and Feng, Yuan},
+  year      = {2021},
+  month     = jan,
+  publisher = {Cambridge University Press},
+  address   = {Cambridge},
+  doi       = {10.1017/9781108613323}
 }
 
 @inproceedings{Yu2021,
