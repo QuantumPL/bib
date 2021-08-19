@@ -2,8 +2,10 @@
 
 A Quantum Programming Languages and Verification Literature Bibliography 
 
-See it rendered at https://quantumpl.github.io/bib/retro/bbt.html
+See it rendered using `bibtex2html` at https://quantumpl.github.io/bib/retro/bbt.html
 
-Alternate and more accessible rendering at https://quantumpl.github.io/bib/
+An alternate and more accessible rendering using `Hugo` at https://quantumpl.github.io/bib/
+
+Hugo Source: https://github.com/QuantumPL/site
 
 Corrections, additions, suggestions are all welcome!
