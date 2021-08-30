@@ -1,3 +1,5 @@
+# How to contribute to QPLV Bib
+
 ## Organization
 - Currently `bibtex` style bib entries are supported in `bbt.bib`. Please send all PRs for changes for this file.
 - We would love to have a `biblatex` style of entries as well in the file `bblt.bib`, but for now it is not up to date. PRs welcome.
