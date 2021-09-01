@@ -8,4 +8,4 @@ An alternate and more accessible rendering using `Hugo` at https://quantumpl.git
 
 Hugo Source: https://github.com/QuantumPL/site
 
-Corrections, additions, suggestions are all welcome!
+Corrections, additions, suggestions are all welcome! Please see [our contribution guide](./CONTRIBUTING.md).
