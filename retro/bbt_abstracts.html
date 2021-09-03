@@ -1121,7 +1121,7 @@ Krysta&nbsp;M. Svore, Alan Geller, Matthias Troyer, John Azariah, Christopher
  In <em>Proceedings of the Real World Domain Specific Languages
   Workshop 2018</em>, RWDSL '18, pages 7:1--7:10, New York, NY, USA,
   February 2018. Association for Computing Machinery.
- See also Ch. 8 of [<a href="#Heim2020">83</a>].
+ See also Ch. 8 of [<a href="#Heim2020">84</a>].
 [&nbsp;<a href="bbt_bib.html#Svore2018">bib</a>&nbsp;| 
 <a href="https://doi.org/10.1145/3183895.3183901">DOI</a>&nbsp;| 
 <a href="http://arxiv.org/abs/1803.00652">arXiv</a>&nbsp;]
@@ -1390,7 +1390,7 @@ This report documents the program and the outcomes of Dagstuhl Seminar 18381 &ld
 Kesha Hietala, Robert Rand, Shih-Han Hung, Xiaodi Wu, and Michael Hicks.
  <b>Verified Optimization in a Quantum Intermediate
   Representation</b>.
- Talk at QPL '19. Superseded by [<a href="#Hietala2021">85</a>], April 2019.
+ Talk at QPL '19. Superseded by [<a href="#Hietala2021">87</a>], April 2019.
 [&nbsp;<a href="bbt_bib.html#Hietala2019">bib</a>&nbsp;| 
 <a href="http://arxiv.org/abs/1904.06319">arXiv</a>&nbsp;]
 <blockquote>
@@ -1577,14 +1577,16 @@ qPCF is a paradigmatic quantum programming language that extends PCF with quantu
 </td>
 <td class="bibtexitem">
 Kartik Singhal, Robert Rand, and Michael Hicks.
- <b>Verified translation between low-level quantum languages</b>,
-  January 2020.
- Talk at The First International Workshop on Programming Languages for
-  Quantum Computing (PLanQC '20).
+ <b>Verified translation between low-level quantum languages</b>.
+ In <em>Informal Proceedings of the First International Workshop on
+  Programming Languages for Quantum Computing (PLanQC '20)</em>, January 2020.
 [&nbsp;<a href="bbt_bib.html#Singhal2020">bib</a>&nbsp;| 
 <a href="http://ks.cs.uchicago.edu/publication/verified-translation/">http</a>&nbsp;]
 <blockquote>
 We describe the ongoing development of a verified translator between OpenQASM (Open Quantum Assembly Language) and sqir, a Small Quantum Intermediate Representation used for circuit optimization. Verified translation from and to OpenQASM will allow verified optimization of circuits written in a variety of tools and executed on real quantum computers. This translator is a step toward a verified compilation stack for quantum computing.
+</blockquote>
+<blockquote>
+Keywords: Formal Verification, NISQ, Program Proof, Programming Languages, Semantic Preservation
 </blockquote>
 
 </td>
@@ -1645,13 +1647,17 @@ Robert Rand, Aarthi Sundaram, Kartik Singhal, and Brad Lackey.
  <b>Gottesman Types for Quantum Programs</b>.
  In Beno&icirc;t Valiron, Shane Mansfield, Pablo Arrighi, and Prakash
   Panangaden, editors, <em>Proceedings of the 17th International Conference on
-  Quantum Physics and Logic (QPL), Paris, France, June 2--6, 2020</em>, Electronic
-  Proceedings in Theoretical Computer Science, pages 265--276. Open Publishing
-  Association, June 2020.
+  Quantum Physics and Logic (QPL), Paris, France, June 2--6, 2020</em>, volume 340
+  of <em>Electronic Proceedings in Theoretical Computer Science</em>, pages
+  279--290. Open Publishing Association, June 2020.
 [&nbsp;<a href="bbt_bib.html#Rand2020">bib</a>&nbsp;| 
+<a href="https://doi.org/10.4204/EPTCS.340.14">DOI</a>&nbsp;| 
 <a href="https://rand.cs.uchicago.edu/publication/rand-2020-gottesman/">https</a>&nbsp;]
 <blockquote>
 The Heisenberg representation of quantum operators provides a powerful technique for reasoning about quantum circuits, albeit those restricted to the common (non-universal) Clifford set H, S and CNOT. The Gottesman-Knill theorem showed that we can use this representation to efficiently simulate Clifford circuits. We show that Gottesman's semantics for quantum programs can be treated as a type system, allowing us to efficiently characterize a common subset of quantum programs. We also show that it can be extended beyond the Clifford set to partially characterize a broad range of programs. We apply these types to reason about separable states and the superdense coding algorithm.
+</blockquote>
+<blockquote>
+Keywords: Quantum Computing, Type Systems, Gottesman Types
 </blockquote>
 
 </td>
@@ -1660,14 +1666,41 @@ The Heisenberg representation of quantum operators provides a powerful technique
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Chareton2020">79</a>]
+[<a name="Singhal2020a">79</a>]
+</td>
+<td class="bibtexitem">
+Kartik Singhal and John Reppy.
+ <b>Quantum Hoare Type Theory: Extended Abstract</b>.
+ In Beno&icirc;t Valiron, Shane Mansfield, Pablo Arrighi, and Prakash
+  Panangaden, editors, <em>Proceedings of the 17th International Conference on
+  Quantum Physics and Logic (QPL), Paris, France, June 2--6, 2020</em>, volume 340
+  of <em>Electronic Proceedings in Theoretical Computer Science</em>, pages
+  291--302. Open Publishing Association, June 2020.
+ Also see expanded version: [<a href="#Singhal2020b">86</a>].
+[&nbsp;<a href="bbt_bib.html#Singhal2020a">bib</a>&nbsp;| 
+<a href="https://doi.org/10.4204/EPTCS.340.15">DOI</a>&nbsp;| 
+<a href="http://ks.cs.uchicago.edu/publication/qhtt/">http</a>&nbsp;]
+<blockquote>
+As quantum computers become real, it is high time we come up with effective techniques that help programmers write correct quantum programs. In classical computing, formal verification and sound static type systems prevent several classes of bugs from being introduced. There is a need for similar techniques in the quantum regime. Inspired by Hoare Type Theory in the classical paradigm, we propose Quantum Hoare Types by extending the Quantum IO Monad by indexing it with pre- and post-conditions that serve as program specifications. In this paper, we introduce Quantum Hoare Type Theory (QHTT), present its syntax and typing rules, and demonstrate its effectiveness with the help of examples. QHTT has the potential to be a unified system for programming, specifying, and reasoning about quantum programs. This is a work in progress.
+</blockquote>
+<blockquote>
+Keywords: Formal Verification, Program Proof, Programming Languages, Quantum Computing, Type Systems, Type Theory, Pre- and Postconditions, Program Specifications
+</blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Chareton2020">80</a>]
 </td>
 <td class="bibtexitem">
 Christophe Chareton, S&eacute;bastien Bardin, Fran&#x00E7;ois Bobot, Valentin
   Perrelle, and Beno&icirc;t Valiron.
  <b>A Deductive Verification Framework for Circuit-Building
   Quantum Programs</b>, July 2020.
- Extended version of [<a href="#Chareton2021">87</a>].
+ Extended version of [<a href="#Chareton2021">89</a>].
 [&nbsp;<a href="bbt_bib.html#Chareton2020">bib</a>&nbsp;| 
 <a href="http://arxiv.org/abs/2003.05841">arXiv</a>&nbsp;]
 <blockquote>
@@ -1680,7 +1713,7 @@ While recent progress in quantum hardware open the door for significant speedup 
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Fu2020">80</a>]
+[<a name="Fu2020">81</a>]
 </td>
 <td class="bibtexitem">
 Peng Fu, Kohei Kishida, and Peter Selinger.
@@ -1702,7 +1735,7 @@ Modern quantum programming languages integrate quantum resources and classical c
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Fu2020a">81</a>]
+[<a name="Fu2020a">82</a>]
 </td>
 <td class="bibtexitem">
 Peng Fu, Kohei Kishida, Neil&nbsp;J. Ross, and Peter Selinger.
@@ -1725,7 +1758,7 @@ We introduce dependently typed Proto-Quipper, or Proto-Quipper-D for short, an e
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Li2020">82</a>]
+[<a name="Li2020">83</a>]
 </td>
 <td class="bibtexitem">
 Gushu Li, Li&nbsp;Zhou, Nengkun Yu, Yufei Ding, Mingsheng Ying, and Yuan Xie.
@@ -1759,7 +1792,7 @@ quantum algorithms, the Harrow-Hassidim-Lloyd algorithm and Shor's algorithm.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Heim2020">83</a>]
+[<a name="Heim2020">84</a>]
 </td>
 <td class="bibtexitem">
 Bettina Heim.
@@ -1777,14 +1810,14 @@ The aim of this thesis is to identify practical applications where quantum compu
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Heim2020a">84</a>]
+[<a name="Heim2020a">85</a>]
 </td>
 <td class="bibtexitem">
 Bettina Heim, Mathias Soeken, Sarah Marshall, Chris Granade, Martin Roetteler,
   Alan Geller, Matthias Troyer, and Krysta&nbsp;M. Svore.
  <b>Quantum Programming Languages</b>.
  <em>Nature Reviews Physics</em>, 2(12):709--722, December 2020.
- Content overlap with Ch. 6--7 of [<a href="#Heim2020">83</a>].
+ Content overlap with Ch. 6--7 of [<a href="#Heim2020">84</a>].
 [&nbsp;<a href="bbt_bib.html#Heim2020a">bib</a>&nbsp;| 
 <a href="https://doi.org/10.1038/s42254-020-00245-7">DOI</a>&nbsp;| 
 <a href="https://github.com/msr-quarc/quantum-languages-review">https</a>&nbsp;]
@@ -1798,7 +1831,30 @@ Quantum programming languages are essential to translate ideas into instructions
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Hietala2021">85</a>]
+[<a name="Singhal2020b">86</a>]
+</td>
+<td class="bibtexitem">
+Kartik Singhal.
+ <b>Quantum Hoare Type Theory</b>.
+ Master's thesis, University of Chicago, Chicago, IL, December 2020.
+ See also: [<a href="#Singhal2020a">79</a>].
+[&nbsp;<a href="bbt_bib.html#Singhal2020b">bib</a>&nbsp;| 
+<a href="http://arxiv.org/abs/2012.02154">arXiv</a>&nbsp;| 
+<a href="http://ks.cs.uchicago.edu/publication/qhtt-masters/">http</a>&nbsp;]
+<blockquote>
+As quantum computers become real, it is high time we come up with effective techniques that help programmers write correct quantum programs. Inspired by Hoare Type Theory in classical computing, we propose Quantum Hoare Type Theory (QHTT) in which precise specifications about the modification to the quantum state can be provided within the type of a computation. These specifications within a Hoare type are given in the form of Hoare-logic style pre- and postconditions following the propositions-as-types principle. The type-checking process verifies that the implementation conforms to the provided specification. QHTT has the potential to be a unified system for programming, specifying, and reasoning about quantum programs.
+</blockquote>
+<blockquote>
+Keywords: Formal Verification, Program Proof, Programming Languages, Quantum Computing, Quantum Computation, Type Systems, Type Theory, Pre- and Postconditions, Program Specifications
+</blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Hietala2021">87</a>]
 </td>
 <td class="bibtexitem">
 Kesha Hietala, Robert Rand, Shih-Han Hung, Xiaodi Wu, and Michael Hicks.
@@ -1821,7 +1877,7 @@ Keywords: Programming Languages, Formal Verification, Certified Compilation, Qua
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Ying2021">86</a>]
+[<a name="Ying2021">88</a>]
 </td>
 <td class="bibtexitem">
 Mingsheng Ying and Yuan Feng.
@@ -1842,7 +1898,7 @@ Keywords: model checking, quantum computing
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Chareton2021">87</a>]
+[<a name="Chareton2021">89</a>]
 </td>
 <td class="bibtexitem">
 Christophe Chareton, S&eacute;bastien Bardin, Fran&#x00E7;ois Bobot, Valentin
@@ -1852,7 +1908,7 @@ Christophe Chareton, S&eacute;bastien Bardin, Fran&#x00E7;ois Bobot, Valentin
  In Nobuko Yoshida, editor, <em>Programming Languages and Systems,
   ESOP 2021</em>, volume 12648 of <em>Lecture Notes in Computer Science</em>,
   pages 148--177, Cham, March 2021. Springer International Publishing.
- See extended version&nbsp;[<a href="#Chareton2020">79</a>] for additional technical
+ See extended version&nbsp;[<a href="#Chareton2020">80</a>] for additional technical
   material.
 [&nbsp;<a href="bbt_bib.html#Chareton2021">bib</a>&nbsp;| 
 <a href="https://doi.org/10.1007/978-3-030-72019-3_6">DOI</a>&nbsp;]
@@ -1869,7 +1925,7 @@ Keywords: deductive verification, quantum programming, quantum circuits
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Hietala2021a">88</a>]
+[<a name="Hietala2021a">90</a>]
 </td>
 <td class="bibtexitem">
 Kesha Hietala, Robert Rand, Shih-Han Hung, Liyi Li, and Michael Hicks.
@@ -1895,7 +1951,7 @@ Keywords: Formal Verification, Quantum Computing, Proof Engineering
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Yu2021">89</a>]
+[<a name="Yu2021">91</a>]
 </td>
 <td class="bibtexitem">
 Nengkun Yu and Jens Palsberg.
@@ -1928,7 +1984,7 @@ Keywords: quantum programming, scalability, abstract interpretation
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Zhou2021">90</a>]
+[<a name="Zhou2021">92</a>]
 </td>
 <td class="bibtexitem">
 Li&nbsp;Zhou, Gilles Barthe, Justin Hsu, Mingsheng Ying, and Nengkun Yu.
