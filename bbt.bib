@@ -929,11 +929,12 @@ quantum algorithms, the Harrow-Hassidim-Lloyd algorithm and Shor's algorithm.}
   editor    = {Valiron, Beno{\^i}t and Mansfield, Shane and Arrighi, Pablo and Panangaden, Prakash},
   publisher = {{Open Publishing Association}},
   series    = {Electronic Proceedings in Theoretical Computer Science},
-  novolume  = {},
-  pages     = {265--276},
-  nodoi     = {},
+  volume    = {340},
+  pages     = {279--290},
+  doi       = {10.4204/EPTCS.340.14},
   url       = {https://rand.cs.uchicago.edu/publication/rand-2020-gottesman/},
-  abstract  = {The Heisenberg representation of quantum operators provides a powerful technique for reasoning about quantum circuits, albeit those restricted to the common (non-universal) Clifford set H, S and CNOT. The Gottesman-Knill theorem showed that we can use this representation to efficiently simulate Clifford circuits. We show that Gottesman's semantics for quantum programs can be treated as a type system, allowing us to efficiently characterize a common subset of quantum programs. We also show that it can be extended beyond the Clifford set to partially characterize a broad range of programs. We apply these types to reason about separable states and the superdense coding algorithm.}
+  abstract  = {The Heisenberg representation of quantum operators provides a powerful technique for reasoning about quantum circuits, albeit those restricted to the common (non-universal) Clifford set H, S and CNOT. The Gottesman-Knill theorem showed that we can use this representation to efficiently simulate Clifford circuits. We show that Gottesman's semantics for quantum programs can be treated as a type system, allowing us to efficiently characterize a common subset of quantum programs. We also show that it can be extended beyond the Clifford set to partially characterize a broad range of programs. We apply these types to reason about separable states and the superdense coding algorithm.},
+  keywords  = {Quantum Computing, Type Systems, Gottesman Types}
 }
 
 @inproceedings{Rennela2018,
@@ -1083,7 +1084,41 @@ quantum algorithms, the Harrow-Hassidim-Lloyd algorithm and Shor's algorithm.}
   month    = jan,
   url      = {http://ks.cs.uchicago.edu/publication/verified-translation/},
   abstract = {We describe the ongoing development of a verified translator between OpenQASM (Open Quantum Assembly Language) and sqir, a Small Quantum Intermediate Representation used for circuit optimization. Verified translation from and to OpenQASM will allow verified optimization of circuits written in a variety of tools and executed on real quantum computers. This translator is a step toward a verified compilation stack for quantum computing.},
+  keywords = {Formal Verification, NISQ, Program Proof, Programming Languages, Semantic Preservation},
   note     = {Talk at The First International Workshop on Programming Languages for Quantum Computing (PLanQC '20)}
+}
+
+@inproceedings{Singhal2020a,
+  title     = {Quantum Hoare Type Theory: Extended Abstract},
+  author    = {Singhal, Kartik and Reppy, John},
+  year      = {2020},
+  month     = jun,
+  booktitle = {Proceedings of the 17th International Conference on Quantum Physics and Logic (QPL), Paris, France, June 2--6, 2020},
+  editor    = {Valiron, Beno{\^i}t and Mansfield, Shane and Arrighi, Pablo and Panangaden, Prakash},
+  publisher = {{Open Publishing Association}},
+  series    = {Electronic Proceedings in Theoretical Computer Science},
+  volume    = {340},
+  pages     = {291--302},
+  doi       = {10.4204/EPTCS.340.15},
+  url       = {http://ks.cs.uchicago.edu/publication/qhtt/},
+  abstract  = {As quantum computers become real, it is high time we come up with effective techniques that help programmers write correct quantum programs. In classical computing, formal verification and sound static type systems prevent several classes of bugs from being introduced. There is a need for similar techniques in the quantum regime. Inspired by Hoare Type Theory in the classical paradigm, we propose Quantum Hoare Types by extending the Quantum IO Monad by indexing it with pre- and post-conditions that serve as program specifications. In this paper, we introduce Quantum Hoare Type Theory (QHTT), present its syntax and typing rules, and demonstrate its effectiveness with the help of examples. QHTT has the potential to be a unified system for programming, specifying, and reasoning about quantum programs. This is a work in progress.},
+  keywords  = {Formal Verification, Program Proof, Programming Languages, Quantum Computing, Type Systems, Type Theory, Pre- and Postconditions, Program Specifications},
+  note      = {Also see expanded version: \cite{Singhal2020b}}
+}
+
+@mastersthesis{Singhal2020b,
+  title         = {Quantum Hoare Type Theory},
+  author        = {Kartik Singhal},
+  year          = {2020},
+  month         = dec,
+  school        = {University of Chicago},
+  address       = {Chicago, IL},
+  archiveprefix = {arXiv},
+  eprint        = {2012.02154},
+  url           = {http://ks.cs.uchicago.edu/publication/qhtt-masters/},
+  abstract      = {As quantum computers become real, it is high time we come up with effective techniques that help programmers write correct quantum programs. Inspired by Hoare Type Theory in classical computing, we propose Quantum Hoare Type Theory (QHTT) in which precise specifications about the modification to the quantum state can be provided within the type of a computation. These specifications within a Hoare type are given in the form of Hoare-logic style pre- and postconditions following the propositions-as-types principle. The type-checking process verifies that the implementation conforms to the provided specification. QHTT has the potential to be a unified system for programming, specifying, and reasoning about quantum programs.},
+  keywords      = {Formal Verification, Program Proof, Programming Languages, Quantum Computing, Quantum Computation, Type Systems, Type Theory, Pre- and Postconditions, Program Specifications},
+  note          = {See also: \cite{Singhal2020a}}
 }
 
 @misc{Smith2016,
