@@ -1129,6 +1129,23 @@ quantum algorithms, the Harrow-Hassidim-Lloyd algorithm and Shor's algorithm.}
 }
 </pre>
 
+<a name="Rios2021"></a><pre>
+@phdthesis{<a href="bbt.html#Rios2021">Rios2021</a>,
+  title = {On a Categorically Sound Quantum Programming Language for Circuit Description},
+  author = {Francisco Rios},
+  year = {2021},
+  month = aug,
+  school = {Dalhousie University},
+  address = {{Halifax, Nova Scotia, Canada}},
+  url = {<a href="https://dalspace.library.dal.ca/bitstream/handle/10222/80771/FranciscoRios2021.pdf">https://dalspace.library.dal.ca/bitstream/handle/10222/80771/FranciscoRios2021.pdf</a>},
+  abstract = {This thesis contains contributions to the mathematical foundations of quantum programming languages.
+
+  The likely arrival of scalable quantum computers in the not so distant future has resulted in a flurry of activity in the development of quantum programming languages. As in classical computing, the transition from a description of a quantum algorithm found in the literature to a hardware-specific set of instructions run on a quantum device is a complex process, prone to errors. This issue is exacerbated in the quantum setting not only by the complexity of quantum algorithms but also by the fragility of quantum information, which renders ineffective some of the classical techniques used to debug programs.
+
+  In this thesis, we contribute to the solution of some of these issues. We introduce Proto-Quipper-M, a new quantum  programming language designed to serve as a testbed for the research and development of sound mathematical semantics and reasoning techniques for quantum programs. We first present Proto-Quipper-M as a formalization of a fragment of Quipper, a high-level functional programming language for describing families of quantum circuits. In particular, we define Proto-Quipper-M as a simply-typed lambda calculus with a special type for quantum circuits and a strong type system designed to enforce linearity on quantum data, and thus prevent violations of the no-cloning property of quantum information. We endow ProtoQuipper-M with computational meaning via a big-step operational semantics and prove that the language is type-safe by showing that it enjoys the type-preservation and error-freeness properties. We also give Proto-Quipper-M a denotational semantics in a suitable class of monoidal categories and show that these categories give rise to linear-non-linear models in the sense of Benton, and thus models of intuitionistic linear logic. Finally, we crystallize the connection between the syntax and the semantics of the language by proving the soundness theorem for Proto-Quipper-M.}
+}
+</pre>
+
 <a name="Ross2015"></a><pre>
 @phdthesis{<a href="bbt.html#Ross2015">Ross2015</a>,
   title = {Algebraic and {{Logical Methods}} in {{Quantum Computation}}},
@@ -1136,7 +1153,7 @@ quantum algorithms, the Harrow-Hassidim-Lloyd algorithm and Shor's algorithm.}
   year = {2015},
   month = aug,
   school = {Dalhousie University},
-  address = {{Halifax, Canada}},
+  address = {{Halifax, Nova Scotia, Canada}},
   archiveprefix = {arXiv},
   eprint = {1510.02198},
   abstract = {This thesis contains contributions to the theory of quantum computation. We first define a new method to efficiently approximate special unitary operators. Specifically, given a special unitary U and a precision {\epsilon} > 0, we show how to efficiently find a sequence of Clifford+V or Clifford+T operators whose product approximates U up to {\epsilon} in the operator norm. In the general case, the length of the approximating sequence is asymptotically optimal. If the unitary to approximate is diagonal then our method is optimal: it yields the shortest sequence approximating U up to {\epsilon}. Next, we introduce a mathematical formalization of a fragment of the Quipper quantum programming language. We define a typed lambda calculus called Proto-Quipper which formalizes a restricted but expressive fragment of Quipper. The type system of Proto-Quipper is based on intuitionistic linear logic and prohibits the duplication of quantum data, in accordance with the no-cloning property of quantum computation. We prove that Proto-Quipper is type-safe in the sense that it enjoys the subject reduction and progress properties.},
