@@ -85,7 +85,20 @@
 </pre>
 
 <a name="Amy2019a"></a><pre>
-@inproceedings{<a href="bbt.html#Amy2019a">Amy2019a</a>,
+@phdthesis{<a href="bbt.html#Amy2019a">Amy2019a</a>,
+  title = {Formal Methods in Quantum Circuit Design},
+  author = {Amy, Matthew},
+  year = {2019},
+  month = feb,
+  school = {University of Waterloo},
+  address = {Waterloo, Ontario, Canada},
+  url = {<a href="http://hdl.handle.net/10012/14480">http://hdl.handle.net/10012/14480</a>},
+  abstract = {The design and compilation of correct, efficient quantum circuits is integral to the future operation of quantum computers. This thesis makes contributions to the problems of optimizing and verifying quantum circuits, with an emphasis on the development of formal models for such purposes. We also present software implementations of these methods, which together form a full stack of tools for the design of optimized, formally verified quantum oracles. On the optimization side, we study methods for the optimization of Rz and CNOT gates in Clifford+Rz circuits. We develop a general, efficient optimization algorithm called phase folding, which reduces the number of Rz gates without increasing any metrics by computing its phase polynomial. This algorithm can further be combined with synthesis techniques for CNOT-dihedral operators to optimize circuits with respect to particular costs. We then study the optimal synthesis problem for CNOT-dihedral operators from the perspectives of Rz and CNOT gate optimization. In the case of Rz gate optimization, we show that the optimal synthesis problem is polynomial-time equivalent to minimum-distance decoding in certain Reed-Muller codes. For the CNOT optimization problem, we show that the optimal synthesis problem is at least as hard as a combinatorial problem related to Gray codes. In both cases, we develop heuristics for the optimal synthesis problem, which together with phase folding reduces T counts by 42% and CNOT counts by 22% across a suite of real-world benchmarks. From the perspective of formal verification, we make two contributions. The first is the development of a formal model of quantum circuits with ancillary bits based on the Feynman path integral, along with a concrete verification algorithm. The path integral model, with some syntactic sugar, further doubles as a natural specification language for quantum computations. Our experiments show some practical circuits with up to hundreds of qubits can be efficiently verified. Our second contribution is a formally verified, optimizing compiler for reversible circuits. The compiler compiles a classical, irreversible language to reversible circuits, with a formal, machine-checked proof of correctness written in the proof assistant F*. The compiler is structured as a partial evaluator, allowing verification to be carried out significantly faster than previous results.}
+}
+</pre>
+
+<a name="Amy2019b"></a><pre>
+@inproceedings{<a href="bbt.html#Amy2019b">Amy2019b</a>,
   title = {Sized {{Types}} for {{Low}}-{{Level Quantum Metaprogramming}}},
   author = {Amy, Matthew},
   year = {2019},
@@ -908,6 +921,24 @@ quantum algorithms, the Harrow-Hassidim-Lloyd algorithm and Shor's algorithm.}
 
 		We present QWIRE along with its type system and operational semantics, which we prove is safe and strongly normalizing whenever the host language is. We give circuits a denotational semantics in terms of density matrices. Throughout, we investigate examples that demonstrate the expressive power of QWIRE, including extensions to the host language that (1) expose a general analysis framework for circuits, and (2) provide dependent types.},
   timestamp = {2021-04-18}
+}
+</pre>
+
+<a name="Paykin2018"></a><pre>
+@phdthesis{<a href="bbt.html#Paykin2018">Paykin2018</a>,
+  title = {Linear/non-Linear Types For Embedded Domain-Specific Languages},
+  author = {Paykin, Jennifer},
+  year = {2018},
+  month = aug,
+  school = {University of Pennsylvania},
+  address = {{Philadelphia, PA, USA}},
+  url = {<a href="https://repository.upenn.edu/edissertations/2752/">https://repository.upenn.edu/edissertations/2752/</a>},
+  abstract = {Domain-specific languages are often embedded inside of general-purpose host languages so that the embedded language can take advantage of host-language data structures, libraries, and tools. However, when the domain-specific language uses linear types, existing techniques for embedded languages fall short. Linear type systems, which have applications in a wide variety of programming domains including mutable state, I/O, concurrency, and quantum computing, can manipulate embedded non-linear data via the linear type !σ. However, prior work has not been able to produce linear embedded languages that have full and easy access to host-language data, libraries, and tools.
+
+  This dissertation proposes a new perspective on linear, embedded, domain-specific languages derived from the linear/non-linear (LNL) interpretation of linear logic. The LNL model consists of two distinct fragments---one with linear types and another with non-linear types---and provides a simple categorical interface between the two. This dissertation identifies the linear fragment with the linear embedded language and the non-linear fragment with the general-purpose host language.
+
+  The effectiveness of this framework is illustrated via a number of examples, implemented in a variety of host languages. In Haskell, linear domain-specific languages using mutable state and concurrency can take advantage of the monad that arises from the LNL model. In Coq, the QWIRE quantum circuit language uses linearity to enforce the no-cloning axiom of quantum mechanics. In homotopy type theory, quantum transformations can be encoded as higher inductive types to simplify the presentation of a quantum equational theory. These examples serve as case studies that prove linear/non-linear type theory is a natural and expressive interface in which to embed linear domain-specific languages.},
+  note = {Publicly Accessible Penn Dissertations. 2752.}
 }
 </pre>
 

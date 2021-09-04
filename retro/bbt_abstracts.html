@@ -1121,7 +1121,7 @@ Krysta&nbsp;M. Svore, Alan Geller, Matthias Troyer, John Azariah, Christopher
  In <em>Proceedings of the Real World Domain Specific Languages
   Workshop 2018</em>, RWDSL '18, pages 7:1--7:10, New York, NY, USA,
   February 2018. Association for Computing Machinery.
- See also Ch. 8 of [<a href="#Heim2020">84</a>].
+ See also Ch. 8 of [<a href="#Heim2020">86</a>].
 [&nbsp;<a href="bbt_bib.html#Svore2018">bib</a>&nbsp;| 
 <a href="https://doi.org/10.1145/3183895.3183901">DOI</a>&nbsp;| 
 <a href="http://arxiv.org/abs/1803.00652">arXiv</a>&nbsp;]
@@ -1220,7 +1220,29 @@ Linear/non-linear (LNL) models, as described by Benton, soundly model a LNL term
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Ying2018">58</a>]
+[<a name="Paykin2018">58</a>]
+</td>
+<td class="bibtexitem">
+Jennifer Paykin.
+ <em>Linear/non-Linear Types For Embedded Domain-Specific Languages</em>.
+ PhD thesis, University of Pennsylvania, Philadelphia, PA, USA,
+  August 2018.
+ Publicly Accessible Penn Dissertations. 2752.
+[&nbsp;<a href="bbt_bib.html#Paykin2018">bib</a>&nbsp;| 
+<a href="https://repository.upenn.edu/edissertations/2752/">https</a>&nbsp;]
+<blockquote>
+Domain-specific languages are often embedded inside of general-purpose host languages so that the embedded language can take advantage of host-language data structures, libraries, and tools. However, when the domain-specific language uses linear types, existing techniques for embedded languages fall short. Linear type systems, which have applications in a wide variety of programming domains including mutable state, I/O, concurrency, and quantum computing, can manipulate embedded non-linear data via the linear type !σ. However, prior work has not been able to produce linear embedded languages that have full and easy access to host-language data, libraries, and tools.<p>
+  This dissertation proposes a new perspective on linear, embedded, domain-specific languages derived from the linear/non-linear (LNL) interpretation of linear logic. The LNL model consists of two distinct fragments---one with linear types and another with non-linear types---and provides a simple categorical interface between the two. This dissertation identifies the linear fragment with the linear embedded language and the non-linear fragment with the general-purpose host language.<p>
+  The effectiveness of this framework is illustrated via a number of examples, implemented in a variety of host languages. In Haskell, linear domain-specific languages using mutable state and concurrency can take advantage of the monad that arises from the LNL model. In Coq, the QWIRE quantum circuit language uses linearity to enforce the no-cloning axiom of quantum mechanics. In homotopy type theory, quantum transformations can be encoded as higher inductive types to simplify the presentation of a quantum equational theory. These examples serve as case studies that prove linear/non-linear type theory is a natural and expressive interface in which to embed linear domain-specific languages.
+</blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Ying2018">59</a>]
 </td>
 <td class="bibtexitem">
 Mingsheng Ying, Li&nbsp;Zhou, and Yangjia Li.
@@ -1237,7 +1259,7 @@ We initiate the study of parallel quantum programming by defining the operationa
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Rand2018a">59</a>]
+[<a name="Rand2018a">60</a>]
 </td>
 <td class="bibtexitem">
 Robert Rand.
@@ -1262,7 +1284,7 @@ The field of quantum mechanics predates computer science by at least ten years, 
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Amy2019">60</a>]
+[<a name="Amy2019">61</a>]
 </td>
 <td class="bibtexitem">
 Matthew Amy.
@@ -1285,7 +1307,7 @@ We introduce a framework for the formal specification and verification of quantu
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Rand2019">61</a>]
+[<a name="Rand2019">62</a>]
 </td>
 <td class="bibtexitem">
 Robert Rand, Jennifer Paykin, Dong-Ho Lee, and Steve Zdancewic.
@@ -1308,7 +1330,7 @@ Common quantum algorithms make heavy use of ancillae: scratch qubits that are in
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Unruh2019">62</a>]
+[<a name="Unruh2019">63</a>]
 </td>
 <td class="bibtexitem">
 Dominique Unruh.
@@ -1327,7 +1349,26 @@ We present a logic for reasoning about pairs of interactive quantum programs -- 
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="LaRose2019">63</a>]
+[<a name="Amy2019a">64</a>]
+</td>
+<td class="bibtexitem">
+Matthew Amy.
+ <em>Formal Methods in Quantum Circuit Design</em>.
+ PhD thesis, University of Waterloo, Waterloo, Ontario, Canada,
+  February 2019.
+[&nbsp;<a href="bbt_bib.html#Amy2019a">bib</a>&nbsp;| 
+<a href="http://hdl.handle.net/10012/14480">http</a>&nbsp;]
+<blockquote>
+The design and compilation of correct, efficient quantum circuits is integral to the future operation of quantum computers. This thesis makes contributions to the problems of optimizing and verifying quantum circuits, with an emphasis on the development of formal models for such purposes. We also present software implementations of these methods, which together form a full stack of tools for the design of optimized, formally verified quantum oracles. On the optimization side, we study methods for the optimization of Rz and CNOT gates in Clifford+Rz circuits. We develop a general, efficient optimization algorithm called phase folding, which reduces the number of Rz gates without increasing any metrics by computing its phase polynomial. This algorithm can further be combined with synthesis techniques for CNOT-dihedral operators to optimize circuits with respect to particular costs. We then study the optimal synthesis problem for CNOT-dihedral operators from the perspectives of Rz and CNOT gate optimization. In the case of Rz gate optimization, we show that the optimal synthesis problem is polynomial-time equivalent to minimum-distance decoding in certain Reed-Muller codes. For the CNOT optimization problem, we show that the optimal synthesis problem is at least as hard as a combinatorial problem related to Gray codes. In both cases, we develop heuristics for the optimal synthesis problem, which together with phase folding reduces T counts by 42% and CNOT counts by 22% across a suite of real-world benchmarks. From the perspective of formal verification, we make two contributions. The first is the development of a formal model of quantum circuits with ancillary bits based on the Feynman path integral, along with a concrete verification algorithm. The path integral model, with some syntactic sugar, further doubles as a natural specification language for quantum computations. Our experiments show some practical circuits with up to hundreds of qubits can be efficiently verified. Our second contribution is a formally verified, optimizing compiler for reversible circuits. The compiler compiles a classical, irreversible language to reversible circuits, with a formal, machine-checked proof of correctness written in the proof assistant F*. The compiler is structured as a partial evaluator, allowing verification to be carried out significantly faster than previous results.
+</blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="LaRose2019">65</a>]
 </td>
 <td class="bibtexitem">
 Ryan LaRose.
@@ -1346,14 +1387,14 @@ Quantum computers are available to use over the cloud, but the recent explosion 
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Liu2019a">64</a>]
+[<a name="Liu2019a">66</a>]
 </td>
 <td class="bibtexitem">
 Junyi Liu, Bohua Zhan, Shuling Wang, Shenggang Ying, Tao Liu, Yangjia Li,
   Mingsheng Ying, and Naijun Zhan.
  <b>Quantum Hoare Logic</b>, March 2019.
  QHLProver-AFP, formal proof development in Isabelle, supplement to
-  [<a href="#Liu2019">72</a>].
+  [<a href="#Liu2019">74</a>].
 [&nbsp;<a href="bbt_bib.html#Liu2019a">bib</a>&nbsp;| 
 <a href="https://isa-afp.org/entries/QHLProver.html">.html</a>&nbsp;]
 
@@ -1363,7 +1404,7 @@ Junyi Liu, Bohua Zhan, Shuling Wang, Shenggang Ying, Tao Liu, Yangjia Li,
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Mosca2019">65</a>]
+[<a name="Mosca2019">67</a>]
 </td>
 <td class="bibtexitem">
 Michele Mosca, Martin Roetteler, and Peter Selinger.
@@ -1384,13 +1425,13 @@ This report documents the program and the outcomes of Dagstuhl Seminar 18381 &ld
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Hietala2019">66</a>]
+[<a name="Hietala2019">68</a>]
 </td>
 <td class="bibtexitem">
 Kesha Hietala, Robert Rand, Shih-Han Hung, Xiaodi Wu, and Michael Hicks.
  <b>Verified Optimization in a Quantum Intermediate
   Representation</b>.
- Talk at QPL '19. Superseded by [<a href="#Hietala2021">87</a>], April 2019.
+ Talk at QPL '19. Superseded by [<a href="#Hietala2021">89</a>], April 2019.
 [&nbsp;<a href="bbt_bib.html#Hietala2019">bib</a>&nbsp;| 
 <a href="http://arxiv.org/abs/1904.06319">arXiv</a>&nbsp;]
 <blockquote>
@@ -1403,7 +1444,7 @@ We present sqire, a low-level language for quantum computing and verification. s
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Paolini2019">67</a>]
+[<a name="Paolini2019">69</a>]
 </td>
 <td class="bibtexitem">
 Luca Paolini, Luca Roversi, and Margherita Zorzi.
@@ -1426,7 +1467,7 @@ We present IQu, namely a quantum programming language that extends Reynold's Ide
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Paykin2019">68</a>]
+[<a name="Paykin2019">70</a>]
 </td>
 <td class="bibtexitem">
 Jennifer Paykin and Steve Zdancewic.
@@ -1445,7 +1486,7 @@ This paper presents an equational theory for the QRAM model of quantum computati
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Amy2019a">69</a>]
+[<a name="Amy2019b">71</a>]
 </td>
 <td class="bibtexitem">
 Matthew Amy.
@@ -1454,7 +1495,7 @@ Matthew Amy.
   Reversible Computation (RC '19)</em>, volume 11497 of <em>Lecture
   Notes in Computer Science</em>, pages 87--107. Springer International
   Publishing, May 2019.
-[&nbsp;<a href="bbt_bib.html#Amy2019a">bib</a>&nbsp;| 
+[&nbsp;<a href="bbt_bib.html#Amy2019b">bib</a>&nbsp;| 
 <a href="https://doi.org/10.1007/978-3-030-21500-2_6">DOI</a>&nbsp;| 
 <a href="http://arxiv.org/abs/1908.02644">arXiv</a>&nbsp;]
 <blockquote>
@@ -1467,7 +1508,7 @@ One of the most fundamental aspects of quantum circuit design is the concept of 
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Unruh2019a">70</a>]
+[<a name="Unruh2019a">72</a>]
 </td>
 <td class="bibtexitem">
 Dominique Unruh.
@@ -1487,7 +1528,7 @@ Quantum Hoare logic allows us to reason about quantum programs. We present an ex
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Zhou2019">71</a>]
+[<a name="Zhou2019">73</a>]
 </td>
 <td class="bibtexitem">
 Li&nbsp;Zhou, Nengkun Yu, and Mingsheng Ying.
@@ -1509,7 +1550,7 @@ We derive a variant of quantum Hoare logic (QHL), called applied quantum Hoare l
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Liu2019">72</a>]
+[<a name="Liu2019">74</a>]
 </td>
 <td class="bibtexitem">
 Junyi Liu, Bohua Zhan, Shuling Wang, Shenggang Ying, Tao Liu, Yangjia Li,
@@ -1520,7 +1561,7 @@ Junyi Liu, Bohua Zhan, Shuling Wang, Shenggang Ying, Tao Liu, Yangjia Li,
   Verification (CAV '19)</em>, volume 11562 of <em>Lecture Notes in
   Computer Science</em>, pages 187--207, Cham, July 2019. Springer
   International Publishing.
- See also: Isabelle AFP entry, QHLProver [<a href="#Liu2019a">64</a>].
+ See also: Isabelle AFP entry, QHLProver [<a href="#Liu2019a">66</a>].
 [&nbsp;<a href="bbt_bib.html#Liu2019">bib</a>&nbsp;| 
 <a href="https://doi.org/10.1007/978-3-030-25543-5_12">DOI</a>&nbsp;]
 <blockquote>
@@ -1533,7 +1574,7 @@ We formalize the theory of quantum Hoare logic (QHL) [TOPLAS 33(6),19], an exten
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Mahmoud2019">73</a>]
+[<a name="Mahmoud2019">75</a>]
 </td>
 <td class="bibtexitem">
 Mohamed&nbsp;Yousri Mahmoud and Amy&nbsp;P. Felty.
@@ -1553,7 +1594,7 @@ We develop a linear logical framework within the Hybrid system and use it to rea
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Paolini2019a">74</a>]
+[<a name="Paolini2019a">76</a>]
 </td>
 <td class="bibtexitem">
 Luca Paolini, Mauro Piccolo, and Margherita Zorzi.
@@ -1573,7 +1614,7 @@ qPCF is a paradigmatic quantum programming language that extends PCF with quantu
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Singhal2020">75</a>]
+[<a name="Singhal2020">77</a>]
 </td>
 <td class="bibtexitem">
 Kartik Singhal, Robert Rand, and Michael Hicks.
@@ -1595,7 +1636,7 @@ Keywords: Formal Verification, NISQ, Program Proof, Programming Languages, Seman
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Pechoux2020">76</a>]
+[<a name="Pechoux2020">78</a>]
 </td>
 <td class="bibtexitem">
 Romain P&eacute;choux, Simon Perdrix, Mathys Rennela, and Vladimir Zamdzhiev.
@@ -1617,7 +1658,7 @@ Inductive datatypes in programming languages allow users to define useful data s
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Bichsel2020">77</a>]
+[<a name="Bichsel2020">79</a>]
 </td>
 <td class="bibtexitem">
 Benjamin Bichsel, Maximilian Baader, Timon Gehr, and Martin Vechev.
@@ -1640,7 +1681,7 @@ Existing quantum languages force the programmer to work at a low level of abstra
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Rand2020">78</a>]
+[<a name="Rand2020">80</a>]
 </td>
 <td class="bibtexitem">
 Robert Rand, Aarthi Sundaram, Kartik Singhal, and Brad Lackey.
@@ -1666,7 +1707,7 @@ Keywords: Quantum Computing, Type Systems, Gottesman Types
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Singhal2020a">79</a>]
+[<a name="Singhal2020a">81</a>]
 </td>
 <td class="bibtexitem">
 Kartik Singhal and John Reppy.
@@ -1676,7 +1717,7 @@ Kartik Singhal and John Reppy.
   Quantum Physics and Logic (QPL), Paris, France, June 2--6, 2020</em>, volume 340
   of <em>Electronic Proceedings in Theoretical Computer Science</em>, pages
   291--302. Open Publishing Association, June 2020.
- Also see expanded version: [<a href="#Singhal2020b">86</a>].
+ Also see expanded version: [<a href="#Singhal2020b">88</a>].
 [&nbsp;<a href="bbt_bib.html#Singhal2020a">bib</a>&nbsp;| 
 <a href="https://doi.org/10.4204/EPTCS.340.15">DOI</a>&nbsp;| 
 <a href="http://ks.cs.uchicago.edu/publication/qhtt/">http</a>&nbsp;]
@@ -1693,14 +1734,14 @@ Keywords: Formal Verification, Program Proof, Programming Languages, Quantum Com
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Chareton2020">80</a>]
+[<a name="Chareton2020">82</a>]
 </td>
 <td class="bibtexitem">
 Christophe Chareton, S&eacute;bastien Bardin, Fran&#x00E7;ois Bobot, Valentin
   Perrelle, and Beno&icirc;t Valiron.
  <b>A Deductive Verification Framework for Circuit-Building
   Quantum Programs</b>, July 2020.
- Extended version of [<a href="#Chareton2021">89</a>].
+ Extended version of [<a href="#Chareton2021">91</a>].
 [&nbsp;<a href="bbt_bib.html#Chareton2020">bib</a>&nbsp;| 
 <a href="http://arxiv.org/abs/2003.05841">arXiv</a>&nbsp;]
 <blockquote>
@@ -1713,7 +1754,7 @@ While recent progress in quantum hardware open the door for significant speedup 
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Fu2020">81</a>]
+[<a name="Fu2020">83</a>]
 </td>
 <td class="bibtexitem">
 Peng Fu, Kohei Kishida, and Peter Selinger.
@@ -1735,7 +1776,7 @@ Modern quantum programming languages integrate quantum resources and classical c
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Fu2020a">82</a>]
+[<a name="Fu2020a">84</a>]
 </td>
 <td class="bibtexitem">
 Peng Fu, Kohei Kishida, Neil&nbsp;J. Ross, and Peter Selinger.
@@ -1758,7 +1799,7 @@ We introduce dependently typed Proto-Quipper, or Proto-Quipper-D for short, an e
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Li2020">83</a>]
+[<a name="Li2020">85</a>]
 </td>
 <td class="bibtexitem">
 Gushu Li, Li&nbsp;Zhou, Nengkun Yu, Yufei Ding, Mingsheng Ying, and Yuan Xie.
@@ -1792,7 +1833,7 @@ quantum algorithms, the Harrow-Hassidim-Lloyd algorithm and Shor's algorithm.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Heim2020">84</a>]
+[<a name="Heim2020">86</a>]
 </td>
 <td class="bibtexitem">
 Bettina Heim.
@@ -1810,14 +1851,14 @@ The aim of this thesis is to identify practical applications where quantum compu
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Heim2020a">85</a>]
+[<a name="Heim2020a">87</a>]
 </td>
 <td class="bibtexitem">
 Bettina Heim, Mathias Soeken, Sarah Marshall, Chris Granade, Martin Roetteler,
   Alan Geller, Matthias Troyer, and Krysta&nbsp;M. Svore.
  <b>Quantum Programming Languages</b>.
  <em>Nature Reviews Physics</em>, 2(12):709--722, December 2020.
- Content overlap with Ch. 6--7 of [<a href="#Heim2020">84</a>].
+ Content overlap with Ch. 6--7 of [<a href="#Heim2020">86</a>].
 [&nbsp;<a href="bbt_bib.html#Heim2020a">bib</a>&nbsp;| 
 <a href="https://doi.org/10.1038/s42254-020-00245-7">DOI</a>&nbsp;| 
 <a href="https://github.com/msr-quarc/quantum-languages-review">https</a>&nbsp;]
@@ -1831,13 +1872,13 @@ Quantum programming languages are essential to translate ideas into instructions
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Singhal2020b">86</a>]
+[<a name="Singhal2020b">88</a>]
 </td>
 <td class="bibtexitem">
 Kartik Singhal.
  <b>Quantum Hoare Type Theory</b>.
  Master's thesis, University of Chicago, Chicago, IL, December 2020.
- See also: [<a href="#Singhal2020a">79</a>].
+ See also: [<a href="#Singhal2020a">81</a>].
 [&nbsp;<a href="bbt_bib.html#Singhal2020b">bib</a>&nbsp;| 
 <a href="http://arxiv.org/abs/2012.02154">arXiv</a>&nbsp;| 
 <a href="http://ks.cs.uchicago.edu/publication/qhtt-masters/">http</a>&nbsp;]
@@ -1854,7 +1895,7 @@ Keywords: Formal Verification, Program Proof, Programming Languages, Quantum Com
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Hietala2021">87</a>]
+[<a name="Hietala2021">89</a>]
 </td>
 <td class="bibtexitem">
 Kesha Hietala, Robert Rand, Shih-Han Hung, Xiaodi Wu, and Michael Hicks.
@@ -1877,7 +1918,7 @@ Keywords: Programming Languages, Formal Verification, Certified Compilation, Qua
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Ying2021">88</a>]
+[<a name="Ying2021">90</a>]
 </td>
 <td class="bibtexitem">
 Mingsheng Ying and Yuan Feng.
@@ -1898,7 +1939,7 @@ Keywords: model checking, quantum computing
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Chareton2021">89</a>]
+[<a name="Chareton2021">91</a>]
 </td>
 <td class="bibtexitem">
 Christophe Chareton, S&eacute;bastien Bardin, Fran&#x00E7;ois Bobot, Valentin
@@ -1908,7 +1949,7 @@ Christophe Chareton, S&eacute;bastien Bardin, Fran&#x00E7;ois Bobot, Valentin
  In Nobuko Yoshida, editor, <em>Programming Languages and Systems,
   ESOP 2021</em>, volume 12648 of <em>Lecture Notes in Computer Science</em>,
   pages 148--177, Cham, March 2021. Springer International Publishing.
- See extended version&nbsp;[<a href="#Chareton2020">80</a>] for additional technical
+ See extended version&nbsp;[<a href="#Chareton2020">82</a>] for additional technical
   material.
 [&nbsp;<a href="bbt_bib.html#Chareton2021">bib</a>&nbsp;| 
 <a href="https://doi.org/10.1007/978-3-030-72019-3_6">DOI</a>&nbsp;]
@@ -1925,7 +1966,7 @@ Keywords: deductive verification, quantum programming, quantum circuits
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Hietala2021a">90</a>]
+[<a name="Hietala2021a">92</a>]
 </td>
 <td class="bibtexitem">
 Kesha Hietala, Robert Rand, Shih-Han Hung, Liyi Li, and Michael Hicks.
@@ -1951,7 +1992,7 @@ Keywords: Formal Verification, Quantum Computing, Proof Engineering
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Yu2021">91</a>]
+[<a name="Yu2021">93</a>]
 </td>
 <td class="bibtexitem">
 Nengkun Yu and Jens Palsberg.
@@ -1984,7 +2025,7 @@ Keywords: quantum programming, scalability, abstract interpretation
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Zhou2021">92</a>]
+[<a name="Zhou2021">94</a>]
 </td>
 <td class="bibtexitem">
 Li&nbsp;Zhou, Gilles Barthe, Justin Hsu, Mingsheng Ying, and Nengkun Yu.
