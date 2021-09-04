@@ -16,7 +16,8 @@
 - For [retro](https://quantumpl.github.io/bib/retro/bbt.html) HTML generation: `bibtex2html`. Install the latest version using https://github.com/backtracking/bibtex2html
 - For website:
   - Go and [`hugo-extended`](https://gohugo.io/getting-started/installing/)
-  - A local installation of `academic-cli` using the [qpl-bib](https://github.com/QuantumPL/academic-cli/tree/qpl-bib) branch.
+  - A local installation of `academic-cli` using the [qpl-bib](https://github.com/QuantumPL/academic-cli/tree/qpl-bib) branch:
+   `git clone --single-branch --branch qpl-bib https://github.com/QuantumPL/academic-cli.git`
 
 ### Local directory structure
 ```
