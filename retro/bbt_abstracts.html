@@ -465,6 +465,9 @@ Alexander&nbsp;S. Green.
 <blockquote>
 This thesis looks at the development of a framework for a functional quantum programming language. The framework is first developed in Haskell, looking at how a monadic structure can be used to explicitly deal with the side-effects inherent in the measurement of quantum systems, and goes on to look at how a dependently-typed reimplementation in Agda gives us the basis for a formally verified quantum programming language. The two implementations are not in themselves fully developed quantum programming languages, as they are embedded in their respective parent languages, but are a major step towards the development of a full formally verified, functional quantum programming language. Dubbed the &ldquo;Quantum IO Monad&rdquo;, this framework is designed following a structural approach as given by a categorical model of quantum computation.
 </blockquote>
+<blockquote>
+Keywords: quantum programming, computer programming, computer languages, haskell, monadic structure, quantum io monad
+</blockquote>
 
 </td>
 </tr>
@@ -1362,6 +1365,9 @@ Matthew Amy.
 <blockquote>
 The design and compilation of correct, efficient quantum circuits is integral to the future operation of quantum computers. This thesis makes contributions to the problems of optimizing and verifying quantum circuits, with an emphasis on the development of formal models for such purposes. We also present software implementations of these methods, which together form a full stack of tools for the design of optimized, formally verified quantum oracles. On the optimization side, we study methods for the optimization of Rz and CNOT gates in Clifford+Rz circuits. We develop a general, efficient optimization algorithm called phase folding, which reduces the number of Rz gates without increasing any metrics by computing its phase polynomial. This algorithm can further be combined with synthesis techniques for CNOT-dihedral operators to optimize circuits with respect to particular costs. We then study the optimal synthesis problem for CNOT-dihedral operators from the perspectives of Rz and CNOT gate optimization. In the case of Rz gate optimization, we show that the optimal synthesis problem is polynomial-time equivalent to minimum-distance decoding in certain Reed-Muller codes. For the CNOT optimization problem, we show that the optimal synthesis problem is at least as hard as a combinatorial problem related to Gray codes. In both cases, we develop heuristics for the optimal synthesis problem, which together with phase folding reduces T counts by 42% and CNOT counts by 22% across a suite of real-world benchmarks. From the perspective of formal verification, we make two contributions. The first is the development of a formal model of quantum circuits with ancillary bits based on the Feynman path integral, along with a concrete verification algorithm. The path integral model, with some syntactic sugar, further doubles as a natural specification language for quantum computations. Our experiments show some practical circuits with up to hundreds of qubits can be efficiently verified. Our second contribution is a formally verified, optimizing compiler for reversible circuits. The compiler compiles a classical, irreversible language to reversible circuits, with a formal, machine-checked proof of correctness written in the proof assistant F*. The compiler is structured as a partial evaluator, allowing verification to be carried out significantly faster than previous results.
 </blockquote>
+<blockquote>
+Keywords: Quantum computing, Quantum circuits, Compiler optimization, Formal verification
+</blockquote>
 
 </td>
 </tr>
@@ -2060,11 +2066,14 @@ Francisco Rios.
  PhD thesis, Dalhousie University, Halifax, Nova Scotia, Canada,
   August 2021.
 [&nbsp;<a href="bbt_bib.html#Rios2021">bib</a>&nbsp;| 
-<a href="https://dalspace.library.dal.ca/bitstream/handle/10222/80771/FranciscoRios2021.pdf">.pdf</a>&nbsp;]
+<a href="https://dalspace.library.dal.ca/handle/10222/80771">https</a>&nbsp;]
 <blockquote>
 This thesis contains contributions to the mathematical foundations of quantum programming languages.<p>
   The likely arrival of scalable quantum computers in the not so distant future has resulted in a flurry of activity in the development of quantum programming languages. As in classical computing, the transition from a description of a quantum algorithm found in the literature to a hardware-specific set of instructions run on a quantum device is a complex process, prone to errors. This issue is exacerbated in the quantum setting not only by the complexity of quantum algorithms but also by the fragility of quantum information, which renders ineffective some of the classical techniques used to debug programs.<p>
   In this thesis, we contribute to the solution of some of these issues. We introduce Proto-Quipper-M, a new quantum  programming language designed to serve as a testbed for the research and development of sound mathematical semantics and reasoning techniques for quantum programs. We first present Proto-Quipper-M as a formalization of a fragment of Quipper, a high-level functional programming language for describing families of quantum circuits. In particular, we define Proto-Quipper-M as a simply-typed lambda calculus with a special type for quantum circuits and a strong type system designed to enforce linearity on quantum data, and thus prevent violations of the no-cloning property of quantum information. We endow ProtoQuipper-M with computational meaning via a big-step operational semantics and prove that the language is type-safe by showing that it enjoys the type-preservation and error-freeness properties. We also give Proto-Quipper-M a denotational semantics in a suitable class of monoidal categories and show that these categories give rise to linear-non-linear models in the sense of Benton, and thus models of intuitionistic linear logic. Finally, we crystallize the connection between the syntax and the semantics of the language by proving the soundness theorem for Proto-Quipper-M.
+</blockquote>
+<blockquote>
+Keywords: Quantum programming language, Categorical model, Quantum circuit, Proto-Quipper-M, Category theory, Quantum computing
 </blockquote>
 
 </td>
