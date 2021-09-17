@@ -21,8 +21,28 @@
   doi = {10.1109/LICS.2004.1319636},
   archiveprefix = {arXiv},
   eprint = {quant-ph/0402130},
-  abstract = {We study quantum information and computation from a novel point of view. Our approach is based on recasting the standard axiomatic presentation of quantum mechanics, due to von Neumann, at a more abstract level, of compact closed categories with biproducts. We show how the essential structures found in key quantum information protocols such as teleportation, logic-gate teleportation, and entanglement-swapping can be captured at this abstract level. Moreover, from the combination of the --apparently purely qualitative-- structures of compact closure and biproducts there emerge `scalars` and a `Born rule'. This abstract and structural point of view opens up new possibilities for describing and reasoning about quantum systems. It also shows the degrees of axiomatic freedom: we can show what requirements are placed on the (semi)ring of scalars C(I,I), where C is the category and I is the tensor unit, in order to perform various protocols such as teleportation. Our formalism captures both the information-flow aspect of the protocols (see quant-ph/0402014), and the branching due to quantum indeterminism. This contrasts with the standard accounts, in which the classical information flows are `outside' the usual quantum-mechanical formalism.},
+  abstract = {We study quantum information and computation from a novel point of view. Our approach is based on recasting the standard axiomatic presentation of quantum mechanics, due to von Neumann, at a more abstract level, of compact closed categories with biproducts. We show how the essential structures found in key quantum information protocols such as teleportation, logic-gate teleportation, and entanglement-swapping can be captured at this abstract level. Moreover, from the combination of the -- apparently purely qualitative -- structures of compact closure and biproducts there emerge 'scalars' and a 'Born rule'. This abstract and structural point of view opens up new possibilities for describing and reasoning about quantum systems. It also shows the degrees of axiomatic freedom: we can show what requirements are placed on the (semi)ring of scalars C(I,I), where C is the category and I is the tensor unit, in order to perform various protocols such as teleportation. Our formalism captures both the information-flow aspect of the protocols (see quant-ph/0402014), and the branching due to quantum indeterminism. This contrasts with the standard accounts, in which the classical information flows are `outside' the usual quantum-mechanical formalism.},
+  note = {Also see updated version: \cite{Abramsky2008}},
   timestamp = {2021-04-18}
+}
+</pre>
+
+<a name="Abramsky2008"></a><pre>
+@incollection{<a href="bbt.html#Abramsky2008">Abramsky2008</a>,
+  title = {Categorical Quantum Mechanics},
+  author = {Abramsky, Samson and Coecke, Bob},
+  year = {2008},
+  month = nov,
+  booktitle = {Handbook of Quantum Logic and Quantum Structures},
+  editor = {Engesser, Kurt and Gabbay, Dov M. and Lehmann, Daniel},
+  publisher = {Elsevier},
+  address = {Amsterdam},
+  pages = {261--323},
+  doi = {10.1016/B978-0-444-52869-8.50010-4},
+  archiveprefix = {arXiv},
+  eprint = {0808.1023},
+  abstract = {This invited chapter in the Handbook of Quantum Logic and Quantum Structures consists of two parts: 1. A substantially updated version of quant-ph/0402130 by the same authors, which initiated the area of categorical quantum mechanics, but had not yet been published in full length; 2. An overview of the progress which has been made since then in this area.},
+  note = {Substantially updated version of \cite{Abramsky2004} by the same authors.}
 }
 </pre>
 
@@ -118,6 +138,24 @@
 }
 </pre>
 
+<a name="Backens2014"></a><pre>
+@article{<a href="bbt.html#Backens2014">Backens2014</a>,
+  title = {The {ZX}-calculus is complete for stabilizer quantum mechanics},
+  author = {Miriam Backens},
+  year = {2014},
+  month = sep,
+  journal = {New Journal of Physics},
+  publisher = {{IOP} Publishing},
+  volume = {16},
+  number = {9},
+  pages = {093021},
+  doi = {10.1088/1367-2630/16/9/093021},
+  abstract = {The ZX-calculus is a graphical calculus for reasoning about quantum systems and processes. It is known to be universal for pure state qubit quantum mechanics (QM), meaning any pure state, unitary operation and post-selected pure projective measurement can be expressed in the ZX-calculus. The calculus is also sound, i.e. any equality that can be derived graphically can also be derived using matrix mechanics. Here, we show that the ZX-calculus is complete for pure qubit stabilizer QM, meaning any equality that can be derived using matrices can also be derived pictorially. The proof relies on bringing diagrams into a normal form based on graph states and local Clifford operations.},
+  keywords = {quantum foundations, quantum computing, logic, graphical calculus,
+  stabilizer quantum mechanics, graph states}
+}
+</pre>
+
 <a name="Badescu2015"></a><pre>
 @inproceedings{<a href="bbt.html#Badescu2015">Badescu2015</a>,
   title = {Quantum Alternation: {{Prospects}} and Problems},
@@ -189,6 +227,40 @@
   url = {<a href="https://files.sri.inf.ethz.ch/website/papers/pldi20-silq.pdf">https://files.sri.inf.ethz.ch/website/papers/pldi20-silq.pdf</a>},
   abstract = {Existing quantum languages force the programmer to work at a low level of abstraction leading to unintuitive and cluttered code. A fundamental reason is that dropping temporary values from the program state requires explicitly applying quantum operations that safely uncompute these values. We present Silq, the first quantum language that addresses this challenge by supporting safe, automatic uncomputation. This enables an intuitive semantics that implicitly drops temporary values, as in classical computation. To ensure physicality of Silq's semantics, its type system leverages novel annotations to reject unphysical programs. Our experimental evaluation demonstrates that Silq programs are not only easier to read and write, but also significantly shorter than equivalent programs in other quantum languages (on average -46\% for Q\#, -38\% for Quipper), while using only half the number of quantum primitives.},
   timestamp = {2021-04-18}
+}
+</pre>
+
+<a name="Boender2015"></a><pre>
+@inproceedings{<a href="bbt.html#Boender2015">Boender2015</a>,
+  title = {Formalization of Quantum Protocols using Coq},
+  author = {Boender, Jaap and Kammüller, Florian and Nagarajan, Rajagopal},
+  year = {2015},
+  month = nov,
+  booktitle = {Proceedings of the 12th International Workshop on Quantum Physics and Logic (QPL), Oxford, {{U}}.{{K}}., July 15--17, 2015},
+  editor = {Heunen, Chris and Selinger, Peter and Vicary, Jamie},
+  publisher = {{Open Publishing Association}},
+  series = {Electronic Proceedings in Theoretical Computer Science},
+  volume = {195},
+  pages = {71--83},
+  doi = {10.4204/EPTCS.195.6},
+  abstract = {Quantum Information Processing, which is an exciting area of research at the intersection of physics and computer science, has great potential for influencing the future development of information processing systems. The building of practical, general purpose Quantum Computers may be some years into the future. However, Quantum Communication and Quantum Cryptography are well developed. Commercial Quantum Key Distribution systems are easily available and several QKD networks have been built in various parts of the world. The security of the protocols used in these implementations rely on information-theoretic proofs, which may or may not reflect actual system behaviour. Moreover, testing of implementations cannot guarantee the absence of bugs and errors. This paper presents a novel framework for modelling and verifying quantum protocols and their implementations using the proof assistant Coq. We provide a Coq library for quantum bits (qubits), quantum gates, and quantum measurement. As a step towards verifying practical quantum communication and security protocols such as Quantum Key Distribution, we support multiple qubits, communication and entanglement. We illustrate these concepts by modelling the Quantum Teleportation Protocol, which communicates the state of an unknown quantum bit using only a classical channel.}
+}
+</pre>
+
+<a name="Bordg2021"></a><pre>
+@article{<a href="bbt.html#Bordg2021">Bordg2021</a>,
+  title = {Certified Quantum Computation in Isabelle/HOL},
+  author = {Bordg, Anthony and Lachnitt, Hanna and He, Yijun},
+  year = {2021},
+  month = jun,
+  journal = {Journal of Automated Reasoning},
+  volume = {65},
+  number = {5},
+  pages = {691--709},
+  doi = {10.1007/s10817-020-09584-7},
+  url = {<a href="https://github.com/AnthonyBordg/Isabelle_marries_Dirac">https://github.com/AnthonyBordg/Isabelle_marries_Dirac</a>},
+  abstract = {In this article we present an ongoing effort to formalise quantum algorithms and results in quantum information theory using the proof assistant Isabelle/HOL. Formal methods being critical for the safety and security of algorithms and protocols, we foresee their widespread use for quantum computing in the future. We have developed a large library for quantum computing in Isabelle based on a matrix representation for quantum circuits, successfully formalising the no-cloning theorem, quantum teleportation, Deutsch's algorithm, the Deutsch--Jozsa algorithm and the quantum Prisoner's Dilemma. We discuss the design choices made and report on an outcome of our work in the field of quantum game theory.},
+  keywords = {Isabelle/HOL, Certification, Quantum computing, No-cloning, Quantum teleportation, Deutsch's algorithm, Deutsch--Jozsa algorithm, Quantum prisoner's dilemma}
 }
 </pre>
 
@@ -1012,7 +1084,7 @@ quantum algorithms, the Harrow-Hassidim-Lloyd algorithm and Shor's algorithm.}
   pages = {42},
   archiveprefix = {arXiv},
   eprint = {1904.04304},
-  abstract = {We survey the landscape of Hoare logics for quantum programs. We review three papers: "Reasoning about imperative quantum programs" by Chadha, Mateus and Sernadas; "A logic for formal verification of quantum programs" by Yoshihiko Kakutani; and "Floyd-hoare logic for quantum programs" by Mingsheng Ying. We compare the mathematical foundations of the logics, their underlying languages, and the expressivity of their assertions. We also use the languages to verify the Deutsch-Jozsa Algorithm, and discuss their relative usability in practice.},
+  abstract = {We survey the landscape of Hoare logics for quantum programs. We review three papers: "Reasoning about imperative quantum programs" by Chadha, Mateus and Sernadas; "A logic for formal verification of quantum programs" by Yoshihiko Kakutani; and "Floyd-hoare logic for quantum programs" by Mingsheng Ying. We compare the mathematical foundations of the logics, their underlying languages, and the expressivity of their assertions. We also use the languages to verify the Deutsch--Jozsa Algorithm, and discuss their relative usability in practice.},
   note = {Submitted as a qualifying examination (WPE-II) for the PhD program at the University of Pennsylvania.},
   timestamp = {2021-04-18}
 }
@@ -1389,10 +1461,10 @@ quantum algorithms, the Harrow-Hassidim-Lloyd algorithm and Shor's algorithm.}
   abstract = {We develop a new framework of algebraic theories with linear parameters, and use it
 to analyze the equational reasoning principles of quantum computing and quantum programming
 languages. We use the framework as follows: we present a new elementary algebraic
-theory of quantum computation, built from unitary gates and measurement;we provide
+theory of quantum computation, built from unitary gates and measurement; we provide
 a completeness theorem or the elementary algebraic theory by relating it with a model
 from operator algebra; we extract an equational theory for a quantum programming language
-from the algebraic theory;we compare quantum computation with other local notions
+from the algebraic theory; we compare quantum computation with other local notions
 of computation by investigating variations on the algebraic theory.},
   keywords = {monads, quantum computation, algebraic effects}
 }
