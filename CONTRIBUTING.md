@@ -1,7 +1,7 @@
 # How to contribute to QPLV Bib
 
 ## Organization
-- Currently `bibtex` style bib entries are supported in `bbt.bib`. Please send all PRs for changes for this file.
+- Currently `bibtex` style bib entries are supported in `bbt.bib`. Please send all PRs for changes to this file.
 - We would love to have a `biblatex` style of entries as well in the file `bblt.bib`, but for now it is not up to date. There is a [tracking issue for BibLaTeX](https://github.com/QuantumPL/bib/issues/6) support; PRs welcome.
 
 ## Style
@@ -11,7 +11,7 @@
 
   For mass sort, I have been using the `bibtex-tidy` tool at https://flamingtempura.github.io/bibtex-tidy/ with the above sorting order.
 
-## Building and Testing
+## Building and Testing (optiona)
 You **do not have to** test the website for contributing here, I have added the steps if you would like to, however. I will test the site for issues before I merge a PR.
 
 ### Prerequisites
