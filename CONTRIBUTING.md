@@ -11,7 +11,7 @@
 
   For mass sort, I have been using the `bibtex-tidy` tool at https://flamingtempura.github.io/bibtex-tidy/ with the above sorting order.
 
-## Building and Testing (optiona)
+## Building and Testing (optional)
 You **do not have to** test the website for contributing here, I have added the steps if you would like to, however. I will test the site for issues before I merge a PR.
 
 ### Prerequisites
