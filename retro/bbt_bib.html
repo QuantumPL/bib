@@ -411,6 +411,25 @@
 }
 </pre>
 
+<a name="DalLago2017"></a><pre>
+@inproceedings{<a href="bbt.html#DalLago2017">DalLago2017</a>,
+  title = {The Geometry of Parallelism: Classical, Probabilistic, and Quantum Effects},
+  author = {{Dal Lago}, Ugo and Faggian, Claudia and Valiron, Beno\^{\i}t and Yoshimizu, Akira},
+  year = {2017},
+  month = jan,
+  booktitle = {Proceedings of the 44th ACM SIGPLAN Symposium on Principles of Programming Languages},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  series = {POPL '17},
+  pages = {833--845},
+  doi = {10.1145/3009837.3009859},
+  archiveprefix = {arXiv},
+  eprint = {1610.09629},
+  abstract = {We introduce a Geometry of Interaction model for higher-order quantum computation, and prove its adequacy for a fully fledged quantum programming language in which entanglement, duplication, and recursion are all available. This model is an instance of a new framework which captures not only quantum but also classical and probabilistic computation. Its main feature is the ability to model commutative effects in a parallel setting. Our model comes with a multi-token machine, a proof net system, and a -style language. Being based on a multi-token machine equipped with a memory, it has a concrete nature which makes it well suited for building low-level operational descriptions of higher-order languages.},
+  keywords = {memory structure, Geometry of Interaction, quantum computation, lambda calculus, probabilistic computation}
+}
+</pre>
+
 <a name="Danos2007"></a><pre>
 @article{<a href="bbt.html#Danos2007">Danos2007</a>,
   title = {The {{Measurement Calculus}}},
@@ -534,6 +553,26 @@
 }
 </pre>
 
+<a name="Gay2008"></a><pre>
+@inproceedings{<a href="bbt.html#Gay2008">Gay2008</a>,
+  title = {QMC: A Model Checker for Quantum Systems},
+  author = {Gay, Simon J. and Nagarajan, Rajagopal and Papanikolaou, Nikolaos},
+  year = {2008},
+  month = jul,
+  booktitle = {Computer Aided Verification ({{CAV}} '08)},
+  editor = {Gupta, Aarti and Malik, Sharad},
+  publisher = {Springer},
+  address = {Berlin, Heidelberg},
+  series = {Lecture Notes in Computer Science},
+  volume = {5123},
+  pages = {543--547},
+  doi = {10.1007/978-3-540-70545-1_51},
+  archiveprefix = {arXiv},
+  eprint = {0704.3705},
+  abstract = {The novel field of quantum computation and quantum information has been growing at a rapid rate; the study of quantum information in particular has led to the emergence of communication and cryptographic protocols with no classical analogues. Quantum information protocols have interesting properties which are not exhibited by their classical counterparts, but they are most distinguished for their applications in cryptography. Notable results include the unconditional security proof [1] of quantum key distribution. This result, in particular, is one of the reasons for the widespread interest in this field. Furthermore, the implementation of quantum cryptography has been demonstrated in non-laboratory settings and is already an important practical technology. Implementations of quantum cryptography have already been commercially launched and tested by a number of companies including MagiQ, Id Quantique, Toshiba, and NEC. The unconditional security of quantum key distribution protocols does not automatically imply the same degree of security for actual systems, of course; this justifies the need for systems modelling and verification in this setting.}
+}
+</pre>
+
 <a name="Gay2009"></a><pre>
 @book{<a href="bbt.html#Gay2009">Gay2009</a>,
   title = {Semantic Techniques in Quantum Computation},
@@ -605,14 +644,35 @@
   month = jul,
   booktitle = {Reversible {{Computation}} ({{RC}} '13)},
   editor = {Dueck, Gerhard W. and Miller, D. Michael},
-  publisher = {{Springer Berlin Heidelberg}},
+  publisher = {Springer},
+  address = {Berlin, Heidelberg},
   series = {Lecture Notes in Computer Science},
   volume = {7948},
   pages = {110--124},
   doi = {10.1007/978-3-642-38986-3_10},
   archiveprefix = {arXiv},
   eprint = {1304.5485},
-  abstract = {Quipper is a recently developed programming language for expressing quantum computations. This paper gives a brief tutorial introduction to the language, through a demonstration of how to make use of some of its key features. We illustrate many of Quipper's language features by developing a few well known examples of Quantum computation, including quantum teleportation, the quantum Fourier transform, and a quantum circuit for addition.}
+  abstract = {Quipper is a recently developed programming language for expressing quantum computations. This paper gives a brief tutorial introduction to the language, through a demonstration of how to make use of some of its key features. We illustrate many of Quipper's language features by developing a few well known examples of Quantum computation, including quantum teleportation, the quantum Fourier transform, and a quantum circuit for addition.},
+  keywords = {Quantum Computation, Programming Languages, Quipper }
+}
+</pre>
+
+<a name="Hasuo2017"></a><pre>
+@article{<a href="bbt.html#Hasuo2017">Hasuo2017</a>,
+  title = {Semantics of higher-order quantum computation via geometry of interaction},
+  author = {Hasuo, Ichiro and Hoshino, Naohiko},
+  year = {2017},
+  month = feb,
+  journal = {Annals of Pure and Applied Logic},
+  volume = {168},
+  number = {2},
+  pages = {404--469},
+  doi = {10.1016/j.apal.2016.10.010},
+  archiveprefix = {arXiv},
+  eprint = {1605.05079},
+  abstract = {While much of the current study on quantum computation employs low-level formalisms such as quantum circuits, several high-level languages/calculi have been recently proposed aiming at structured quantum programming. The current work contributes to the semantical study of such languages by providing interaction-based semantics of a functional quantum programming language; the latter is, much like Selinger and Valiron's, based on linear lambda calculus and equipped with features like the ! modality and recursion. The proposed denotational model is the first one that supports the full features of a quantum functional programming language; we prove adequacy of our semantics. The construction of our model is by a series of existing techniques taken from the semantics of classical computation as well as from process theory. The most notable among them is Girard's Geometry of Interaction (GoI), categorically formulated by Abramsky, Haghverdi and Scott. The mathematical genericity of these techniques—largely due to their categorical formulation—is exploited for our move from classical to quantum.},
+  keywords = {Higher-order computation, Quantum computation, Programming languages, Geometry of interaction, Denotational semantics, Categorical semantics},
+  note = {Eighth Games for Logic and Programming Languages Workshop (GaLoP)}
 }
 </pre>
 
@@ -848,6 +908,7 @@
   publisher = {Schloss Dagstuhl--Leibniz-Zentrum f{\"u}r Informatik},
   address = {Dagstuhl, Germany},
   series = {Leibniz International Proceedings in Informatics (LIPIcs)},
+  volume = {To appear},
   pages = {13:1--13:21},
   doi = {10.4230/LIPIcs.FSTTCS.2021.13},
   archiveprefix = {arXiv},
@@ -1010,6 +1071,25 @@
   school = {Vienna University of Technology},
   url = {<a href="http://www.itp.tuwien.ac.at/~oemer/doc/structquprog.pdf">http://www.itp.tuwien.ac.at/~oemer/doc/structquprog.pdf</a>},
   note = {Describes QCL}
+}
+</pre>
+
+<a name="Pagani2014"></a><pre>
+@inproceedings{<a href="bbt.html#Pagani2014">Pagani2014</a>,
+  title = {Applying Quantitative Semantics to Higher-Order Quantum Computing},
+  author = {Pagani, Michele and Selinger, Peter and Valiron, Beno\^{\i}t},
+  year = {2014},
+  month = jan,
+  booktitle = {Proceedings of the 41st ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  series = {POPL '14},
+  pages = {647--658},
+  doi = {10.1145/2535838.2535879},
+  archiveprefix = {arXiv},
+  eprint = {1311.2290},
+  abstract = {Finding a denotational semantics for higher order quantum computation is a long-standing problem in the semantics of quantum programming languages. Most past approaches to this problem fell short in one way or another, either limiting the language to an unusably small finitary fragment, or giving up important features of quantum physics such as entanglement. In this paper, we propose a denotational semantics for a quantum lambda calculus with recursion and an infinite data type, using constructions from quantitative semantics of linear logic.},
+  keywords = {higher-order, quantum computation, completely positive maps, categorical model, functional programming}
 }
 </pre>
 
@@ -1373,9 +1453,11 @@
   publisher = {{Springer}},
   address = {{Berlin, Heidelberg}},
   series = {Lecture Notes in Computer Science},
+  volume = {2998},
   pages = {1--6},
   doi = {10.1007/978-3-540-24754-8_1},
-  abstract = {This article is a brief and subjective survey of quantum programming language research.}
+  abstract = {This article is a brief and subjective survey of quantum programming language research.},
+  keywords = {Quantum Computation, Quantum Algorithm, Linear Logic, Denotational Semantics, Lambda Calculus}
 }
 </pre>
 
