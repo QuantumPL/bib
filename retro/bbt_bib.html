@@ -1897,12 +1897,13 @@
 <a name="Ying2018"></a><pre>
 @misc{<a href="bbt.html#Ying2018">Ying2018</a>,
   title = {Reasoning about Parallel Quantum Programs},
-  author = {Mingsheng Ying and Li Zhou and Yangjia Li},
+  author = {Ying, Mingsheng and Zhou, Li and Li, Yangjia},
   year = {2018},
   month = oct,
   archiveprefix = {arXiv},
   eprint = {1810.11334},
-  abstract = {We initiate the study of parallel quantum programming by defining the operational and denotational semantics of parallel quantum programs. The technical contributions of this paper include: (1) find a series of useful proof rules for reasoning about correctness of parallel quantum programs; (2) prove a (relative) completeness of our proof rules for partial correctness of disjoint parallel quantum programs; and (3) prove a strong soundness theorem of the proof rules showing that partial correctness is well maintained at each step of transitions in the operational semantics of a general parallel quantum program (with shared variables). This is achieved by partially overcoming the following conceptual challenges that are never present in classical parallel programming: (i) the intertwining of nondeterminism caused by quantum measurements and introduced by parallelism; (ii) entanglement between component quantum programs; and (iii) combining quantum predicates in the overlap of state Hilbert spaces of component quantum programs with shared variables. Applications of the techniques developed in this paper are illustrated by a formal verification of Bravyi-Gosset-König's parallel quantum algorithm solving a linear algebra problem, which gives for the first time an unconditional proof of a computational quantum advantage.}
+  abstract = {We initiate the study of parallel quantum programming by defining the operational and denotational semantics of parallel quantum programs. The technical contributions of this paper include: (1) find a series of useful proof rules for reasoning about correctness of parallel quantum programs; (2) prove a (relative) completeness of our proof rules for partial correctness of disjoint parallel quantum programs; and (3) prove a strong soundness theorem of the proof rules showing that partial correctness is well maintained at each step of transitions in the operational semantics of a general parallel quantum program (with shared variables). This is achieved by partially overcoming the following conceptual challenges that are never present in classical parallel programming: (i) the intertwining of nondeterminism caused by quantum measurements and introduced by parallelism; (ii) entanglement between component quantum programs; and (iii) combining quantum predicates in the overlap of state Hilbert spaces of component quantum programs with shared variables. Applications of the techniques developed in this paper are illustrated by a formal verification of Bravyi-Gosset-König's parallel quantum algorithm solving a linear algebra problem, which gives for the first time an unconditional proof of a computational quantum advantage.},
+  note = {See also the published version \cite{Ying2021a}}
 }
 </pre>
 
@@ -1917,6 +1918,23 @@
   doi = {10.1017/9781108613323},
   abstract = {Model checking is one of the most successful verification techniques and has been widely adopted in traditional computing and communication hardware and software industries. This book provides the first systematic introduction to model checking techniques applicable to quantum systems, with broad potential applications in the emerging industry of quantum computing and quantum communication as well as quantum physics. Suitable for use as a course textbook and for self-study, graduate and senior undergraduate students will appreciate the step-by-step explanations and the exercises included. Researchers and engineers in the related fields can further develop these techniques in their own work, with the final chapter outlining potential future applications.},
   keywords = {model checking, quantum computing}
+}
+</pre>
+
+<a name="Ying2021a"></a><pre>
+@article{<a href="bbt.html#Ying2021a">Ying2021a</a>,
+  title = {A Proof System for Disjoint Parallel Quantum Programs},
+  author = {Ying, Mingsheng and Zhou, Li and Li, Yangjia and Feng, Yuan},
+  year = {2021},
+  month = nov,
+  journal = {Theoretical Computer Science},
+  volume = {},
+  number = {},
+  pages = {},
+  doi = {10.1016/j.tcs.2021.10.025},
+  abstract = {In this paper, we define the operational and denotational semantics of a special class of parallel quantum programs, namely disjoint parallel quantum programs. Based on them, a proof system for reasoning about disjoint parallel quantum programs is developed, which is (relatively) complete even when entanglement between different processes appears in the preconditions and postconditions.},
+  keywords = {Quantum programming, quantum Hoare logic, parallel programs, entanglement},
+  note = {In press. Essentially the first part of \cite{Ying2018}}
 }
 </pre>
 
