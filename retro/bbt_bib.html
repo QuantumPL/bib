@@ -134,10 +134,29 @@
 }
 </pre>
 
+<a name="ArdeshirLarijani2018"></a><pre>
+@article{<a href="bbt.html#ArdeshirLarijani2018">ArdeshirLarijani2018</a>,
+  title = {Automated Equivalence Checking of Concurrent Quantum Systems},
+  author = {{Ardeshir-Larijani}, Ebrahim and Gay, Simon J. and Nagarajan, Rajagopal},
+  year = {2018},
+  month = nov,
+  journal = {ACM Transactions on Computational Logic},
+  publisher = {Association for Computing Machinery},
+  volume = {19},
+  number = {4},
+  pages = {28},
+  numpages = {32},
+  doi = {10.1145/3231597},
+  url = {<a href="http://eprints.gla.ac.uk/166295/">http://eprints.gla.ac.uk/166295/</a>},
+  abstract = {The novel field of quantum computation and quantum information has gathered significant momentum in the last few years. It has the potential to radically impact the future of information technology and influence the development of modern society. The construction of practical, general purpose quantum computers has been challenging, but quantum cryptographic and communication devices have been available in the commercial marketplace for several years. Quantum networks have been built in various cities around the world and a dedicated satellite has been launched by China to provide secure quantum communication. Such new technologies demand rigorous analysis and verification before they can be trusted in safety- and security-critical applications. Experience with classical hardware and software systems has shown the difficulty of achieving robust and reliable implementations.We present CCSq, a concurrent language for describing quantum systems, and develop verification techniques for checking equivalence between CCSq processes. CCSq has well-defined operational and superoperator semantics for protocols that are functional, in the sense of computing a deterministic input-output relation for all interleavings arising from concurrency in the system. We have implemented QEC (Quantum Equivalence Checker), a tool that takes the specification and implementation of quantum protocols, described in CCSq, and automatically checks their equivalence. QEC is the first fully automatic equivalence checking tool for concurrent quantum systems. For efficiency purposes, we restrict ourselves to Clifford operators in the stabilizer formalism, but we are able to verify protocols over all input states. We have specified and verified a collection of interesting and practical quantum protocols, ranging from quantum communication and quantum cryptography to quantum error correction.},
+  keywords = {concurrency, process calculi, equivalence checking, Quantum information processing, programming language semantics}
+}
+</pre>
+
 <a name="Backens2014"></a><pre>
 @article{<a href="bbt.html#Backens2014">Backens2014</a>,
   title = {The {ZX}-calculus is complete for stabilizer quantum mechanics},
-  author = {Miriam Backens},
+  author = {Backens, Miriam},
   year = {2014},
   month = sep,
   journal = {New Journal of Physics},
@@ -249,7 +268,7 @@
   number = {5},
   pages = {691--709},
   doi = {10.1007/s10817-020-09584-7},
-  url = {<a href="https://github.com/AnthonyBordg/Isabelle_marries_Dirac">https://github.com/AnthonyBordg/Isabelle_marries_Dirac</a>},
+  url = {<a href="https://www.isa-afp.org/entries/Isabelle_Marries_Dirac.html">https://www.isa-afp.org/entries/Isabelle_Marries_Dirac.html</a>},
   abstract = {In this article we present an ongoing effort to formalise quantum algorithms and results in quantum information theory using the proof assistant Isabelle/HOL. Formal methods being critical for the safety and security of algorithms and protocols, we foresee their widespread use for quantum computing in the future. We have developed a large library for quantum computing in Isabelle based on a matrix representation for quantum circuits, successfully formalising the no-cloning theorem, quantum teleportation, Deutsch's algorithm, the Deutsch--Jozsa algorithm and the quantum Prisoner's Dilemma. We discuss the design choices made and report on an outcome of our work in the field of quantum game theory.},
   keywords = {Isabelle/HOL, Certification, Quantum computing, No-cloning, Quantum teleportation, Deutsch's algorithm, Deutsch--Jozsa algorithm, Quantum prisoner's dilemma}
 }
@@ -364,7 +383,8 @@
   number = {4},
   pages = {043016},
   doi = {10.1088/1367-2630/13/4/043016},
-  abstract = {This paper has two tightly intertwined aims: (i) to introduce an intuitive and universal graphical calculus for multi-qubit systems, the ZX-calculus, which greatly simplifies derivations in the area of quantum computation and information. (ii) To axiomatize complementarity of quantum observables within a general framework for physical theories in terms of dagger symmetric monoidal categories. We also axiomatize phase shifts within this framework. Using the well-studied canonical correspondence between graphical calculi and dagger symmetric monoidal categories, our results provide a purely graphical formalisation of complementarity for quantum observables. Each individual observable, represented by a commutative special dagger Frobenius algebra, gives rise to an Abelian group of phase shifts, which we call the phase group. We also identify a strong form of complementarity, satisfied by the Z- and X-spin observables, which yields a scaled variant of a bialgebra.}
+  abstract = {This paper has two tightly intertwined aims: (i) to introduce an intuitive and universal graphical calculus for multi-qubit systems, the ZX-calculus, which greatly simplifies derivations in the area of quantum computation and information. (ii) To axiomatize complementarity of quantum observables within a general framework for physical theories in terms of dagger symmetric monoidal categories. We also axiomatize phase shifts within this framework. Using the well-studied canonical correspondence between graphical calculi and dagger symmetric monoidal categories, our results provide a purely graphical formalisation of complementarity for quantum observables. Each individual observable, represented by a commutative special dagger Frobenius algebra, gives rise to an Abelian group of phase shifts, which we call the phase group. We also identify a strong form of complementarity, satisfied by the Z- and X-spin observables, which yields a scaled variant of a bialgebra.},
+  note = {Corrects several errors in and supersedes the earlier ICALP 2008 conference paper.}
 }
 </pre>
 
@@ -479,6 +499,19 @@
 }
 </pre>
 
+<a name="Feng2021"></a><pre>
+@misc{<a href="bbt.html#Feng2021">Feng2021</a>,
+  title = {Quantum Hoare logic with classical variables},
+  author = {Feng, Yuan and Ying, Mingsheng},
+  year = {2021},
+  month = apr,
+  archiveprefix = {arXiv},
+  eprint = {2008.06812},
+  abstract = {Hoare logic provides a syntax-oriented method to reason about program correctness and has been proven effective in the verification of classical and probabilistic programs. Existing proposals for quantum Hoare logic either lack completeness or support only quantum variables, thus limiting their capability in practical use. In this paper, we propose a quantum Hoare logic for a simple while language which involves both classical and quantum variables. Its soundness and relative completeness are proven for both partial and total correctness of quantum programs written in the language. Remarkably, with novel definitions of classical-quantum states and corresponding assertions, the logic system is quite simple and similar to the traditional Hoare logic for classical programs. Furthermore, to simplify reasoning in real applications, auxiliary proof rules are provided which support standard logical operation in the classical part of assertions, and of super-operator application in the quantum part. Finally, a series of practical quantum algorithms, in particular the whole algorithm of Shor's factorisation, are formally verified to show the effectiveness of the logic.},
+  note = {To appear in ACM Transactions on Quantum Computing}
+}
+</pre>
+
 <a name="Fu2020"></a><pre>
 @inproceedings{<a href="bbt.html#Fu2020">Fu2020</a>,
   title = {Linear {{Dependent Type Theory}} for {{Quantum Programming Languages}}: {{Extended Abstract}}},
@@ -540,7 +573,7 @@
 <a name="Gay2006"></a><pre>
 @article{<a href="bbt.html#Gay2006">Gay2006</a>,
   title = {Quantum Programming Languages: Survey and Bibliography},
-  author = {Simon J. Gay},
+  author = {Gay, Simon J.},
   year = {2006},
   month = aug,
   journal = {Mathematical Structures in Computer Science},
@@ -589,7 +622,7 @@
 <a name="Grattage2011"></a><pre>
 @inproceedings{<a href="bbt.html#Grattage2011">Grattage2011</a>,
   title = {An Overview of QML With a Concrete Implementation in Haskell},
-  author = {Jonathan Grattage},
+  author = {Grattage, Jonathan},
   year = {2011},
   month = feb,
   booktitle = {Proceedings of the Joint 5th International Workshop on Quantum Physics and Logic and 4th Workshop on Developments in Computational Models (QPL/DCM 2008)},
@@ -1033,7 +1066,7 @@
 <a name="Mosca2019"></a><pre>
 @misc{<a href="bbt.html#Mosca2019">Mosca2019</a>,
   title = {{Quantum Programming Languages (Dagstuhl Seminar 18381)}},
-  author = {Mosca,  Michele and Roetteler,  Martin and Selinger,  Peter},
+  author = {Mosca, Michele and Roetteler, Martin and Selinger, Peter},
   year = {2019},
   month = mar,
   journal = {Dagstuhl Reports},
@@ -1379,7 +1412,7 @@
 <a name="Rios2021"></a><pre>
 @phdthesis{<a href="bbt.html#Rios2021">Rios2021</a>,
   title = {On a Categorically Sound Quantum Programming Language for Circuit Description},
-  author = {Francisco Rios},
+  author = {Rios, Francisco},
   year = {2021},
   month = aug,
   school = {Dalhousie University},
@@ -1548,7 +1581,7 @@
 <a name="Singhal2020b"></a><pre>
 @mastersthesis{<a href="bbt.html#Singhal2020b">Singhal2020b</a>,
   title = {Quantum Hoare Type Theory},
-  author = {Kartik Singhal},
+  author = {Singhal, Kartik},
   year = {2020},
   month = dec,
   school = {University of Chicago},
@@ -1791,7 +1824,7 @@
 <a name="Ying2009a"></a><pre>
 @misc{<a href="bbt.html#Ying2009a">Ying2009a</a>,
   title = {Hoare Logic for Quantum Programs},
-  author = {Mingsheng Ying},
+  author = {Ying, Mingsheng},
   year = {2009},
   month = jun,
   archiveprefix = {arXiv},
@@ -1852,7 +1885,7 @@
 <a name="Ying2014a"></a><pre>
 @misc{<a href="bbt.html#Ying2014a">Ying2014a</a>,
   title = {Quantum Recursion and Second Quantisation},
-  author = {Mingsheng Ying},
+  author = {Ying, Mingsheng},
   year = {2014},
   month = may,
   archiveprefix = {arXiv},
