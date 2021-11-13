@@ -483,10 +483,10 @@
 }
 </pre>
 
-<a name="Dhondt2006"></a><pre>
-@article{<a href="bbt.html#Dhondt2006">Dhondt2006</a>,
+<a name="DHondt2006"></a><pre>
+@article{<a href="bbt.html#DHondt2006">DHondt2006</a>,
   title = {Quantum {{Weakest Preconditions}}},
-  author = {D'hondt, Ellie and Panangaden, Prakash},
+  author = {D'Hondt, Ellie and Panangaden, Prakash},
   year = {2006},
   month = jun,
   journal = {Mathematical Structures in Computer Science},
@@ -768,7 +768,8 @@
   doi = {10.1145/3434318},
   url = {<a href="https://github.com/inQWIRE/SQIR">https://github.com/inQWIRE/SQIR</a>},
   abstract = {We present VOQC, the first fully verified optimizer for quantum circuits, written using the Coq proof assistant. Quantum circuits are expressed as programs in a simple, low-level language called SQIR, a simple quantum intermediate representation, which is deeply embedded in Coq. Optimizations and other transformations are expressed as Coq functions, which are proved correct with respect to a semantics of SQIR programs. SQIR uses a semantics of matrices of complex numbers, which is the standard for quantum computation, but treats matrices symbolically in order to reason about programs that use an arbitrary number of quantum bits. SQIR's careful design and our provided automation make it possible to write and verify a broad range of optimizations in VOQC, including full-circuit transformations from cutting-edge optimizers.},
-  keywords = {Programming Languages, Formal Verification, Certified Compilation, Quantum Computing, Circuit Optimization}
+  keywords = {Programming Languages, Formal Verification, Certified Compilation, Quantum Computing, Circuit Optimization},
+  note = {POPL '21}
 }
 </pre>
 
@@ -976,7 +977,8 @@
   numpages = {29},
   doi = {10.1145/3158123},
   abstract = {We introduce the notion of linear ranking super-martingale (LRSM) for quantum programs (with nondeterministic choices, namely angelic and demonic choices). Several termination theorems are established showing that the existence of the LRSMs of a quantum program implies its termination. Thus, the termination problems of quantum programs is reduced to realisability and synthesis of LRSMs. We further show that the realisability and synthesis problem of LRSMs for quantum programs can be reduced to an SDP (Semi-Definite Programming) problem, which can be settled with the existing SDP solvers. The techniques developed in this paper are used to analyse the termination of several example quantum programs, including quantum random walks and quantum Bernoulli factory for random number generation. This work is essentially a generalisation of constraint-based approach to the corresponding problems for probabilistic programs developed in the recent literature by adding two novel ideas: (1) employing the fundamental Gleason's theorem in quantum mechanics to guide the choices of templates; and (2) a generalised Farkas' lemma in terms of observables (Hermitian operators) in quantum physics.},
-  keywords = {SDP (Semi-Definite Programming), quantum Bernoulli factory, quantum programming, quantum random walk, ranking function, super-martingale, termination}
+  keywords = {SDP (Semi-Definite Programming), quantum Bernoulli factory, quantum programming, quantum random walk, ranking function, super-martingale, termination},
+  note = {POPL '17}
 }
 </pre>
 
@@ -992,7 +994,9 @@
   pages = {150},
   numpages = {29},
   doi = {10.1145/3428218},
-  abstract = {In this paper, we propose Proq, a runtime assertion scheme for testing and debugging quantum programs on a quantum computer. The predicates in Proq are represented by projections (or equivalently, closed subspaces of the state space), following Birkhoff-von Neumann quantum logic. The satisfaction of a projection by a quantum state can be directly checked upon a small number of projective measurements rather than a large number of repeated executions. On the theory side, we rigorously prove that checking projection-based assertions can help locate bugs or statistically assure that the semantic function of the tested program is close to what we expect, for both exact and approximate quantum programs. On the practice side, we consider hardware constraints and introduce several techniques to transform the assertions, making them directly executable on the measurement-restricted quantum computers. We also propose to achieve simplified assertion implementation using local projection technique with soundness guaranteed. We compare Proq with existing quantum program assertions and demonstrate the effectiveness and efficiency of Proq by its applications to assert two sophisticated quantum algorithms, the Harrow-Hassidim-Lloyd algorithm and Shor's algorithm.}
+  abstract = {In this paper, we propose Proq, a runtime assertion scheme for testing and debugging quantum programs on a quantum computer. The predicates in Proq are represented by projections (or equivalently, closed subspaces of the state space), following Birkhoff-von Neumann quantum logic. The satisfaction of a projection by a quantum state can be directly checked upon a small number of projective measurements rather than a large number of repeated executions. On the theory side, we rigorously prove that checking projection-based assertions can help locate bugs or statistically assure that the semantic function of the tested program is close to what we expect, for both exact and approximate quantum programs. On the practice side, we consider hardware constraints and introduce several techniques to transform the assertions, making them directly executable on the measurement-restricted quantum computers. We also propose to achieve simplified assertion implementation using local projection technique with soundness guaranteed. We compare Proq with existing quantum program assertions and demonstrate the effectiveness and efficiency of Proq by its applications to assert two sophisticated quantum algorithms, the Harrow-Hassidim-Lloyd algorithm and Shor's algorithm.},
+  keywords = {assertion, quantum computing, program testing, quantum programming},
+  note = {OOPSLA '20}
 }
 </pre>
 
@@ -1707,7 +1711,9 @@
   pages = {33},
   numpages = {31},
   doi = {10.1145/3290346},
-  abstract = {We present a logic for reasoning about pairs of interactive quantum programs -- quantum relational Hoare logic (qRHL). This logic follows the spirit of probabilistic relational Hoare logic (Barthe et al. 2009) and allows us to formulate how the outputs of two quantum programs relate given the relationship of their inputs. Probabilistic RHL was used extensively for computer-verified security proofs of classical cryptographic protocols. Since pRHL is not suitable for analyzing quantum cryptography, we present qRHL as a replacement, suitable for the security analysis of post-quantum cryptography and quantum protocols. The design of qRHL poses some challenges unique to the quantum setting, e.g., the definition of equality on quantum registers. Finally, we implemented a tool for verifying proofs in qRHL and developed several example security proofs in it.}
+  abstract = {We present a logic for reasoning about pairs of interactive quantum programs -- quantum relational Hoare logic (qRHL). This logic follows the spirit of probabilistic relational Hoare logic (Barthe et al. 2009) and allows us to formulate how the outputs of two quantum programs relate given the relationship of their inputs. Probabilistic RHL was used extensively for computer-verified security proofs of classical cryptographic protocols. Since pRHL is not suitable for analyzing quantum cryptography, we present qRHL as a replacement, suitable for the security analysis of post-quantum cryptography and quantum protocols. The design of qRHL poses some challenges unique to the quantum setting, e.g., the definition of equality on quantum registers. Finally, we implemented a tool for verifying proofs in qRHL and developed several example security proofs in it.},
+  keywords = {formal verification, Quantum cryptography, Hoare logics},
+  note = {POPL '19}
 }
 </pre>
 
