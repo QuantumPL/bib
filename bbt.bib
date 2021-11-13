@@ -16,6 +16,7 @@
   archiveprefix = {arXiv},
   eprint        = {quant-ph/0402130},
   abstract      = {We study quantum information and computation from a novel point of view. Our approach is based on recasting the standard axiomatic presentation of quantum mechanics, due to von Neumann, at a more abstract level, of compact closed categories with biproducts. We show how the essential structures found in key quantum information protocols such as teleportation, logic-gate teleportation, and entanglement-swapping can be captured at this abstract level. Moreover, from the combination of the -- apparently purely qualitative -- structures of compact closure and biproducts there emerge 'scalars' and a 'Born rule'. This abstract and structural point of view opens up new possibilities for describing and reasoning about quantum systems. It also shows the degrees of axiomatic freedom: we can show what requirements are placed on the (semi)ring of scalars C(I,I), where C is the category and I is the tensor unit, in order to perform various protocols such as teleportation. Our formalism captures both the information-flow aspect of the protocols (see quant-ph/0402014), and the branching due to quantum indeterminism. This contrasts with the standard accounts, in which the classical information flows are 'outside' the usual quantum-mechanical formalism.},
+  keywords      = {Protocols, Teleportation, Performance evaluation, Quantum computing, Quantum entanglement, Quantum mechanics, Laboratories, Communication channels, Force measurement, Measurement standards},
   note          = {Also see updated version: \cite{Abramsky2008}}
 }
 
@@ -50,6 +51,7 @@
   archiveprefix = {arXiv},
   eprint        = {quant-ph/0409065},
   abstract      = {We introduce the language QML, a functional language for quantum computations on finite types. Its design is guided by its categorical semantics: QML programs are interpreted by morphisms in the category FQC of finite quantum computations, which provides a constructive semantics of irreversible quantum computations realisable as quantum gates. QML integrates reversible and irreversible quantum computations in one language, using first order strict linear logic to make weakenings explicit. Strict programs are free from decoherence and hence preserve superpositions and entanglement - which is essential for quantum parallelism.},
+  keywords      = {Computer languages, Quantum computing, Quantum entanglement, Circuits, Parallel processing, Computer science, Logic programming, Parallel programming, Functional programming, Program processors},
   note          = {Introduces QML, see also \cite{Grattage2011}}
 }
 
@@ -206,7 +208,8 @@
   pages      = {286--300},
   doi        = {10.1145/3385412.3386007},
   url        = {https://files.sri.inf.ethz.ch/website/papers/pldi20-silq.pdf},
-  abstract   = {Existing quantum languages force the programmer to work at a low level of abstraction leading to unintuitive and cluttered code. A fundamental reason is that dropping temporary values from the program state requires explicitly applying quantum operations that safely uncompute these values. We present Silq, the first quantum language that addresses this challenge by supporting safe, automatic uncomputation. This enables an intuitive semantics that implicitly drops temporary values, as in classical computation. To ensure physicality of Silq's semantics, its type system leverages novel annotations to reject unphysical programs. Our experimental evaluation demonstrates that Silq programs are not only easier to read and write, but also significantly shorter than equivalent programs in other quantum languages (on average -46\% for Q\#, -38\% for Quipper), while using only half the number of quantum primitives.}
+  abstract   = {Existing quantum languages force the programmer to work at a low level of abstraction leading to unintuitive and cluttered code. A fundamental reason is that dropping temporary values from the program state requires explicitly applying quantum operations that safely uncompute these values. We present Silq, the first quantum language that addresses this challenge by supporting safe, automatic uncomputation. This enables an intuitive semantics that implicitly drops temporary values, as in classical computation. To ensure physicality of Silq's semantics, its type system leverages novel annotations to reject unphysical programs. Our experimental evaluation demonstrates that Silq programs are not only easier to read and write, but also significantly shorter than equivalent programs in other quantum languages (on average -46\% for Q\#, -38\% for Quipper), while using only half the number of quantum primitives.},
+  keywords   = {Quantum Language, Semantics, Uncomputation}
 }
 
 @inproceedings{Boender2015,
@@ -404,7 +407,8 @@
   pages    = {8},
   doi      = {10.1145/1219092.1219096},
   url      = {https://www.cs.mcgill.ca/~prakash/Pubs/jacm.pdf},
-  abstract = {Measurement-based quantum computation has emerged from the physics community as a new approach to quantum computation where the notion of measurement is the main driving force of computation. This is in contrast with the more traditional circuit model that is based on unitary operations. Among measurement-based quantum computation methods, the recently introduced one-way quantum computer [Raussendorf and Briegel 2001] stands out as fundamental. We develop a rigorous mathematical model underlying the one-way quantum computer and present a concrete syntax and operational semantics for programs, which we call patterns, and an algebra of these patterns derived from a denotational semantics. More importantly, we present a calculus for reasoning locally and compositionally about these patterns. We present a rewrite theory and prove a general standardization theorem which allows all patterns to be put in a semantically equivalent standard form. Standardization has far-reaching consequences: a new physical architecture based on performing all the entanglement in the beginning, parallelization by exposing the dependency structure of measurements and expressiveness theorems. Furthermore we formalize several other measurement-based models, for example, Teleportation, Phase and Pauli models and present compositional embeddings of them into and from the one-way model. This allows us to transfer all the theory we develop for the one-way model to these models. This shows that the framework we have developed has a general impact on measurement-based computation and is not just particular to the one-way quantum computer.}
+  abstract = {Measurement-based quantum computation has emerged from the physics community as a new approach to quantum computation where the notion of measurement is the main driving force of computation. This is in contrast with the more traditional circuit model that is based on unitary operations. Among measurement-based quantum computation methods, the recently introduced one-way quantum computer [Raussendorf and Briegel 2001] stands out as fundamental. We develop a rigorous mathematical model underlying the one-way quantum computer and present a concrete syntax and operational semantics for programs, which we call patterns, and an algebra of these patterns derived from a denotational semantics. More importantly, we present a calculus for reasoning locally and compositionally about these patterns. We present a rewrite theory and prove a general standardization theorem which allows all patterns to be put in a semantically equivalent standard form. Standardization has far-reaching consequences: a new physical architecture based on performing all the entanglement in the beginning, parallelization by exposing the dependency structure of measurements and expressiveness theorems. Furthermore we formalize several other measurement-based models, for example, Teleportation, Phase and Pauli models and present compositional embeddings of them into and from the one-way model. This allows us to transfer all the theory we develop for the one-way model to these models. This shows that the framework we have developed has a general impact on measurement-based computation and is not just particular to the one-way quantum computer.},
+  keywords = {normalization, measurement-based quantum computing, quantum programming languages, Models for quantum computing, term rewriting, teleportation-based quantum computing}
 }
 
 @incollection{Danos2009,
@@ -461,7 +465,8 @@
   doi           = {10.1145/3373718.3394765},
   archiveprefix = {arXiv},
   eprint        = {2004.13472},
-  abstract      = {Modern quantum programming languages integrate quantum resources and classical control. They must, on the one hand, be linearly typed to reflect the no-cloning property of quantum resources. On the other hand, high-level and practical languages should also support quantum circuits as first-class citizens, as well as families of circuits that are indexed by some classical parameters. Quantum programming languages thus need linear dependent type theory. This paper defines a general semantic structure for such a type theory via certain fibrations of monoidal categories. The categorical model of the quantum circuit description language Proto-Quipper-M in [28] constitutes an example of such a fibration, which means that the language can readily be integrated with dependent types. We then devise both a general linear dependent type system and a dependently typed extension of Proto-Quipper-M, and provide them with operational semantics as well as a prototype implementation.}
+  abstract      = {Modern quantum programming languages integrate quantum resources and classical control. They must, on the one hand, be linearly typed to reflect the no-cloning property of quantum resources. On the other hand, high-level and practical languages should also support quantum circuits as first-class citizens, as well as families of circuits that are indexed by some classical parameters. Quantum programming languages thus need linear dependent type theory. This paper defines a general semantic structure for such a type theory via certain fibrations of monoidal categories. The categorical model of the quantum circuit description language Proto-Quipper-M in [28] constitutes an example of such a fibration, which means that the language can readily be integrated with dependent types. We then devise both a general linear dependent type system and a dependently typed extension of Proto-Quipper-M, and provide them with operational semantics as well as a prototype implementation.},
+  keywords      = {fibration, categorical model, Quantum programming languages, linear dependent types}
 }
 
 @inproceedings{Fu2020a,
@@ -496,7 +501,8 @@
   archiveprefix = {arXiv},
   eprint        = {quant-ph/0409052},
   url           = {http://www.dcs.gla.ac.uk/~simon/publications/CQP-POPL.pdf},
-  abstract      = {We define a language CQP (Communicating Quantum Processes) for modelling systems which combine quantum and classical communication and computation. CQP combines the communication primitives of the pi-calculus with primitives for measurement and transformation of quantum state; in particular, quantum bits (qubits) can be transmitted from process to process along communication channels. CQP has a static type system which classifies channels, distinguishes between quantum and classical data, and controls the use of quantum state. We formally define the syntax, operational semantics and type system of CQP, prove that the semantics preserves typing, and prove that typing guarantees that each qubit is owned by a unique process within a system. We illustrate CQP by defining models of several quantum communication systems, and outline our plans for using CQP as the foundation for formal analysis and verification of combined quantum and classical systems.}
+  abstract      = {We define a language CQP (Communicating Quantum Processes) for modelling systems which combine quantum and classical communication and computation. CQP combines the communication primitives of the pi-calculus with primitives for measurement and transformation of quantum state; in particular, quantum bits (qubits) can be transmitted from process to process along communication channels. CQP has a static type system which classifies channels, distinguishes between quantum and classical data, and controls the use of quantum state. We formally define the syntax, operational semantics and type system of CQP, prove that the semantics preserves typing, and prove that typing guarantees that each qubit is owned by a unique process within a system. We illustrate CQP by defining models of several quantum communication systems, and outline our plans for using CQP as the foundation for formal analysis and verification of combined quantum and classical systems.},
+  keywords      = {quantum computing, semantics, verification, types, quantum communication, formal language}
 }
 
 @article{Gay2006,
@@ -583,7 +589,8 @@
   doi           = {10.1145/2491956.2462177},
   archiveprefix = {arXiv},
   eprint        = {1304.3390},
-  abstract      = {The field of quantum algorithms is vibrant. Still, there is currently a lack of programming languages for describing quantum computation on a practical scale, i.e., not just at the level of toy problems. We address this issue by introducing Quipper, a scalable, expressive, functional, higher-order quantum programming language. Quipper has been used to program a diverse set of non-trivial quantum algorithms, and can generate quantum gate representations using trillions of gates. It is geared towards a model of computation that uses a classical computer to control a quantum device, but is not dependent on any particular model of quantum hardware. Quipper has proven effective and easy to use, and opens the door towards using formal methods to analyze quantum algorithms.}
+  abstract      = {The field of quantum algorithms is vibrant. Still, there is currently a lack of programming languages for describing quantum computation on a practical scale, i.e., not just at the level of toy problems. We address this issue by introducing Quipper, a scalable, expressive, functional, higher-order quantum programming language. Quipper has been used to program a diverse set of non-trivial quantum algorithms, and can generate quantum gate representations using trillions of gates. It is geared towards a model of computation that uses a classical computer to control a quantum device, but is not dependent on any particular model of quantum hardware. Quipper has proven effective and easy to use, and opens the door towards using formal methods to analyze quantum algorithms.},
+  keywords      = {quipper, quantum programming languages}
 }
 
 @inproceedings{Green2013a,
@@ -891,7 +898,8 @@
   doi           = {10.1145/3209108.3209196},
   archiveprefix = {arXiv},
   eprint        = {1804.09822},
-  abstract      = {Linear/non-linear (LNL) models, as described by Benton, soundly model a LNL term calculus and LNL logic closely related to intuitionistic linear logic. Every such model induces a canonical enrichment that we show soundly models a LNL lambda calculus for string diagrams, introduced by Rios and Selinger (with primary application in quantum computing). Our abstract treatment of this language leads to simpler concrete models compared to those presented so far. We also extend the language with general recursion and prove soundness. Finally, we present an adequacy result for the diagram-free fragment of the language which corresponds to a modified version of Benton and Wadler's adjoint calculus with recursion.}
+  abstract      = {Linear/non-linear (LNL) models, as described by Benton, soundly model a LNL term calculus and LNL logic closely related to intuitionistic linear logic. Every such model induces a canonical enrichment that we show soundly models a LNL lambda calculus for string diagrams, introduced by Rios and Selinger (with primary application in quantum computing). Our abstract treatment of this language leads to simpler concrete models compared to those presented so far. We also extend the language with general recursion and prove soundness. Finally, we present an adequacy result for the diagram-free fragment of the language which corresponds to a modified version of Benton and Wadler's adjoint calculus with recursion.},
+  keywords      = {categorical semantics, string diagrams, enriched category theory, programming languages, quantum computing}
 }
 
 @inproceedings{Liu2019,
@@ -1051,7 +1059,8 @@
   url       = {https://jpaykin.github.io/papers/prz_qwire_2017.pdf},
   abstract  = {This paper introduces QWIRE ("choir"), a language for defining quantum circuits and an interface for manipulating them inside of an arbitrary classical host language. QWIRE is minimal---it contains only a few primitives---and sound with respect to the physical properties entailed by quantum mechanics. At the same time, QWIRE is expressive and highly modular due to its relationship with the host language, mirroring the QRAM model of computation that places a quantum computer (controlled by circuits) alongside a classical computer (controlled by the host language).
 
-               We present QWIRE along with its type system and operational semantics, which we prove is safe and strongly normalizing whenever the host language is. We give circuits a denotational semantics in terms of density matrices. Throughout, we investigate examples that demonstrate the expressive power of QWIRE, including extensions to the host language that (1) expose a general analysis framework for circuits, and (2) provide dependent types.}
+               We present QWIRE along with its type system and operational semantics, which we prove is safe and strongly normalizing whenever the host language is. We give circuits a denotational semantics in terms of density matrices. Throughout, we investigate examples that demonstrate the expressive power of QWIRE, including extensions to the host language that (1) expose a general analysis framework for circuits, and (2) provide dependent types.},
+  keywords  = {linear types, denotational semantics, quantum circuits, quantum programming languages}
 }
 
 @phdthesis{Paykin2018,
@@ -1489,6 +1498,7 @@
   archiveprefix = {arXiv},
   eprint        = {1803.00652},
   abstract      = {Quantum computing exploits quantum phenomena such as superposition and entanglement to realize a form of parallelism that is not available to traditional computing. It offers the potential of significant computational speed-ups in quantum chemistry, materials science, cryptography, and machine learning. The dominant approach to programming quantum computers is to provide an existing high-level language with libraries that allow for the expression of quantum programs. This approach can permit computations that are meaningless in a quantum context; prohibits succint expression of interaction between classical and quantum logic; and does not provide important constructs that are required for quantum programming. We present Q\#, a quantum-focused domain-specific language explicitly designed to correctly, clearly and completely express quantum algorithms. Q\# provides a type system; a tightly constrained environment to safely interleave classical and quantum computations; specialized syntax; symbolic code manipulation to automatically generate correct transformations of quantum operations; and powerful functional constructs which aid composition.},
+  keywords      = {domain specific language, functional programming, quantum computing},
   note          = {See also Ch. 8 of \cite{Heim2020}}
 }
 
@@ -1519,7 +1529,8 @@
   doi           = {10.1109/LICS.2019.8785779},
   archiveprefix = {arXiv},
   eprint        = {1902.00325},
-  abstract      = {Quantum Hoare logic allows us to reason about quantum programs. We present an extension of quantum Hoare logic that introduces "ghost variables" to extend the expressive power of pre-/postconditions. Ghost variables are variables that do not actually occur in the program and are allowed to have arbitrary quantum states (in a sense, they are existentially quantified), and be entangled with program variables. Ghost variables allow us to express properties such as the distribution of a program variable or the fact that a variable has classical content. And as a case study, we show how quantum Hoare logic with ghost variables can be used to prove the security of the quantum one-time pad.}
+  abstract      = {Quantum Hoare logic allows us to reason about quantum programs. We present an extension of quantum Hoare logic that introduces "ghost variables" to extend the expressive power of pre-/postconditions. Ghost variables are variables that do not actually occur in the program and are allowed to have arbitrary quantum states (in a sense, they are existentially quantified), and be entangled with program variables. Ghost variables allow us to express properties such as the distribution of a program variable or the fact that a variable has classical content. And as a case study, we show how quantum Hoare logic with ghost variables can be used to prove the security of the quantum one-time pad.},
+  keywords      = {Quantum entanglement, Quantum computing, Probabilistic logic, Computers, Cryptography, Semantics}
 }
 
 @article{Valiron2015,
@@ -1532,7 +1543,8 @@
   number   = {8},
   pages    = {52--61},
   doi      = {10.1145/2699415},
-  abstract = {The Quipper language offers a unified general-purpose programming framework for quantum computation.}
+  abstract = {The Quipper language offers a unified general-purpose programming framework for quantum computation.},
+  keywords = {quipper}
 }
 
 @misc{Vandewetering2020,
@@ -1626,6 +1638,7 @@
   pages    = {19:1--19:49},
   doi      = {10.1145/2049706.2049708},
   abstract = {Floyd--Hoare logic is a foundation of axiomatic semantics of classical programs, and it provides effective proof techniques for reasoning about correctness of classical programs. To offer similar techniques for quantum program verification and to build a logical foundation of programming methodology for quantum computers, we develop a full-fledged Floyd--Hoare logic for both partial and total correctness of quantum programs. It is proved that this logic is (relatively) complete by exploiting the power of weakest preconditions and weakest liberal preconditions for quantum programs.},
+  keywords = {Quantum computation, programming language, axiomatic semantics, Floyd--Hoare logic, completeness},
   note     = {An early version is \cite{Ying2009a}}
 }
 
@@ -1763,7 +1776,8 @@
   pages     = {1149--1162},
   doi       = {10.1145/3314221.3314584},
   url       = {https://opus.lib.uts.edu.au/bitstream/10453/140615/2/3314221.3314584.pdf},
-  abstract  = {We derive a variant of quantum Hoare logic (QHL), called applied quantum Hoare logic (aQHL for short), by: 1. restricting QHL to a special class of preconditions and postconditions, namely projections, which can significantly simplify verification of quantum programs and are much more convenient when used in debugging and testing; and 2. adding several rules for reasoning about robustness of quantum programs, i.e. error bounds of outputs. The effectiveness of aQHL is shown by its applications to verify two sophisticated quantum algorithms: HHL (Harrow-Hassidim-Lloyd) for solving systems of linear equations and qPCA (quantum Principal Component Analysis).}
+  abstract  = {We derive a variant of quantum Hoare logic (QHL), called applied quantum Hoare logic (aQHL for short), by: 1. restricting QHL to a special class of preconditions and postconditions, namely projections, which can significantly simplify verification of quantum programs and are much more convenient when used in debugging and testing; and 2. adding several rules for reasoning about robustness of quantum programs, i.e. error bounds of outputs. The effectiveness of aQHL is shown by its applications to verify two sophisticated quantum algorithms: HHL (Harrow-Hassidim-Lloyd) for solving systems of linear equations and qPCA (quantum Principal Component Analysis).},
+  keywords  = {Quantum computation, Hoare logic, robustness, projections, programming languages}
 }
 
 @inproceedings{Zhou2021,
