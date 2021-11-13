@@ -34,6 +34,9 @@ Samson Abramsky and Bob Coecke.
 <blockquote>
 We study quantum information and computation from a novel point of view. Our approach is based on recasting the standard axiomatic presentation of quantum mechanics, due to von Neumann, at a more abstract level, of compact closed categories with biproducts. We show how the essential structures found in key quantum information protocols such as teleportation, logic-gate teleportation, and entanglement-swapping can be captured at this abstract level. Moreover, from the combination of the &#x2013; apparently purely qualitative &#x2013; structures of compact closure and biproducts there emerge 'scalars' and a 'Born rule'. This abstract and structural point of view opens up new possibilities for describing and reasoning about quantum systems. It also shows the degrees of axiomatic freedom: we can show what requirements are placed on the (semi)ring of scalars C(I,I), where C is the category and I is the tensor unit, in order to perform various protocols such as teleportation. Our formalism captures both the information-flow aspect of the protocols (see quant-ph/0402014), and the branching due to quantum indeterminism. This contrasts with the standard accounts, in which the classical information flows are 'outside' the usual quantum-mechanical formalism.
 </blockquote>
+<blockquote>
+Keywords: protocols, teleportation, performance evaluation, quantum computing, quantum entanglement, quantum mechanics, laboratories, communication channels, force measurement, measurement standards
+</blockquote>
 
 </td>
 </tr>
@@ -79,6 +82,9 @@ Thorsten Altenkirch and Jonathan Grattage.
 <blockquote>
 We introduce the language QML, a functional language for quantum computations on finite types. Its design is guided by its categorical semantics: QML programs are interpreted by morphisms in the category FQC of finite quantum computations, which provides a constructive semantics of irreversible quantum computations realisable as quantum gates. QML integrates reversible and irreversible quantum computations in one language, using first order strict linear logic to make weakenings explicit. Strict programs are free from decoherence and hence preserve superpositions and entanglement - which is essential for quantum parallelism.
 </blockquote>
+<blockquote>
+Keywords: computer languages, quantum computing, quantum entanglement, circuits, parallel processing, computer science, logic programming, parallel programming, functional programming, program processors
+</blockquote>
 
 </td>
 </tr>
@@ -119,7 +125,7 @@ Matthew Amy.
 The design and compilation of correct, efficient quantum circuits is integral to the future operation of quantum computers. This thesis makes contributions to the problems of optimizing and verifying quantum circuits, with an emphasis on the development of formal models for such purposes. We also present software implementations of these methods, which together form a full stack of tools for the design of optimized, formally verified quantum oracles. On the optimization side, we study methods for the optimization of Rz and CNOT gates in Clifford+Rz circuits. We develop a general, efficient optimization algorithm called phase folding, which reduces the number of Rz gates without increasing any metrics by computing its phase polynomial. This algorithm can further be combined with synthesis techniques for CNOT-dihedral operators to optimize circuits with respect to particular costs. We then study the optimal synthesis problem for CNOT-dihedral operators from the perspectives of Rz and CNOT gate optimization. In the case of Rz gate optimization, we show that the optimal synthesis problem is polynomial-time equivalent to minimum-distance decoding in certain Reed-Muller codes. For the CNOT optimization problem, we show that the optimal synthesis problem is at least as hard as a combinatorial problem related to Gray codes. In both cases, we develop heuristics for the optimal synthesis problem, which together with phase folding reduces T counts by 42% and CNOT counts by 22% across a suite of real-world benchmarks. From the perspective of formal verification, we make two contributions. The first is the development of a formal model of quantum circuits with ancillary bits based on the Feynman path integral, along with a concrete verification algorithm. The path integral model, with some syntactic sugar, further doubles as a natural specification language for quantum computations. Our experiments show some practical circuits with up to hundreds of qubits can be efficiently verified. Our second contribution is a formally verified, optimizing compiler for reversible circuits. The compiler compiles a classical, irreversible language to reversible circuits, with a formal, machine-checked proof of correctness written in the proof assistant F*. The compiler is structured as a partial evaluator, allowing verification to be carried out significantly faster than previous results.
 </blockquote>
 <blockquote>
-Keywords: Quantum computing, Quantum circuits, Compiler optimization, Formal verification
+Keywords: quantum computing, quantum circuits, compiler optimization, formal verification
 </blockquote>
 
 </td>
@@ -144,7 +150,7 @@ Matthew Amy.
 One of the most fundamental aspects of quantum circuit design is the concept of families of circuits parametrized by an instance size. As in classical programming, metaprogramming allows the programmer to write entire families of circuits simultaneously, an ability which is of particular importance in the context of quantum computing as algorithms frequently use arithmetic over non-standard word lengths. In this work, we introduce metaQASM, a typed extension of the openQASM language supporting the metaprogramming of circuit families. Our language and type system, built around a lightweight implementation of sized types, supports subtyping over register sizes and is moreover type-safe. In particular, we prove that our system is strongly normalizing, and as such any well-typed metaQASM program can be statically unrolled into a finite circuit.
 </blockquote>
 <blockquote>
-Keywords: quantum computing, OpenQASM, QASM
+Keywords: quantum computing, openqasm, qasm
 </blockquote>
 
 </td>
@@ -298,6 +304,9 @@ Benjamin Bichsel, Maximilian Baader, Timon Gehr, and Martin Vechev.
 <blockquote>
 Existing quantum languages force the programmer to work at a low level of abstraction leading to unintuitive and cluttered code. A fundamental reason is that dropping temporary values from the program state requires explicitly applying quantum operations that safely uncompute these values. We present Silq, the first quantum language that addresses this challenge by supporting safe, automatic uncomputation. This enables an intuitive semantics that implicitly drops temporary values, as in classical computation. To ensure physicality of Silq's semantics, its type system leverages novel annotations to reject unphysical programs. Our experimental evaluation demonstrates that Silq programs are not only easier to read and write, but also significantly shorter than equivalent programs in other quantum languages (on average -46% for Q#, -38% for Quipper), while using only half the number of quantum primitives.
 </blockquote>
+<blockquote>
+Keywords: quantum language, semantics, uncomputation
+</blockquote>
 
 </td>
 </tr>
@@ -340,7 +349,7 @@ Anthony Bordg, Hanna Lachnitt, and Yijun He.
 In this article we present an ongoing effort to formalise quantum algorithms and results in quantum information theory using the proof assistant Isabelle/HOL. Formal methods being critical for the safety and security of algorithms and protocols, we foresee their widespread use for quantum computing in the future. We have developed a large library for quantum computing in Isabelle based on a matrix representation for quantum circuits, successfully formalising the no-cloning theorem, quantum teleportation, Deutsch's algorithm, the Deutsch&#x2013;Jozsa algorithm and the quantum Prisoner's Dilemma. We discuss the design choices made and report on an outcome of our work in the field of quantum game theory.
 </blockquote>
 <blockquote>
-Keywords: Isabelle/HOL, Certification, Quantum computing, No-cloning, Quantum teleportation, Deutsch's algorithm, Deutsch&#x2013;Jozsa algorithm, Quantum prisoner's dilemma
+Keywords: isabelle/hol, certification, quantum computing, no-cloning, quantum teleportation, deutsch's algorithm, deutsch&#x2013;jozsa algorithm, quantum prisoner's dilemma
 </blockquote>
 
 </td>
@@ -385,7 +394,7 @@ Kostia Chardonnet, Beno&icirc;t Valiron, and Renaud Vilmart.
 ZX-Calculus is a versatile graphical language for quantum computation equipped with an equational theory. Getting inspiration from Geometry of Interaction, in this paper we propose a token-machine-based asynchronous model of both pure ZX-Calculus and its extension to mixed processes. We also show how to connect this new semantics to the usual standard interpretation of ZX-diagrams. This model allows us to have a new look at what ZX-diagrams compute, and give a more local, operational view of the semantics of ZX-diagrams.
 </blockquote>
 <blockquote>
-Keywords: Quantum Computation, Linear Logic, ZX-Calculus, Geometry of Interaction
+Keywords: quantum computation, linear logic, zx-calculus, geometry of interaction
 </blockquote>
 
 </td>
@@ -534,7 +543,7 @@ Andrew&nbsp;W. Cross, Lev&nbsp;S. Bishop, John&nbsp;A. Smolin, and Jay&nbsp;M. G
 This document describes a quantum assembly language (QASM) called OpenQASM that is used to implement experiments with low depth quantum circuits. OpenQASM represents universal physical circuits over the CNOT plus SU(2) basis with straight-line code that includes measurement, reset, fast feedback, and gate subroutines. The simple text language can be written by hand or by higher level tools and may be executed on the IBM Q Experience.
 </blockquote>
 <blockquote>
-Keywords: QASM, Quantum Assembly Language, OpenQASM, quantum computing, quantum information
+Keywords: qasm, quantum assembly language, openqasm, quantum computing, quantum information
 </blockquote>
 
 </td>
@@ -559,7 +568,7 @@ Andrew&nbsp;W. Cross, Ali Javadi-Abhari, Thomas Alexander, Niel de&nbsp;Beaudrap
 Quantum assembly languages are machine-independent languages that traditionally describe quantum computation in the circuit model. Open quantum assembly language (OpenQASM 2) was proposed as an imperative programming language for quantum circuits based on earlier QASM dialects. In principle, any quantum computation could be described using OpenQASM 2, but there is a need to describe a broader set of quantum circuits beyond the language of qubits and gates. By examining interactive use cases, we recognize two different timescales of quantum-classical interactions: real-time classical computations that must be performed within the coherence times of the qubits, and near-time computations with less stringent timing. Since the near-time domain is adequately described by existing programming frameworks, we choose in OpenQASM 3 to focus on the real-time domain, which must be more tightly coupled to the execution of quantum operations. Motivated by the need for real-time classical computation, we add support for arbitrary control flow as well as calling external classical functions. In addition, we recognize the need to describe circuits at multiple levels of specificity, and therefore we extend the language to include timing, pulse control, and gate modifiers. These new language features create a multi-level intermediate representation for circuit development and optimization, as well as control sequence implementation for calibration, characterization, and error mitigation.
 </blockquote>
 <blockquote>
-Keywords: QASM, Quantum Assembly Language, OpenQASM, quantum computing, quantum information
+Keywords: qasm, quantum assembly language, openqasm, quantum computing, quantum information
 </blockquote>
 
 </td>
@@ -584,7 +593,7 @@ Ugo Dal Lago, Claudia Faggian, Beno&icirc;t Valiron, and Akira Yoshimizu.
 We introduce a Geometry of Interaction model for higher-order quantum computation, and prove its adequacy for a fully fledged quantum programming language in which entanglement, duplication, and recursion are all available. This model is an instance of a new framework which captures not only quantum but also classical and probabilistic computation. Its main feature is the ability to model commutative effects in a parallel setting. Our model comes with a multi-token machine, a proof net system, and a -style language. Being based on a multi-token machine equipped with a memory, it has a concrete nature which makes it well suited for building low-level operational descriptions of higher-order languages.
 </blockquote>
 <blockquote>
-Keywords: memory structure, Geometry of Interaction, quantum computation, lambda calculus, probabilistic computation
+Keywords: memory structure, geometry of interaction, quantum computation, lambda calculus, probabilistic computation
 </blockquote>
 
 </td>
@@ -604,6 +613,9 @@ Vincent Danos, Elham Kashefi, and Prakash Panangaden.
 <a href="https://www.cs.mcgill.ca/~prakash/Pubs/jacm.pdf">.pdf</a>&nbsp;]
 <blockquote>
 Measurement-based quantum computation has emerged from the physics community as a new approach to quantum computation where the notion of measurement is the main driving force of computation. This is in contrast with the more traditional circuit model that is based on unitary operations. Among measurement-based quantum computation methods, the recently introduced one-way quantum computer [Raussendorf and Briegel 2001] stands out as fundamental. We develop a rigorous mathematical model underlying the one-way quantum computer and present a concrete syntax and operational semantics for programs, which we call patterns, and an algebra of these patterns derived from a denotational semantics. More importantly, we present a calculus for reasoning locally and compositionally about these patterns. We present a rewrite theory and prove a general standardization theorem which allows all patterns to be put in a semantically equivalent standard form. Standardization has far-reaching consequences: a new physical architecture based on performing all the entanglement in the beginning, parallelization by exposing the dependency structure of measurements and expressiveness theorems. Furthermore we formalize several other measurement-based models, for example, Teleportation, Phase and Pauli models and present compositional embeddings of them into and from the one-way model. This allows us to transfer all the theory we develop for the one-way model to these models. This shows that the framework we have developed has a general impact on measurement-based computation and is not just particular to the one-way quantum computer.
+</blockquote>
+<blockquote>
+Keywords: normalization, measurement-based quantum computing, quantum programming languages, models for quantum computing, term rewriting, teleportation-based quantum computing
 </blockquote>
 
 </td>
@@ -706,6 +718,9 @@ Peng Fu, Kohei Kishida, and Peter Selinger.
 <blockquote>
 Modern quantum programming languages integrate quantum resources and classical control. They must, on the one hand, be linearly typed to reflect the no-cloning property of quantum resources. On the other hand, high-level and practical languages should also support quantum circuits as first-class citizens, as well as families of circuits that are indexed by some classical parameters. Quantum programming languages thus need linear dependent type theory. This paper defines a general semantic structure for such a type theory via certain fibrations of monoidal categories. The categorical model of the quantum circuit description language Proto-Quipper-M in [28] constitutes an example of such a fibration, which means that the language can readily be integrated with dependent types. We then devise both a general linear dependent type system and a dependently typed extension of Proto-Quipper-M, and provide them with operational semantics as well as a prototype implementation.
 </blockquote>
+<blockquote>
+Keywords: fibration, categorical model, quantum programming languages, linear dependent types
+</blockquote>
 
 </td>
 </tr>
@@ -765,6 +780,9 @@ Simon&nbsp;J. Gay and Rajagopal Nagarajan.
 <a href="http://www.dcs.gla.ac.uk/~simon/publications/CQP-POPL.pdf">.pdf</a>&nbsp;]
 <blockquote>
 We define a language CQP (Communicating Quantum Processes) for modelling systems which combine quantum and classical communication and computation. CQP combines the communication primitives of the pi-calculus with primitives for measurement and transformation of quantum state; in particular, quantum bits (qubits) can be transmitted from process to process along communication channels. CQP has a static type system which classifies channels, distinguishes between quantum and classical data, and controls the use of quantum state. We formally define the syntax, operational semantics and type system of CQP, prove that the semantics preserves typing, and prove that typing guarantees that each qubit is owned by a unique process within a system. We illustrate CQP by defining models of several quantum communication systems, and outline our plans for using CQP as the foundation for formal analysis and verification of combined quantum and classical systems.
+</blockquote>
+<blockquote>
+Keywords: quantum computing, semantics, verification, types, quantum communication, formal language
 </blockquote>
 
 </td>
@@ -855,7 +873,7 @@ Alexander&nbsp;S. Green, Peter&nbsp;LeFanu Lumsdaine, Neil&nbsp;J. Ross, Peter S
 Quipper is a recently developed programming language for expressing quantum computations. This paper gives a brief tutorial introduction to the language, through a demonstration of how to make use of some of its key features. We illustrate many of Quipper's language features by developing a few well known examples of Quantum computation, including quantum teleportation, the quantum Fourier transform, and a quantum circuit for addition.
 </blockquote>
 <blockquote>
-Keywords: Quantum Computation, Programming Languages, Quipper 
+Keywords: quantum computation, programming languages, quipper
 </blockquote>
 
 </td>
@@ -880,6 +898,9 @@ Alexander&nbsp;S. Green, Peter&nbsp;LeFanu Lumsdaine, Neil&nbsp;J. Ross, Peter S
 <blockquote>
 The field of quantum algorithms is vibrant. Still, there is currently a lack of programming languages for describing quantum computation on a practical scale, i.e., not just at the level of toy problems. We address this issue by introducing Quipper, a scalable, expressive, functional, higher-order quantum programming language. Quipper has been used to program a diverse set of non-trivial quantum algorithms, and can generate quantum gate representations using trillions of gates. It is geared towards a model of computation that uses a classical computer to control a quantum device, but is not dependent on any particular model of quantum hardware. Quipper has proven effective and easy to use, and opens the door towards using formal methods to analyze quantum algorithms.
 </blockquote>
+<blockquote>
+Keywords: quipper, quantum programming languages
+</blockquote>
 
 </td>
 </tr>
@@ -903,7 +924,7 @@ Ichiro Hasuo and Naohiko Hoshino.
 While much of the current study on quantum computation employs low-level formalisms such as quantum circuits, several high-level languages/calculi have been recently proposed aiming at structured quantum programming. The current work contributes to the semantical study of such languages by providing interaction-based semantics of a functional quantum programming language; the latter is, much like Selinger and Valiron's, based on linear lambda calculus and equipped with features like the ! modality and recursion. The proposed denotational model is the first one that supports the full features of a quantum functional programming language; we prove adequacy of our semantics. The construction of our model is by a series of existing techniques taken from the semantics of classical computation as well as from process theory. The most notable among them is Girard's Geometry of Interaction (GoI), categorically formulated by Abramsky, Haghverdi and Scott. The mathematical genericity of these techniques—largely due to their categorical formulation—is exploited for our move from classical to quantum.
 </blockquote>
 <blockquote>
-Keywords: Higher-order computation, Quantum computation, Programming languages, Geometry of interaction, Denotational semantics, Categorical semantics
+Keywords: higher-order computation, quantum computation, programming languages, geometry of interaction, denotational semantics, categorical semantics
 </blockquote>
 
 </td>
@@ -968,7 +989,7 @@ Kesha Hietala, Robert Rand, Shih-Han Hung, Liyi Li, and Michael Hicks.
 As quantum computing progresses steadily from theory into practice, programmers will face a common problem: How can they be sure that their code does what they intend it to do? This paper presents encouraging results in the application of mechanized proof to the domain of quantum programming in the context of the SQIR development. It verifies the correctness of a range of a quantum algorithms including Grover's algorithm and quantum phase estimation, a key component of Shor's algorithm. In doing so, it aims to highlight both the successes and challenges of formal verification in the quantum context and motivate the theorem proving community to target quantum computing as an application domain.
 </blockquote>
 <blockquote>
-Keywords: Formal Verification, Quantum Computing, Proof Engineering
+Keywords: formal verification, quantum computing, proof engineering
 </blockquote>
 
 </td>
@@ -1011,7 +1032,7 @@ Kesha Hietala, Robert Rand, Shih-Han Hung, Xiaodi Wu, and Michael Hicks.
 We present VOQC, the first fully verified optimizer for quantum circuits, written using the Coq proof assistant. Quantum circuits are expressed as programs in a simple, low-level language called SQIR, a simple quantum intermediate representation, which is deeply embedded in Coq. Optimizations and other transformations are expressed as Coq functions, which are proved correct with respect to a semantics of SQIR programs. SQIR uses a semantics of matrices of complex numbers, which is the standard for quantum computation, but treats matrices symbolically in order to reason about programs that use an arbitrary number of quantum bits. SQIR's careful design and our provided automation make it possible to write and verify a broad range of optimizations in VOQC, including full-circuit transformations from cutting-edge optimizers.
 </blockquote>
 <blockquote>
-Keywords: Programming Languages, Formal Verification, Certified Compilation, Quantum Computing, Circuit Optimization
+Keywords: programming languages, formal verification, certified compilation, quantum computing, circuit optimization
 </blockquote>
 
 </td>
@@ -1127,7 +1148,7 @@ Xiaodong Jia, Andre Kornell, Bert Lindenhovius, Michael Mislove, and Vladimir
 We consider a programming language that can manipulate both classical and quantum information. Our language is type-safe and designed for variational quantum programming, which is a hybrid classical-quantum computational paradigm. The classical subsystem of the language is the Probabilistic FixPoint Calculus (PFPC), which is a lambda calculus with mixed-variance recursive types, term recursion and probabilistic choice. The quantum subsystem is a first-order linear type system that can manipulate quantum information. The two subsystems are related by mixed classical/quantum terms that specify how classical probabilistic effects are induced by quantum measurements, and conversely, how classical (probabilistic) programs can influence the quantum dynamics. We also describe a sound and computationally adequate denotational semantics for the language. Classical probabilistic effects are interpreted using a recently-described commutative probabilistic monad on DCPO. Quantum effects and resources are interpreted in a category of von Neumann algebras that we show is enriched over (continuous) domains. This strong sense of enrichment allows us to develop novel semantic methods that we use to interpret the relationship between the quantum and classical probabilistic effects. By doing so we provide the first denotational analysis that relates models of classical probabilistic programming to models of quantum programming.
 </blockquote>
 <blockquote>
-Keywords: Quantum Programming, Probabilistic Programming, Semantics
+Keywords: quantum programming, probabilistic programming, semantics
 </blockquote>
 
 </td>
@@ -1228,7 +1249,7 @@ Dongho Lee, Valentin Perrelle, Beno&icirc;t Valiron, and Zhaowei Xu.
 In this paper, we introduce dynamic lifting to a quantum circuit-description language, following the Proto-Quipper language approach. Dynamic lifting allows programs to transfer the result of measuring quantum data &#x2013; qubits &#x2013; into classical data &#x2013; booleans &#x2013; . We propose a type system and an operational semantics for the language and we state safety properties. Next, we introduce a concrete categorical semantics for the proposed language, basing our approach on a recent model from Rios&amp;Selinger for Proto-Quipper-M. Our approach is to construct on top of a concrete category of circuits with measurements a Kleisli category, capturing as a side effect the action of retrieving classical content out of a quantum memory. We then show a soundness result for this semantics.
 </blockquote>
 <blockquote>
-Keywords: Categorical semantics, Operational semantics, Quantum circuit description language
+Keywords: categorical semantics, operational semantics, quantum circuit description language
 </blockquote>
 
 </td>
@@ -1294,7 +1315,7 @@ Yangjia Li and Mingsheng Ying.
 We introduce the notion of linear ranking super-martingale (LRSM) for quantum programs (with nondeterministic choices, namely angelic and demonic choices). Several termination theorems are established showing that the existence of the LRSMs of a quantum program implies its termination. Thus, the termination problems of quantum programs is reduced to realisability and synthesis of LRSMs. We further show that the realisability and synthesis problem of LRSMs for quantum programs can be reduced to an SDP (Semi-Definite Programming) problem, which can be settled with the existing SDP solvers. The techniques developed in this paper are used to analyse the termination of several example quantum programs, including quantum random walks and quantum Bernoulli factory for random number generation. This work is essentially a generalisation of constraint-based approach to the corresponding problems for probabilistic programs developed in the recent literature by adding two novel ideas: (1) employing the fundamental Gleason's theorem in quantum mechanics to guide the choices of templates; and (2) a generalised Farkas' lemma in terms of observables (Hermitian operators) in quantum physics.
 </blockquote>
 <blockquote>
-Keywords: SDP (Semi-Definite Programming), quantum Bernoulli factory, quantum programming, quantum random walk, ranking function, super-martingale, termination
+Keywords: sdp (semi-definite programming), quantum bernoulli factory, quantum programming, quantum random walk, ranking function, super-martingale, termination
 </blockquote>
 
 </td>
@@ -1317,6 +1338,9 @@ Bert Lindenhovius, Michael Mislove, and Vladimir Zamdzhiev.
 <a href="http://arxiv.org/abs/1804.09822">arXiv</a>&nbsp;]
 <blockquote>
 Linear/non-linear (LNL) models, as described by Benton, soundly model a LNL term calculus and LNL logic closely related to intuitionistic linear logic. Every such model induces a canonical enrichment that we show soundly models a LNL lambda calculus for string diagrams, introduced by Rios and Selinger (with primary application in quantum computing). Our abstract treatment of this language leads to simpler concrete models compared to those presented so far. We also extend the language with general recursion and prove soundness. Finally, we present an adequacy result for the diagram-free fragment of the language which corresponds to a modified version of Benton and Wadler's adjoint calculus with recursion.
+</blockquote>
+<blockquote>
+Keywords: categorical semantics, string diagrams, enriched category theory, programming languages, quantum computing
 </blockquote>
 
 </td>
@@ -1567,6 +1591,9 @@ Jennifer Paykin, Robert Rand, and Steve Zdancewic.
 This paper introduces QWIRE ("choir"), a language for defining quantum circuits and an interface for manipulating them inside of an arbitrary classical host language. QWIRE is minimal&#x2014;it contains only a few primitives&#x2014;and sound with respect to the physical properties entailed by quantum mechanics. At the same time, QWIRE is expressive and highly modular due to its relationship with the host language, mirroring the QRAM model of computation that places a quantum computer (controlled by circuits) alongside a classical computer (controlled by the host language).<p>
                We present QWIRE along with its type system and operational semantics, which we prove is safe and strongly normalizing whenever the host language is. We give circuits a denotational semantics in terms of density matrices. Throughout, we investigate examples that demonstrate the expressive power of QWIRE, including extensions to the host language that (1) expose a general analysis framework for circuits, and (2) provide dependent types.
 </blockquote>
+<blockquote>
+Keywords: linear types, denotational semantics, quantum circuits, quantum programming languages
+</blockquote>
 
 </td>
 </tr>
@@ -1763,7 +1790,7 @@ Robert Rand, Aarthi Sundaram, Kartik Singhal, and Brad Lackey.
 The Heisenberg representation of quantum operators provides a powerful technique for reasoning about quantum circuits, albeit those restricted to the common (non-universal) Clifford set H, S and CNOT. The Gottesman-Knill theorem showed that we can use this representation to efficiently simulate Clifford circuits. We show that Gottesman's semantics for quantum programs can be treated as a type system, allowing us to efficiently characterize a common subset of quantum programs. We also show that it can be extended beyond the Clifford set to partially characterize a broad range of programs. We apply these types to reason about separable states and the superdense coding algorithm.
 </blockquote>
 <blockquote>
-Keywords: Quantum Computing, Type Systems, Gottesman Types
+Keywords: quantum computing, type systems, gottesman types
 </blockquote>
 
 </td>
@@ -1810,7 +1837,7 @@ Mathys Rennela and Sam Staton.
 We describe categorical models of a circuit-based (quantum) functional programming language. We show that enriched categories play a crucial role. Following earlier work on QWire by Paykin et al., we consider both a simple first-order linear language for circuits, and a more powerful host language, such that the circuit language is embedded inside the host language. Our categorical semantics for the host language is standard, and involves cartesian closed categories and monads. We interpret the circuit language not in an ordinary category, but in a category that is enriched in the host category. We show that this structure is also related to linear/non-linear models. As an extended example, we recall an earlier result that the category of W*-algebras is dcpo-enriched, and we use this model to extend the circuit language with some recursive types.
 </blockquote>
 <blockquote>
-Keywords: Programming Languages, Category Theory, Operator Algebras
+Keywords: programming languages, category theory, operator algebras
 </blockquote>
 
 </td>
@@ -1835,7 +1862,7 @@ This thesis contains contributions to the mathematical foundations of quantum pr
               In this thesis, we contribute to the solution of some of these issues. We introduce Proto-Quipper-M, a new quantum  programming language designed to serve as a testbed for the research and development of sound mathematical semantics and reasoning techniques for quantum programs. We first present Proto-Quipper-M as a formalization of a fragment of Quipper, a high-level functional programming language for describing families of quantum circuits. In particular, we define Proto-Quipper-M as a simply-typed lambda calculus with a special type for quantum circuits and a strong type system designed to enforce linearity on quantum data, and thus prevent violations of the no-cloning property of quantum information. We endow ProtoQuipper-M with computational meaning via a big-step operational semantics and prove that the language is type-safe by showing that it enjoys the type-preservation and error-freeness properties. We also give Proto-Quipper-M a denotational semantics in a suitable class of monoidal categories and show that these categories give rise to linear-non-linear models in the sense of Benton, and thus models of intuitionistic linear logic. Finally, we crystallize the connection between the syntax and the semantics of the language by proving the soundness theorem for Proto-Quipper-M.
 </blockquote>
 <blockquote>
-Keywords: Quantum programming language, Categorical model, Quantum circuit, Proto-Quipper-M, Category theory, Quantum computing
+Keywords: quantum programming language, categorical model, quantum circuit, proto-quipper-m, category theory, quantum computing
 </blockquote>
 
 </td>
@@ -1941,7 +1968,7 @@ Peter Selinger.
 This article is a brief and subjective survey of quantum programming language research.
 </blockquote>
 <blockquote>
-Keywords: Quantum Computation, Quantum Algorithm, Linear Logic, Denotational Semantics, Lambda Calculus
+Keywords: quantum computation, quantum algorithm, linear logic, denotational semantics, lambda calculus
 </blockquote>
 
 </td>
@@ -2025,7 +2052,7 @@ Kartik Singhal.
 As quantum computers become real, it is high time we come up with effective techniques that help programmers write correct quantum programs. Inspired by Hoare Type Theory in classical computing, we propose Quantum Hoare Type Theory (QHTT) in which precise specifications about the modification to the quantum state can be provided within the type of a computation. These specifications within a Hoare type are given in the form of Hoare-logic style pre- and postconditions following the propositions-as-types principle. The type-checking process verifies that the implementation conforms to the provided specification. QHTT has the potential to be a unified system for programming, specifying, and reasoning about quantum programs.
 </blockquote>
 <blockquote>
-Keywords: Formal Verification, Program Proof, Programming Languages, Quantum Computing, Quantum Computation, Type Systems, Type Theory, Pre- and Postconditions, Program Specifications
+Keywords: formal verification, program proof, programming languages, quantum computing, quantum computation, type systems, type theory, pre- and postconditions, program specifications
 </blockquote>
 
 </td>
@@ -2048,7 +2075,7 @@ Kartik Singhal, Sarah Marshall, Kesha Hietala, and Robert Rand.
 Q# is a high-level programming language from Microsoft for writing and running quantum programs. Like most industrial languages, it was designed without a formal specification, which can naturally lead to ambiguity in its interpretation. Further, currently, the Q# type system cannot statically prevent cloning of qubits. We aim to provide a formal specification and semantics for Q#, placing the language on a solid mathematical foundation, enabling further evolution of its design and type system (including enforcing no-cloning). This paper describes our current progress in designing λ-Q# (an idealized version of Q#), our solution to the qubit cloning problem in λ-Q#, and outlines the next steps.
 </blockquote>
 <blockquote>
-Keywords: Quantum Computing, Quantum Computation, Programming Languages, Formal Specification, Formal language definitions, Type Systems, Semantics and reasoning, Quantum Programming Languages, Language Design, Q#
+Keywords: quantum computing, quantum computation, programming languages, formal specification, formal language definitions, type systems, semantics and reasoning, quantum programming languages, language design, q#
 </blockquote>
 
 </td>
@@ -2070,7 +2097,7 @@ Kartik Singhal, Robert Rand, and Michael Hicks.
 We describe the ongoing development of a verified translator between OpenQASM (Open Quantum Assembly Language) and sqir, a Small Quantum Intermediate Representation used for circuit optimization. Verified translation from and to OpenQASM will allow verified optimization of circuits written in a variety of tools and executed on real quantum computers. This translator is a step toward a verified compilation stack for quantum computing.
 </blockquote>
 <blockquote>
-Keywords: Formal Verification, NISQ, Program Proof, Programming Languages, Semantic Preservation, OpenQASM, QASM, quantum computing
+Keywords: formal verification, nisq, program proof, programming languages, semantic preservation, openqasm, qasm, quantum computing
 </blockquote>
 
 </td>
@@ -2097,7 +2124,7 @@ Kartik Singhal and John Reppy.
 As quantum computers become real, it is high time we come up with effective techniques that help programmers write correct quantum programs. In classical computing, formal verification and sound static type systems prevent several classes of bugs from being introduced. There is a need for similar techniques in the quantum regime. Inspired by Hoare Type Theory in the classical paradigm, we propose Quantum Hoare Types by extending the Quantum IO Monad by indexing it with pre- and post-conditions that serve as program specifications. In this paper, we introduce Quantum Hoare Type Theory (QHTT), present its syntax and typing rules, and demonstrate its effectiveness with the help of examples. QHTT has the potential to be a unified system for programming, specifying, and reasoning about quantum programs. This is a work in progress.
 </blockquote>
 <blockquote>
-Keywords: Formal Verification, Program Proof, Programming Languages, Quantum Computing, Type Systems, Type Theory, Pre- and Postconditions, Program Specifications
+Keywords: formal verification, program proof, programming languages, quantum computing, type systems, type theory, pre- and postconditions, program specifications
 </blockquote>
 
 </td>
@@ -2209,6 +2236,9 @@ Krysta&nbsp;M. Svore, Alan Geller, Matthias Troyer, John Azariah, Christopher&nb
 <blockquote>
 Quantum computing exploits quantum phenomena such as superposition and entanglement to realize a form of parallelism that is not available to traditional computing. It offers the potential of significant computational speed-ups in quantum chemistry, materials science, cryptography, and machine learning. The dominant approach to programming quantum computers is to provide an existing high-level language with libraries that allow for the expression of quantum programs. This approach can permit computations that are meaningless in a quantum context; prohibits succint expression of interaction between classical and quantum logic; and does not provide important constructs that are required for quantum programming. We present Q#, a quantum-focused domain-specific language explicitly designed to correctly, clearly and completely express quantum algorithms. Q# provides a type system; a tightly constrained environment to safely interleave classical and quantum computations; specialized syntax; symbolic code manipulation to automatically generate correct transformations of quantum operations; and powerful functional constructs which aid composition.
 </blockquote>
+<blockquote>
+Keywords: domain specific language, functional programming, quantum computing
+</blockquote>
 
 </td>
 </tr>
@@ -2228,6 +2258,9 @@ Dominique Unruh.
 <a href="http://arxiv.org/abs/1902.00325">arXiv</a>&nbsp;]
 <blockquote>
 Quantum Hoare logic allows us to reason about quantum programs. We present an extension of quantum Hoare logic that introduces "ghost variables" to extend the expressive power of pre-/postconditions. Ghost variables are variables that do not actually occur in the program and are allowed to have arbitrary quantum states (in a sense, they are existentially quantified), and be entangled with program variables. Ghost variables allow us to express properties such as the distribution of a program variable or the fact that a variable has classical content. And as a case study, we show how quantum Hoare logic with ghost variables can be used to prove the security of the quantum one-time pad.
+</blockquote>
+<blockquote>
+Keywords: quantum entanglement, quantum computing, probabilistic logic, computers, cryptography, semantics
 </blockquote>
 
 </td>
@@ -2250,7 +2283,7 @@ Dominique Unruh.
 We present a logic for reasoning about pairs of interactive quantum programs &#x2013; quantum relational Hoare logic (qRHL). This logic follows the spirit of probabilistic relational Hoare logic (Barthe et al. 2009) and allows us to formulate how the outputs of two quantum programs relate given the relationship of their inputs. Probabilistic RHL was used extensively for computer-verified security proofs of classical cryptographic protocols. Since pRHL is not suitable for analyzing quantum cryptography, we present qRHL as a replacement, suitable for the security analysis of post-quantum cryptography and quantum protocols. The design of qRHL poses some challenges unique to the quantum setting, e.g., the definition of equality on quantum registers. Finally, we implemented a tool for verifying proofs in qRHL and developed several example security proofs in it.
 </blockquote>
 <blockquote>
-Keywords: formal verification, Quantum cryptography, Hoare logics
+Keywords: formal verification, quantum cryptography, hoare logics
 </blockquote>
 
 </td>
@@ -2271,6 +2304,9 @@ Beno&icirc;t Valiron, Neil&nbsp;J. Ross, Peter Selinger, D.&nbsp;Scott Alexander
 <blockquote>
 The Quipper language offers a unified general-purpose programming framework for quantum computation.
 </blockquote>
+<blockquote>
+Keywords: quipper
+</blockquote>
 
 </td>
 </tr>
@@ -2290,7 +2326,7 @@ John van&nbsp;de Wetering.
 The ZX-calculus is a graphical language for reasoning about quantum computation that has recently seen an increased usage in a variety of areas such as quantum circuit optimisation, surface codes and lattice surgery, measurement-based quantum computation, and quantum foundations. The first half of this review gives a gentle introduction to the ZX-calculus suitable for those familiar with the basics of quantum computing. The aim here is to make the reader comfortable enough with the ZX-calculus that they could use it in their daily work for small computations on quantum circuits and states. The latter sections give a condensed overview of the literature on the ZX-calculus. We discuss Clifford computation and graphically prove the Gottesman-Knill theorem, we discuss a recently introduced extension of the ZX-calculus that allows for convenient reasoning about Toffoli gates, and we discuss the recent completeness theorems for the ZX-calculus that show that, in principle, all reasoning about quantum computation can be done using ZX-diagrams. Additionally, we discuss the categorical and algebraic origins of the ZX-calculus and we discuss several extensions of the language which can represent mixed states, measurement, classical control and higher-dimensional qudits.
 </blockquote>
 <blockquote>
-Keywords: ZX-calculus, Category Theory
+Keywords: zx-calculus, category theory
 </blockquote>
 
 </td>
@@ -2335,7 +2371,7 @@ Juliana&nbsp;Kaizer Vizzotto, Giovani&nbsp;Rubert Librelotto, and Amr Sabry.
 In this work we present a functional programming language for quantum computation over mixed states. More interestingly, we develop a set of equations for the resulting programming language, proposing the first framework for equational reasoning about quantum computations over mixed states.
 </blockquote>
 <blockquote>
-Keywords: Density Matrix, Quantum Computation, Quantum Algorithm, Quantum Circuit, Quantum Operation
+Keywords: density matrix, quantum computation, quantum algorithm, quantum circuit, quantum operation
 </blockquote>
 
 </td>
@@ -2393,6 +2429,9 @@ Mingsheng Ying.
 <a href="https://doi.org/10.1145/2049706.2049708">DOI</a>&nbsp;]
 <blockquote>
 Floyd&#x2013;Hoare logic is a foundation of axiomatic semantics of classical programs, and it provides effective proof techniques for reasoning about correctness of classical programs. To offer similar techniques for quantum program verification and to build a logical foundation of programming methodology for quantum computers, we develop a full-fledged Floyd&#x2013;Hoare logic for both partial and total correctness of quantum programs. It is proved that this logic is (relatively) complete by exploiting the power of weakest preconditions and weakest liberal preconditions for quantum programs.
+</blockquote>
+<blockquote>
+Keywords: quantum computation, programming language, axiomatic semantics, floyd&#x2013;hoare logic, completeness
 </blockquote>
 
 </td>
@@ -2493,7 +2532,7 @@ Mingsheng Ying, Shenggang Ying, and Xiaodi Wu.
 Program invariant is a fundamental notion widely used in program verification and analysis. The aim of this paper is twofold: (i) find an appropriate definition of invariants for quantum programs; and (ii) develop an effective technique of invariant generation for verification and analysis of quantum programs.  Interestingly, the notion of invariant can be defined for quantum programs in two different ways &#x2013; additive invariants and multiplicative invariants &#x2013; corresponding to two interpretations of implication in a continuous valued logic: the Lukasiewicz implication and the Godel implication. It is shown that both of them can be used to establish partial correctness of quantum programs.  The problem of generating additive invariants of quantum programs is addressed by reducing it to an SDP (Semidefinite Programming) problem. This approach is applied with an SDP solver to generate invariants of two important quantum algorithms &#x2013; quantum walk and quantum Metropolis sampling. Our examples show that the generated invariants can be used to verify correctness of these algorithms and are helpful in optimising quantum Metropolis sampling.  To our knowledge, this paper is the first attempt to define the notion of invariant and to develop a method of invariant generation for quantum programs.
 </blockquote>
 <blockquote>
-Keywords: Inductive assertions, Quantum programming, Partial correctness, Invariant generation, Program invariants
+Keywords: inductive assertions, quantum programming, partial correctness, invariant generation, program invariants
 </blockquote>
 
 </td>
@@ -2572,7 +2611,7 @@ Mingsheng Ying, Li&nbsp;Zhou, Yangjia Li, and Yuan Feng.
 In this paper, we define the operational and denotational semantics of a special class of parallel quantum programs, namely disjoint parallel quantum programs. Based on them, a proof system for reasoning about disjoint parallel quantum programs is developed, which is (relatively) complete even when entanglement between different processes appears in the preconditions and postconditions.
 </blockquote>
 <blockquote>
-Keywords: Quantum programming, quantum Hoare logic, parallel programs, entanglement
+Keywords: quantum programming, quantum hoare logic, parallel programs, entanglement
 </blockquote>
 
 </td>
@@ -2644,6 +2683,9 @@ Li&nbsp;Zhou, Nengkun Yu, and Mingsheng Ying.
 <a href="https://opus.lib.uts.edu.au/bitstream/10453/140615/2/3314221.3314584.pdf">.pdf</a>&nbsp;]
 <blockquote>
 We derive a variant of quantum Hoare logic (QHL), called applied quantum Hoare logic (aQHL for short), by: 1. restricting QHL to a special class of preconditions and postconditions, namely projections, which can significantly simplify verification of quantum programs and are much more convenient when used in debugging and testing; and 2. adding several rules for reasoning about robustness of quantum programs, i.e. error bounds of outputs. The effectiveness of aQHL is shown by its applications to verify two sophisticated quantum algorithms: HHL (Harrow-Hassidim-Lloyd) for solving systems of linear equations and qPCA (quantum Principal Component Analysis).
+</blockquote>
+<blockquote>
+Keywords: quantum computation, hoare logic, robustness, projections, programming languages
 </blockquote>
 
 </td>
