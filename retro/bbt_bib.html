@@ -753,6 +753,26 @@
 }
 </pre>
 
+<a name="Heunen2022"></a><pre>
+@article{<a href="bbt.html#Heunen2022">Heunen2022</a>,
+  title = {Quantum Information Effects},
+  author = {Heunen, Chris and Kaarsgaard, Robin},
+  year = {2022},
+  month = jan,
+  journal = {Proceedings of the ACM on Programming Languages},
+  volume = {6},
+  number = {POPL},
+  pages = {2},
+  numpages = {27},
+  doi = {10.1145/3498663},
+  archiveprefix = {arXiv},
+  eprint = {2107.12144},
+  abstract = {We study the two dual quantum information effects to manipulate the amount of information in quantum computation: hiding and allocation. The resulting type-and-effect system is fully expressive for irreversible quantum computing, including measurement. We provide universal categorical constructions that semantically interpret this arrow metalanguage with choice, starting with any rig groupoid interpreting the reversible base language. Several properties of quantum measurement follow in general, and we translate quantum flow charts into our language. The semantic constructions turn the category of unitaries between Hilbert spaces into the category of completely positive trace-preserving maps, and they turn the category of bijections between finite sets into the category of functions with chosen garbage. Thus they capture the fundamental theorems of classical and quantum reversible computing of Toffoli and Stinespring.},
+  keywords = {quantum computation, reversible computation, information effects, measurement, effects, arrows, categorical semantics},
+  note = {POPL '22}
+}
+</pre>
+
 <a name="Hietala2019"></a><pre>
 @misc{<a href="bbt.html#Hietala2019">Hietala2019</a>,
   title = {Verified {{Optimization}} in a {{Quantum Intermediate Representation}}},
@@ -884,7 +904,7 @@
   eprint = {2107.13347},
   abstract = {We consider a programming language that can manipulate both classical and quantum information. Our language is type-safe and designed for variational quantum programming, which is a hybrid classical-quantum computational paradigm. The classical subsystem of the language is the Probabilistic FixPoint Calculus (PFPC), which is a lambda calculus with mixed-variance recursive types, term recursion and probabilistic choice. The quantum subsystem is a first-order linear type system that can manipulate quantum information. The two subsystems are related by mixed classical/quantum terms that specify how classical probabilistic effects are induced by quantum measurements, and conversely, how classical (probabilistic) programs can influence the quantum dynamics. We also describe a sound and computationally adequate denotational semantics for the language. Classical probabilistic effects are interpreted using a recently-described commutative probabilistic monad on DCPO. Quantum effects and resources are interpreted in a category of von Neumann algebras that we show is enriched over (continuous) domains. This strong sense of enrichment allows us to develop novel semantic methods that we use to interpret the relationship between the quantum and classical probabilistic effects. By doing so we provide the first denotational analysis that relates models of classical probabilistic programming to models of quantum programming.},
   keywords = {quantum programming, probabilistic programming, semantics},
-  note = {To appear at POPL 2022 as "Semantics for Probabilistic and Quantum Effects"}
+  note = {To appear at POPL 2022}
 }
 </pre>
 
@@ -902,19 +922,6 @@
   crossref = {<a href="#Gay2009">Gay2009</a>},
   doi = {10.1017/CBO9781139193313.007},
   abstract = {In this chapter, we present applications of abstract interpretation techniques in quantum computing. Quantum computing is a now well-established domain of computer science, and the recent developments of semantic techniques show the vitality of this rapidly growing area. On the other hand, the proof has been made that abstract interpretation is a powerful theory (of "classical" computer science) for comparing more or less precise semantics of the same programming language. In a more general picture, abstract interpretation can be seen as a framework for comparing the precision of several representations of the same dynamic system evolution. In this paper, we point out that abstract interpretation can be fruitfully used in quantum computing: (i) for establishing a hierarchy of quantum semantics and (ii) for analyzing entanglement evolution.}
-}
-</pre>
-
-<a name="Kaarsgaard2021"></a><pre>
-@misc{<a href="bbt.html#Kaarsgaard2021">Kaarsgaard2021</a>,
-  title = {Quantum Information Effects},
-  author = {Kaarsgaard, Robin and Heunen, Chris},
-  year = {2021},
-  month = jul,
-  archiveprefix = {arXiv},
-  eprint = {2107.12144},
-  abstract = {We study the two dual quantum information effects to manipulate the amount of information in quantum computation: hiding and allocation. The resulting type-and-effect system is fully expressive for irreversible quantum computing, including measurement. We provide universal categorical constructions that semantically interpret this arrow metalanguage with choice, starting with any rig groupoid interpreting the reversible base language. Several properties of quantum measurement follow in general, and we translate quantum flow charts into our language. The semantic constructions turn the category of unitaries between Hilbert spaces into the category of completely positive trace-preserving maps, and they turn the category of bijections between finite sets into the category of functions with chosen garbage. Thus they capture the fundamental theorems of classical and quantum reversible computing of Toffoli and Stinespring.},
-  note = {To appear at POPL 2022}
 }
 </pre>
 
