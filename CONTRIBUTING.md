@@ -17,7 +17,7 @@ You **do not have to** test the website for contributing here, I have added the 
 ### Prerequisites
 - For [retro](https://quantumpl.github.io/bib/retro/bbt.html) HTML generation: `bibtex2html`. Install the latest version using https://github.com/backtracking/bibtex2html
 - For website:
-  - Go and [`hugo-extended v0.88.1`](https://github.com/gohugoio/hugo/releases/tag/v0.88.1)
+  - Go and a recent version of [`hugo_extended`](https://github.com/gohugoio/hugo/releases)
   - A local installation of `academic-cli` using the [qpl-bib](https://github.com/QuantumPL/academic-cli/tree/qpl-bib) branch:
    `git clone --single-branch --branch qpl-bib https://github.com/QuantumPL/academic-cli.git`
 
