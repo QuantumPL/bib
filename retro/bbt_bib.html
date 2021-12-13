@@ -889,6 +889,23 @@
 }
 </pre>
 
+<a name="Huot2019"></a><pre>
+@inproceedings{<a href="bbt.html#Huot2019">Huot2019</a>,
+  title = {Universal Properties in Quantum Theory},
+  author = {Huot, Mathieu and Staton, Sam},
+  year = {2019},
+  month = jan,
+  booktitle = {Proceedings of the 15th International Conference on Quantum Physics and Logic (QPL), Halifax, Canada, June 3--7, 2018},
+  editor = {Selinger, Peter and Chiribella, Giulio},
+  publisher = {{Open Publishing Association}},
+  series = {Electronic Proceedings in Theoretical Computer Science},
+  volume = {287},
+  pages = {213--223},
+  doi = {10.4204/EPTCS.287.12},
+  abstract = {We argue that notions in quantum theory should have universal properties in the sense of category theory. We consider the completely positive trace preserving (CPTP) maps, the basic notion of quantum channel. Physically, quantum channels are derived from pure quantum theory by allowing discarding. We phrase this in category theoretic terms by showing that the category of CPTP maps is the universal monoidal category with a terminal unit that has a functor from the category of isometries. In other words, the CPTP maps are the affine reflection of the isometries.}
+}
+</pre>
+
 <a name="JavadiAbhari2012"></a><pre>
 @techreport{<a href="bbt.html#JavadiAbhari2012">JavadiAbhari2012</a>,
   title = {Scaffold: {{Quantum}} Programming Language},
@@ -1403,12 +1420,12 @@
 }
 </pre>
 
-<a name="Rand2020"></a><pre>
-@inproceedings{<a href="bbt.html#Rand2020">Rand2020</a>,
+<a name="Rand2021"></a><pre>
+@inproceedings{<a href="bbt.html#Rand2021">Rand2021</a>,
   title = {Gottesman Types for Quantum Programs},
   author = {Rand, Robert and Sundaram, Aarthi and Singhal, Kartik and Lackey, Brad},
-  year = {2020},
-  month = jun,
+  year = {2021},
+  month = sep,
   booktitle = {Proceedings of the 17th International Conference on Quantum Physics and Logic (QPL), Paris, France, June 2--6, 2020},
   editor = {Valiron, Beno{\^i}t and Mansfield, Shane and Arrighi, Pablo and Panangaden, Prakash},
   publisher = {{Open Publishing Association}},
@@ -1627,27 +1644,7 @@
 </pre>
 
 <a name="Singhal2020a"></a><pre>
-@inproceedings{<a href="bbt.html#Singhal2020a">Singhal2020a</a>,
-  title = {Quantum Hoare Type Theory: Extended Abstract},
-  author = {Singhal, Kartik and Reppy, John},
-  year = {2020},
-  month = jun,
-  booktitle = {Proceedings of the 17th International Conference on Quantum Physics and Logic (QPL), Paris, France, June 2--6, 2020},
-  editor = {Valiron, Beno{\^i}t and Mansfield, Shane and Arrighi, Pablo and Panangaden, Prakash},
-  publisher = {{Open Publishing Association}},
-  series = {Electronic Proceedings in Theoretical Computer Science},
-  volume = {340},
-  pages = {291--302},
-  doi = {10.4204/EPTCS.340.15},
-  url = {<a href="https://ks.cs.uchicago.edu/publication/qhtt/">https://ks.cs.uchicago.edu/publication/qhtt/</a>},
-  abstract = {As quantum computers become real, it is high time we come up with effective techniques that help programmers write correct quantum programs. In classical computing, formal verification and sound static type systems prevent several classes of bugs from being introduced. There is a need for similar techniques in the quantum regime. Inspired by Hoare Type Theory in the classical paradigm, we propose Quantum Hoare Types by extending the Quantum IO Monad by indexing it with pre- and post-conditions that serve as program specifications. In this paper, we introduce Quantum Hoare Type Theory (QHTT), present its syntax and typing rules, and demonstrate its effectiveness with the help of examples. QHTT has the potential to be a unified system for programming, specifying, and reasoning about quantum programs. This is a work in progress.},
-  keywords = {formal verification, program proof, programming languages, quantum computing, type systems, type theory, pre- and postconditions, program specifications},
-  note = {Also see expanded version: \cite{Singhal2020b}}
-}
-</pre>
-
-<a name="Singhal2020b"></a><pre>
-@mastersthesis{<a href="bbt.html#Singhal2020b">Singhal2020b</a>,
+@mastersthesis{<a href="bbt.html#Singhal2020a">Singhal2020a</a>,
   title = {Quantum Hoare Type Theory},
   author = {Singhal, Kartik},
   year = {2020},
@@ -1659,7 +1656,7 @@
   url = {<a href="https://ks.cs.uchicago.edu/publication/qhtt-masters/">https://ks.cs.uchicago.edu/publication/qhtt-masters/</a>},
   abstract = {As quantum computers become real, it is high time we come up with effective techniques that help programmers write correct quantum programs. Inspired by Hoare Type Theory in classical computing, we propose Quantum Hoare Type Theory (QHTT), in which precise specifications about the modification to the quantum state can be provided within the type of computation. These specifications within a Hoare type are given in the form of Hoare-logic style pre- and postconditions following the propositions-as-types principle. The type-checking process verifies that the implementation conforms to the provided specification. QHTT has the potential to be a unified system for programming, specifying, and reasoning about quantum programs.},
   keywords = {formal verification, program proof, programming languages, quantum computing, quantum computation, type systems, type theory, pre- and postconditions, program specifications},
-  note = {See also: \cite{Singhal2020a}}
+  note = {See also: \cite{Singhal2021a}}
 }
 </pre>
 
@@ -1673,6 +1670,26 @@
   url = {<a href="https://ks.cs.uchicago.edu/publication/tttiq/">https://ks.cs.uchicago.edu/publication/tttiq/</a>},
   abstract = {Q\# is a high-level programming language from Microsoft for writing and running quantum programs. Like most industrial languages, it was designed without a formal specification, which can naturally lead to ambiguity in its interpretation. Further, currently, the Q\# type system cannot statically prevent cloning of qubits. We aim to provide a formal specification and semantics for Q\#, placing the language on a solid mathematical foundation, enabling further evolution of its design and type system (including enforcing no-cloning). This paper describes our current progress in designing λ-Q\# (an idealized version of Q\#), our solution to the qubit cloning problem in λ-Q\#, and outlines the next steps.},
   keywords = {quantum computing, quantum computation, programming languages, formal specification, formal language definitions, type systems, semantics and reasoning, quantum programming languages, language design, q\#}
+}
+</pre>
+
+<a name="Singhal2021a"></a><pre>
+@inproceedings{<a href="bbt.html#Singhal2021a">Singhal2021a</a>,
+  title = {Quantum Hoare Type Theory: Extended Abstract},
+  author = {Singhal, Kartik and Reppy, John},
+  year = {2021},
+  month = sep,
+  booktitle = {Proceedings of the 17th International Conference on Quantum Physics and Logic (QPL), Paris, France, June 2--6, 2020},
+  editor = {Valiron, Beno{\^i}t and Mansfield, Shane and Arrighi, Pablo and Panangaden, Prakash},
+  publisher = {{Open Publishing Association}},
+  series = {Electronic Proceedings in Theoretical Computer Science},
+  volume = {340},
+  pages = {291--302},
+  doi = {10.4204/EPTCS.340.15},
+  url = {<a href="https://ks.cs.uchicago.edu/publication/qhtt/">https://ks.cs.uchicago.edu/publication/qhtt/</a>},
+  abstract = {As quantum computers become real, it is high time we come up with effective techniques that help programmers write correct quantum programs. In classical computing, formal verification and sound static type systems prevent several classes of bugs from being introduced. There is a need for similar techniques in the quantum regime. Inspired by Hoare Type Theory in the classical paradigm, we propose Quantum Hoare Types by extending the Quantum IO Monad by indexing it with pre- and post-conditions that serve as program specifications. In this paper, we introduce Quantum Hoare Type Theory (QHTT), present its syntax and typing rules, and demonstrate its effectiveness with the help of examples. QHTT has the potential to be a unified system for programming, specifying, and reasoning about quantum programs. This is a work in progress.},
+  keywords = {formal verification, program proof, programming languages, quantum computing, type systems, type theory, pre- and postconditions, program specifications},
+  note = {Also see expanded version: \cite{Singhal2020a}}
 }
 </pre>
 
