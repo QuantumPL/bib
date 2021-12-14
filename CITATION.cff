@@ -1,3 +1,4 @@
+type: dataset
 cff-version: 1.2.0
 message: "If you use this bibliography, please cite it as below."
 authors:
@@ -6,8 +7,6 @@ authors:
   orcid: "0000-0003-1132-269X"
 title: "Quantum Programming Languages & Verification Bibliography"
 version: 1.0.0
-doi: 10.5281/zenodo.1234
+doi: 10.5281/zenodo.5780237
 date-released: 2021-12-14
 url: "https://quantumpl.github.io/bib/"
-preferred-citation:
-  type: database
