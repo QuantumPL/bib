@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/359320795.svg)](https://zenodo.org/badge/latestdoi/359320795)
+
 # QPL Bib
 
 A Quantum Programming Languages and Verification Literature Bibliography 
