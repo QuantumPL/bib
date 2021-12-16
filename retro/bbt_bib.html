@@ -62,7 +62,7 @@
   archiveprefix = {arXiv},
   eprint = {quant-ph/0409065},
   abstract = {We introduce the language QML, a functional language for quantum computations on finite types. Its design is guided by its categorical semantics: QML programs are interpreted by morphisms in the category FQC of finite quantum computations, which provides a constructive semantics of irreversible quantum computations realisable as quantum gates. QML integrates reversible and irreversible quantum computations in one language, using first order strict linear logic to make weakenings explicit. Strict programs are free from decoherence and hence preserve superpositions and entanglement - which is essential for quantum parallelism.},
-  keywords = {computer languages, quantum computing, quantum entanglement, circuits, parallel processing, computer science, logic programming, parallel programming, functional programming, program processors},
+  keywords = {quantum computing, quantum entanglement, functional programming, quantum gates, formal logic, quantum entanglement, functional languages},
   note = {Introduces QML, see also \cite{Grattage2011}}
 }
 </pre>
@@ -154,7 +154,7 @@
   doi = {10.1145/3231597},
   url = {<a href="http://eprints.gla.ac.uk/166295/">http://eprints.gla.ac.uk/166295/</a>},
   abstract = {The novel field of quantum computation and quantum information has gathered significant momentum in the last few years. It has the potential to radically impact the future of information technology and influence the development of modern society. The construction of practical, general purpose quantum computers has been challenging, but quantum cryptographic and communication devices have been available in the commercial marketplace for several years. Quantum networks have been built in various cities around the world and a dedicated satellite has been launched by China to provide secure quantum communication. Such new technologies demand rigorous analysis and verification before they can be trusted in safety- and security-critical applications. Experience with classical hardware and software systems has shown the difficulty of achieving robust and reliable implementations.We present CCSq, a concurrent language for describing quantum systems, and develop verification techniques for checking equivalence between CCSq processes. CCSq has well-defined operational and superoperator semantics for protocols that are functional, in the sense of computing a deterministic input-output relation for all interleavings arising from concurrency in the system. We have implemented QEC (Quantum Equivalence Checker), a tool that takes the specification and implementation of quantum protocols, described in CCSq, and automatically checks their equivalence. QEC is the first fully automatic equivalence checking tool for concurrent quantum systems. For efficiency purposes, we restrict ourselves to Clifford operators in the stabilizer formalism, but we are able to verify protocols over all input states. We have specified and verified a collection of interesting and practical quantum protocols, ranging from quantum communication and quantum cryptography to quantum error correction.},
-  keywords = {concurrency, process calculi, equivalence checking, Quantum information processing, programming language semantics}
+  keywords = {concurrency, process calculi, equivalence checking, quantum information processing, programming language semantics}
 }
 </pre>
 
@@ -663,7 +663,7 @@
   school = {University of Nottingham},
   url = {<a href="http://eprints.nottingham.ac.uk/11457/">http://eprints.nottingham.ac.uk/11457/</a>},
   abstract = {This thesis looks at the development of a framework for a functional quantum programming language. The framework is first developed in Haskell, looking at how a monadic structure can be used to explicitly deal with the side-effects inherent in the measurement of quantum systems, and goes on to look at how a dependently-typed reimplementation in Agda gives us the basis for a formally verified quantum programming language. The two implementations are not in themselves fully developed quantum programming languages, as they are embedded in their respective parent languages, but are a major step towards the development of a full formally verified, functional quantum programming language. Dubbed the ``Quantum IO Monad'', this framework is designed following a structural approach as given by a categorical model of quantum computation.},
-  keywords = {quantum programming, computer programming, computer languages, haskell, monadic structure, quantum io monad}
+  keywords = {quantum programming, haskell, monadic structure, quantum io monad}
 }
 </pre>
 
@@ -1014,7 +1014,7 @@
   pages = {51:1--51:20},
   doi = {10.4230/LIPIcs.FSTTCS.2021.51},
   abstract = {In this paper, we introduce dynamic lifting to a quantum circuit-description language, following the Proto-Quipper language approach. Dynamic lifting allows programs to transfer the result of measuring quantum data -- qubits -- into classical data -- booleans -- . We propose a type system and an operational semantics for the language and we state safety properties. Next, we introduce a concrete categorical semantics for the proposed language, basing our approach on a recent model from Rios\&Selinger for Proto-Quipper-M. Our approach is to construct on top of a concrete category of circuits with measurements a Kleisli category, capturing as a side effect the action of retrieving classical content out of a quantum memory. We then show a soundness result for this semantics.},
-  keywords = {categorical semantics, operational semantics, quantum circuit description language}
+  keywords = {categorical semantics, operational semantics, quantum circuit description language, proto-quipper-l}
 }
 </pre>
 
@@ -1215,7 +1215,7 @@
   pages = {455--469},
   doi = {10.1007/978-3-319-55911-7_33},
   abstract = {We propose qPCF, a functional language able to define and manipulate quantum circuits in an easy and intuitive way. qPCF follows the tradition of ``quantum data & classical control'' languages, inspired to the QRAM model. Ideally, qPCF computes finite circuit descriptions which are offloaded to a quantum co-processor (i.e. a quantum device) for the execution. qPCF extends   PCF  with a new kind of datatype: quantum circuits. The typing of qPCF is quite different from the mainstream of ``quantum data & classical control'' languages that involves linear/exponential modalities. qPCF uses a simple form of dependent types to manage circuits and an implicit form of monad to manage quantum states via a destructive-measurement operator.},
-  keywords = {quantum circuit, classical control, quantum programming language}
+  keywords = {quantum circuits, classical control, quantum programming languages}
 }
 </pre>
 
@@ -1451,7 +1451,7 @@
   pages = {257--279},
   doi = {10.1016/j.entcs.2018.03.027},
   abstract = {We describe categorical models of a circuit-based (quantum) functional programming language. We show that enriched categories play a crucial role. Following earlier work on QWire by Paykin et al., we consider both a simple first-order linear language for circuits, and a more powerful host language, such that the circuit language is embedded inside the host language. Our categorical semantics for the host language is standard, and involves cartesian closed categories and monads. We interpret the circuit language not in an ordinary category, but in a category that is enriched in the host category. As an extended example, we recall an earlier result that the category of W*-algebras is dcpo-enriched, and we use this model to extend the circuit language with some recursive types.},
-  keywords = {enriched categories, categorical semantics, linear type theory, quantum circuits, relative monad,quantum domain theory},
+  keywords = {enriched categories, categorical semantics, linear type theory, quantum circuits, relative monad, quantum domain theory},
   note = {See also the later version: \cite{Rennela2020}}
 }
 </pre>
@@ -1505,7 +1505,7 @@
               The likely arrival of scalable quantum computers in the not so distant future has resulted in a flurry of activity in the development of quantum programming languages. As in classical computing, the transition from a description of a quantum algorithm found in the literature to a hardware-specific set of instructions run on a quantum device is a complex process, prone to errors. This issue is exacerbated in the quantum setting not only by the complexity of quantum algorithms but also by the fragility of quantum information, which renders ineffective some of the classical techniques used to debug programs.
 
               In this thesis, we contribute to the solution of some of these issues. We introduce Proto-Quipper-M, a new quantum  programming language designed to serve as a testbed for the research and development of sound mathematical semantics and reasoning techniques for quantum programs. We first present Proto-Quipper-M as a formalization of a fragment of Quipper, a high-level functional programming language for describing families of quantum circuits. In particular, we define Proto-Quipper-M as a simply-typed lambda calculus with a special type for quantum circuits and a strong type system designed to enforce linearity on quantum data, and thus prevent violations of the no-cloning property of quantum information. We endow ProtoQuipper-M with computational meaning via a big-step operational semantics and prove that the language is type-safe by showing that it enjoys the type-preservation and error-freeness properties. We also give Proto-Quipper-M a denotational semantics in a suitable class of monoidal categories and show that these categories give rise to linear-non-linear models in the sense of Benton, and thus models of intuitionistic linear logic. Finally, we crystallize the connection between the syntax and the semantics of the language by proving the soundness theorem for Proto-Quipper-M.},
-  keywords = {quantum programming language, categorical model, quantum circuit, proto-quipper-m, category theory, quantum computing}
+  keywords = {quantum programming languages, categorical model, quantum circuits, proto-quipper-m, category theory, quantum computing}
 }
 </pre>
 
@@ -1797,7 +1797,7 @@
   numpages = {31},
   doi = {10.1145/3290346},
   abstract = {We present a logic for reasoning about pairs of interactive quantum programs -- quantum relational Hoare logic (qRHL). This logic follows the spirit of probabilistic relational Hoare logic (Barthe et al. 2009) and allows us to formulate how the outputs of two quantum programs relate given the relationship of their inputs. Probabilistic RHL was used extensively for computer-verified security proofs of classical cryptographic protocols. Since pRHL is not suitable for analyzing quantum cryptography, we present qRHL as a replacement, suitable for the security analysis of post-quantum cryptography and quantum protocols. The design of qRHL poses some challenges unique to the quantum setting, e.g., the definition of equality on quantum registers. Finally, we implemented a tool for verifying proofs in qRHL and developed several example security proofs in it.},
-  keywords = {formal verification, quantum cryptography, hoare logics},
+  keywords = {formal verification, quantum cryptography, hoare logic},
   note = {POPL '19}
 }
 </pre>
@@ -1879,7 +1879,7 @@
   numpages = {15},
   doi = {10.1007/978-3-642-10452-7_22},
   abstract = {In this work we present a functional programming language for quantum computation over mixed states. More interestingly, we develop a set of equations for the resulting programming language, proposing the first framework for equational reasoning about quantum computations over mixed states.},
-  keywords = {density matrix, quantum computation, quantum algorithm, quantum circuit, quantum operation}
+  keywords = {density matrix, quantum computation, quantum algorithm, quantum circuits, quantum operation}
 }
 </pre>
 
@@ -1940,7 +1940,7 @@
   pages = {19:1--19:49},
   doi = {10.1145/2049706.2049708},
   abstract = {Floyd--Hoare logic is a foundation of axiomatic semantics of classical programs, and it provides effective proof techniques for reasoning about correctness of classical programs. To offer similar techniques for quantum program verification and to build a logical foundation of programming methodology for quantum computers, we develop a full-fledged Floyd--Hoare logic for both partial and total correctness of quantum programs. It is proved that this logic is (relatively) complete by exploiting the power of weakest preconditions and weakest liberal preconditions for quantum programs.},
-  keywords = {quantum computation, programming language, axiomatic semantics, floyd--hoare logic, completeness},
+  keywords = {quantum computation, programming languages, axiomatic semantics, floyd--hoare logic, completeness, hoare logic},
   note = {An early version is \cite{Ying2009a}}
 }
 </pre>
