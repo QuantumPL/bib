@@ -35,6 +35,10 @@
 &lt;td style="text-align:center">&lt;em>pizzix&lt;/em> (like &lt;em>physics&lt;/em>)&lt;/td>
 &lt;/tr>
 &lt;tr>
+&lt;td style="text-align:center">&lt;a href="../../publication/Svore2018">Q#&lt;/a>&lt;/td>
+&lt;td style="text-align:center">&lt;em>Q-Sharp&lt;/em>&lt;/td>
+&lt;/tr>
+&lt;tr>
 &lt;td style="text-align:center">&lt;a href="../../publication/Cross2017">QASM&lt;/a>&lt;/td>
 &lt;td style="text-align:center">&lt;em>chasm&lt;/em>&lt;/td>
 &lt;/tr>
@@ -43,11 +47,11 @@
 &lt;td style="text-align:center">&lt;em>Q-bricks&lt;/em> / &lt;em>Kubrick&amp;rsquo;s&lt;/em>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">&lt;a href="../../publication/">Qiskit&lt;/a>&lt;/td>
+&lt;td style="text-align:center">&lt;a href="../../publication/QiskitCommunity2017">Qiskit&lt;/a>&lt;/td>
 &lt;td style="text-align:center">&lt;em>kiss-kit&lt;/em> AND &lt;em>quiss-kit&lt;/em>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">&lt;a href="../../publication/Smith2016">QUIL&lt;/a>&lt;/td>
+&lt;td style="text-align:center">&lt;a href="../../publication/Smith2016">Quil&lt;/a>&lt;/td>
 &lt;td style="text-align:center">&lt;em>quill&lt;/em>&lt;/td>
 &lt;/tr>
 &lt;tr>
