@@ -675,12 +675,16 @@ We develop a notion of predicate transformer and, in particular, the weakest pre
 </td>
 <td class="bibtexitem">
 Yuan Feng and Mingsheng Ying.
- <b>Quantum Hoare logic with classical variables</b>, April 2021.
- To appear in ACM Transactions on Quantum Computing.
+ <b>Quantum Hoare Logic with Classical Variables</b>.
+ <em>ACM Transactions on Quantum Computing</em>, 2(4), December 2021.
 [&nbsp;<a href="bbt_bib.html#Feng2021">bib</a>&nbsp;| 
+<a href="https://doi.org/10.1145/3456877">DOI</a>&nbsp;| 
 <a href="http://arxiv.org/abs/2008.06812">arXiv</a>&nbsp;]
 <blockquote>
-Hoare logic provides a syntax-oriented method to reason about program correctness and has been proven effective in the verification of classical and probabilistic programs. Existing proposals for quantum Hoare logic either lack completeness or support only quantum variables, thus limiting their capability in practical use. In this paper, we propose a quantum Hoare logic for a simple while language which involves both classical and quantum variables. Its soundness and relative completeness are proven for both partial and total correctness of quantum programs written in the language. Remarkably, with novel definitions of classical-quantum states and corresponding assertions, the logic system is quite simple and similar to the traditional Hoare logic for classical programs. Furthermore, to simplify reasoning in real applications, auxiliary proof rules are provided which support standard logical operation in the classical part of assertions, and of super-operator application in the quantum part. Finally, a series of practical quantum algorithms, in particular the whole algorithm of Shor's factorisation, are formally verified to show the effectiveness of the logic.
+Hoare logic provides a syntax-oriented method to reason about program correctness and has been proven effective in the verification of classical and probabilistic programs. Existing proposals for quantum Hoare logic either lack completeness or support only quantum variables, thus limiting their capability in practical use. In this article, we propose a quantum Hoare logic for a simple while language that involves both classical and quantum variables. Its soundness and relative completeness are proven for both partial and total correctness of quantum programs written in the language. Remarkably, with novel definitions of classical-quantum states and corresponding assertions, the logic system is quite simple and similar to the traditional Hoare logic for classical programs. Furthermore, to simplify reasoning in real applications, auxiliary proof rules are provided that support standard logical operation in the classical part of assertions and super-operator application in the quantum part. Finally, a series of practical quantum algorithms, in particular the whole algorithm of Shor's factorisation, are formally verified to show the effectiveness of the logic.
+</blockquote>
+<blockquote>
+Keywords: quantum while language, quantum programming, hoare logic
 </blockquote>
 
 </td>
@@ -1433,6 +1437,9 @@ Junyi Liu, Bohua Zhan, Shuling Wang, Shenggang Ying, Tao Liu, Yangjia Li,
 <blockquote>
 We formalize the theory of quantum Hoare logic (QHL) [TOPLAS 33(6),19], an extension of Hoare logic for reasoning about quantum programs. In particular, we formalize the syntax and semantics of quantum programs in Isabelle/HOL, write down the rules of quantum Hoare logic, and verify the soundness and completeness of the deduction system for partial correctness of quantum programs. As preliminary work, we formalize some necessary mathematical background in linear algebra, and define tensor products of vectors and matrices on quantum variables. As an application, we verify the correctness of Grover's search algorithm. To our best knowledge, this is the first time a Hoare logic for quantum programs is formalized in an interactive theorem prover, and used to verify the correctness of a nontrivial quantum algorithm.
 </blockquote>
+<blockquote>
+Keywords: hoare logic
+</blockquote>
 
 </td>
 </tr>
@@ -1450,6 +1457,9 @@ Junyi Liu, Bohua Zhan, Shuling Wang, Shenggang Ying, Tao Liu, Yangjia Li,
   [<a href="#Liu2019">63</a>].
 [&nbsp;<a href="bbt_bib.html#Liu2019a">bib</a>&nbsp;| 
 <a href="https://isa-afp.org/entries/QHLProver.html">.html</a>&nbsp;]
+<blockquote>
+Keywords: hoare logic
+</blockquote>
 
 </td>
 </tr>
@@ -1751,6 +1761,9 @@ Robert Rand.
 <a href="http://arxiv.org/abs/1904.04304">arXiv</a>&nbsp;]
 <blockquote>
 We survey the landscape of Hoare logics for quantum programs. We review three papers: &ldquo;Reasoning about imperative quantum programs&rdquo; by Chadha, Mateus and Sernadas; &ldquo;A logic for formal verification of quantum programs&rdquo; by Yoshihiko Kakutani; and &ldquo;Floyd-hoare logic for quantum programs&rdquo; by Mingsheng Ying. We compare the mathematical foundations of the logics, their underlying languages, and the expressivity of their assertions. We also use the languages to verify the Deutsch&#x2013;Jozsa Algorithm, and discuss their relative usability in practice.
+</blockquote>
+<blockquote>
+Keywords: hoare logic
 </blockquote>
 
 </td>
@@ -2131,7 +2144,7 @@ Kartik Singhal.
 As quantum computers become real, it is high time we come up with effective techniques that help programmers write correct quantum programs. Inspired by Hoare Type Theory in classical computing, we propose Quantum Hoare Type Theory (QHTT), in which precise specifications about the modification to the quantum state can be provided within the type of computation. These specifications within a Hoare type are given in the form of Hoare-logic style pre- and postconditions following the propositions-as-types principle. The type-checking process verifies that the implementation conforms to the provided specification. QHTT has the potential to be a unified system for programming, specifying, and reasoning about quantum programs.
 </blockquote>
 <blockquote>
-Keywords: formal verification, program proof, programming languages, quantum computing, quantum computation, type systems, type theory, pre- and postconditions, program specifications
+Keywords: formal verification, program proof, programming languages, quantum computing, quantum computation, type systems, type theory, pre- and postconditions, program specifications, hoare logic
 </blockquote>
 
 </td>
@@ -2203,7 +2216,7 @@ Kartik Singhal and John Reppy.
 As quantum computers become real, it is high time we come up with effective techniques that help programmers write correct quantum programs. In classical computing, formal verification and sound static type systems prevent several classes of bugs from being introduced. There is a need for similar techniques in the quantum regime. Inspired by Hoare Type Theory in the classical paradigm, we propose Quantum Hoare Types by extending the Quantum IO Monad by indexing it with pre- and post-conditions that serve as program specifications. In this paper, we introduce Quantum Hoare Type Theory (QHTT), present its syntax and typing rules, and demonstrate its effectiveness with the help of examples. QHTT has the potential to be a unified system for programming, specifying, and reasoning about quantum programs. This is a work in progress.
 </blockquote>
 <blockquote>
-Keywords: formal verification, program proof, programming languages, quantum computing, type systems, type theory, pre- and postconditions, program specifications
+Keywords: formal verification, program proof, programming languages, quantum computing, type systems, type theory, pre- and postconditions, program specifications, hoare logic
 </blockquote>
 
 </td>
@@ -2339,7 +2352,7 @@ Dominique Unruh.
 Quantum Hoare logic allows us to reason about quantum programs. We present an extension of quantum Hoare logic that introduces &ldquo;ghost variables&rdquo; to extend the expressive power of pre-/postconditions. Ghost variables are variables that do not actually occur in the program and are allowed to have arbitrary quantum states (in a sense, they are existentially quantified), and be entangled with program variables. Ghost variables allow us to express properties such as the distribution of a program variable or the fact that a variable has classical content. And as a case study, we show how quantum Hoare logic with ghost variables can be used to prove the security of the quantum one-time pad.
 </blockquote>
 <blockquote>
-Keywords: quantum entanglement, quantum computing, probabilistic logic, computers, cryptography, semantics
+Keywords: quantum entanglement, quantum computing, probabilistic logic, computers, cryptography, semantics, hoare logic
 </blockquote>
 
 </td>
@@ -2690,7 +2703,7 @@ Mingsheng Ying, Li&nbsp;Zhou, Yangjia Li, and Yuan Feng.
 In this paper, we define the operational and denotational semantics of a special class of parallel quantum programs, namely disjoint parallel quantum programs. Based on them, a proof system for reasoning about disjoint parallel quantum programs is developed, which is (relatively) complete even when entanglement between different processes appears in the preconditions and postconditions.
 </blockquote>
 <blockquote>
-Keywords: quantum programming, quantum hoare logic, parallel programs, entanglement
+Keywords: quantum programming, quantum hoare logic, parallel programs, entanglement, hoare logic
 </blockquote>
 
 </td>
