@@ -451,15 +451,23 @@
   abstract = {We develop a notion of predicate transformer and, in particular, the weakest precondition, appropriate for quantum computation. We show that there is a Stone-type duality between the usual state-transformer semantics and the weakest precondition semantics. Rather than trying to reduce quantum computation to probabilistic programming, we develop a notion that is directly taken from concepts used in quantum computation. The proof that weakest preconditions exist for completely positive maps follows immediately from the Kraus representation theorem. As an example, we give the semantics of Selinger's language in terms of our weakest preconditions. We also cover some specific situations and exhibit an interesting link with stabilisers.}
 }
 
-@misc{Feng2021,
-  title         = {Quantum Hoare logic with classical variables},
+@article{Feng2021,
+  title         = {Quantum Hoare Logic with Classical Variables},
   author        = {Feng, Yuan and Ying, Mingsheng},
   year          = {2021},
-  month         = apr,
+  month         = dec,
+  journal       = {ACM Transactions on Quantum Computing},
+  publisher     = {{Association for Computing Machinery}},
+  address       = {{New York, NY, USA}},
+  volume        = {2},
+  number        = {4},
+  eid           = {16},
+  numpages      = {43},
+  doi           = {10.1145/3456877},
   archiveprefix = {arXiv},
   eprint        = {2008.06812},
-  abstract      = {Hoare logic provides a syntax-oriented method to reason about program correctness and has been proven effective in the verification of classical and probabilistic programs. Existing proposals for quantum Hoare logic either lack completeness or support only quantum variables, thus limiting their capability in practical use. In this paper, we propose a quantum Hoare logic for a simple while language which involves both classical and quantum variables. Its soundness and relative completeness are proven for both partial and total correctness of quantum programs written in the language. Remarkably, with novel definitions of classical-quantum states and corresponding assertions, the logic system is quite simple and similar to the traditional Hoare logic for classical programs. Furthermore, to simplify reasoning in real applications, auxiliary proof rules are provided which support standard logical operation in the classical part of assertions, and of super-operator application in the quantum part. Finally, a series of practical quantum algorithms, in particular the whole algorithm of Shor's factorisation, are formally verified to show the effectiveness of the logic.},
-  note          = {To appear in ACM Transactions on Quantum Computing}
+  abstract      = {Hoare logic provides a syntax-oriented method to reason about program correctness and has been proven effective in the verification of classical and probabilistic programs. Existing proposals for quantum Hoare logic either lack completeness or support only quantum variables, thus limiting their capability in practical use. In this article, we propose a quantum Hoare logic for a simple while language that involves both classical and quantum variables. Its soundness and relative completeness are proven for both partial and total correctness of quantum programs written in the language. Remarkably, with novel definitions of classical-quantum states and corresponding assertions, the logic system is quite simple and similar to the traditional Hoare logic for classical programs. Furthermore, to simplify reasoning in real applications, auxiliary proof rules are provided that support standard logical operation in the classical part of assertions and super-operator application in the quantum part. Finally, a series of practical quantum algorithms, in particular the whole algorithm of Shor's factorisation, are formally verified to show the effectiveness of the logic.},
+  keywords      = {quantum while language, quantum programming}
 }
 
 @inproceedings{Fu2020,
@@ -882,21 +890,21 @@
 }
 
 @inproceedings{Lee2021,
-  title         = {{Concrete Categorical Model of a Quantum Circuit Description Language with Measurement}},
-  author        = {Lee, Dongho and Perrelle, Valentin and Valiron, Beno{\^i}t and Xu, Zhaowei},
-  year          = {2021},
-  month         = nov,
-  booktitle     = {41st IARCS Annual Conference on Foundations of Software Technology and Theoretical Computer Science (FSTTCS 2021)},
-  editor        = {Boja\'{n}czy, Mikołaj and Chekuri, Chandra},
-  publisher     = {{Schloss Dagstuhl -- Leibniz-Zentrum f{\"u}r Informatik}},
-  address       = {Dagstuhl, Germany},
-  series        = {Leibniz International Proceedings in Informatics (LIPIcs)},
-  volume        = {213},
-  eid           = {13},
-  pages         = {51:1--51:20},
-  doi           = {10.4230/LIPIcs.FSTTCS.2021.51},
-  abstract      = {In this paper, we introduce dynamic lifting to a quantum circuit-description language, following the Proto-Quipper language approach. Dynamic lifting allows programs to transfer the result of measuring quantum data -- qubits -- into classical data -- booleans -- . We propose a type system and an operational semantics for the language and we state safety properties. Next, we introduce a concrete categorical semantics for the proposed language, basing our approach on a recent model from Rios\&Selinger for Proto-Quipper-M. Our approach is to construct on top of a concrete category of circuits with measurements a Kleisli category, capturing as a side effect the action of retrieving classical content out of a quantum memory. We then show a soundness result for this semantics.},
-  keywords      = {categorical semantics, operational semantics, quantum circuit description language, proto-quipper-l}
+  title     = {{Concrete Categorical Model of a Quantum Circuit Description Language with Measurement}},
+  author    = {Lee, Dongho and Perrelle, Valentin and Valiron, Beno{\^i}t and Xu, Zhaowei},
+  year      = {2021},
+  month     = nov,
+  booktitle = {41st IARCS Annual Conference on Foundations of Software Technology and Theoretical Computer Science (FSTTCS 2021)},
+  editor    = {Boja\'{n}czy, Mikołaj and Chekuri, Chandra},
+  publisher = {{Schloss Dagstuhl -- Leibniz-Zentrum f{\"u}r Informatik}},
+  address   = {Dagstuhl, Germany},
+  series    = {Leibniz International Proceedings in Informatics (LIPIcs)},
+  volume    = {213},
+  eid       = {13},
+  pages     = {51:1--51:20},
+  doi       = {10.4230/LIPIcs.FSTTCS.2021.51},
+  abstract  = {In this paper, we introduce dynamic lifting to a quantum circuit-description language, following the Proto-Quipper language approach. Dynamic lifting allows programs to transfer the result of measuring quantum data -- qubits -- into classical data -- booleans -- . We propose a type system and an operational semantics for the language and we state safety properties. Next, we introduce a concrete categorical semantics for the proposed language, basing our approach on a recent model from Rios\&Selinger for Proto-Quipper-M. Our approach is to construct on top of a concrete category of circuits with measurements a Kleisli category, capturing as a side effect the action of retrieving classical content out of a quantum memory. We then show a soundness result for this semantics.},
+  keywords  = {categorical semantics, operational semantics, quantum circuit description language, proto-quipper-l}
 }
 
 @misc{Lewis2021,
