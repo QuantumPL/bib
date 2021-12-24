@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts | Quantum PL &amp; Verification Bibliography</title><link>https://quantumpl.github.io/bib/post/</link><atom:link href="https://quantumpl.github.io/bib/post/index.xml" rel="self" type="application/rss+xml"/><description>Posts</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 22 Dec 2021 07:59:53 -0600</lastBuildDate><image><url>https://quantumpl.github.io/bib/media/logo_hu18592104feffac20f675f2d84225d529_16137_300x300_fit_lanczos_3.png</url><title>Posts</title><link>https://quantumpl.github.io/bib/post/</link></image><item><title>A Quantum Pronunciation Guide</title><link>https://quantumpl.github.io/bib/post/pronunciation-guide/</link><pubDate>Wed, 22 Dec 2021 07:59:53 -0600</pubDate><guid>https://quantumpl.github.io/bib/post/pronunciation-guide/</guid><description>&lt;table>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts | Quantum PL &amp; Verification Bibliography</title><link>https://quantumpl.github.io/bib/post/</link><atom:link href="https://quantumpl.github.io/bib/post/index.xml" rel="self" type="application/rss+xml"/><description>Posts</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 22 Dec 2021 07:59:53 -0600</lastBuildDate><image><url>https://quantumpl.github.io/bib/media/logo_hu18592104feffac20f675f2d84225d529_16137_300x300_fit_lanczos_3.png</url><title>Posts</title><link>https://quantumpl.github.io/bib/post/</link></image><item><title>A Quantum PL Pronunciation Guide</title><link>https://quantumpl.github.io/bib/post/pronunciation-guide/</link><pubDate>Wed, 22 Dec 2021 07:59:53 -0600</pubDate><guid>https://quantumpl.github.io/bib/post/pronunciation-guide/</guid><description>&lt;table>
 &lt;thead>
 &lt;tr>
 &lt;th style="text-align:center">Project Name&lt;/th>
@@ -13,10 +13,6 @@
 &lt;tr>
 &lt;td style="text-align:center">&lt;a href="../../publication/Wecker2014">LIQ$Ui|\rangle$&lt;/a>&lt;/td>
 &lt;td style="text-align:center">&lt;em>liquid&lt;/em>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:center">Nielsen and Chuang&amp;rsquo;s &lt;br />&lt;a href="../../publication/Nielsen2010">Quantum Computation and Quantum Information&lt;/a>&lt;/td>
-&lt;td style="text-align:center">&lt;a href="https://en.wikipedia.org/wiki/Quantum_Computation_and_Quantum_Information" target="_blank" rel="noopener">&lt;em>Mike and Ike&lt;/em>&lt;/a>&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td style="text-align:center">&lt;a href="../../publication/Cross2021">OpenQASM&lt;/a>&lt;/td>
@@ -59,6 +55,10 @@
 &lt;td style="text-align:center">&lt;em>choir&lt;/em>&lt;/td>
 &lt;/tr>
 &lt;tr>
+&lt;td style="text-align:center">&lt;a href="../../publication/Bichsel2020/">Silq&lt;/a>&lt;/td>
+&lt;td style="text-align:center">&lt;em>silk&lt;/em>&lt;/td>
+&lt;/tr>
+&lt;tr>
 &lt;td style="text-align:center">&lt;a href="../../publication/Hietala2021">SQIR&lt;/a>&lt;/td>
 &lt;td style="text-align:center">&lt;em>squire&lt;/em>&lt;/td>
 &lt;/tr>
@@ -76,11 +76,12 @@
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
+&lt;p>&lt;em>Bonus&lt;/em>: Michael Nielsen and Isaac Chuang&amp;rsquo;s classic textbook &lt;a href="../../publication/Nielsen2010">Quantum Computation and Quantum Information&lt;/a> is affectionately known as &lt;a href="https://en.wikipedia.org/wiki/Quantum_Computation_and_Quantum_Information" target="_blank" rel="noopener">&lt;em>Mike and Ike&lt;/em>&lt;/a>.&lt;/p>
 &lt;section class="footnotes" role="doc-endnotes">
 &lt;hr>
 &lt;ol>
 &lt;li id="fn:1" role="doc-endnote">
-&lt;p>&lt;a href="https://bsiegelwax.medium.com/how-do-you-pronounce-qiskit-5d5df387e00" target="_blank" rel="noopener">How Do You Pronounce &amp;ldquo;Qiskit?&amp;quot;&lt;/a>; also see &lt;a href="https://twitter.com/qiskit/status/913080183405596673" target="_blank" rel="noopener">an older tweet&lt;/a> from the official Qiskit account.&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;p>Source: &lt;a href="https://bsiegelwax.medium.com/how-do-you-pronounce-qiskit-5d5df387e00" target="_blank" rel="noopener">How Do You Pronounce &amp;ldquo;Qiskit?&amp;quot;&lt;/a>; also see &lt;a href="https://twitter.com/qiskit/status/913080183405596673" target="_blank" rel="noopener">an older tweet&lt;/a> from the official Qiskit account.&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;/section></description></item><item><title>End of Year 2021 Updates</title><link>https://quantumpl.github.io/bib/post/eoy-2021-updates/</link><pubDate>Mon, 13 Dec 2021 09:30:04 -0600</pubDate><guid>https://quantumpl.github.io/bib/post/eoy-2021-updates/</guid><description>&lt;p>Since the &lt;a href="../gh-org-ui/">last news item&lt;/a> in July, there have been several visual and usability improvements to this QPL Bib. I list the major ones here:&lt;/p>
