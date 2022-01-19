@@ -1580,6 +1580,34 @@
   abstract   = {We introduce ProjectQ, an open source software effort for quantum computing. The first release features a compiler framework capable of targeting various types of hardware, a high-performance simulator with emulation capabilities, and compiler plug-ins for circuit drawing and resource estimation. We introduce our Python-embedded domain-specific language, present the features, and provide example implementations for quantum algorithms. The framework allows testing of quantum algorithms through simulation and enables running them on actual quantum hardware using a back-end connecting to the IBM Quantum Experience cloud service. Through extension mechanisms, users can provide back-ends to further quantum hardware, and scientists working on quantum compilation can provide plug-ins for additional compilation, optimization, gate synthesis, and layout strategies.}
 }
 
+@inproceedings{Svore2004,
+  title     = {Toward a Software Architecture for Quantum Computing Design Tools},
+  author    = {Svore, Krysta M. and Cross, Andrew W. and Aho, Alfred V. and Chuang, Isaac and Markov, Igor L.},
+  year      = {2004},
+  month     = jul,
+  booktitle = {Proceedings of the 2nd International Workshop on Quantum Programming Languages (QPL), Turku, Finland, July 12--13, 2004},
+  pages     = {145--162},
+  url       = {https://www.mathstat.dal.ca/~selinger/qpl2004/PDFS/10Svore-Cross-Aho-Chuang-Markov.pdf},
+  abstract  = {Compilers and computer-aided design tools will be essential for quantum computing. We present a computer-aided design flow that transforms a high-level language program representing a quantum computing algorithm into a technology-specific implementation. We trace the significant steps in this flow and illustrate the transformations to the representation of the quantum program. The focus of this paper is on the languages and transformations needed to represent and optimize a quantum algorithm along the design flow. Our software architecture provides significant benefits to algorithm designers, tool builders, and experimentalists. Of particular interest are the trade-offs in performance and accuracy that can be obtained by weighing different optimization and error-correction procedures at given levels in the design hierarchy.},
+  note      = {See also: \cite{Svore2006}}
+}
+
+@article{Svore2006,
+  title    = {A Layered Software Architecture for Quantum Computing Design Tools},
+  author   = {Svore, Krysta M. and Aho, Alfred V. and Cross, Andrew W. and Chuang, Isaac and Markov, Igor L.},
+  year     = {2006},
+  month    = jan,
+  journal  = {Computer},
+  volume   = {39},
+  number   = {1},
+  pages    = {74--83},
+  doi      = {10.1109/MC.2006.4},
+  url      = {https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/QC-svore-aho-cross-chuang-markov-computer-magazine-article-a-layered-software-architecture-for-quantum-computing-design-tools-jan06-SVORE.pdf},
+  abstract = {Compilers and computer-aided design tools are essential for fine-grained control of nanoscale quantum-mechanical systems. A proposed four-phase design flow assists with computations by transforming a quantum algorithm from a high-level language program into precisely scheduled physical actions.},
+  keywords = {quantum computing, design tools, programming languages, software architectures, epr pair creation},
+  note     = {See also: \cite{Svore2004}}
+}
+
 @inproceedings{Svore2018,
   title         = {Q\#: {{Enabling Scalable Quantum Computing}} and {{Development}} with a {{High}}-Level {{DSL}}},
   shorttitle    = {Q\#},
