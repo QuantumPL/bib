@@ -5,7 +5,7 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=generator content="Wowchemy 5.2.0 for Hugo">
 <meta name=author content="Kartik">
-<meta name=description content="In this work we present a functional programming language for quantum computation over mixed states. More interestingly, we develop a set of equations for the resulting programming language, proposing the first framework for equational reasoning about quantum computations over mixed states.">
+<meta name=description content="We express quantum computations (with measurements) using the arrow calculus extended with monadic constructions. This framework expresses quantum programming using well-understood and familiar classical patterns for programming in the presence of computational effects. In addition, the five laws of the arrow calculus provide a convenient framework for equational reasoning about quantum computations that include measurements.">
 <link rel=alternate hreflang=en-us href=https://quantumpl.github.io/bib/publication/Vizzotto2009/>
 <meta name=theme-color content="#1565c0">
 <script src=/bib/js/mathjax-config.js></script>
@@ -22,13 +22,13 @@
 <meta property="twitter:creator" content="@Quantum Programming Languages & Verification Bibliography">
 <meta property="og:site_name" content="Quantum PL & Verification Bibliography">
 <meta property="og:url" content="https://quantumpl.github.io/bib/publication/Vizzotto2009/">
-<meta property="og:title" content="Reasoning about General Quantum Programs over Mixed States | Quantum PL & Verification Bibliography">
-<meta property="og:description" content="In this work we present a functional programming language for quantum computation over mixed states. More interestingly, we develop a set of equations for the resulting programming language, proposing the first framework for equational reasoning about quantum computations over mixed states."><meta property="og:image" content="https://quantumpl.github.io/bib/media/logo_hu18592104feffac20f675f2d84225d529_16137_300x300_fit_lanczos_3.png">
+<meta property="og:title" content="The Arrow Calculus as a Quantum Programming Language | Quantum PL & Verification Bibliography">
+<meta property="og:description" content="We express quantum computations (with measurements) using the arrow calculus extended with monadic constructions. This framework expresses quantum programming using well-understood and familiar classical patterns for programming in the presence of computational effects. In addition, the five laws of the arrow calculus provide a convenient framework for equational reasoning about quantum computations that include measurements."><meta property="og:image" content="https://quantumpl.github.io/bib/media/logo_hu18592104feffac20f675f2d84225d529_16137_300x300_fit_lanczos_3.png">
 <meta property="twitter:image" content="https://quantumpl.github.io/bib/media/logo_hu18592104feffac20f675f2d84225d529_16137_300x300_fit_lanczos_3.png"><meta property="og:locale" content="en-us">
-<meta property="article:published_time" content="2009-11-01T00:00:00+00:00">
+<meta property="article:published_time" content="2009-06-01T00:00:00+00:00">
 <meta property="article:modified_time" content="2021-09-30T13:07:52-05:00">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://quantumpl.github.io/bib/publication/Vizzotto2009/"},"headline":"Reasoning about General Quantum Programs over Mixed States","datePublished":"2009-11-01T00:00:00Z","dateModified":"2021-09-30T13:07:52-05:00","author":{"@type":"Person","name":"Juliana Kaizer Vizzotto"},"publisher":{"@type":"Organization","name":"Quantum PL \u0026 Verification Bibliography","logo":{"@type":"ImageObject","url":"https://quantumpl.github.io/bib/media/logo_hu18592104feffac20f675f2d84225d529_16137_192x192_fit_lanczos_3.png"}},"description":"In this work we present a functional programming language for quantum computation over mixed states. More interestingly, we develop a set of equations for the resulting programming language, proposing the first framework for equational reasoning about quantum computations over mixed states."}</script>
-<title>Reasoning about General Quantum Programs over Mixed States | Quantum PL & Verification Bibliography</title>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://quantumpl.github.io/bib/publication/Vizzotto2009/"},"headline":"The Arrow Calculus as a Quantum Programming Language","datePublished":"2009-06-01T00:00:00Z","dateModified":"2021-09-30T13:07:52-05:00","author":{"@type":"Person","name":"Juliana Kaizer Vizzotto"},"publisher":{"@type":"Organization","name":"Quantum PL \u0026 Verification Bibliography","logo":{"@type":"ImageObject","url":"https://quantumpl.github.io/bib/media/logo_hu18592104feffac20f675f2d84225d529_16137_192x192_fit_lanczos_3.png"}},"description":"We express quantum computations (with measurements) using the arrow calculus extended with monadic constructions. This framework expresses quantum programming using well-understood and familiar classical patterns for programming in the presence of computational effects. In addition, the five laws of the arrow calculus provide a convenient framework for equational reasoning about quantum computations that include measurements."}</script>
+<title>The Arrow Calculus as a Quantum Programming Language | Quantum PL & Verification Bibliography</title>
 </head>
 <body id=top data-spy=scroll data-offset=70 data-target=#TableOfContents class=page-wrapper data-wc-page-id=c4f5723482a548f9fffec70c34365a79>
 <script src=/bib/js/wowchemy-init.min.b8153d4570dcbb34350a2a846dba8c03.js></script>
@@ -120,30 +120,30 @@
 <div class=page-body>
 <div class=pub>
 <div class="article-container pt-3">
-<h1>Reasoning about General Quantum Programs over Mixed States</h1>
+<h1>The Arrow Calculus as a Quantum Programming Language</h1>
 <div class=article-metadata>
 <div>
 <span>
 <a href=/bib/author/Juliana-Kaizer-Vizzotto/>Juliana Kaizer Vizzotto</a></span>, <span>
-<a href=/bib/author/Giovani-Rubert-Librelotto/>Giovani Rubert Librelotto</a></span>, <span>
+<a href=/bib/author/Andre-Rauber-Du-Bois/>André Rauber Du Bois</a></span>, <span>
 <a href=/bib/author/Amr-Sabry/>Amr Sabry</a></span>
 </div>
 <span class=article-date>
-November 2009
+June 2009
 </span>
 </div>
 <div class="btn-links mb-3">
 <a href=# class="btn btn-outline-primary btn-page-header js-cite-modal" data-filename=/bib/publication/Vizzotto2009/cite.bib>
 Cite
 </a>
-<a class="btn btn-outline-primary btn-page-header" href=https://doi.org/10.1007/978-3-642-10452-7_22 target=_blank rel=noopener>
+<a class="btn btn-outline-primary btn-page-header" href=https://doi.org/10.1007/978-3-642-02261-6_30 target=_blank rel=noopener>
 DOI
 </a>
 </div>
 </div>
 <div class=article-container>
 <h3>Abstract</h3>
-<p class=pub-abstract>In this work we present a functional programming language for quantum computation over mixed states. More interestingly, we develop a set of equations for the resulting programming language, proposing the first framework for equational reasoning about quantum computations over mixed states.</p>
+<p class=pub-abstract>We express quantum computations (with measurements) using the arrow calculus extended with monadic constructions. This framework expresses quantum programming using well-understood and familiar classical patterns for programming in the presence of computational effects. In addition, the five laws of the arrow calculus provide a convenient framework for equational reasoning about quantum computations that include measurements.</p>
 <div class=row>
 <div class=col-md-1></div>
 <div class=col-md-10>
@@ -164,29 +164,31 @@ Conference paper
 <div class=col-md-10>
 <div class=row>
 <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-<div class="col-12 col-md-9"><em>Formal Methods: Foundations and Applications: 12th Brazilian Symposium on Formal Methods, SBMF 2009 Gramado, Brazil, August 19-21, 2009 Revised Selected Papers</em></div>
+<div class="col-12 col-md-9"><em>Logic, Language, Information and Computation</em></div>
 </div>
 </div>
 <div class=col-md-1></div>
 </div>
 <div class="d-md-none space-below"></div>
 <div class=space-below></div>
-<div class=article-style></div>
+<div class=article-style><p>WoLLIC &lsquo;09</p>
+</div>
 <div class=article-tags>
 <a class="badge badge-light" href=/bib/tag/density-matrix/>density matrix</a>
 <a class="badge badge-light" href=/bib/tag/quantum-computation/>quantum computation</a>
 <a class="badge badge-light" href=/bib/tag/quantum-algorithm/>quantum algorithm</a>
-<a class="badge badge-light" href=/bib/tag/quantum-circuits/>quantum circuits</a>
-<a class="badge badge-light" href=/bib/tag/quantum-operation/>quantum operation</a>
+<a class="badge badge-light" href=/bib/tag/functional-programming/>functional programming</a>
+<a class="badge badge-light" href=/bib/tag/lambda-calculus/>lambda calculus</a>
+<a class="badge badge-light" href=/bib/tag/arrows/>arrows</a>
 </div>
 <div class="article-widget content-widget-hr">
 <h3>Related</h3>
 <ul>
 <li><a href=/bib/publication/Selinger2004/>A Brief Survey of Quantum Programming Languages</a></li>
+<li><a href=/bib/publication/Vizzotto2009a/>Reasoning about General Quantum Programs over Mixed States</a></li>
 <li><a href=/bib/publication/Heunen2022/>Quantum Information Effects</a></li>
-<li><a href=/bib/publication/Amy2019a/>Formal Methods in Quantum Circuit Design</a></li>
-<li><a href=/bib/publication/Ying2012/>Floyd--Hoare Logic for Quantum Programs</a></li>
-<li><a href=/bib/publication/Rennela2018/>Classical Control and Quantum Circuits in Enriched Category Theory</a></li>
+<li><a href=/bib/publication/DalLago2017/>The Geometry of Parallelism: Classical, Probabilistic, and Quantum Effects</a></li>
+<li><a href=/bib/publication/Pagani2014/>Applying Quantitative Semantics to Higher-Order Quantum Computing</a></li>
 </ul>
 </div>
 </div>

@@ -1241,6 +1241,9 @@ Philippe Jorrand and Simon Perdrix.
 <blockquote>
 In this chapter, we present applications of abstract interpretation techniques in quantum computing. Quantum computing is a now well-established domain of computer science, and the recent developments of semantic techniques show the vitality of this rapidly growing area. On the other hand, the proof has been made that abstract interpretation is a powerful theory (of &ldquo;classical&rdquo; computer science) for comparing more or less precise semantics of the same programming language. In a more general picture, abstract interpretation can be seen as a framework for comparing the precision of several representations of the same dynamic system evolution. In this paper, we point out that abstract interpretation can be fruitfully used in quantum computing: (i) for establishing a hierarchy of quantum semantics and (ii) for analyzing entanglement evolution.
 </blockquote>
+<blockquote>
+Keywords: abstract interpretation
+</blockquote>
 
 </td>
 </tr>
@@ -1301,7 +1304,7 @@ Xuan-Bach Le, Shang-Wei Lin, Jun Sun, and David Sanan.
 It is well-known that quantum programs are not only complicated to design but also challenging to verify because the quantum states can have exponential size and require sophisticated mathematics to encode and manipulate. To tackle the state-space explosion problem for quantum reasoning, we propose a Hoare-style inference framework that supports local reasoning for quantum programs. By providing a quantum interpretation of the separating conjunction, we are able to infuse separation logic into our framework and apply local reasoning using a quantum frame rule that is similar to the classical frame rule. For evaluation, we apply our framework to verify various quantum programs including Deutsch-Jozsa's algorithm and Grover's algorithm.
 </blockquote>
 <blockquote>
-Keywords: verification, quantum computing, formal semantics
+Keywords: verification, quantum computing, formal semantics, separation logic
 </blockquote>
 
 </td>
@@ -2408,7 +2411,7 @@ Dominique Unruh.
 Quantum Hoare logic allows us to reason about quantum programs. We present an extension of quantum Hoare logic that introduces &ldquo;ghost variables&rdquo; to extend the expressive power of pre-/postconditions. Ghost variables are variables that do not actually occur in the program and are allowed to have arbitrary quantum states (in a sense, they are existentially quantified), and be entangled with program variables. Ghost variables allow us to express properties such as the distribution of a program variable or the fact that a variable has classical content. And as a case study, we show how quantum Hoare logic with ghost variables can be used to prove the security of the quantum one-time pad.
 </blockquote>
 <blockquote>
-Keywords: quantum entanglement, quantum computing, probabilistic logic, computers, cryptography, semantics, hoare logic
+Keywords: quantum entanglement, quantum computing, probabilistic logic, cryptography, semantics, hoare logic
 </blockquote>
 
 </td>
@@ -2496,6 +2499,9 @@ Juliana&nbsp;Kaizer Vizzotto, Thorsten Altenkirch, and Amr Sabry.
 <blockquote>
 We show that the model of quantum computation based on density matrices and superoperators can be decomposed into a pure classical (functional) part and an effectful part modelling probabilities and measurement. The effectful part can be modelled using a generalisation of monads called arrows. We express the resulting executable model of quantum computing in the Haskell programming language using its special syntax for arrow computations. However, the embedding in Haskell is not perfect: a faithful model of quantum computing requires type capabilities that are not directly expressible in Haskell.
 </blockquote>
+<blockquote>
+Keywords: arrows
+</blockquote>
 
 </td>
 </tr>
@@ -2506,6 +2512,30 @@ We show that the model of quantum computation based on density matrices and supe
 [<a name="Vizzotto2009">111</a>]
 </td>
 <td class="bibtexitem">
+Juliana&nbsp;Kaizer Vizzotto, Andr&eacute;&nbsp;Rauber Du&nbsp;Bois, and Amr Sabry.
+ <b>The Arrow Calculus as a Quantum Programming Language</b>.
+ In Hiroakira Ono, Makoto Kanazawa, and Ruy de&nbsp;Queiroz, editors, <em>
+  Logic, Language, Information and Computation</em>, pages 379&#x2013;393, Berlin,
+  Heidelberg, June 2009. Springer.
+ WoLLIC '09.
+[&nbsp;<a href="bbt_bib.html#Vizzotto2009">bib</a>&nbsp;| 
+<a href="https://doi.org/10.1007/978-3-642-02261-6_30">DOI</a>&nbsp;]
+<blockquote>
+We express quantum computations (with measurements) using the arrow calculus extended with monadic constructions. This framework expresses quantum programming using well-understood and familiar classical patterns for programming in the presence of computational effects. In addition, the five laws of the arrow calculus provide a convenient framework for equational reasoning about quantum computations that include measurements.
+</blockquote>
+<blockquote>
+Keywords: density matrix, quantum computation, quantum algorithm, functional programming, lambda calculus, arrows
+</blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Vizzotto2009a">112</a>]
+</td>
+<td class="bibtexitem">
 Juliana&nbsp;Kaizer Vizzotto, Giovani&nbsp;Rubert Librelotto, and Amr Sabry.
  <b>Reasoning about General Quantum Programs over Mixed States</b>.
  In Marcel Vin&iacute;cius&nbsp;Medeiros Oliveira and Jim Woodcock, editors,
@@ -2513,7 +2543,7 @@ Juliana&nbsp;Kaizer Vizzotto, Giovani&nbsp;Rubert Librelotto, and Amr Sabry.
   on Formal Methods, SBMF 2009 Gramado, Brazil, August 19-21, 2009 Revised
   Selected Papers</em>, pages 321&#x2013;335, Berlin, Heidelberg, November 2009.
   Springer.
-[&nbsp;<a href="bbt_bib.html#Vizzotto2009">bib</a>&nbsp;| 
+[&nbsp;<a href="bbt_bib.html#Vizzotto2009a">bib</a>&nbsp;| 
 <a href="https://doi.org/10.1007/978-3-642-10452-7_22">DOI</a>&nbsp;]
 <blockquote>
 In this work we present a functional programming language for quantum computation over mixed states. More interestingly, we develop a set of equations for the resulting programming language, proposing the first framework for equational reasoning about quantum computations over mixed states.
@@ -2528,7 +2558,7 @@ Keywords: density matrix, quantum computation, quantum algorithm, quantum circui
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Wecker2014">112</a>]
+[<a name="Wecker2014">113</a>]
 </td>
 <td class="bibtexitem">
 Dave Wecker and Krysta&nbsp;M. Svore.
@@ -2547,12 +2577,12 @@ Languages, compilers, and computer-aided design tools will be essential for scal
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Ying2009a">113</a>]
+[<a name="Ying2009a">114</a>]
 </td>
 <td class="bibtexitem">
 Mingsheng Ying.
  <b>Hoare Logic for Quantum Programs</b>, June 2009.
- Early version of [<a href="#Ying2012">114</a>].
+ Early version of [<a href="#Ying2012">115</a>].
 [&nbsp;<a href="bbt_bib.html#Ying2009a">bib</a>&nbsp;| 
 <a href="http://arxiv.org/abs/0906.4586">arXiv</a>&nbsp;]
 <blockquote>
@@ -2565,14 +2595,14 @@ Hoare logic is a foundation of axiomatic semantics of classical programs and it 
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Ying2012">114</a>]
+[<a name="Ying2012">115</a>]
 </td>
 <td class="bibtexitem">
 Mingsheng Ying.
  <b>Floyd&#x2013;Hoare Logic for Quantum Programs</b>.
  <em>ACM Transactions on Programming Languages and Systems</em>,
   33(6):19:1&#x2013;19:49, January 2012.
- An early version is [<a href="#Ying2009a">113</a>].
+ An early version is [<a href="#Ying2009a">114</a>].
 [&nbsp;<a href="bbt_bib.html#Ying2012">bib</a>&nbsp;| 
 <a href="https://doi.org/10.1145/2049706.2049708">DOI</a>&nbsp;]
 <blockquote>
@@ -2588,7 +2618,7 @@ Keywords: quantum computation, programming languages, axiomatic semantics, floyd
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Ying2014a">115</a>]
+[<a name="Ying2014a">116</a>]
 </td>
 <td class="bibtexitem">
 Mingsheng Ying.
@@ -2606,7 +2636,7 @@ This paper introduces a new notion of quantum recursion of which the control flo
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Ying2016">116</a>]
+[<a name="Ying2016">117</a>]
 </td>
 <td class="bibtexitem">
 Mingsheng Ying.
@@ -2624,7 +2654,7 @@ Foundations of Quantum Programming discusses how new programming methodologies a
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Ying2009">117</a>]
+[<a name="Ying2009">118</a>]
 </td>
 <td class="bibtexitem">
 Mingsheng Ying, Runyao Duan, Yuan Feng, and Zhengfeng Ji.
@@ -2643,7 +2673,7 @@ This chapter presents a systematic exposition of predicate transformer semantics
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Ying2021">118</a>]
+[<a name="Ying2021">119</a>]
 </td>
 <td class="bibtexitem">
 Mingsheng Ying and Yuan Feng.
@@ -2664,7 +2694,7 @@ Keywords: model checking, quantum computing
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Ying2017">119</a>]
+[<a name="Ying2017">120</a>]
 </td>
 <td class="bibtexitem">
 Mingsheng Ying, Shenggang Ying, and Xiaodi Wu.
@@ -2689,7 +2719,7 @@ Keywords: inductive assertions, quantum programming, partial correctness, invari
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Ying2014">120</a>]
+[<a name="Ying2014">121</a>]
 </td>
 <td class="bibtexitem">
 Mingsheng Ying, Nengkun Yu, and Yuan Feng.
@@ -2707,7 +2737,7 @@ We extract a novel quantum programming paradigm - superposition of programs - fr
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Ying2013">121</a>]
+[<a name="Ying2013">122</a>]
 </td>
 <td class="bibtexitem">
 Mingsheng Ying, Nengkun Yu, Yuan Feng, and Runyao Duan.
@@ -2728,12 +2758,12 @@ This paper develops verification methodology for quantum programs, and the contr
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Ying2018">122</a>]
+[<a name="Ying2018">123</a>]
 </td>
 <td class="bibtexitem">
 Mingsheng Ying, Li&nbsp;Zhou, and Yangjia Li.
  <b>Reasoning about Parallel Quantum Programs</b>, October 2018.
- See also the published version [<a href="#Ying2021a">123</a>].
+ See also the published version [<a href="#Ying2021a">124</a>].
 [&nbsp;<a href="bbt_bib.html#Ying2018">bib</a>&nbsp;| 
 <a href="http://arxiv.org/abs/1810.11334">arXiv</a>&nbsp;]
 <blockquote>
@@ -2746,13 +2776,13 @@ We initiate the study of parallel quantum programming by defining the operationa
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Ying2021a">123</a>]
+[<a name="Ying2021a">124</a>]
 </td>
 <td class="bibtexitem">
 Mingsheng Ying, Li&nbsp;Zhou, Yangjia Li, and Yuan Feng.
  <b>A proof system for disjoint parallel quantum programs</b>.
  <em>Theoretical Computer Science</em>, 897:164&#x2013;184, November 2021.
- Essentially the first part of [<a href="#Ying2018">122</a>].
+ Essentially the first part of [<a href="#Ying2018">123</a>].
 [&nbsp;<a href="bbt_bib.html#Ying2021a">bib</a>&nbsp;| 
 <a href="https://doi.org/10.1016/j.tcs.2021.10.025">DOI</a>&nbsp;]
 <blockquote>
@@ -2768,7 +2798,7 @@ Keywords: quantum programming, quantum hoare logic, parallel programs, entanglem
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Yu2021">124</a>]
+[<a name="Yu2021">125</a>]
 </td>
 <td class="bibtexitem">
 Nengkun Yu and Jens Palsberg.
@@ -2793,7 +2823,7 @@ Keywords: quantum programming, scalability, abstract interpretation
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Yuan2022">125</a>]
+[<a name="Yuan2022">126</a>]
 </td>
 <td class="bibtexitem">
 Charles Yuan, Christopher McNally, and Michael Carbin.
@@ -2801,7 +2831,7 @@ Charles Yuan, Christopher McNally, and Michael Carbin.
   Programs</b>.
  <em>Proceedings of the ACM on Programming Languages</em>, 6(POPL):30,
   January 2022.
- POPL '22. Appendix missing.
+ POPL '22.
 [&nbsp;<a href="bbt_bib.html#Yuan2022">bib</a>&nbsp;| 
 <a href="https://doi.org/10.1145/3498691">DOI</a>&nbsp;]
 <blockquote>
@@ -2817,7 +2847,7 @@ Keywords: entanglement, purity, quantum programming, type systems
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Zhao2020">126</a>]
+[<a name="Zhao2020">127</a>]
 </td>
 <td class="bibtexitem">
 Jianjun Zhao.
@@ -2835,7 +2865,7 @@ Quantum software plays a critical role in exploiting the full potential of quant
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Zhou2021">127</a>]
+[<a name="Zhou2021">128</a>]
 </td>
 <td class="bibtexitem">
 Li&nbsp;Zhou, Gilles Barthe, Justin Hsu, Mingsheng Ying, and Nengkun Yu.
@@ -2851,7 +2881,7 @@ Li&nbsp;Zhou, Gilles Barthe, Justin Hsu, Mingsheng Ying, and Nengkun Yu.
 We propose a model of the substructural logic of Bunched Implications (BI) that is suitable for reasoning about quantum states. In our model, the separating conjunction of BI describes separable quantum states. We develop a program logic where pre- and post-conditions are BI formulas describing quantum states&#x2014;the program logic can be seen as a counterpart of separation logic for imperative quantum programs. We exercise the logic for proving the security of quantum one-time pad and secret sharing, and we show how the program logic can be used to discover a flaw in Google Cirq's tutorial on the Variational Quantum Algorithm (VQA).
 </blockquote>
 <blockquote>
-Keywords: formal logic, quantum computing, substructural logic, separating conjunction, separable quantum states, program logic, imperative quantum programs, variational quantum algorithm, quantum interpretation, bunched logic, quantum separation logic
+Keywords: formal logic, quantum computing, substructural logic, separating conjunction, separable quantum states, program logic, imperative quantum programs, variational quantum algorithm, quantum interpretation, bunched logic, separation logic
 </blockquote>
 
 </td>
@@ -2860,7 +2890,7 @@ Keywords: formal logic, quantum computing, substructural logic, separating conju
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Zhou2019">128</a>]
+[<a name="Zhou2019">129</a>]
 </td>
 <td class="bibtexitem">
 Li&nbsp;Zhou, Nengkun Yu, and Mingsheng Ying.

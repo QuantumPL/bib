@@ -970,7 +970,8 @@
   pages = {206--234},
   crossref = {<a href="#Gay2009">Gay2009</a>},
   doi = {10.1017/CBO9781139193313.007},
-  abstract = {In this chapter, we present applications of abstract interpretation techniques in quantum computing. Quantum computing is a now well-established domain of computer science, and the recent developments of semantic techniques show the vitality of this rapidly growing area. On the other hand, the proof has been made that abstract interpretation is a powerful theory (of ``classical'' computer science) for comparing more or less precise semantics of the same programming language. In a more general picture, abstract interpretation can be seen as a framework for comparing the precision of several representations of the same dynamic system evolution. In this paper, we point out that abstract interpretation can be fruitfully used in quantum computing: (i) for establishing a hierarchy of quantum semantics and (ii) for analyzing entanglement evolution.}
+  abstract = {In this chapter, we present applications of abstract interpretation techniques in quantum computing. Quantum computing is a now well-established domain of computer science, and the recent developments of semantic techniques show the vitality of this rapidly growing area. On the other hand, the proof has been made that abstract interpretation is a powerful theory (of ``classical'' computer science) for comparing more or less precise semantics of the same programming language. In a more general picture, abstract interpretation can be seen as a framework for comparing the precision of several representations of the same dynamic system evolution. In this paper, we point out that abstract interpretation can be fruitfully used in quantum computing: (i) for establishing a hierarchy of quantum semantics and (ii) for analyzing entanglement evolution.},
+  keywords = {abstract interpretation}
 }
 </pre>
 
@@ -1016,7 +1017,7 @@
   numpages = {27},
   doi = {10.1145/3498697},
   abstract = {It is well-known that quantum programs are not only complicated to design but also challenging to verify because the quantum states can have exponential size and require sophisticated mathematics to encode and manipulate. To tackle the state-space explosion problem for quantum reasoning, we propose a Hoare-style inference framework that supports local reasoning for quantum programs. By providing a quantum interpretation of the separating conjunction, we are able to infuse separation logic into our framework and apply local reasoning using a quantum frame rule that is similar to the classical frame rule. For evaluation, we apply our framework to verify various quantum programs including Deutsch-Jozsa's algorithm and Grover's algorithm.},
-  keywords = {verification, quantum computing, formal semantics},
+  keywords = {verification, quantum computing, formal semantics, separation logic},
   note = {POPL '22}
 }
 </pre>
@@ -1875,7 +1876,7 @@
   archiveprefix = {arXiv},
   eprint = {1902.00325},
   abstract = {Quantum Hoare logic allows us to reason about quantum programs. We present an extension of quantum Hoare logic that introduces ``ghost variables'' to extend the expressive power of pre-/postconditions. Ghost variables are variables that do not actually occur in the program and are allowed to have arbitrary quantum states (in a sense, they are existentially quantified), and be entangled with program variables. Ghost variables allow us to express properties such as the distribution of a program variable or the fact that a variable has classical content. And as a case study, we show how quantum Hoare logic with ghost variables can be used to prove the security of the quantum one-time pad.},
-  keywords = {quantum entanglement, quantum computing, probabilistic logic, computers, cryptography, semantics, hoare logic}
+  keywords = {quantum entanglement, quantum computing, probabilistic logic, cryptography, semantics, hoare logic}
 }
 </pre>
 
@@ -1921,12 +1922,31 @@
   doi = {10.1017/S0960129506005287},
   archiveprefix = {arXiv},
   eprint = {quant-ph/0501151},
-  abstract = {We show that the model of quantum computation based on density matrices and superoperators can be decomposed into a pure classical (functional) part and an effectful part modelling probabilities and measurement. The effectful part can be modelled using a generalisation of monads called arrows. We express the resulting executable model of quantum computing in the Haskell programming language using its special syntax for arrow computations. However, the embedding in Haskell is not perfect: a faithful model of quantum computing requires type capabilities that are not directly expressible in Haskell.}
+  abstract = {We show that the model of quantum computation based on density matrices and superoperators can be decomposed into a pure classical (functional) part and an effectful part modelling probabilities and measurement. The effectful part can be modelled using a generalisation of monads called arrows. We express the resulting executable model of quantum computing in the Haskell programming language using its special syntax for arrow computations. However, the embedding in Haskell is not perfect: a faithful model of quantum computing requires type capabilities that are not directly expressible in Haskell.},
+  keywords = {arrows}
 }
 </pre>
 
 <a name="Vizzotto2009"></a><pre>
 @inproceedings{<a href="bbt.html#Vizzotto2009">Vizzotto2009</a>,
+  title = {The Arrow Calculus as a Quantum Programming Language},
+  author = {Vizzotto, Juliana Kaizer and Du Bois, Andr{\'e} Rauber and Sabry, Amr},
+  year = {2009},
+  month = jun,
+  booktitle = {Logic, Language, Information and Computation},
+  editor = {Ono, Hiroakira and Kanazawa, Makoto and de Queiroz, Ruy},
+  publisher = {{Springer}},
+  address = {Berlin, Heidelberg},
+  pages = {379--393},
+  doi = {10.1007/978-3-642-02261-6_30},
+  abstract = {We express quantum computations (with measurements) using the arrow calculus extended with monadic constructions. This framework expresses quantum programming using well-understood and familiar classical patterns for programming in the presence of computational effects. In addition, the five laws of the arrow calculus provide a convenient framework for equational reasoning about quantum computations that include measurements.},
+  keywords = {density matrix, quantum computation, quantum algorithm, functional programming, lambda calculus, arrows},
+  note = {WoLLIC '09}
+}
+</pre>
+
+<a name="Vizzotto2009a"></a><pre>
+@inproceedings{<a href="bbt.html#Vizzotto2009a">Vizzotto2009a</a>,
   title = {Reasoning about General Quantum Programs over Mixed States},
   author = {Vizzotto, Juliana Kaizer and Librelotto, Giovani Rubert and Sabry, Amr},
   year = {2009},
@@ -2159,7 +2179,7 @@
   doi = {10.1145/3498691},
   abstract = {Quantum programming languages enable developers to implement algorithms for quantum computers that promise computational breakthroughs in classically intractable tasks. Programming quantum computers requires awareness of entanglement, the phenomenon in which measurement outcomes of qubits are correlated. Entanglement can determine the correctness of algorithms and suitability of programming patterns. In this work, we formalize purity as a central tool for automating reasoning about entanglement in quantum programs. A pure expression is one whose evaluation is unaffected by the measurement outcomes of qubits that it does not own, implying freedom from entanglement with any other expression in the computation. We present Twist, the first language that features a type system for sound reasoning about purity. The type system enables the developer to identify pure expressions using type annotations. Twist also features purity assertion operators that state the absence of entanglement in the output of quantum gates. To soundly check these assertions, Twist uses a combination of static analysis and runtime verification. We evaluate Twist's type system and analyses on a benchmark suite of quantum programs in simulation, demonstrating that Twist can express quantum algorithms, catch programming errors in them, and support programs that existing languages disallow, while incurring runtime verification overhead of less than 3.5%.},
   keywords = {entanglement, purity, quantum programming, type systems},
-  note = {POPL '22. Appendix missing.}
+  note = {POPL '22.}
 }
 </pre>
 
@@ -2208,7 +2228,7 @@
   archiveprefix = {arXiv},
   eprint = {2102.00329},
   abstract = {We propose a model of the substructural logic of Bunched Implications (BI) that is suitable for reasoning about quantum states. In our model, the separating conjunction of BI describes separable quantum states. We develop a program logic where pre- and post-conditions are BI formulas describing quantum states---the program logic can be seen as a counterpart of separation logic for imperative quantum programs. We exercise the logic for proving the security of quantum one-time pad and secret sharing, and we show how the program logic can be used to discover a flaw in Google Cirq's tutorial on the Variational Quantum Algorithm (VQA).},
-  keywords = {formal logic, quantum computing, substructural logic, separating conjunction, separable quantum states, program logic, imperative quantum programs, variational quantum algorithm, quantum interpretation, bunched logic, quantum separation logic}
+  keywords = {formal logic, quantum computing, substructural logic, separating conjunction, separable quantum states, program logic, imperative quantum programs, variational quantum algorithm, quantum interpretation, bunched logic, separation logic}
 }
 </pre>
 
