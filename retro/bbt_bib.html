@@ -1047,7 +1047,7 @@
   address = {Dagstuhl, Germany},
   series = {Leibniz International Proceedings in Informatics (LIPIcs)},
   volume = {213},
-  eid = {13},
+  eid = {51},
   pages = {51:1--51:20},
   doi = {10.4230/LIPIcs.FSTTCS.2021.51},
   abstract = {In this paper, we introduce dynamic lifting to a quantum circuit-description language, following the Proto-Quipper language approach. Dynamic lifting allows programs to transfer the result of measuring quantum data -- qubits -- into classical data -- booleans -- . We propose a type system and an operational semantics for the language and we state safety properties. Next, we introduce a concrete categorical semantics for the proposed language, basing our approach on a recent model from Rios\&Selinger for Proto-Quipper-M. Our approach is to construct on top of a concrete category of circuits with measurements a Kleisli category, capturing as a side effect the action of retrieving classical content out of a quantum memory. We then show a soundness result for this semantics.},
@@ -1102,6 +1102,26 @@
   abstract = {In this paper, we propose Proq, a runtime assertion scheme for testing and debugging quantum programs on a quantum computer. The predicates in Proq are represented by projections (or equivalently, closed subspaces of the state space), following Birkhoff-von Neumann quantum logic. The satisfaction of a projection by a quantum state can be directly checked upon a small number of projective measurements rather than a large number of repeated executions. On the theory side, we rigorously prove that checking projection-based assertions can help locate bugs or statistically assure that the semantic function of the tested program is close to what we expect, for both exact and approximate quantum programs. On the practice side, we consider hardware constraints and introduce several techniques to transform the assertions, making them directly executable on the measurement-restricted quantum computers. We also propose to achieve simplified assertion implementation using local projection technique with soundness guaranteed. We compare Proq with existing quantum program assertions and demonstrate the effectiveness and efficiency of Proq by its applications to assert two sophisticated quantum algorithms, the Harrow-Hassidim-Lloyd algorithm and Shor's algorithm.},
   keywords = {assertion, quantum computing, program testing, quantum programming},
   note = {OOPSLA '20}
+}
+</pre>
+
+<a name="Li2021"></a><pre>
+@inproceedings{<a href="bbt.html#Li2021">Li2021</a>,
+  title = {{Quantum Relational Hoare Logic with Expectations}},
+  author = {Li, Yangjia and Unruh, Dominique},
+  year = {2021},
+  month = jul,
+  booktitle = {48th International Colloquium on Automata, Languages, and Programming (ICALP 2021)},
+  editor = {Bansal, Nikhil and Merelli, Emanuela and Worrell, James},
+  publisher = {{Schloss Dagstuhl -- Leibniz-Zentrum f{\"u}r Informatik}},
+  address = {Dagstuhl, Germany},
+  series = {Leibniz International Proceedings in Informatics (LIPIcs)},
+  volume = {198},
+  eid = {136},
+  pages = {136:1--136:20},
+  doi = {10.4230/LIPIcs.ICALP.2021.136},
+  abstract = {We present a variant of the quantum relational Hoare logic from (Unruh, POPL 2019) that allows us to use "expectations" in pre- and postconditions. That is, when reasoning about pairs of programs, our logic allows us to quantitatively reason about how much certain pre-/postconditions are satisfied that refer to the relationship between the programs inputs/outputs.},
+  keywords = {quantum cryptography, hoare logic, formal verification}
 }
 </pre>
 
