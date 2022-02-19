@@ -1335,7 +1335,7 @@
 
 <a name="Paykin2018"></a><pre>
 @phdthesis{<a href="bbt.html#Paykin2018">Paykin2018</a>,
-  title = {Linear/non-Linear Types For Embedded Domain-Specific Languages},
+  title = {{Linear/Non-Linear Types for Embedded Domain-Specific Languages}},
   author = {Paykin, Jennifer},
   year = {2018},
   month = aug,
@@ -1360,7 +1360,7 @@
   archiveprefix = {arXiv},
   eprint = {1904.04371},
   abstract = {This paper presents an equational theory for the QRAM model of quantum computation, formulated as an embedded language inside of homotopy type theory. The embedded language approach is highly expressive, and reflects the style of state-of-the art quantum languages like Quipper and QWIRE. The embedding takes advantage of features of homotopy type theory to encode unitary transformations as higher inductive paths, simplifying the presentation of an equational theory. We prove that this equational theory is sound and complete with respect to established models of quantum computation.},
-  note = {Talk at QPL '19}
+  note = {QPL '19}
 }
 </pre>
 
@@ -1476,6 +1476,26 @@
   pages = {299--312},
   doi = {10.4204/EPTCS.287.17},
   abstract = {Common quantum algorithms make heavy use of ancillae: scratch qubits that are initialized at some state and later returned to that state and discarded. Existing quantum circuit languages let programmers assert that a qubit has been returned to the |0{$>$} state before it is discarded, allowing for a range of optimizations. However, existing languages do not provide the tools to verify these assertions, introducing a potential source of errors. In this paper we present methods for verifying that ancillae are discarded in the desired state, and use these methods to implement a verified compiler from classical functions to quantum oracles.}
+}
+</pre>
+
+<a name="Rand2019a"></a><pre>
+@inproceedings{<a href="bbt.html#Rand2019a">Rand2019a</a>,
+  title = {{Formal Verification vs. Quantum Uncertainty}},
+  author = {Rand, Robert and Hietala, Kesha and Hicks, Michael},
+  year = {2019},
+  month = jul,
+  booktitle = {3rd Summit on Advances in Programming Languages (SNAPL 2019)},
+  editor = {Benjamin S. Lerner and Rastislav Bod{\'i}k and Shriram Krishnamurthi},
+  publisher = {{Schloss Dagstuhl -- Leibniz-Zentrum f{\"u}r Informatik}},
+  address = {Dagstuhl, Germany},
+  series = {Leibniz International Proceedings in Informatics (LIPIcs)},
+  volume = {136},
+  eid = {12},
+  pages = {12:1--12:11},
+  doi = {10.4230/LIPIcs.SNAPL.2019.12},
+  abstract = {Quantum programming is hard: Quantum programs are necessarily probabilistic and impossible to examine without disrupting the execution of a program. In response to this challenge, we and a number of other researchers have written tools to verify quantum programs against their intended semantics. This is not enough. Verifying an idealized semantics against a real world quantum program doesn't allow you to confidently predict the program's output. In order to have verification that works, you need both an error semantics related to the hardware at hand (this is necessarily low level) and certified compilation to the that same hardware. Once we have these two things, we can talk about an approach to quantum programming where we start by writing and verifying programs at a high level, attempt to verify properties of the compiled code, and repeat as necessary.},
+  keywords = {formal verification, quantum computing, programming languages, quantum error correction, certified compilation, nisq}
 }
 </pre>
 

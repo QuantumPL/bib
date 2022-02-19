@@ -5,8 +5,8 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=generator content="Wowchemy 5.2.0 for Hugo">
 <meta name=author content="Kartik">
-<meta name=description content="As quantum computers become real, it is high time we come up with effective techniques that help programmers write correct quantum programs. In classical computing, formal verification and sound static type systems prevent several classes of bugs from being introduced. There is a need for similar techniques in the quantum regime. Inspired by Hoare Type Theory in the classical paradigm, we propose Quantum Hoare Types by extending the Quantum IO Monad by indexing it with pre- and post-conditions that serve as program specifications. In this paper, we introduce Quantum Hoare Type Theory (QHTT), present its syntax and typing rules, and demonstrate its effectiveness with the help of examples. QHTT has the potential to be a unified system for programming, specifying, and reasoning about quantum programs. This is a work in progress.">
-<link rel=alternate hreflang=en-us href=https://quantumpl.github.io/bib/publication/Singhal2021a/>
+<meta name=description content="Quantum programming is hard: Quantum programs are necessarily probabilistic and impossible to examine without disrupting the execution of a program. In response to this challenge, we and a number of other researchers have written tools to verify quantum programs against their intended semantics. This is not enough. Verifying an idealized semantics against a real world quantum program doesn't allow you to confidently predict the program's output. In order to have verification that works, you need both an error semantics related to the hardware at hand (this is necessarily low level) and certified compilation to the that same hardware. Once we have these two things, we can talk about an approach to quantum programming where we start by writing and verifying programs at a high level, attempt to verify properties of the compiled code, and repeat as necessary.">
+<link rel=alternate hreflang=en-us href=https://quantumpl.github.io/bib/publication/Rand2019a/>
 <meta name=theme-color content="#1565c0">
 <script src=/bib/js/mathjax-config.js></script>
 <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin=anonymous>
@@ -16,21 +16,21 @@
 <link rel=stylesheet href=/bib/css/wowchemy.a53ee215eb6dcadd1a125dc8098e4c3e.css>
 <link rel=icon type=image/png href=/bib/media/icon_hu18592104feffac20f675f2d84225d529_16137_32x32_fill_lanczos_center_3.png>
 <link rel=apple-touch-icon type=image/png href=/bib/media/icon_hu18592104feffac20f675f2d84225d529_16137_180x180_fill_lanczos_center_3.png>
-<link rel=canonical href=https://quantumpl.github.io/bib/publication/Singhal2021a/>
+<link rel=canonical href=https://quantumpl.github.io/bib/publication/Rand2019a/>
 <meta property="twitter:card" content="summary">
 <meta property="twitter:site" content="@Quantum Programming Languages & Verification Bibliography">
 <meta property="twitter:creator" content="@Quantum Programming Languages & Verification Bibliography">
 <meta property="og:site_name" content="Quantum PL & Verification Bibliography">
-<meta property="og:url" content="https://quantumpl.github.io/bib/publication/Singhal2021a/">
-<meta property="og:title" content="Quantum Hoare Type Theory: Extended Abstract | Quantum PL & Verification Bibliography">
-<meta property="og:description" content="As quantum computers become real, it is high time we come up with effective techniques that help programmers write correct quantum programs. In classical computing, formal verification and sound static type systems prevent several classes of bugs from being introduced. There is a need for similar techniques in the quantum regime. Inspired by Hoare Type Theory in the classical paradigm, we propose Quantum Hoare Types by extending the Quantum IO Monad by indexing it with pre- and post-conditions that serve as program specifications. In this paper, we introduce Quantum Hoare Type Theory (QHTT), present its syntax and typing rules, and demonstrate its effectiveness with the help of examples. QHTT has the potential to be a unified system for programming, specifying, and reasoning about quantum programs. This is a work in progress."><meta property="og:image" content="https://quantumpl.github.io/bib/media/logo_hu18592104feffac20f675f2d84225d529_16137_300x300_fit_lanczos_3.png">
+<meta property="og:url" content="https://quantumpl.github.io/bib/publication/Rand2019a/">
+<meta property="og:title" content="Formal Verification vs. Quantum Uncertainty | Quantum PL & Verification Bibliography">
+<meta property="og:description" content="Quantum programming is hard: Quantum programs are necessarily probabilistic and impossible to examine without disrupting the execution of a program. In response to this challenge, we and a number of other researchers have written tools to verify quantum programs against their intended semantics. This is not enough. Verifying an idealized semantics against a real world quantum program doesn't allow you to confidently predict the program's output. In order to have verification that works, you need both an error semantics related to the hardware at hand (this is necessarily low level) and certified compilation to the that same hardware. Once we have these two things, we can talk about an approach to quantum programming where we start by writing and verifying programs at a high level, attempt to verify properties of the compiled code, and repeat as necessary."><meta property="og:image" content="https://quantumpl.github.io/bib/media/logo_hu18592104feffac20f675f2d84225d529_16137_300x300_fit_lanczos_3.png">
 <meta property="twitter:image" content="https://quantumpl.github.io/bib/media/logo_hu18592104feffac20f675f2d84225d529_16137_300x300_fit_lanczos_3.png"><meta property="og:locale" content="en-us">
-<meta property="article:published_time" content="2021-09-01T00:00:00+00:00">
-<meta property="article:modified_time" content="2021-12-13T08:25:19-06:00">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://quantumpl.github.io/bib/publication/Singhal2021a/"},"headline":"Quantum Hoare Type Theory: Extended Abstract","datePublished":"2021-09-01T00:00:00Z","dateModified":"2021-12-13T08:25:19-06:00","author":{"@type":"Person","name":"Kartik Singhal"},"publisher":{"@type":"Organization","name":"Quantum PL \u0026 Verification Bibliography","logo":{"@type":"ImageObject","url":"https://quantumpl.github.io/bib/media/logo_hu18592104feffac20f675f2d84225d529_16137_192x192_fit_lanczos_3.png"}},"description":"As quantum computers become real, it is high time we come up with effective techniques that help programmers write correct quantum programs. In classical computing, formal verification and sound static type systems prevent several classes of bugs from being introduced. There is a need for similar techniques in the quantum regime. Inspired by Hoare Type Theory in the classical paradigm, we propose Quantum Hoare Types by extending the Quantum IO Monad by indexing it with pre- and post-conditions that serve as program specifications. In this paper, we introduce Quantum Hoare Type Theory (QHTT), present its syntax and typing rules, and demonstrate its effectiveness with the help of examples. QHTT has the potential to be a unified system for programming, specifying, and reasoning about quantum programs. This is a work in progress."}</script>
-<title>Quantum Hoare Type Theory: Extended Abstract | Quantum PL & Verification Bibliography</title>
+<meta property="article:published_time" content="2019-07-01T00:00:00+00:00">
+<meta property="article:modified_time" content="2022-02-19T13:41:47-06:00">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://quantumpl.github.io/bib/publication/Rand2019a/"},"headline":"Formal Verification vs. Quantum Uncertainty","datePublished":"2019-07-01T00:00:00Z","dateModified":"2022-02-19T13:41:47-06:00","author":{"@type":"Person","name":"Robert Rand"},"publisher":{"@type":"Organization","name":"Quantum PL \u0026 Verification Bibliography","logo":{"@type":"ImageObject","url":"https://quantumpl.github.io/bib/media/logo_hu18592104feffac20f675f2d84225d529_16137_192x192_fit_lanczos_3.png"}},"description":"Quantum programming is hard: Quantum programs are necessarily probabilistic and impossible to examine without disrupting the execution of a program. In response to this challenge, we and a number of other researchers have written tools to verify quantum programs against their intended semantics. This is not enough. Verifying an idealized semantics against a real world quantum program doesn't allow you to confidently predict the program's output. In order to have verification that works, you need both an error semantics related to the hardware at hand (this is necessarily low level) and certified compilation to the that same hardware. Once we have these two things, we can talk about an approach to quantum programming where we start by writing and verifying programs at a high level, attempt to verify properties of the compiled code, and repeat as necessary."}</script>
+<title>Formal Verification vs. Quantum Uncertainty | Quantum PL & Verification Bibliography</title>
 </head>
-<body id=top data-spy=scroll data-offset=70 data-target=#TableOfContents class=page-wrapper data-wc-page-id=ad0df641b571d6e07cc697b93f739f38>
+<body id=top data-spy=scroll data-offset=70 data-target=#TableOfContents class=page-wrapper data-wc-page-id=11f79bcbb907f811e9fdb7ef40502055>
 <script src=/bib/js/wowchemy-init.min.b8153d4570dcbb34350a2a846dba8c03.js></script>
 <aside class=search-modal id=search>
 <div class=container>
@@ -120,32 +120,30 @@
 <div class=page-body>
 <div class=pub>
 <div class="article-container pt-3">
-<h1>Quantum Hoare Type Theory: Extended Abstract</h1>
+<h1>Formal Verification vs. Quantum Uncertainty</h1>
 <div class=article-metadata>
 <div>
 <span>
-<a href=/bib/author/Kartik-Singhal/>Kartik Singhal</a></span>, <span>
-<a href=/bib/author/John-Reppy/>John Reppy</a></span>
+<a href=/bib/author/Robert-Rand/>Robert Rand</a></span>, <span>
+<a href=/bib/author/Kesha-Hietala/>Kesha Hietala</a></span>, <span>
+<a href=/bib/author/Michael-Hicks/>Michael Hicks</a></span>
 </div>
 <span class=article-date>
-September 2021
+July 2019
 </span>
 </div>
 <div class="btn-links mb-3">
-<a href=# class="btn btn-outline-primary btn-page-header js-cite-modal" data-filename=/bib/publication/Singhal2021a/cite.bib>
+<a href=# class="btn btn-outline-primary btn-page-header js-cite-modal" data-filename=/bib/publication/Rand2019a/cite.bib>
 Cite
 </a>
-<a class="btn btn-outline-primary btn-page-header" href=https://doi.org/10.4204/EPTCS.340.15 target=_blank rel=noopener>
+<a class="btn btn-outline-primary btn-page-header" href=https://doi.org/10.4230/LIPIcs.SNAPL.2019.12 target=_blank rel=noopener>
 DOI
-</a>
-<a class="btn btn-outline-primary btn-page-header" href=https://ks.cs.uchicago.edu/publication/qhtt/ target=_blank rel=noopener>
-URL
 </a>
 </div>
 </div>
 <div class=article-container>
 <h3>Abstract</h3>
-<p class=pub-abstract>As quantum computers become real, it is high time we come up with effective techniques that help programmers write correct quantum programs. In classical computing, formal verification and sound static type systems prevent several classes of bugs from being introduced. There is a need for similar techniques in the quantum regime. Inspired by Hoare Type Theory in the classical paradigm, we propose Quantum Hoare Types by extending the Quantum IO Monad by indexing it with pre- and post-conditions that serve as program specifications. In this paper, we introduce Quantum Hoare Type Theory (QHTT), present its syntax and typing rules, and demonstrate its effectiveness with the help of examples. QHTT has the potential to be a unified system for programming, specifying, and reasoning about quantum programs. This is a work in progress.</p>
+<p class=pub-abstract>Quantum programming is hard: Quantum programs are necessarily probabilistic and impossible to examine without disrupting the execution of a program. In response to this challenge, we and a number of other researchers have written tools to verify quantum programs against their intended semantics. This is not enough. Verifying an idealized semantics against a real world quantum program doesn&rsquo;t allow you to confidently predict the program&rsquo;s output. In order to have verification that works, you need both an error semantics related to the hardware at hand (this is necessarily low level) and certified compilation to the that same hardware. Once we have these two things, we can talk about an approach to quantum programming where we start by writing and verifying programs at a high level, attempt to verify properties of the compiled code, and repeat as necessary.</p>
 <div class=row>
 <div class=col-md-1></div>
 <div class=col-md-10>
@@ -166,35 +164,30 @@ Conference paper
 <div class=col-md-10>
 <div class=row>
 <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-<div class="col-12 col-md-9"><em>Proceedings of the 17th International Conference on Quantum Physics and Logic (QPL), Paris, France, June 2&ndash;6, 2020</em></div>
+<div class="col-12 col-md-9"><em>3rd Summit on Advances in Programming Languages (SNAPL 2019)</em></div>
 </div>
 </div>
 <div class=col-md-1></div>
 </div>
 <div class="d-md-none space-below"></div>
 <div class=space-below></div>
-<div class=article-style><p>Also see expanded version: [<a href=../Singhal2020a>Singhal2020a</a>]</p>
-</div>
+<div class=article-style></div>
 <div class=article-tags>
 <a class="badge badge-light" href=/bib/tag/formal-verification/>formal verification</a>
-<a class="badge badge-light" href=/bib/tag/program-proof/>program proof</a>
-<a class="badge badge-light" href=/bib/tag/programming-languages/>programming languages</a>
 <a class="badge badge-light" href=/bib/tag/quantum-computing/>quantum computing</a>
-<a class="badge badge-light" href=/bib/tag/type-systems/>type systems</a>
-<a class="badge badge-light" href=/bib/tag/type-theory/>type theory</a>
-<a class="badge badge-light" href=/bib/tag/pre-and-postconditions/>pre- and postconditions</a>
-<a class="badge badge-light" href=/bib/tag/program-specifications/>program specifications</a>
-<a class="badge badge-light" href=/bib/tag/hoare-logic/>hoare logic</a>
-<a class="badge badge-light" href=/bib/tag/separation-logic/>separation logic</a>
+<a class="badge badge-light" href=/bib/tag/programming-languages/>programming languages</a>
+<a class="badge badge-light" href=/bib/tag/quantum-error-correction/>quantum error correction</a>
+<a class="badge badge-light" href=/bib/tag/certified-compilation/>certified compilation</a>
+<a class="badge badge-light" href=/bib/tag/nisq/>nisq</a>
 </div>
 <div class="article-widget content-widget-hr">
 <h3>Related</h3>
 <ul>
-<li><a href=/bib/publication/Singhal2020a/>Quantum Hoare Type Theory</a></li>
 <li><a href=/bib/publication/Singhal2020/>Verified translation between low-level quantum languages</a></li>
 <li><a href=/bib/publication/Hietala2021/>A Verified Optimizer for Quantum Circuits</a></li>
-<li><a href=/bib/publication/Singhal2021/>Toward a Type-Theoretic Interpretation of Q# and Statically Enforcing the No-Cloning Theorem</a></li>
-<li><a href=/bib/publication/Rand2019a/>Formal Verification vs. Quantum Uncertainty</a></li>
+<li><a href=/bib/publication/Singhal2021a/>Quantum Hoare Type Theory: Extended Abstract</a></li>
+<li><a href=/bib/publication/Singhal2020a/>Quantum Hoare Type Theory</a></li>
+<li><a href=/bib/publication/Amy2019a/>Formal Methods in Quantum Circuit Design</a></li>
 </ul>
 </div>
 </div>
