@@ -400,6 +400,19 @@
 }
 </pre>
 
+<a name="Colledan2022"></a><pre>
+@misc{<a href="bbt.html#Colledan2022">Colledan2022</a>,
+  title = {{On Dynamic Lifting and Effect Typing in Circuit Description Languages (Extended Version)}},
+  author = {Colledan, Andrea and Dal Lago, Ugo},
+  year = {2022},
+  month = feb,
+  archiveprefix = {arXiv},
+  eprint = {2202.07636},
+  abstract = {In the realm of quantum computing, circuit description languages represent a valid alternative to traditional QRAM-style languages. They indeed allow for finer control over the output circuit, without sacrificing flexibility nor modularity. We introduce a generalization of the paradigmatic lambda-calculus Proto-Quipper-M, itself modeling the core features of the quantum circuit description language Quipper. The extension, called Proto-Quipper-K, is meant to capture a very general form of dynamic lifting. This is made possible by the introduction of a rich type and effect system in which not only computations, but also the very types are effectful. The main results we give for the introduced language are the classic type soundness results, namely subject reduction and progress.},
+  keywords = {proto-quipper-k, proto-quipper-m, dynamic lifting}
+}
+</pre>
+
 <a name="Cross2017"></a><pre>
 @misc{<a href="bbt.html#Cross2017">Cross2017</a>,
   title = {Open {{Quantum Assembly Language}}},
@@ -550,8 +563,8 @@
   doi = {10.1145/3373718.3394765},
   archiveprefix = {arXiv},
   eprint = {2004.13472},
-  abstract = {Modern quantum programming languages integrate quantum resources and classical control. They must, on the one hand, be linearly typed to reflect the no-cloning property of quantum resources. On the other hand, high-level and practical languages should also support quantum circuits as first-class citizens, as well as families of circuits that are indexed by some classical parameters. Quantum programming languages thus need linear dependent type theory. This paper defines a general semantic structure for such a type theory via certain fibrations of monoidal categories. The categorical model of the quantum circuit description language Proto-Quipper-M in [28] constitutes an example of such a fibration, which means that the language can readily be integrated with dependent types. We then devise both a general linear dependent type system and a dependently typed extension of Proto-Quipper-M, and provide them with operational semantics as well as a prototype implementation.},
-  keywords = {fibration, categorical model, quantum programming languages, linear dependent types}
+  abstract = {Modern quantum programming languages integrate quantum resources and classical control. They must, on the one hand, be linearly typed to reflect the no-cloning property of quantum resources. On the other hand, high-level and practical languages should also support quantum circuits as first-class citizens, as well as families of circuits that are indexed by some classical parameters. Quantum programming languages thus need linear dependent type theory. This paper defines a general semantic structure for such a type theory via certain fibrations of monoidal categories. The categorical model of the quantum circuit description language Proto-Quipper-M by Rios & Selinger constitutes an example of such a fibration, which means that the language can readily be integrated with dependent types. We then devise both a general linear dependent type system and a dependently typed extension of Proto-Quipper-M, and provide them with operational semantics as well as a prototype implementation.},
+  keywords = {proto-quipper-d, fibration, categorical model, quantum programming languages, linear dependent types, proto-quipper-m}
 }
 </pre>
 
@@ -1001,6 +1014,24 @@
 }
 </pre>
 
+<a name="Kornell2021"></a><pre>
+@inproceedings{<a href="bbt.html#Kornell2021">Kornell2021</a>,
+  title = {Quantum {CPOs}},
+  author = {Kornell, Andre and Lindenhovius, Bert and Mislove, Michael},
+  year = {2021},
+  month = sep,
+  booktitle = {Proceedings of the 17th International Conference on Quantum Physics and Logic (QPL), Paris, France, June 2--6, 2020},
+  editor = {Valiron, Beno{\^i}t and Mansfield, Shane and Arrighi, Pablo and Panangaden, Prakash},
+  publisher = {{Open Publishing Association}},
+  series = {Electronic Proceedings in Theoretical Computer Science},
+  volume = {340},
+  pages = {174--187},
+  doi = {10.4204/EPTCS.340.9},
+  abstract = {We introduce the monoidal closed category qCPO of quantum cpos, whose objects are "quantized" analogs of omega-complete partial orders (cpos). The category qCPO is enriched over the category CPO of cpos, and contains both CPO, and the opposite of the category FdAlg of finite-dimensional von Neumann algebras as monoidal subcategories. We use qCPO to construct a sound model for the quantum programming language Proto-Quipper-M (PQM) extended with term recursion, as well as a sound and computationally adequate model for the Linear/Non-Linear Fixpoint Calculus (LNL-FPC), which is both an extension of the Fixpoint Calculus (FPC) with linear types, and an extension of a circuit-free fragment of PQM that includes recursive types.},
+  keywords = {proto-quipper-m}
+}
+</pre>
+
 <a name="LaRose2019"></a><pre>
 @article{<a href="bbt.html#LaRose2019">LaRose2019</a>,
   title = {Overview and {{Comparison}} of {{Gate Level Quantum Software Platforms}}},
@@ -1051,7 +1082,7 @@
   pages = {51:1--51:20},
   doi = {10.4230/LIPIcs.FSTTCS.2021.51},
   abstract = {In this paper, we introduce dynamic lifting to a quantum circuit-description language, following the Proto-Quipper language approach. Dynamic lifting allows programs to transfer the result of measuring quantum data -- qubits -- into classical data -- booleans -- . We propose a type system and an operational semantics for the language and we state safety properties. Next, we introduce a concrete categorical semantics for the proposed language, basing our approach on a recent model from Rios\&Selinger for Proto-Quipper-M. Our approach is to construct on top of a concrete category of circuits with measurements a Kleisli category, capturing as a side effect the action of retrieving classical content out of a quantum memory. We then show a soundness result for this semantics.},
-  keywords = {categorical semantics, operational semantics, quantum circuit description language, proto-quipper-l}
+  keywords = {categorical semantics, operational semantics, quantum circuit description language, proto-quipper-l, proto-quipper-m, dynamic lifting}
 }
 </pre>
 
@@ -1191,7 +1222,8 @@
   doi = {10.1007/s10817-019-09527-x},
   archiveprefix = {arXiv},
   eprint = {1812.03624},
-  abstract = {We develop a linear logical framework within the Hybrid system and use it to reason about the type system of a quantum lambda calculus. In particular, we consider a practical version of the calculus called Proto-Quipper, which contains the core of Quipper. Quipper is a quantum programming language under active development and recently has gained much popularity among the quantum computing communities. Hybrid is a system that is designed to support the use of higher-order abstract syntax for representing and reasoning about formal systems implemented in the Coq Proof Assistant. In this work, we extend the system with a linear specification logic (SL) in order to reason about the linear type system of Quipper. To this end, we formalize the semantics of Proto-Quipper by encoding the typing and evaluation rules in the SL, and prove type soundness.}
+  abstract = {We develop a linear logical framework within the Hybrid system and use it to reason about the type system of a quantum lambda calculus. In particular, we consider a practical version of the calculus called Proto-Quipper, which contains the core of Quipper. Quipper is a quantum programming language under active development and recently has gained much popularity among the quantum computing communities. Hybrid is a system that is designed to support the use of higher-order abstract syntax for representing and reasoning about formal systems implemented in the Coq Proof Assistant. In this work, we extend the system with a linear specification logic (SL) in order to reason about the linear type system of Quipper. To this end, we formalize the semantics of Proto-Quipper by encoding the typing and evaluation rules in the SL, and prove type soundness.},
+  keywords = {proto-quipper, quantum programming languages, linear logic, hybrid, higher-order abstract syntax, coq}
 }
 </pre>
 
@@ -1567,7 +1599,8 @@
   volume = {266},
   pages = {164--178},
   doi = {10.4204/EPTCS.266.11},
-  abstract = {Quipper is a practical programming language for describing families of quantum circuits. In this paper, we formalize a small, but useful fragment of Quipper called Proto-Quipper-M. Unlike its parent Quipper, this language is type-safe and has a formal denotational and operational semantics. Proto-Quipper-M is also more general than Quipper, in that it can describe families of morphisms in any symmetric monoidal category, of which quantum circuits are but one example. We design Proto-Quipper-M from the ground up, by first giving a general categorical model of parameters and state. The distinction between parameters and state is also known from hardware description languages. A parameter is a value that is known at circuit generation time, whereas a state is a value that is known at circuit execution time. After finding some interesting categorical structures in the model, we then define the programming language to fit the model. We cement the connection between the language and the model by proving type safety, soundness, and adequacy properties.}
+  abstract = {Quipper is a practical programming language for describing families of quantum circuits. In this paper, we formalize a small, but useful fragment of Quipper called Proto-Quipper-M. Unlike its parent Quipper, this language is type-safe and has a formal denotational and operational semantics. Proto-Quipper-M is also more general than Quipper, in that it can describe families of morphisms in any symmetric monoidal category, of which quantum circuits are but one example. We design Proto-Quipper-M from the ground up, by first giving a general categorical model of parameters and state. The distinction between parameters and state is also known from hardware description languages. A parameter is a value that is known at circuit generation time, whereas a state is a value that is known at circuit execution time. After finding some interesting categorical structures in the model, we then define the programming language to fit the model. We cement the connection between the language and the model by proving type safety, soundness, and adequacy properties.},
+  keywords = {proto-quipper-m, quipper}
 }
 </pre>
 
@@ -1585,7 +1618,7 @@
               The likely arrival of scalable quantum computers in the not so distant future has resulted in a flurry of activity in the development of quantum programming languages. As in classical computing, the transition from a description of a quantum algorithm found in the literature to a hardware-specific set of instructions run on a quantum device is a complex process, prone to errors. This issue is exacerbated in the quantum setting not only by the complexity of quantum algorithms but also by the fragility of quantum information, which renders ineffective some of the classical techniques used to debug programs.
 
               In this thesis, we contribute to the solution of some of these issues. We introduce Proto-Quipper-M, a new quantum  programming language designed to serve as a testbed for the research and development of sound mathematical semantics and reasoning techniques for quantum programs. We first present Proto-Quipper-M as a formalization of a fragment of Quipper, a high-level functional programming language for describing families of quantum circuits. In particular, we define Proto-Quipper-M as a simply-typed lambda calculus with a special type for quantum circuits and a strong type system designed to enforce linearity on quantum data, and thus prevent violations of the no-cloning property of quantum information. We endow ProtoQuipper-M with computational meaning via a big-step operational semantics and prove that the language is type-safe by showing that it enjoys the type-preservation and error-freeness properties. We also give Proto-Quipper-M a denotational semantics in a suitable class of monoidal categories and show that these categories give rise to linear-non-linear models in the sense of Benton, and thus models of intuitionistic linear logic. Finally, we crystallize the connection between the syntax and the semantics of the language by proving the soundness theorem for Proto-Quipper-M.},
-  keywords = {quantum programming languages, categorical model, quantum circuits, proto-quipper-m, category theory, quantum computing}
+  keywords = {quantum programming languages, categorical model, quantum circuits, proto-quipper-m, category theory, quantum computing, quipper}
 }
 </pre>
 
@@ -1599,7 +1632,8 @@
   address = {{Halifax, Nova Scotia, Canada}},
   archiveprefix = {arXiv},
   eprint = {1510.02198},
-  abstract = {This thesis contains contributions to the theory of quantum computation. We first define a new method to efficiently approximate special unitary operators. Specifically, given a special unitary U and a precision {\epsilon} > 0, we show how to efficiently find a sequence of Clifford+V or Clifford+T operators whose product approximates U up to {\epsilon} in the operator norm. In the general case, the length of the approximating sequence is asymptotically optimal. If the unitary to approximate is diagonal then our method is optimal: it yields the shortest sequence approximating U up to {\epsilon}. Next, we introduce a mathematical formalization of a fragment of the Quipper quantum programming language. We define a typed lambda calculus called Proto-Quipper which formalizes a restricted but expressive fragment of Quipper. The type system of Proto-Quipper is based on intuitionistic linear logic and prohibits the duplication of quantum data, in accordance with the no-cloning property of quantum computation. We prove that Proto-Quipper is type-safe in the sense that it enjoys the subject reduction and progress properties.}
+  abstract = {This thesis contains contributions to the theory of quantum computation. We first define a new method to efficiently approximate special unitary operators. Specifically, given a special unitary U and a precision {\epsilon} > 0, we show how to efficiently find a sequence of Clifford+V or Clifford+T operators whose product approximates U up to {\epsilon} in the operator norm. In the general case, the length of the approximating sequence is asymptotically optimal. If the unitary to approximate is diagonal then our method is optimal: it yields the shortest sequence approximating U up to {\epsilon}. Next, we introduce a mathematical formalization of a fragment of the Quipper quantum programming language. We define a typed lambda calculus called Proto-Quipper which formalizes a restricted but expressive fragment of Quipper. The type system of Proto-Quipper is based on intuitionistic linear logic and prohibits the duplication of quantum data, in accordance with the no-cloning property of quantum computation. We prove that Proto-Quipper is type-safe in the sense that it enjoys the subject reduction and progress properties.},
+  keywords = {proto-quipper, quipper}
 }
 </pre>
 
