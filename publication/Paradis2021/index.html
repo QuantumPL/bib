@@ -5,8 +5,8 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=generator content="Wowchemy 5.2.0 for Hugo">
 <meta name=author content="Kartik">
-<meta name=description content="This report documents the program and the outcomes of Dagstuhl Seminar 18381 &#34;Quantum Programming Languages&#34;, which brought together researchers from quantum computing and classical programming languages.">
-<link rel=alternate hreflang=en-us href=https://quantumpl.github.io/bib/publication/Mosca2019/>
+<meta name=description content="A key challenge when writing quantum programs is the need for uncomputation: temporary values produced during the computation must be reset to zero before they can be safely discarded. Unfortunately, most existing quantum languages require tedious manual uncomputation, often leading to inefficient and error-prone programs. We present Unqomp, the first procedure to automatically synthesize uncomputation in a given quantum circuit. Unqomp can be readily integrated into popular quantum languages, allowing the programmer to allocate and use temporary values analogously to classical computation, knowing they will be uncomputed by Unqomp. Our evaluation shows that programs leveraging Unqomp are not only shorter (-19% on average), but also generate more efficient circuits (-71% gates and -19% qubits on average).">
+<link rel=alternate hreflang=en-us href=https://quantumpl.github.io/bib/publication/Paradis2021/>
 <meta name=theme-color content="#1565c0">
 <script src=/bib/js/mathjax-config.js></script>
 <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin=anonymous>
@@ -16,21 +16,21 @@
 <link rel=stylesheet href=/bib/css/wowchemy.a53ee215eb6dcadd1a125dc8098e4c3e.css>
 <link rel=icon type=image/png href=/bib/media/icon_hu18592104feffac20f675f2d84225d529_16137_32x32_fill_lanczos_center_3.png>
 <link rel=apple-touch-icon type=image/png href=/bib/media/icon_hu18592104feffac20f675f2d84225d529_16137_180x180_fill_lanczos_center_3.png>
-<link rel=canonical href=https://quantumpl.github.io/bib/publication/Mosca2019/>
+<link rel=canonical href=https://quantumpl.github.io/bib/publication/Paradis2021/>
 <meta property="twitter:card" content="summary">
 <meta property="twitter:site" content="@Quantum Programming Languages & Verification Bibliography">
 <meta property="twitter:creator" content="@Quantum Programming Languages & Verification Bibliography">
 <meta property="og:site_name" content="Quantum PL & Verification Bibliography">
-<meta property="og:url" content="https://quantumpl.github.io/bib/publication/Mosca2019/">
-<meta property="og:title" content="Quantum Programming Languages (Dagstuhl Seminar 18381) | Quantum PL & Verification Bibliography">
-<meta property="og:description" content="This report documents the program and the outcomes of Dagstuhl Seminar 18381 &#34;Quantum Programming Languages&#34;, which brought together researchers from quantum computing and classical programming languages."><meta property="og:image" content="https://quantumpl.github.io/bib/media/logo_hu18592104feffac20f675f2d84225d529_16137_300x300_fit_lanczos_3.png">
+<meta property="og:url" content="https://quantumpl.github.io/bib/publication/Paradis2021/">
+<meta property="og:title" content="Unqomp: Synthesizing Uncomputation in Quantum Circuits | Quantum PL & Verification Bibliography">
+<meta property="og:description" content="A key challenge when writing quantum programs is the need for uncomputation: temporary values produced during the computation must be reset to zero before they can be safely discarded. Unfortunately, most existing quantum languages require tedious manual uncomputation, often leading to inefficient and error-prone programs. We present Unqomp, the first procedure to automatically synthesize uncomputation in a given quantum circuit. Unqomp can be readily integrated into popular quantum languages, allowing the programmer to allocate and use temporary values analogously to classical computation, knowing they will be uncomputed by Unqomp. Our evaluation shows that programs leveraging Unqomp are not only shorter (-19% on average), but also generate more efficient circuits (-71% gates and -19% qubits on average)."><meta property="og:image" content="https://quantumpl.github.io/bib/media/logo_hu18592104feffac20f675f2d84225d529_16137_300x300_fit_lanczos_3.png">
 <meta property="twitter:image" content="https://quantumpl.github.io/bib/media/logo_hu18592104feffac20f675f2d84225d529_16137_300x300_fit_lanczos_3.png"><meta property="og:locale" content="en-us">
-<meta property="article:published_time" content="2021-08-16T16:44:18+00:00">
-<meta property="article:modified_time" content="2021-08-16T11:44:18-05:00">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://quantumpl.github.io/bib/publication/Mosca2019/"},"headline":"Quantum Programming Languages (Dagstuhl Seminar 18381)","datePublished":"2021-08-16T16:44:18Z","dateModified":"2021-08-16T11:44:18-05:00","author":{"@type":"Person","name":"Michele Mosca"},"publisher":{"@type":"Organization","name":"Quantum PL \u0026 Verification Bibliography","logo":{"@type":"ImageObject","url":"https://quantumpl.github.io/bib/media/logo_hu18592104feffac20f675f2d84225d529_16137_192x192_fit_lanczos_3.png"}},"description":"This report documents the program and the outcomes of Dagstuhl Seminar 18381 \"Quantum Programming Languages\", which brought together researchers from quantum computing and classical programming languages."}</script>
-<title>Quantum Programming Languages (Dagstuhl Seminar 18381) | Quantum PL & Verification Bibliography</title>
+<meta property="article:published_time" content="2021-06-01T00:00:00+00:00">
+<meta property="article:modified_time" content="2022-02-28T11:06:40-06:00">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://quantumpl.github.io/bib/publication/Paradis2021/"},"headline":"Unqomp: Synthesizing Uncomputation in Quantum Circuits","datePublished":"2021-06-01T00:00:00Z","dateModified":"2022-02-28T11:06:40-06:00","author":{"@type":"Person","name":"Anouk Paradis"},"publisher":{"@type":"Organization","name":"Quantum PL \u0026 Verification Bibliography","logo":{"@type":"ImageObject","url":"https://quantumpl.github.io/bib/media/logo_hu18592104feffac20f675f2d84225d529_16137_192x192_fit_lanczos_3.png"}},"description":"A key challenge when writing quantum programs is the need for uncomputation: temporary values produced during the computation must be reset to zero before they can be safely discarded. Unfortunately, most existing quantum languages require tedious manual uncomputation, often leading to inefficient and error-prone programs. We present Unqomp, the first procedure to automatically synthesize uncomputation in a given quantum circuit. Unqomp can be readily integrated into popular quantum languages, allowing the programmer to allocate and use temporary values analogously to classical computation, knowing they will be uncomputed by Unqomp. Our evaluation shows that programs leveraging Unqomp are not only shorter (-19% on average), but also generate more efficient circuits (-71% gates and -19% qubits on average)."}</script>
+<title>Unqomp: Synthesizing Uncomputation in Quantum Circuits | Quantum PL & Verification Bibliography</title>
 </head>
-<body id=top data-spy=scroll data-offset=70 data-target=#TableOfContents class=page-wrapper data-wc-page-id=25225fe3815f073c21dfbea6eacae51a>
+<body id=top data-spy=scroll data-offset=70 data-target=#TableOfContents class=page-wrapper data-wc-page-id=dc4da494fb92fbe6d1c9cdea9e594e90>
 <script src=/bib/js/wowchemy-init.min.b8153d4570dcbb34350a2a846dba8c03.js></script>
 <aside class=search-modal id=search>
 <div class=container>
@@ -120,41 +120,39 @@
 <div class=page-body>
 <div class=pub>
 <div class="article-container pt-3">
-<h1>Quantum Programming Languages (Dagstuhl Seminar 18381)</h1>
+<h1>Unqomp: Synthesizing Uncomputation in Quantum Circuits</h1>
 <div class=article-metadata>
 <div>
 <span>
-<a href=/bib/author/Michele-Mosca/>Michele Mosca</a></span>, <span>
-<a href=/bib/author/Martin-Roetteler/>Martin Roetteler</a></span>, <span>
-<a href=/bib/author/Peter-Selinger/>Peter Selinger</a></span>
+<a href=/bib/author/Anouk-Paradis/>Anouk Paradis</a></span>, <span>
+<a href=/bib/author/Benjamin-Bichsel/>Benjamin Bichsel</a></span>, <span>
+<a href=/bib/author/Samuel-Steffen/>Samuel Steffen</a></span>, <span>
+<a href=/bib/author/Martin-Vechev/>Martin Vechev</a></span>
 </div>
 <span class=article-date>
-March 2019
+June 2021
 </span>
 </div>
 <div class="btn-links mb-3">
-<a href=# class="btn btn-outline-primary btn-page-header js-cite-modal" data-filename=/bib/publication/Mosca2019/cite.bib>
+<a href=# class="btn btn-outline-primary btn-page-header js-cite-modal" data-filename=/bib/publication/Paradis2021/cite.bib>
 Cite
 </a>
-<a class="btn btn-outline-primary btn-page-header" href=https://doi.org/10.4230/DagRep.8.9.112 target=_blank rel=noopener>
+<a class="btn btn-outline-primary btn-page-header" href=https://doi.org/10.1145/3453483.3454040 target=_blank rel=noopener>
 DOI
-</a>
-<a class="btn btn-outline-primary btn-page-header" href=https://www.dagstuhl.de/18381 target=_blank rel=noopener>
-URL
 </a>
 </div>
 </div>
 <div class=article-container>
 <h3>Abstract</h3>
-<p class=pub-abstract>This report documents the program and the outcomes of Dagstuhl Seminar 18381 &ldquo;Quantum Programming Languages&rdquo;, which brought together researchers from quantum computing and classical programming languages.</p>
+<p class=pub-abstract>A key challenge when writing quantum programs is the need for uncomputation: temporary values produced during the computation must be reset to zero before they can be safely discarded. Unfortunately, most existing quantum languages require tedious manual uncomputation, often leading to inefficient and error-prone programs. We present Unqomp, the first procedure to automatically synthesize uncomputation in a given quantum circuit. Unqomp can be readily integrated into popular quantum languages, allowing the programmer to allocate and use temporary values analogously to classical computation, knowing they will be uncomputed by Unqomp. Our evaluation shows that programs leveraging Unqomp are not only shorter (-19% on average), but also generate more efficient circuits (-71% gates and -19% qubits on average).</p>
 <div class=row>
 <div class=col-md-1></div>
 <div class=col-md-10>
 <div class=row>
 <div class="col-12 col-md-3 pub-row-heading">Type</div>
 <div class="col-12 col-md-9">
-<a href=/bib/publication/#2>
-Journal article
+<a href=/bib/publication/#1>
+Conference paper
 </a>
 </div>
 </div>
@@ -167,30 +165,28 @@ Journal article
 <div class=col-md-10>
 <div class=row>
 <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-<div class="col-12 col-md-9"><em>Dagstuhl Reports</em></div>
+<div class="col-12 col-md-9"><em>Proceedings of the 42nd ACM SIGPLAN International Conference on Programming Language Design and Implementation</em></div>
 </div>
 </div>
 <div class=col-md-1></div>
 </div>
 <div class="d-md-none space-below"></div>
 <div class=space-below></div>
-<div class=article-style><p>Dagstuhl Reports, Volume 8, Issue 9. Seminar dates: September 16&ndash;21, 2018</p>
+<div class=article-style><p>PLDI &lsquo;21.</p>
 </div>
 <div class=article-tags>
-<a class="badge badge-light" href=/bib/tag/compilers/>compilers</a>
-<a class="badge badge-light" href=/bib/tag/functional-programming/>functional programming</a>
-<a class="badge badge-light" href=/bib/tag/quantum-computing/>quantum computing</a>
-<a class="badge badge-light" href=/bib/tag/reversible-computing/>reversible computing</a>
-<a class="badge badge-light" href=/bib/tag/verification/>verification</a>
+<a class="badge badge-light" href=/bib/tag/quantum-circuits/>quantum circuits</a>
+<a class="badge badge-light" href=/bib/tag/uncomputation/>uncomputation</a>
+<a class="badge badge-light" href=/bib/tag/synthesis/>synthesis</a>
 </div>
 <div class="article-widget content-widget-hr">
 <h3>Related</h3>
 <ul>
-<li><a href=/bib/publication/Le2022/>A Quantum Interpretation of Separating Conjunction for Local Reasoning of Quantum Programs Based on Separation Logic</a></li>
-<li><a href=/bib/publication/Svore2018/>Q#: Enabling Scalable Quantum Computing and Development with a High-Level DSL</a></li>
-<li><a href=/bib/publication/Altenkirch2005/>A Functional Quantum Programming Language</a></li>
-<li><a href=/bib/publication/Gay2005/>Communicating Quantum Processes</a></li>
 <li><a href=/bib/publication/Amy2019a/>Formal Methods in Quantum Circuit Design</a></li>
+<li><a href=/bib/publication/Rennela2018/>Classical Control and Quantum Circuits in Enriched Category Theory</a></li>
+<li><a href=/bib/publication/Paolini2017/>qPCF: A Language for Quantum Circuit Computations</a></li>
+<li><a href=/bib/publication/Chareton2021/>An Automated Deductive Verification Framework for Circuit-Building Quantum Programs</a></li>
+<li><a href=/bib/publication/Rios2021/>On a Categorically Sound Quantum Programming Language for Circuit Description</a></li>
 </ul>
 </div>
 </div>
