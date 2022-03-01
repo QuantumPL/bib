@@ -534,24 +534,6 @@
   keywords      = {quantum programming languages, linear dependent types, proto-quipper-d}
 }
 
-@article{Fu2021,
-  title     = {Quingo: A Programming Framework for Heterogeneous Quantum-Classical Computing with NISQ Features},
-  author    = {Fu, Xiang and Yu, Jintao and Su, Xing and Jiang, Hanru and Wu, Hua and Cheng, Fucheng and Deng, Xi and Zhang, Jinrong and Jin, Lei and Yang, Yihang and Xu, Le and Hu, Chunchao and Huang, Anqi and Huang, Guangyao and Qiang, Xiaogang and Deng, Mingtang and Xu, Ping and Xu, Weixia and Liu, Wanwei and Zhang, Yu and Deng, Yuxin and Wu, Junjie and Feng, Yuan},
-  year      = {2021},
-  month     = dec,
-  publisher = {Association for Computing Machinery},
-  address   = {New York, NY, USA},
-  journal   = {ACM Transactions on Quantum Computing},
-  volume    = {2},
-  number    = {4},
-  eid       = {19},
-  pages     = {19},
-  numpages  = {37},
-  doi       = {10.1145/3483528},
-  abstract  = {The increasing control complexity of Noisy Intermediate-Scale Quantum (NISQ) systems underlines the necessity of integrating quantum hardware with quantum software. While mapping heterogeneous quantum-classical computing (HQCC) algorithms to NISQ hardware for execution, we observed a few dissatisfactions in quantum programming languages (QPLs), including difficult mapping to hardware, limited expressiveness, and counter-intuitive code. In addition, noisy qubits require repeatedly performed quantum experiments, which explicitly operate low-level configurations, such as pulses and timing of operations. This requirement is beyond the scope or capability of most existing QPLs.We summarize three execution models to depict the quantum-classical interaction of existing QPLs. Based on the refined HQCC model, we propose the Quingo framework to integrate and manage quantum-classical software and hardware to provide the programmability over HQCC applications and map them to NISQ hardware. We propose a six-phase quantum program life-cycle model matching the refined HQCC model, which is implemented by a runtime system. We also propose the Quingo programming language, an external domain-specific language highlighting timer-based timing control and opaque operation definition, which can be used to describe quantum experiments. We believe the Quingo framework could contribute to the clarification of key techniques in the design of future HQCC systems.},
-  keywords  = {nisq, quantum compilation, timing control, quantum programming framework, quantum programming language}
-}
-
 @inproceedings{Gay2005,
   title         = {Communicating Quantum Processes},
   author        = {Gay, Simon J. and Nagarajan, Rajagopal},
@@ -857,7 +839,7 @@
 
 @article{Ittah2022,
   title     = {QIRO: A Static Single Assignment-Based Quantum Program Representation for Optimization},
-  author    = {Ittah, David and H\"{a}ner, Thomas and Kliuchnikov, Vadym and Hoefler, Torsten},
+  author    = {Ittah, David and H{\"a}ner, Thomas and Kliuchnikov, Vadym and Hoefler, Torsten},
   year      = {2022},
   month     = jun,
   journal   = {ACM Transactions on Quantum Computing},
@@ -1155,9 +1137,9 @@
   keywords      = {proto-quipper, quantum programming languages, linear logic, hybrid, higher-order abstract syntax, coq}
 }
 
-@article{Mccaskey2021,
+@article{McCaskey2021,
   title         = {Extending C++ for Heterogeneous Quantum-Classical Computing},
-  author        = {Mccaskey, Alexander and Nguyen, Thien and Santana, Anthony and Claudino, Daniel and Kharazi, Tyler and Finkel, Hal},
+  author        = {McCaskey, Alexander and Nguyen, Thien and Santana, Anthony and Claudino, Daniel and Kharazi, Tyler and Finkel, Hal},
   year          = {2021},
   month         = jun,
   journal       = {ACM Transactions on Quantum Computing},
@@ -1366,6 +1348,25 @@
   url      = {https://github.com/Qiskit/qiskit},
   abstract = {Qiskit is an open-source framework for working with noisy quantum computers at the level of pulses, circuits, and algorithms. https://qiskit.org},
   note     = {The official way to cite Qiskit is using the bibentry at \url{https://github.com/Qiskit/qiskit/blob/master/Qiskit.bib}}
+}
+
+@article{QuingoTeam2021,
+  title     = {Quingo: A Programming Framework for Heterogeneous Quantum-Classical Computing with NISQ Features},
+  author    = {{Quingo Development Team}, The},
+  year      = {2021},
+  month     = dec,
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  journal   = {ACM Transactions on Quantum Computing},
+  volume    = {2},
+  number    = {4},
+  eid       = {19},
+  pages     = {19},
+  numpages  = {37},
+  doi       = {10.1145/3483528},
+  url       = {https://github.com/Quingo},
+  abstract  = {The increasing control complexity of Noisy Intermediate-Scale Quantum (NISQ) systems underlines the necessity of integrating quantum hardware with quantum software. While mapping heterogeneous quantum-classical computing (HQCC) algorithms to NISQ hardware for execution, we observed a few dissatisfactions in quantum programming languages (QPLs), including difficult mapping to hardware, limited expressiveness, and counter-intuitive code. In addition, noisy qubits require repeatedly performed quantum experiments, which explicitly operate low-level configurations, such as pulses and timing of operations. This requirement is beyond the scope or capability of most existing QPLs.We summarize three execution models to depict the quantum-classical interaction of existing QPLs. Based on the refined HQCC model, we propose the Quingo framework to integrate and manage quantum-classical software and hardware to provide the programmability over HQCC applications and map them to NISQ hardware. We propose a six-phase quantum program life-cycle model matching the refined HQCC model, which is implemented by a runtime system. We also propose the Quingo programming language, an external domain-specific language highlighting timer-based timing control and opaque operation definition, which can be used to describe quantum experiments. We believe the Quingo framework could contribute to the clarification of key techniques in the design of future HQCC systems.},
+  keywords  = {nisq, quantum compilation, timing control, quantum programming framework, quantum programming language}
 }
 
 @techreport{Rand2016,
