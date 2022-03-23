@@ -1,4 +1,4 @@
 # Netlify redirects
 # Automatically generated
 # Documentation: http://bit.ly/netlify-deployment
-/bib/bib/event/pop22/ /bib/event/popl22/
+/bib/pop22 /bib/event/popl22/
