@@ -6,84 +6,26 @@
 &lt;li>&lt;a href="../../publication/Jia2022">Semantics for Variational Quantum Programming&lt;/a> by Xiaodong Jia, Andre Kornell, Bert Lindenhovius, Michael Mislove, Vladimir Zamdzhiev&lt;/li>
 &lt;/ul>
 &lt;p>All of these papers have been added to bibliography including their appendices and expanded versions for your convenience:&lt;/p>
-&lt;p>&lt;img src="screenshot.png" alt="">&lt;/p></description></item><item><title>A Quantum Interpretation of Separating Conjunction for Local Reasoning of Quantum Programs Based on Separation Logic</title><link>https://quantumpl.github.io/bib/publication/Le2022/</link><pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate><guid>https://quantumpl.github.io/bib/publication/Le2022/</guid><description>&lt;p>POPL &amp;lsquo;22&lt;/p></description></item><item><title>Quantum Information Effects</title><link>https://quantumpl.github.io/bib/publication/Heunen2022/</link><pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate><guid>https://quantumpl.github.io/bib/publication/Heunen2022/</guid><description>&lt;p>POPL &amp;lsquo;22&lt;/p></description></item><item><title>Semantics for Variational Quantum Programming</title><link>https://quantumpl.github.io/bib/publication/Jia2022/</link><pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate><guid>https://quantumpl.github.io/bib/publication/Jia2022/</guid><description>&lt;p>POPL &amp;lsquo;22&lt;/p></description></item><item><title>Twist: Sound Reasoning for Purity and Entanglement in Quantum Programs</title><link>https://quantumpl.github.io/bib/publication/Yuan2022/</link><pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate><guid>https://quantumpl.github.io/bib/publication/Yuan2022/</guid><description>&lt;p>POPL &amp;lsquo;22. Also see &lt;a href="https://dl.acm.org/action/downloadSupplement?doi=10.1145%2F3498691&amp;amp;file=popl22main-p167-p-archive.zip" target="_blank" rel="noopener">the associated appendix&lt;/a>.&lt;/p></description></item><item><title>A Quantum PL Pronunciation Guide</title><link>https://quantumpl.github.io/bib/post/pronunciation-guide/</link><pubDate>Wed, 22 Dec 2021 07:59:53 -0600</pubDate><guid>https://quantumpl.github.io/bib/post/pronunciation-guide/</guid><description>&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th style="text-align:center">Project Name&lt;/th>
-&lt;th style="text-align:center">Pronounced as&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td style="text-align:center">&lt;a href="../../publication/Paolini2019">IQu&lt;/a>&lt;/td>
-&lt;td style="text-align:center">&lt;em>haiku&lt;/em>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:center">&lt;a href="../../publication/Wecker2014">LIQ$Ui|\rangle$&lt;/a>&lt;/td>
-&lt;td style="text-align:center">&lt;em>liquid&lt;/em>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:center">&lt;a href="../../publication/Cross2021">OpenQASM&lt;/a>&lt;/td>
-&lt;td style="text-align:center">&lt;em>open chasm&lt;/em>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:center">&lt;a href="https://twitter.com/planqc2021" target="_blank" rel="noopener">PLanQC&lt;/a>&lt;/td>
-&lt;td style="text-align:center">&lt;em>plank&lt;/em> / &lt;em>Planck&lt;/em>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:center">&lt;a href="../../publication/Smith2016">PyQuil&lt;/a>&lt;/td>
-&lt;td style="text-align:center">&lt;em>pie-quill&lt;/em>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:center">&lt;a href="https://github.com/Quantomatic/pyzx#attribution" target="_blank" rel="noopener">PyZX&lt;/a>&lt;/td>
-&lt;td style="text-align:center">&lt;em>pizzix&lt;/em> (like &lt;em>physics&lt;/em>)&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:center">&lt;a href="../../publication/Svore2018">Q#&lt;/a>&lt;/td>
-&lt;td style="text-align:center">&lt;em>Q-Sharp&lt;/em>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:center">&lt;a href="../../publication/Cross2017">QASM&lt;/a>&lt;/td>
-&lt;td style="text-align:center">&lt;em>chasm&lt;/em>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:center">&lt;a href="../../publication/Chareton2021">Qbricks&lt;/a>&lt;/td>
-&lt;td style="text-align:center">&lt;em>Q-bricks&lt;/em> / &lt;em>Kubrick&amp;rsquo;s&lt;/em>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:center">&lt;a href="../../publication/QiskitCommunity2017">Qiskit&lt;/a>&lt;/td>
-&lt;td style="text-align:center">&lt;em>kiss-kit&lt;/em> AND &lt;em>quiss-kit&lt;/em>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:center">&lt;a href="../../publication/Smith2016">Quil&lt;/a>&lt;/td>
-&lt;td style="text-align:center">&lt;em>quill&lt;/em>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:center">&lt;a href="../../publication/Paykin2017/">QWIRE&lt;/a>&lt;/td>
-&lt;td style="text-align:center">&lt;em>choir&lt;/em>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:center">&lt;a href="../../publication/Bichsel2020/">Silq&lt;/a>&lt;/td>
-&lt;td style="text-align:center">&lt;em>silk&lt;/em>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:center">&lt;a href="../../publication/Hietala2021">SQIR&lt;/a>&lt;/td>
-&lt;td style="text-align:center">&lt;em>squire&lt;/em>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:center">&lt;a href="../../publication/Sivarajah2020">t$|$ket$\rangle$&lt;/a>&lt;/td>
-&lt;td style="text-align:center">&lt;em>ticket&lt;/em>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:center">&lt;a href="../../publication/Hietala2021">VOQC&lt;/a>&lt;/td>
-&lt;td style="text-align:center">&lt;em>vox&lt;/em>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:center">&lt;a href="../../tag/zx-calculus/">ZX&lt;/a>&lt;/td>
-&lt;td style="text-align:center">&lt;em>zed ex&lt;/em>&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
+&lt;p>&lt;img src="screenshot.png" alt="Screenshot of the four POPL papers on this site">&lt;/p></description></item><item><title>A Quantum Interpretation of Separating Conjunction for Local Reasoning of Quantum Programs Based on Separation Logic</title><link>https://quantumpl.github.io/bib/publication/Le2022/</link><pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate><guid>https://quantumpl.github.io/bib/publication/Le2022/</guid><description>&lt;p>POPL &amp;lsquo;22&lt;/p></description></item><item><title>Quantum Information Effects</title><link>https://quantumpl.github.io/bib/publication/Heunen2022/</link><pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate><guid>https://quantumpl.github.io/bib/publication/Heunen2022/</guid><description>&lt;p>POPL &amp;lsquo;22&lt;/p></description></item><item><title>Semantics for Variational Quantum Programming</title><link>https://quantumpl.github.io/bib/publication/Jia2022/</link><pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate><guid>https://quantumpl.github.io/bib/publication/Jia2022/</guid><description>&lt;p>POPL &amp;lsquo;22&lt;/p></description></item><item><title>Twist: Sound Reasoning for Purity and Entanglement in Quantum Programs</title><link>https://quantumpl.github.io/bib/publication/Yuan2022/</link><pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate><guid>https://quantumpl.github.io/bib/publication/Yuan2022/</guid><description>&lt;p>POPL &amp;lsquo;22. Also see &lt;a href="https://dl.acm.org/action/downloadSupplement?doi=10.1145%2F3498691&amp;amp;file=popl22main-p167-p-archive.zip" target="_blank" rel="noopener">the associated appendix&lt;/a>.&lt;/p></description></item><item><title>A Quantum PL Pronunciation Guide</title><link>https://quantumpl.github.io/bib/post/pronunciation-guide/</link><pubDate>Wed, 22 Dec 2021 07:59:53 -0600</pubDate><guid>https://quantumpl.github.io/bib/post/pronunciation-guide/</guid><description>&lt;pre>&lt;code> Project Name | Pronounced as
+&lt;/code>&lt;/pre>
+&lt;p>:&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;:|:&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;-:
+&lt;a href="../../publication/Paolini2019">IQu&lt;/a> | &lt;em>haiku&lt;/em>
+&lt;a href="../../publication/Wecker2014">LIQ$Ui|\rangle$&lt;/a> | &lt;em>liquid&lt;/em>
+&lt;a href="../../publication/Cross2021">OpenQASM&lt;/a> | &lt;em>open chasm&lt;/em>
+&lt;a href="https://twitter.com/planqc2021" target="_blank" rel="noopener">PLanQC&lt;/a> | &lt;em>plank&lt;/em> / &lt;em>Planck&lt;/em>
+&lt;a href="../../publication/Smith2016">PyQuil&lt;/a> | &lt;em>pie-quill&lt;/em>
+&lt;a href="https://github.com/Quantomatic/pyzx#attribution" target="_blank" rel="noopener">PyZX&lt;/a> | &lt;em>pizzix&lt;/em> (like &lt;em>physics&lt;/em>)
+&lt;a href="../../publication/Svore2018">Q#&lt;/a> | &lt;em>Q-Sharp&lt;/em>
+&lt;a href="../../publication/Cross2017">QASM&lt;/a> | &lt;em>chasm&lt;/em>
+&lt;a href="../../publication/Chareton2021">Qbricks&lt;/a> | &lt;em>Q-bricks&lt;/em> / &lt;em>Kubrick&amp;rsquo;s&lt;/em>
+&lt;a href="../../publication/QiskitCommunity2017">Qiskit&lt;/a> | &lt;em>kiss-kit&lt;/em> AND &lt;em>quiss-kit&lt;/em>&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>
+&lt;a href="../../publication/Smith2016">Quil&lt;/a> | &lt;em>quill&lt;/em>
+&lt;a href="../../publication/Paykin2017/">QWIRE&lt;/a> | &lt;em>choir&lt;/em>
+&lt;a href="../../publication/Bichsel2020/">Silq&lt;/a> | &lt;em>silk&lt;/em>
+&lt;a href="../../publication/Hietala2021">SQIR&lt;/a> | &lt;em>squire&lt;/em>
+&lt;a href="../../publication/Sivarajah2020">t$|$ket$\rangle$&lt;/a> | &lt;em>ticket&lt;/em>
+&lt;a href="../../publication/Hietala2021">VOQC&lt;/a> | &lt;em>vox&lt;/em>
+&lt;a href="../../tag/zx-calculus/">ZX&lt;/a> | &lt;em>zed ex&lt;/em>&lt;/p>
 &lt;p>&lt;em>Bonus&lt;/em>: Michael Nielsen and Isaac Chuang&amp;rsquo;s classic textbook &lt;a href="../../publication/Nielsen2010">Quantum Computation and Quantum Information&lt;/a> is affectionately known as &lt;a href="https://en.wikipedia.org/wiki/Quantum_Computation_and_Quantum_Information" target="_blank" rel="noopener">&lt;em>Mike and Ike&lt;/em>&lt;/a>.&lt;/p>
 &lt;section class="footnotes" role="doc-endnotes">
 &lt;hr>
