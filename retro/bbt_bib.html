@@ -282,6 +282,21 @@
 }
 </pre>
 
+<a name="Bordg2020"></a><pre>
+@article{<a href="bbt.html#Bordg2020">Bordg2020</a>,
+  title = {Isabelle Marries Dirac: a Library for Quantum Computation and Quantum Information},
+  author = {Bordg, Anthony and Lachnitt, Hanna and He, Yijun},
+  year = {2020},
+  month = nov,
+  journal = {Archive of Formal Proofs},
+  volume = {2020},
+  url = {<a href="https://isa-afp.org/entries/Isabelle_Marries_Dirac.html">https://isa-afp.org/entries/Isabelle_Marries_Dirac.html</a>},
+  abstract = {This work is an effort to formalise some quantum algorithms and results in quantum information theory. Formal methods being critical for the safety and security of algorithms and protocols, we foresee their widespread use for quantum computing in the future. We have developed a large library for quantum computing in Isabelle based on a matrix representation for quantum circuits, successfully formalising the no-cloning theorem, quantum teleportation, Deutsch's algorithm, the Deutsch-Jozsa algorithm and the quantum Prisoner's Dilemma.},
+  webnote = {Formal proof development in Isabelle. Supplement to \cite{Bordg2021}},
+  bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
+}
+</pre>
+
 <a name="Bordg2021"></a><pre>
 @article{<a href="bbt.html#Bordg2021">Bordg2021</a>,
   title = {Certified Quantum Computation in Isabelle/HOL},
@@ -296,6 +311,7 @@
   url = {<a href="https://www.isa-afp.org/entries/Isabelle_Marries_Dirac.html">https://www.isa-afp.org/entries/Isabelle_Marries_Dirac.html</a>},
   abstract = {In this article we present an ongoing effort to formalise quantum algorithms and results in quantum information theory using the proof assistant Isabelle/HOL. Formal methods being critical for the safety and security of algorithms and protocols, we foresee their widespread use for quantum computing in the future. We have developed a large library for quantum computing in Isabelle based on a matrix representation for quantum circuits, successfully formalising the no-cloning theorem, quantum teleportation, Deutsch's algorithm, the Deutsch--Jozsa algorithm and the quantum Prisoner's Dilemma. We discuss the design choices made and report on an outcome of our work in the field of quantum game theory.},
   keywords = {isabelle/hol, certification, quantum computing, no-cloning, quantum teleportation, deutsch's algorithm, deutsch--jozsa algorithm, quantum prisoner's dilemma},
+  webnote = {See also: Isabelle AFP entry \cite{Bordg2020}},
   bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
 }
 </pre>
@@ -576,6 +592,35 @@
   doi = {10.1017/S0960129506005251},
   url = {<a href="https://www.cs.mcgill.ca/~prakash/Pubs/weakest_mscs.pdf">https://www.cs.mcgill.ca/~prakash/Pubs/weakest_mscs.pdf</a>},
   abstract = {We develop a notion of predicate transformer and, in particular, the weakest precondition, appropriate for quantum computation. We show that there is a Stone-type duality between the usual state-transformer semantics and the weakest precondition semantics. Rather than trying to reduce quantum computation to probabilistic programming, we develop a notion that is directly taken from concepts used in quantum computation. The proof that weakest preconditions exist for completely positive maps follows immediately from the Kraus representation theorem. As an example, we give the semantics of Selinger's language in terms of our weakest preconditions. We also cover some specific situations and exhibit an interesting link with stabilisers.},
+  bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
+}
+</pre>
+
+<a name="Echenim2021"></a><pre>
+@misc{<a href="bbt.html#Echenim2021">Echenim2021</a>,
+  title = {Quantum projective measurements and the {CHSH} inequality in Isabelle/HOL},
+  author = {Echenim, Mnacho and Mhalla, Mehdi},
+  year = {2021},
+  month = mar,
+  archiveprefix = {arXiv},
+  eprint = {2103.08535},
+  abstract = {We present a formalization in Isabelle/HOL of quantum projective measurements, a class of measurements involving orthogonal projectors that is frequently used in quantum computing. We also formalize the CHSH inequality, a result that holds on arbitrary probability spaces, which can used to disprove the existence of a local hidden-variable theory for quantum mechanics.},
+  webnote = {See also: Isabelle AFP entry \cite{Echenim2021a}},
+  bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
+}
+</pre>
+
+<a name="Echenim2021a"></a><pre>
+@article{<a href="bbt.html#Echenim2021a">Echenim2021a</a>,
+  title = {Quantum projective measurements and the CHSH inequality},
+  author = {Echenim, Mnacho},
+  year = {2021},
+  month = mar,
+  journal = {Archive of Formal Proofs},
+  volume = {2021},
+  url = {<a href="https://isa-afp.org/entries/Projective_Measurements.html">https://isa-afp.org/entries/Projective_Measurements.html</a>},
+  abstract = {This work contains a formalization of quantum projective measurements, also known as von Neumann measurements, which are based on elements of spectral theory. We also formalized the CHSH inequality, an inequality involving expectations in a probability space that is violated by quantum measurements, thus proving that quantum mechanics cannot be modeled with an underlying local hidden-variable theory.},
+  webnote = {Formal proof development in Isabelle, supplement to \cite{Echenim2021}},
   bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
 }
 </pre>
@@ -1332,21 +1377,23 @@
   doi = {10.1007/978-3-030-25543-5_12},
   abstract = {We formalize the theory of quantum Hoare logic (QHL) [TOPLAS 33(6),19], an extension of Hoare logic for reasoning about quantum programs. In particular, we formalize the syntax and semantics of quantum programs in Isabelle/HOL, write down the rules of quantum Hoare logic, and verify the soundness and completeness of the deduction system for partial correctness of quantum programs. As preliminary work, we formalize some necessary mathematical background in linear algebra, and define tensor products of vectors and matrices on quantum variables. As an application, we verify the correctness of Grover's search algorithm. To our best knowledge, this is the first time a Hoare logic for quantum programs is formalized in an interactive theorem prover, and used to verify the correctness of a nontrivial quantum algorithm.},
   keywords = {hoare logic},
-  webnote = {See also: Isabelle AFP entry, QHLProver \cite{Liu2019a}},
+  webnote = {See also: Isabelle AFP entry \cite{Liu2019a}},
   bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
 }
 </pre>
 
 <a name="Liu2019a"></a><pre>
-@misc{<a href="bbt.html#Liu2019a">Liu2019a</a>,
+@article{<a href="bbt.html#Liu2019a">Liu2019a</a>,
   title = {Quantum Hoare Logic},
   author = {Liu, Junyi and Zhan, Bohua and Wang, Shuling and Ying, Shenggang and Liu, Tao and Li, Yangjia and Ying, Mingsheng and Zhan, Naijun},
   year = {2019},
   month = mar,
   journal = {Archive of Formal Proofs},
+  volume = {2019},
   url = {<a href="https://isa-afp.org/entries/QHLProver.html">https://isa-afp.org/entries/QHLProver.html</a>},
+  abstract = {We formalize quantum Hoare logic [TOPLAS 33(6),19]. In particular, we specify the syntax and denotational semantics of a simple model of quantum programs. Then, we write down the rules of quantum Hoare logic for partial correctness, and show the soundness and completeness of the resulting proof system. As an application, we verify the correctness of Grover's algorithm.},
   keywords = {hoare logic},
-  webnote = {QHLProver-AFP, formal proof development in Isabelle, supplement to \cite{Liu2019}},
+  webnote = {Formal proof development in Isabelle, supplement to \cite{Liu2019}},
   bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
 }
 </pre>
@@ -2225,6 +2272,37 @@
   eprint = {1902.00325},
   abstract = {Quantum Hoare logic allows us to reason about quantum programs. We present an extension of quantum Hoare logic that introduces ``ghost variables'' to extend the expressive power of pre-/postconditions. Ghost variables are variables that do not actually occur in the program and are allowed to have arbitrary quantum states (in a sense, they are existentially quantified), and be entangled with program variables. Ghost variables allow us to express properties such as the distribution of a program variable or the fact that a variable has classical content. And as a case study, we show how quantum Hoare logic with ghost variables can be used to prove the security of the quantum one-time pad.},
   keywords = {quantum entanglement, quantum computing, probabilistic logic, cryptography, semantics, hoare logic},
+  bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
+}
+</pre>
+
+<a name="Unruh2021"></a><pre>
+@misc{<a href="bbt.html#Unruh2021">Unruh2021</a>,
+  title = {Quantum and classical registers},
+  author = {Dominique Unruh},
+  year = {2021},
+  month = {nov},
+  archiveprefix = {arXiv},
+  eprint = {2105.10914},
+  abstract = {We present a generic theory of "registers" in imperative programs and instantiate it in the classical and quantum setting. Roughly speaking, a register is some mutable part of the program state. Mutable classical variables and quantum registers and wires in quantum circuits are examples of this. However, registers in our setting can also refer to subparts of other registers, or combinations of parts from different registers, or quantum registers seen in a different basis, etc. Our formalization is intended to be well suited for formalization in theorem provers and as a foundation for modeling quantum/classical variables in imperative programs.
+                   We study the quantum registers in greater detail and cover the infinite-dimensional case as well.
+                   We implemented a large part of our results (including a minimal quantum Hoare logic and an analysis of quantum teleportation) in the Isabelle/HOL theorem prover.},
+  webnote = {See also: Isabelle AFP entry \cite{Unruh2021a}},
+  bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
+}
+</pre>
+
+<a name="Unruh2021a"></a><pre>
+@article{<a href="bbt.html#Unruh2021a">Unruh2021a</a>,
+  title = {Quantum and Classical Registers},
+  author = {Dominique Unruh},
+  year = 2021,
+  month = oct,
+  journal = {Archive of Formal Proofs},
+  volume = {2021},
+  url = {<a href="https://isa-afp.org/entries/Registers.html">https://isa-afp.org/entries/Registers.html</a>},
+  abstract = {A formalization of the theory of quantum and classical registers as developed by (Unruh, Quantum and Classical Registers). In a nutshell, a register refers to a part of a larger memory or system that can be accessed independently. Registers can be constructed from other registers and several (compatible) registers can be composed. This formalization develops both the generic theory of registers as well as specific instantiations for classical and quantum registers.},
+  webnote = {Formal proof development in Isabelle, supplement to \cite{Unruh2021}},
   bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
 }
 </pre>
