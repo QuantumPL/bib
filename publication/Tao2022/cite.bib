@@ -1,0 +1,19 @@
+@inproceedings{Tao2022,
+ title = {Giallar: Push-button Verification for the Qiskit Quantum Compiler},
+ author = {Tao, Runzhou and Shi, Yunong and Yao, Jianan and Li, Xupeng and Javadi-Abhari, Ali and Cross, Andrew W. and Chong, Frederic T. and Gu, Ronghui},
+ year = {2022},
+ month = {June},
+ booktitle = {Proceedings of the 43rd ACM SIGPLAN International Conference on Programming Language Design and Implementation},
+ publisher = {acm},
+ address = {New York, NY, USA},
+ series = {{{PLDI}} '22},
+ pages = {},
+ numpages = {},
+ archiveprefix = {arXiv},
+ eprint = {1908.08963},
+ abstract = {This paper presents Giallar, a fully-automated verification toolkit for quantum compilers. Giallar requires no manual specifications, invariants, or proofs, and can automatically verify that a compiler pass preserves the semantics of quantum circuits. To deal with unbounded loops in quantum compilers, Giallar abstracts three loop templates, whose loop invariants can be automatically inferred. To efficiently check the equivalence of arbitrary input and output circuits that have complicated matrix semantics representation, Giallar introduces a symbolic representation for quantum circuits and a set of rewriting rules for reducing symbolic quantum circuits. With Giallar, we implemented and verified 44 (out of 56) compiler passes in 13 versions of the Qiskit compiler, the open-source quantum compiler standard, during which three bugs were detected in and confirmed by Qiskit. Our evaluation shows that most of Qiskit compiler passes can be automatically verified in seconds and verification imposes only a modest overhead to compilation performance.},
+ note = {To appear at PLDI 2022},
+ webnote = {Previously known as CertiQ. To appear at PLDI 2022},
+ bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
+}
+

@@ -1661,6 +1661,28 @@
 }
 </pre>
 
+<a name="Peng2022"></a><pre>
+@inproceedings{<a href="bbt.html#Peng2022">Peng2022</a>,
+  title = {Algebraic Reasoning of Quantum Programs via Non-Idempotent Kleene Algebra},
+  author = {Peng, Yuxiang and Ying, Mingsheng and Wu, Xiaodi},
+  year = {2022},
+  month = jun,
+  booktitle = {Proceedings of the 43rd ACM SIGPLAN International Conference on Programming Language Design and Implementation},
+  publisher = {acm},
+  address = {New York, NY, USA},
+  series = {{{PLDI}} '22},
+  pages = {},
+  numpages = {},
+  doi = {10.1145/3519939.3523713},
+  archiveprefix = {arXiv},
+  eprint = {2110.07018},
+  abstract = {We investigate the algebraic reasoning of quantum programs inspired by the success of classical program analysis based on Kleene algebra. One prominent example of such is the famous Kleene Algebra with Tests (KAT), which has furnished both theoretical insights and practical tools. The succinctness of algebraic reasoning would be especially desirable for scalable analysis of quantum programs, given the involvement of exponential-size matrices in most of the existing methods. A few key features of KAT including the idempotent law and the nice properties of classical tests, however, fail to hold in the context of quantum programs due to their unique quantum features, especially in branching. We propose the Non-idempotent Kleena Algebra (NKA) as a natural alternative, and identify complete and sound semantic models for NKA as well as their quantum interpretations. In light of applications of KAT, we demonstrate algebraic proofs in NKA of quantum compiler optimization and the normal form of quantum \textbf{while}-programs. Moreover, we extend NKA with Tests (i.e., NKAT), where tests model quantum predicates following effect algebra, and illustrate how to encode propositional quantum Hoare logic as NKAT theorems.},
+  note = {To appear at PLDI 2022},
+  webnote = {To appear at PLDI 2022},
+  bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
+}
+</pre>
+
 <a name="QiskitCommunity2017"></a><pre>
 @misc{<a href="bbt.html#QiskitCommunity2017">QiskitCommunity2017</a>,
   title = {Qiskit: {{An}} Open-Source Framework for Quantum Computing},
@@ -2236,6 +2258,27 @@
 }
 </pre>
 
+<a name="Tao2022"></a><pre>
+@inproceedings{<a href="bbt.html#Tao2022">Tao2022</a>,
+  title = {Giallar: Push-button Verification for the Qiskit Quantum Compiler},
+  author = {Tao, Runzhou and Shi, Yunong and Yao, Jianan and Li, Xupeng and Javadi-Abhari, Ali and Cross, Andrew W. and Chong, Frederic T. and Gu, Ronghui},
+  year = {2022},
+  month = jun,
+  booktitle = {Proceedings of the 43rd ACM SIGPLAN International Conference on Programming Language Design and Implementation},
+  publisher = {acm},
+  address = {New York, NY, USA},
+  series = {{{PLDI}} '22},
+  pages = {},
+  numpages = {},
+  archiveprefix = {arXiv},
+  eprint = {1908.08963},
+  abstract = {This paper presents Giallar, a fully-automated verification toolkit for quantum compilers. Giallar requires no manual specifications, invariants, or proofs, and can automatically verify that a compiler pass preserves the semantics of quantum circuits. To deal with unbounded loops in quantum compilers, Giallar abstracts three loop templates, whose loop invariants can be automatically inferred. To efficiently check the equivalence of arbitrary input and output circuits that have complicated matrix semantics representation, Giallar introduces a symbolic representation for quantum circuits and a set of rewriting rules for reducing symbolic quantum circuits. With Giallar, we implemented and verified 44 (out of 56) compiler passes in 13 versions of the Qiskit compiler, the open-source quantum compiler standard, during which three bugs were detected in and confirmed by Qiskit. Our evaluation shows that most of Qiskit compiler passes can be automatically verified in seconds and verification imposes only a modest overhead to compilation performance.},
+  note = {To appear at PLDI 2022},
+  webnote = {Previously known as CertiQ. To appear at PLDI 2022},
+  bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
+}
+</pre>
+
 <a name="Unruh2019"></a><pre>
 @article{<a href="bbt.html#Unruh2019">Unruh2019</a>,
   title = {Quantum Relational {{Hoare}} Logic},
@@ -2405,6 +2448,32 @@
   eprint = {1402.4467},
   abstract = {Languages, compilers, and computer-aided design tools will be essential for scalable quantum computing, which promises an exponential leap in our ability to execute complex tasks. LIQ$Ui|\rangle$ is a modular software architecture designed to control quantum hardware. It enables easy programming, compilation, and simulation of quantum algorithms and circuits, and is independent of a specific quantum architecture. LIQ$Ui|\rangle$ contains an embedded, domain-specific language designed for programming quantum algorithms, with F\# as the host language. It also allows the extraction of a circuit data structure that can be used for optimization, rendering, or translation. The circuit can also be exported to external hardware and software environments. Two different simulation environments are available to the user which allow a trade-off between number of qubits and class of operations. LIQ$Ui|\rangle$ has been implemented on a wide range of runtimes as back-ends with a single user front-end. We describe the significant components of the design architecture and how to express any given quantum algorithm.},
   webnote = {Pronounced ``Liquid''},
+  bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
+}
+</pre>
+
+<a name="Xu2022"></a><pre>
+@inproceedings{<a href="bbt.html#Xu2022">Xu2022</a>,
+  title = {Quartz: Superoptimization of Quantum Circuits},
+  author = {Xu, Mingkuan and Li, Zikun and Padon, Oded and Lin, Sina and Pointing, Jessica and Hirth, Auguste and Ma, Henry and Palsberg, Jens and Aiken, Alex and Acar, Umut A. and Jia, Zhihao},
+  year = {2022},
+  month = jun,
+  booktitle = {Proceedings of the 43rd ACM SIGPLAN International Conference on Programming Language Design and Implementation},
+  publisher = {acm},
+  address = {New York, NY, USA},
+  series = {{{PLDI}} '22},
+  pages = {},
+  numpages = {},
+  archiveprefix = {arXiv},
+  eprint = {2111.11387},
+  url = {<a href="https://github.com/quantum-compiler/quartz">https://github.com/quantum-compiler/quartz</a>},
+  abstract = {Existing quantum compilers optimize quantum circuits by applying circuit transformations designed by experts. This approach requires significant manual effort to design and implement circuit transformations for different quantum devices, which use different gate sets, and can miss subtle optimizations that are hard to find manually.
+
+                   We propose Quartz, a quantum circuit superoptimizer that automatically generates and verifies circuit transformations for arbitrary quantum gate sets. Quartz takes as input the set of quantum gates supported by a quantum processor and generates candidate circuit transformations for the target processor by enumerating small circuits over the given gate set. Quartz then formally verifies the candidate transformations using an automated theorem prover. Finally, to optimize a quantum circuit, Quartz uses a cost-based backtracking search, applying the verified transformations to the input circuit.
+
+                   Our evaluation on three gate sets supported by existing quantum processors shows that Quartz can effectively generate and verify transformations for different gate sets. The generated transformations cover manually designed transformations used by existing optimizers, and also include new transformations. By using these transformations, Quartz's optimizer matches the performance of existing optimizers on one gate set for which they are tuned, and outperforms them on the two other gate sets.},
+  note = {To appear at PLDI 2022},
+  webnote = {Previously known as Quanto. To appear at PLDI 2022},
   bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
 }
 </pre>
