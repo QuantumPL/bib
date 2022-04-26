@@ -1683,6 +1683,19 @@
 }
 </pre>
 
+<a name="Peng2022a"></a><pre>
+@misc{<a href="bbt.html#Peng2022a">Peng2022a</a>,
+  title = {A Formally Certified End-to-End Implementation of Shor's Factorization Algorithm},
+  author = {Peng, Yuxiang and Hietala, Kesha and Tao, Runzhou and Li, Liyi and Rand, Robert and Hicks, Michael and Wu, Xiaodi},
+  year = {2022},
+  month = apr,
+  archiveprefix = {arXiv},
+  eprint = {2204.07112},
+  url = {<a href="https://github.com/inQWIRE/SQIR/tree/main/examples/shor">https://github.com/inQWIRE/SQIR/tree/main/examples/shor</a>},
+  abstract = {Quantum computing technology may soon deliver revolutionary improvements in algorithmic performance, but these are only useful if computed answers are correct. While hardware-level decoherence errors have garnered significant attention, a less recognized obstacle to correctness is that of human programming errors -- ``bugs''. Techniques familiar to most programmers from the classical domain for avoiding, discovering, and diagnosing bugs do not easily transfer, at scale, to the quantum domain because of its unique characteristics. To address this problem, we have been working to adapt formal methods to quantum programming. With such methods, a programmer writes a mathematical specification alongside their program, and semi-automatically proves the program correct with respect to it. The proof's validity is automatically confirmed -- certified -- by a ``proof assistant''. Formal methods have successfully yielded high-assurance classical software artifacts, and the underlying technology has produced certified proofs of major mathematical theorems. As a demonstration of the feasibility of applying formal methods to quantum programming, we present the first formally certified end-to-end implementation of Shor's prime factorization algorithm, developed as part of a novel framework for applying the certified approach to general applications. By leveraging our framework, one can significantly reduce the effects of human errors and obtain a high-assurance implementation of large-scale quantum applications in a principled way.}
+}
+</pre>
+
 <a name="QiskitCommunity2017"></a><pre>
 @misc{<a href="bbt.html#QiskitCommunity2017">QiskitCommunity2017</a>,
   title = {Qiskit: {{An}} Open-Source Framework for Quantum Computing},
@@ -2327,7 +2340,7 @@
   month = {nov},
   archiveprefix = {arXiv},
   eprint = {2105.10914},
-  abstract = {We present a generic theory of "registers" in imperative programs and instantiate it in the classical and quantum setting. Roughly speaking, a register is some mutable part of the program state. Mutable classical variables and quantum registers and wires in quantum circuits are examples of this. However, registers in our setting can also refer to subparts of other registers, or combinations of parts from different registers, or quantum registers seen in a different basis, etc. Our formalization is intended to be well suited for formalization in theorem provers and as a foundation for modeling quantum/classical variables in imperative programs.
+  abstract = {We present a generic theory of ``registers'' in imperative programs and instantiate it in the classical and quantum setting. Roughly speaking, a register is some mutable part of the program state. Mutable classical variables and quantum registers and wires in quantum circuits are examples of this. However, registers in our setting can also refer to subparts of other registers, or combinations of parts from different registers, or quantum registers seen in a different basis, etc. Our formalization is intended to be well suited for formalization in theorem provers and as a foundation for modeling quantum/classical variables in imperative programs.
                    We study the quantum registers in greater detail and cover the infinite-dimensional case as well.
                    We implemented a large part of our results (including a minimal quantum Hoare logic and an analysis of quantum teleportation) in the Isabelle/HOL theorem prover.},
   webnote = {See also: Isabelle AFP entry \cite{Unruh2021a}},
