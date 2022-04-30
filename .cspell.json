@@ -33,6 +33,8 @@
     "eprint",
     "eprinttype",
     "howpublished",
+    "inbook",
+    "incollection",
     "mingsheng",
     "numpages",
     "quantumpl",

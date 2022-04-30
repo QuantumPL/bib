@@ -26,11 +26,11 @@ old_db = open(db_name + ".bib","r")
 new_db = open("bibtex.bib","w")
 
 for line in old_db.readlines():
-    date_pattern = re.search("date.*{(\d+)-?(\d+)?.*}",line)
+    date_pattern = re.search(r"date.*{(\d+)-?(\d+)?.*}",line)
     if date_pattern:
         new_db.write("  year = {{{0:s}}},\n".format(date_pattern.group(1)))
         # print "  year = {{{0:s}}},\n".format(date_pattern.group(1)),
-        if date_pattern.group(2) != None:
+        if date_pattern.group(2) is not None:
             month = month_names[int(date_pattern.group(2))];
             new_db.write("  month = {},\n".format(month))
     elif re.search("journaltitle",line):
