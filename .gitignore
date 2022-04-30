@@ -1,2 +1,5 @@
 *.html
 *.bak
+*.blg
+*.tmp
+*_bibertool.bib
