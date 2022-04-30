@@ -1,7 +1,7 @@
 % Encoding: UTF-8
 
 % Field sort order
-% title,shorttitle,edition,author,year,month,day,date,journal,journaltitle,booktitle,editor,on,publisher,school,institution,address,location,series,volume,number,eid,pages,numpages,crossref,doi,archiveprefix,eprinttype,eprint,howpublished,url,urldate,abstract,keywords,copyright,category,note,metadata,timestamp,webnote,bibsource
+% title,shorttitle,edition,author,year,month,day,date,journal,journaltitle,booktitle,editor,on,publisher,type,school,institution,address,location,series,volume,number,eid,pages,numpages,crossref,doi,archiveprefix,eprinttype,eprint,howpublished,url,urldate,abstract,keywords,copyright,category,note,metadata,timestamp,webnote,bibsource
 
 % NOTE: keywords should be added in lowercase
 
@@ -143,10 +143,11 @@
   bibsource = qplbib
 }
 
-@phdthesis{Amy2019a,
+@thesis{Amy2019a,
   title       = {Formal Methods in Quantum Circuit Design},
   author      = {Amy, Matthew},
   date        = {2019-02},
+  type        = {phdthesis},
   institution = {University of Waterloo},
   location    = {Waterloo, Ontario, Canada},
   url         = {http://hdl.handle.net/10012/14480},
@@ -756,10 +757,11 @@
   bibsource  = qplbib
 }
 
-@phdthesis{Green2010,
+@thesis{Green2010,
   title       = {Towards a Formally Verified Functional Quantum Programming Language},
   author      = {Green, Alexander S.},
   date        = {2010-07},
+  type        = {phdthesis},
   institution = {University of Nottingham},
   url         = {http://eprints.nottingham.ac.uk/11457/},
   abstract    = {This thesis looks at the development of a framework for a functional quantum programming language. The framework is first developed in Haskell, looking at how a monadic structure can be used to explicitly deal with the side-effects inherent in the measurement of quantum systems, and goes on to look at how a dependently-typed reimplementation in Agda gives us the basis for a formally verified quantum programming language. The two implementations are not in themselves fully developed quantum programming languages, as they are embedded in their respective parent languages, but are a major step towards the development of a full formally verified, functional quantum programming language. Dubbed the ``Quantum IO Monad'', this framework is designed following a structural approach as given by a categorical model of quantum computation.},
@@ -822,10 +824,11 @@
   bibsource    = qplbib
 }
 
-@phdthesis{Heim2020,
+@thesis{Heim2020,
   title       = {Development of Quantum Applications},
   author      = {Heim, Bettina},
   date        = {2020-12},
+  type        = {phdthesis},
   institution = {ETH Zurich},
   location    = {Zurich},
   doi         = {10.3929/ethz-b-000468201},
@@ -884,7 +887,6 @@
   title      = {Verified {{Optimization}} in a {{Quantum Intermediate Representation}}},
   author     = {Hietala, Kesha and Rand, Robert and Hung, Shih-Han and Wu, Xiaodi and Hicks, Michael},
   date       = {2019-04},
-  crossref   = {Hietala2021},
   eprinttype = {arXiv},
   eprint     = {1904.06319},
   abstract   = {We present sqire, a low-level language for quantum computing and verification. sqire uses a global register of quantum bits, allowing easy compilation to and from existing 'quantum assembly' languages and simplifying the verification process. We demonstrate the power of sqire as an intermediate representation of quantum programs by verifying a number of useful optimizations, and we demonstrate sqire's use as a tool for general verification by proving several quantum programs correct.},
@@ -1320,10 +1322,11 @@
   bibsource = qplbib
 }
 
-@phdthesis{Oemer2003,
+@thesis{Oemer2003,
   title       = {Structured {{Quantum Programming}}},
   author      = {{\"O}mer, Bernhard},
   date        = {2003-05},
+  type        = {phdthesis},
   institution = {Vienna University of Technology},
   url         = {http://www.itp.tuwien.ac.at/~oemer/doc/structquprog.pdf},
   webnote     = {Describes QCL},
@@ -1428,10 +1431,11 @@
   bibsource = qplbib
 }
 
-@phdthesis{Paykin2018,
+@thesis{Paykin2018,
   title       = {{Linear/Non-Linear Types for Embedded Domain-Specific Languages}},
   author      = {Paykin, Jennifer},
   date        = {2018-08},
+  type        = {phdthesis},
   institution = {University of Pennsylvania},
   location    = {{Philadelphia, PA, USA}},
   url         = {https://repository.upenn.edu/edissertations/2752/},
@@ -1531,16 +1535,16 @@
 }
 
 @misc{Rand2016,
-  title       = {Verification {{Logics}} for {{Quantum Programs}}},
-  author      = {Rand, Robert},
-  date        = {2016-03},
-  eprinttype  = {arXiv},
-  eprint      = {1904.04304},
-  abstract    = {We survey the landscape of Hoare logics for quantum programs. We review three papers: ``Reasoning about imperative quantum programs'' by Chadha, Mateus and Sernadas; ``A logic for formal verification of quantum programs'' by Yoshihiko Kakutani; and ``Floyd-hoare logic for quantum programs'' by Mingsheng Ying. We compare the mathematical foundations of the logics, their underlying languages, and the expressivity of their assertions. We also use the languages to verify the Deutsch--Jozsa Algorithm, and discuss their relative usability in practice.},
-  keywords    = {hoare logic},
-  note        = {Submitted as a qualifying examination (WPE-II) for the PhD program at the University of Pennsylvania},
-  webnote     = {Submitted as a qualifying examination (WPE-II) for the PhD program at the University of Pennsylvania.},
-  bibsource   = qplbib
+  title      = {Verification {{Logics}} for {{Quantum Programs}}},
+  author     = {Rand, Robert},
+  date       = {2016-03},
+  eprinttype = {arXiv},
+  eprint     = {1904.04304},
+  abstract   = {We survey the landscape of Hoare logics for quantum programs. We review three papers: ``Reasoning about imperative quantum programs'' by Chadha, Mateus and Sernadas; ``A logic for formal verification of quantum programs'' by Yoshihiko Kakutani; and ``Floyd-hoare logic for quantum programs'' by Mingsheng Ying. We compare the mathematical foundations of the logics, their underlying languages, and the expressivity of their assertions. We also use the languages to verify the Deutsch--Jozsa Algorithm, and discuss their relative usability in practice.},
+  keywords   = {hoare logic},
+  note       = {Submitted as a qualifying examination (WPE-II) for the PhD program at the University of Pennsylvania},
+  webnote    = {Submitted as a qualifying examination (WPE-II) for the PhD program at the University of Pennsylvania.},
+  bibsource  = qplbib
 }
 
 @inproceedings{Rand2018,
@@ -1559,10 +1563,11 @@
   bibsource = qplbib
 }
 
-@phdthesis{Rand2018a,
+@thesis{Rand2018a,
   title       = {Formally {{Verified Quantum Programming}}},
   author      = {Rand, Robert},
   date        = {2018-11},
+  type        = {phdthesis},
   institution = {University of Pennsylvania},
   location    = {{Philadelphia, PA, USA}},
   url         = {https://repository.upenn.edu/edissertations/3175},
@@ -1691,10 +1696,11 @@
   bibsource = qplbib
 }
 
-@phdthesis{Rios2021,
+@thesis{Rios2021,
   title       = {On a Categorically Sound Quantum Programming Language for Circuit Description},
   author      = {Rios, Francisco},
   date        = {2021-08},
+  type        = {phdthesis},
   institution = {Dalhousie University},
   location    = {{Halifax, Nova Scotia, Canada}},
   url         = {https://dalspace.library.dal.ca/handle/10222/80771},
@@ -1707,10 +1713,11 @@
   bibsource   = qplbib
 }
 
-@phdthesis{Ross2015,
+@thesis{Ross2015,
   title       = {Algebraic and {{Logical Methods}} in {{Quantum Computation}}},
   author      = {Ross, Neil J.},
   date        = {2015-08},
+  type        = {phdthesis},
   institution = {Dalhousie University},
   location    = {{Halifax, Nova Scotia, Canada}},
   eprinttype  = {arXiv},
@@ -1825,10 +1832,11 @@
   bibsource = qplbib
 }
 
-@mastersthesis{Singhal2020a,
+@thesis{Singhal2020a,
   title       = {Quantum Hoare Type Theory},
   author      = {Singhal, Kartik},
   date        = {2020-12},
+  type        = {mathesis},
   institution = {University of Chicago},
   location    = {Chicago, IL},
   eprinttype  = {arXiv},
