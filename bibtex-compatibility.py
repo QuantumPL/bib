@@ -1,6 +1,6 @@
 # Original author: Jon Sterling
 # Original source: https://github.com/jonsterling/bibtex-references
-# Modified for using in qpl-bib
+# Modified by Kartik for use in qpl-bib
 
 import re
 import sys
@@ -22,7 +22,7 @@ month_names = {
 
 db_name = sys.argv[1]
 
-old_db = open(db_name + "-expanded.bib","r")
+old_db = open(db_name + ".bib","r")
 new_db = open("bibtex.bib","w")
 
 for line in old_db.readlines():
@@ -39,10 +39,21 @@ for line in old_db.readlines():
         new_db.write(line.replace("location","address"))
     elif re.search("eprinttype",line):
         new_db.write(line.replace("eprinttype","archiveprefix"))
+    # the following change is not suitable for techreports
+    # elif re.search("institution",line):
+    #     new_db.write(line.replace("institution","school"))
     elif re.search("@online",line):
         new_db.write(line.replace("@online","@unpublished"))
     elif re.search("@report",line):
         new_db.write(line.replace("@report","@techreport"))
+    elif re.search("@inbook",line):
+        new_db.write(line.replace("@inbook","@incollection"))
+    elif re.search("@collection",line):
+        new_db.write(line.replace("@collection","@book"))
+    elif re.search("@thesis{Singhal2020",line):
+        new_db.write(line.replace("@thesis","@mastersthesis"))
+    elif re.search("@thesis",line):
+        new_db.write(line.replace("@thesis","@phdthesis"))
     else:
       new_db.write(line)
 old_db.close()
