@@ -1015,7 +1015,6 @@
   author = {Hietala, Kesha and Rand, Robert and Hung, Shih-Han and Wu, Xiaodi and Hicks, Michael},
   year = {2019},
   month = apr,
-  crossref = {<a href="#Hietala2021">Hietala2021</a>},
   archiveprefix = {arXiv},
   eprint = {1904.06319},
   abstract = {We present sqire, a low-level language for quantum computing and verification. sqire uses a global register of quantum bits, allowing easy compilation to and from existing 'quantum assembly' languages and simplifying the verification process. We demonstrate the power of sqire as an intermediate representation of quantum programs by verifying a number of useful optimizations, and we demonstrate sqire's use as a tool for general verification by proving several quantum programs correct.},
@@ -1790,9 +1789,9 @@
   author = {{Quingo Development Team}},
   year = {2021},
   month = dec,
+  journal = {ACM Transactions on Quantum Computing},
   publisher = {{Association for Computing Machinery}},
   address = {New York, NY, USA},
-  journal = {ACM Transactions on Quantum Computing},
   volume = {2},
   number = {4},
   eid = {19},
@@ -2411,7 +2410,7 @@
   title = {Quantum and classical registers},
   author = {Dominique Unruh},
   year = {2021},
-  month = {nov},
+  month = nov,
   archiveprefix = {arXiv},
   eprint = {2105.10914},
   abstract = {We present a generic theory of ``registers'' in imperative programs and instantiate it in the classical and quantum setting. Roughly speaking, a register is some mutable part of the program state. Mutable classical variables and quantum registers and wires in quantum circuits are examples of this. However, registers in our setting can also refer to subparts of other registers, or combinations of parts from different registers, or quantum registers seen in a different basis, etc. Our formalization is intended to be well suited for formalization in theorem provers and as a foundation for modeling quantum/classical variables in imperative programs.
@@ -2561,6 +2560,26 @@
                    Our evaluation on three gate sets supported by existing quantum processors shows that Quartz can effectively generate and verify transformations for different gate sets. The generated transformations cover manually designed transformations used by existing optimizers, and also include new transformations. By using these transformations, Quartz's optimizer matches the performance of existing optimizers on one gate set for which they are tuned, and outperforms them on the two other gate sets.},
   note = {To appear at PLDI 2022},
   webnote = {Previously known as Quanto. To appear at PLDI 2022},
+  bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
+}
+</pre>
+
+<a name="Yan2022"></a><pre>
+@article{<a href="bbt.html#Yan2022">Yan2022</a>,
+  title = {On Incorrectness Logic for Quantum Programs},
+  author = {Yan, Peng and Jiang, Hanru and Yu, Nengkun},
+  year = {2022},
+  month = dec,
+  journal = {Proceedings of the ACM on Programming Languages},
+  volume = {6},
+  number = {OOPSLA1},
+  eid = {72},
+  pages = {72},
+  numpages = {28},
+  doi = {10.1145/3527316},
+  abstract = {Bug-catching is important for developing quantum programs. Motivated by the incorrectness logic for classical programs, we propose an incorrectness logic towards a logical foundation for static bug-catching in quantum programming. The validity of formulas in this logic is dual to that of quantum Hoare logics. We justify the formulation of validity by an intuitive explanation from a reachability point of view and a comparison against several alternative formulations. Compared with existing works focusing on dynamic analysis, our logic provides sound and complete arguments. We further demonstrate the usefulness of the logic by reasoning several examples, including Grover's search, quantum teleportation, and a repeat-until-success program. We also automate the reasoning procedure by a prototyped static analyzer built on top of the logic rules.},
+  keywords = {quantum programming languages, projective quantum predicates, incorrectness logic},
+  webnote = {OOPSLA '22},
   bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
 }
 </pre>
@@ -2785,7 +2804,7 @@
   url = {<a href="https://github.com/psg-mit/twist-popl22">https://github.com/psg-mit/twist-popl22</a>},
   abstract = {Quantum programming languages enable developers to implement algorithms for quantum computers that promise computational breakthroughs in classically intractable tasks. Programming quantum computers requires awareness of entanglement, the phenomenon in which measurement outcomes of qubits are correlated. Entanglement can determine the correctness of algorithms and suitability of programming patterns. In this work, we formalize purity as a central tool for automating reasoning about entanglement in quantum programs. A pure expression is one whose evaluation is unaffected by the measurement outcomes of qubits that it does not own, implying freedom from entanglement with any other expression in the computation. We present Twist, the first language that features a type system for sound reasoning about purity. The type system enables the developer to identify pure expressions using type annotations. Twist also features purity assertion operators that state the absence of entanglement in the output of quantum gates. To soundly check these assertions, Twist uses a combination of static analysis and runtime verification. We evaluate Twist's type system and analyses on a benchmark suite of quantum programs in simulation, demonstrating that Twist can express quantum algorithms, catch programming errors in them, and support programs that existing languages disallow, while incurring runtime verification overhead of less than 3.5\%.},
   keywords = {entanglement, purity, quantum programming, type systems},
-  webnote = {POPL '22.},
+  webnote = {POPL '22},
   bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
 }
 </pre>

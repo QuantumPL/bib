@@ -5,8 +5,8 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=generator content="Wowchemy 5.2.0 for Hugo">
 <meta name=author content="Kartik">
-<meta name=description content="Measurement-based quantum computation has emerged from the physics community as a new approach to quantum computation where the notion of measurement is the main driving force of computation. This is in contrast with the more traditional circuit model that is based on unitary operations. Among measurement-based quantum computation methods, the recently introduced one-way quantum computer [Raussendorf and Briegel 2001] stands out as fundamental. We develop a rigorous mathematical model underlying the one-way quantum computer and present a concrete syntax and operational semantics for programs, which we call patterns, and an algebra of these patterns derived from a denotational semantics. More importantly, we present a calculus for reasoning locally and compositionally about these patterns. We present a rewrite theory and prove a general standardization theorem which allows all patterns to be put in a semantically equivalent standard form. Standardization has far-reaching consequences: a new physical architecture based on performing all the entanglement in the beginning, parallelization by exposing the dependency structure of measurements and expressiveness theorems. Furthermore we formalize several other measurement-based models, for example, Teleportation, Phase and Pauli models and present compositional embeddings of them into and from the one-way model. This allows us to transfer all the theory we develop for the one-way model to these models. This shows that the framework we have developed has a general impact on measurement-based computation and is not just particular to the one-way quantum computer.">
-<link rel=alternate hreflang=en-us href=https://quantumpl.github.io/bib/publication/Danos2007/>
+<meta name=description content="Bug-catching is important for developing quantum programs. Motivated by the incorrectness logic for classical programs, we propose an incorrectness logic towards a logical foundation for static bug-catching in quantum programming. The validity of formulas in this logic is dual to that of quantum Hoare logics. We justify the formulation of validity by an intuitive explanation from a reachability point of view and a comparison against several alternative formulations. Compared with existing works focusing on dynamic analysis, our logic provides sound and complete arguments. We further demonstrate the usefulness of the logic by reasoning several examples, including Grover's search, quantum teleportation, and a repeat-until-success program. We also automate the reasoning procedure by a prototyped static analyzer built on top of the logic rules.">
+<link rel=alternate hreflang=en-us href=https://quantumpl.github.io/bib/publication/Yan2022/>
 <meta name=theme-color content="#1565c0">
 <script src=/bib/js/mathjax-config.js></script>
 <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin=anonymous>
@@ -16,21 +16,21 @@
 <link rel=stylesheet href=/bib/css/wowchemy.28f0baf80c0ff84350a807acc45ceca7.css>
 <link rel=icon type=image/png href=/bib/media/icon_hu18592104feffac20f675f2d84225d529_16137_32x32_fill_lanczos_center_3.png>
 <link rel=apple-touch-icon type=image/png href=/bib/media/icon_hu18592104feffac20f675f2d84225d529_16137_180x180_fill_lanczos_center_3.png>
-<link rel=canonical href=https://quantumpl.github.io/bib/publication/Danos2007/>
+<link rel=canonical href=https://quantumpl.github.io/bib/publication/Yan2022/>
 <meta property="twitter:card" content="summary">
 <meta property="twitter:site" content="@Quantum Programming Languages & Verification Bibliography">
 <meta property="twitter:creator" content="@Quantum Programming Languages & Verification Bibliography">
 <meta property="og:site_name" content="Quantum PL & Verification Bibliography">
-<meta property="og:url" content="https://quantumpl.github.io/bib/publication/Danos2007/">
-<meta property="og:title" content="The Measurement Calculus | Quantum PL & Verification Bibliography">
-<meta property="og:description" content="Measurement-based quantum computation has emerged from the physics community as a new approach to quantum computation where the notion of measurement is the main driving force of computation. This is in contrast with the more traditional circuit model that is based on unitary operations. Among measurement-based quantum computation methods, the recently introduced one-way quantum computer [Raussendorf and Briegel 2001] stands out as fundamental. We develop a rigorous mathematical model underlying the one-way quantum computer and present a concrete syntax and operational semantics for programs, which we call patterns, and an algebra of these patterns derived from a denotational semantics. More importantly, we present a calculus for reasoning locally and compositionally about these patterns. We present a rewrite theory and prove a general standardization theorem which allows all patterns to be put in a semantically equivalent standard form. Standardization has far-reaching consequences: a new physical architecture based on performing all the entanglement in the beginning, parallelization by exposing the dependency structure of measurements and expressiveness theorems. Furthermore we formalize several other measurement-based models, for example, Teleportation, Phase and Pauli models and present compositional embeddings of them into and from the one-way model. This allows us to transfer all the theory we develop for the one-way model to these models. This shows that the framework we have developed has a general impact on measurement-based computation and is not just particular to the one-way quantum computer."><meta property="og:image" content="https://quantumpl.github.io/bib/media/logo_hu18592104feffac20f675f2d84225d529_16137_300x300_fit_lanczos_3.png">
+<meta property="og:url" content="https://quantumpl.github.io/bib/publication/Yan2022/">
+<meta property="og:title" content="On Incorrectness Logic for Quantum Programs | Quantum PL & Verification Bibliography">
+<meta property="og:description" content="Bug-catching is important for developing quantum programs. Motivated by the incorrectness logic for classical programs, we propose an incorrectness logic towards a logical foundation for static bug-catching in quantum programming. The validity of formulas in this logic is dual to that of quantum Hoare logics. We justify the formulation of validity by an intuitive explanation from a reachability point of view and a comparison against several alternative formulations. Compared with existing works focusing on dynamic analysis, our logic provides sound and complete arguments. We further demonstrate the usefulness of the logic by reasoning several examples, including Grover's search, quantum teleportation, and a repeat-until-success program. We also automate the reasoning procedure by a prototyped static analyzer built on top of the logic rules."><meta property="og:image" content="https://quantumpl.github.io/bib/media/logo_hu18592104feffac20f675f2d84225d529_16137_300x300_fit_lanczos_3.png">
 <meta property="twitter:image" content="https://quantumpl.github.io/bib/media/logo_hu18592104feffac20f675f2d84225d529_16137_300x300_fit_lanczos_3.png"><meta property="og:locale" content="en-us">
-<meta property="article:published_time" content="2021-08-16T16:44:14+00:00">
-<meta property="article:modified_time" content="2021-08-16T11:44:14-05:00">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://quantumpl.github.io/bib/publication/Danos2007/"},"headline":"The Measurement Calculus","datePublished":"2021-08-16T16:44:14Z","dateModified":"2021-08-16T11:44:14-05:00","author":{"@type":"Person","name":"Vincent Danos"},"publisher":{"@type":"Organization","name":"Quantum PL \u0026 Verification Bibliography","logo":{"@type":"ImageObject","url":"https://quantumpl.github.io/bib/media/logo_hu18592104feffac20f675f2d84225d529_16137_192x192_fit_lanczos_3.png"}},"description":"Measurement-based quantum computation has emerged from the physics community as a new approach to quantum computation where the notion of measurement is the main driving force of computation. This is in contrast with the more traditional circuit model that is based on unitary operations. Among measurement-based quantum computation methods, the recently introduced one-way quantum computer [Raussendorf and Briegel 2001] stands out as fundamental. We develop a rigorous mathematical model underlying the one-way quantum computer and present a concrete syntax and operational semantics for programs, which we call patterns, and an algebra of these patterns derived from a denotational semantics. More importantly, we present a calculus for reasoning locally and compositionally about these patterns. We present a rewrite theory and prove a general standardization theorem which allows all patterns to be put in a semantically equivalent standard form. Standardization has far-reaching consequences: a new physical architecture based on performing all the entanglement in the beginning, parallelization by exposing the dependency structure of measurements and expressiveness theorems. Furthermore we formalize several other measurement-based models, for example, Teleportation, Phase and Pauli models and present compositional embeddings of them into and from the one-way model. This allows us to transfer all the theory we develop for the one-way model to these models. This shows that the framework we have developed has a general impact on measurement-based computation and is not just particular to the one-way quantum computer."}</script>
-<title>The Measurement Calculus | Quantum PL & Verification Bibliography</title>
+<meta property="article:published_time" content="2022-04-01T00:00:00+00:00">
+<meta property="article:modified_time" content="2022-04-30T18:11:02-05:00">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://quantumpl.github.io/bib/publication/Yan2022/"},"headline":"On Incorrectness Logic for Quantum Programs","datePublished":"2022-04-01T00:00:00Z","dateModified":"2022-04-30T18:11:02-05:00","author":{"@type":"Person","name":"Peng Yan"},"publisher":{"@type":"Organization","name":"Quantum PL \u0026 Verification Bibliography","logo":{"@type":"ImageObject","url":"https://quantumpl.github.io/bib/media/logo_hu18592104feffac20f675f2d84225d529_16137_192x192_fit_lanczos_3.png"}},"description":"Bug-catching is important for developing quantum programs. Motivated by the incorrectness logic for classical programs, we propose an incorrectness logic towards a logical foundation for static bug-catching in quantum programming. The validity of formulas in this logic is dual to that of quantum Hoare logics. We justify the formulation of validity by an intuitive explanation from a reachability point of view and a comparison against several alternative formulations. Compared with existing works focusing on dynamic analysis, our logic provides sound and complete arguments. We further demonstrate the usefulness of the logic by reasoning several examples, including Grover's search, quantum teleportation, and a repeat-until-success program. We also automate the reasoning procedure by a prototyped static analyzer built on top of the logic rules."}</script>
+<title>On Incorrectness Logic for Quantum Programs | Quantum PL & Verification Bibliography</title>
 </head>
-<body id=top data-spy=scroll data-offset=70 data-target=#TableOfContents class=page-wrapper data-wc-page-id=999ba30e55bfc47f2ee2becd073cc91d>
+<body id=top data-spy=scroll data-offset=70 data-target=#TableOfContents class=page-wrapper data-wc-page-id=5eaf39c72c78d1467b02f6e31a51030c>
 <script src=/bib/js/wowchemy-init.min.b8153d4570dcbb34350a2a846dba8c03.js></script>
 <aside class=search-modal id=search>
 <div class=container>
@@ -120,33 +120,30 @@
 <div class=page-body>
 <div class=pub>
 <div class="article-container pt-3">
-<h1>The Measurement Calculus</h1>
+<h1>On Incorrectness Logic for Quantum Programs</h1>
 <div class=article-metadata>
 <div>
 <span>
-<a href=/bib/author/Vincent-Danos/>Vincent Danos</a></span>, <span>
-<a href=/bib/author/Elham-Kashefi/>Elham Kashefi</a></span>, <span>
-<a href=/bib/author/Prakash-Panangaden/>Prakash Panangaden</a></span>
+<a href=/bib/author/Peng-Yan/>Peng Yan</a></span>, <span>
+<a href=/bib/author/Hanru-Jiang/>Hanru Jiang</a></span>, <span>
+<a href=/bib/author/Nengkun-Yu/>Nengkun Yu</a></span>
 </div>
 <span class=article-date>
-April 2007
+April 2022
 </span>
 </div>
 <div class="btn-links mb-3">
-<a class="btn btn-outline-primary btn-page-header" href=https://www.cs.mcgill.ca/~prakash/Pubs/jacm.pdf target=_blank rel=noopener>
-PDF
-</a>
-<a href=# class="btn btn-outline-primary btn-page-header js-cite-modal" data-filename=/bib/publication/Danos2007/cite.bib>
+<a href=# class="btn btn-outline-primary btn-page-header js-cite-modal" data-filename=/bib/publication/Yan2022/cite.bib>
 Cite
 </a>
-<a class="btn btn-outline-primary btn-page-header" href=https://doi.org/10.1145/1219092.1219096 target=_blank rel=noopener>
+<a class="btn btn-outline-primary btn-page-header" href=https://doi.org/10.1145/3527316 target=_blank rel=noopener>
 DOI
 </a>
 </div>
 </div>
 <div class=article-container>
 <h3>Abstract</h3>
-<p class=pub-abstract>Measurement-based quantum computation has emerged from the physics community as a new approach to quantum computation where the notion of measurement is the main driving force of computation. This is in contrast with the more traditional circuit model that is based on unitary operations. Among measurement-based quantum computation methods, the recently introduced one-way quantum computer [Raussendorf and Briegel 2001] stands out as fundamental. We develop a rigorous mathematical model underlying the one-way quantum computer and present a concrete syntax and operational semantics for programs, which we call patterns, and an algebra of these patterns derived from a denotational semantics. More importantly, we present a calculus for reasoning locally and compositionally about these patterns. We present a rewrite theory and prove a general standardization theorem which allows all patterns to be put in a semantically equivalent standard form. Standardization has far-reaching consequences: a new physical architecture based on performing all the entanglement in the beginning, parallelization by exposing the dependency structure of measurements and expressiveness theorems. Furthermore we formalize several other measurement-based models, for example, Teleportation, Phase and Pauli models and present compositional embeddings of them into and from the one-way model. This allows us to transfer all the theory we develop for the one-way model to these models. This shows that the framework we have developed has a general impact on measurement-based computation and is not just particular to the one-way quantum computer.</p>
+<p class=pub-abstract>Bug-catching is important for developing quantum programs. Motivated by the incorrectness logic for classical programs, we propose an incorrectness logic towards a logical foundation for static bug-catching in quantum programming. The validity of formulas in this logic is dual to that of quantum Hoare logics. We justify the formulation of validity by an intuitive explanation from a reachability point of view and a comparison against several alternative formulations. Compared with existing works focusing on dynamic analysis, our logic provides sound and complete arguments. We further demonstrate the usefulness of the logic by reasoning several examples, including Grover&rsquo;s search, quantum teleportation, and a repeat-until-success program. We also automate the reasoning procedure by a prototyped static analyzer built on top of the logic rules.</p>
 <div class=row>
 <div class=col-md-1></div>
 <div class=col-md-10>
@@ -167,29 +164,27 @@ Journal article
 <div class=col-md-10>
 <div class=row>
 <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-<div class="col-12 col-md-9"><em>Journal of the ACM</em></div>
+<div class="col-12 col-md-9"><em>Proceedings of the ACM on Programming Languages</em></div>
 </div>
 </div>
 <div class=col-md-1></div>
 </div>
 <div class="d-md-none space-below"></div>
 <div class=space-below></div>
-<div class=article-style></div>
+<div class=article-style><p>OOPSLA &lsquo;22</p>
+</div>
 <div class=article-tags>
-<a class="badge badge-light" href=/bib/tag/normalization/>normalization</a>
-<a class="badge badge-light" href=/bib/tag/measurement-based-quantum-computing/>measurement-based quantum computing</a>
 <a class="badge badge-light" href=/bib/tag/quantum-programming-languages/>quantum programming languages</a>
-<a class="badge badge-light" href=/bib/tag/models-for-quantum-computing/>models for quantum computing</a>
-<a class="badge badge-light" href=/bib/tag/term-rewriting/>term rewriting</a>
-<a class="badge badge-light" href=/bib/tag/teleportation-based-quantum-computing/>teleportation-based quantum computing</a>
+<a class="badge badge-light" href=/bib/tag/projective-quantum-predicates/>projective quantum predicates</a>
+<a class="badge badge-light" href=/bib/tag/incorrectness-logic/>incorrectness logic</a>
 </div>
 <div class="article-widget content-widget-hr">
 <h3>Related</h3>
 <ul>
-<li><a href=/bib/publication/Yan2022/>On Incorrectness Logic for Quantum Programs</a></li>
 <li><a href=/bib/publication/Paolini2017/>qPCF: A Language for Quantum Circuit Computations</a></li>
 <li><a href=/bib/publication/Mahmoud2019/>Formalization of Metatheory of the Quipper Quantum Programming Language in a Linear Logic</a></li>
 <li><a href=/bib/publication/Fu2020a/>A Tutorial Introduction to Quantum Circuit Programming in Dependently Typed Proto-Quipper</a></li>
+<li><a href=/bib/publication/Danos2007/>The Measurement Calculus</a></li>
 <li><a href=/bib/publication/Rios2021/>On a Categorically Sound Quantum Programming Language for Circuit Description</a></li>
 </ul>
 </div>
