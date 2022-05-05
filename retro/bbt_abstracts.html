@@ -3049,8 +3049,9 @@ Mingkuan Xu, Zikun Li, Oded Padon, Sina Lin, Jessica Pointing, Auguste Hirth,
   NY, USA, June 2022. Association for Computing Machinery.
  To appear at PLDI 2022.
 [&nbsp;<a href="bbt_bib.html#Xu2022">bib</a>&nbsp;| 
+<a href="https://doi.org/10.1145/3519939.3523433">DOI</a>&nbsp;| 
 <a href="http://arxiv.org/abs/2111.11387">arXiv</a>&nbsp;| 
-<a href="https://github.com/quantum-compiler/quartz">https</a>&nbsp;]
+<a href="https://theory.stanford.edu/~aiken/publications/papers/pldi22b.pdf">.pdf</a>&nbsp;]
 <blockquote>
 Existing quantum compilers optimize quantum circuits by applying circuit transformations designed by experts. This approach requires significant manual effort to design and implement circuit transformations for different quantum devices, which use different gate sets, and can miss subtle optimizations that are hard to find manually.<p>
                    We propose Quartz, a quantum circuit superoptimizer that automatically generates and verifies circuit transformations for arbitrary quantum gate sets. Quartz takes as input the set of quantum gates supported by a quantum processor and generates candidate circuit transformations for the target processor by enumerating small circuits over the given gate set. Quartz then formally verifies the candidate transformations using an automated theorem prover. Finally, to optimize a quantum circuit, Quartz uses a cost-based backtracking search, applying the verified transformations to the input circuit.<p>

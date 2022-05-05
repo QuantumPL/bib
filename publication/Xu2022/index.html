@@ -25,9 +25,9 @@
 <meta property="og:title" content="Quartz: Superoptimization of Quantum Circuits | Quantum PL & Verification Bibliography">
 <meta property="og:description" content="Existing quantum compilers optimize quantum circuits by applying circuit transformations designed by experts. This approach requires significant manual effort to design and implement circuit transformations for different quantum devices, which use different gate sets, and can miss subtle optimizations that are hard to find manually.  We propose Quartz, a quantum circuit superoptimizer that automatically generates and verifies circuit transformations for arbitrary quantum gate sets. Quartz takes as input the set of quantum gates supported by a quantum processor and generates candidate circuit transformations for the target processor by enumerating small circuits over the given gate set. Quartz then formally verifies the candidate transformations using an automated theorem prover. Finally, to optimize a quantum circuit, Quartz uses a cost-based backtracking search, applying the verified transformations to the input circuit.  Our evaluation on three gate sets supported by existing quantum processors shows that Quartz can effectively generate and verify transformations for different gate sets. The generated transformations cover manually designed transformations used by existing optimizers, and also include new transformations. By using these transformations, Quartz's optimizer matches the performance of existing optimizers on one gate set for which they are tuned, and outperforms them on the two other gate sets."><meta property="og:image" content="https://quantumpl.github.io/bib/media/logo_hu18592104feffac20f675f2d84225d529_16137_300x300_fit_lanczos_3.png">
 <meta property="twitter:image" content="https://quantumpl.github.io/bib/media/logo_hu18592104feffac20f675f2d84225d529_16137_300x300_fit_lanczos_3.png"><meta property="og:locale" content="en-us">
-<meta property="article:published_time" content="2022-04-01T00:00:00+00:00">
+<meta property="article:published_time" content="2022-05-01T00:00:00+00:00">
 <meta property="article:modified_time" content="2022-04-07T20:34:41-05:00">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://quantumpl.github.io/bib/publication/Xu2022/"},"headline":"Quartz: Superoptimization of Quantum Circuits","datePublished":"2022-04-01T00:00:00Z","dateModified":"2022-04-07T20:34:41-05:00","author":{"@type":"Person","name":"Mingkuan Xu"},"publisher":{"@type":"Organization","name":"Quantum PL \u0026 Verification Bibliography","logo":{"@type":"ImageObject","url":"https://quantumpl.github.io/bib/media/logo_hu18592104feffac20f675f2d84225d529_16137_192x192_fit_lanczos_3.png"}},"description":"Existing quantum compilers optimize quantum circuits by applying circuit transformations designed by experts. This approach requires significant manual effort to design and implement circuit transformations for different quantum devices, which use different gate sets, and can miss subtle optimizations that are hard to find manually.  We propose Quartz, a quantum circuit superoptimizer that automatically generates and verifies circuit transformations for arbitrary quantum gate sets. Quartz takes as input the set of quantum gates supported by a quantum processor and generates candidate circuit transformations for the target processor by enumerating small circuits over the given gate set. Quartz then formally verifies the candidate transformations using an automated theorem prover. Finally, to optimize a quantum circuit, Quartz uses a cost-based backtracking search, applying the verified transformations to the input circuit.  Our evaluation on three gate sets supported by existing quantum processors shows that Quartz can effectively generate and verify transformations for different gate sets. The generated transformations cover manually designed transformations used by existing optimizers, and also include new transformations. By using these transformations, Quartz's optimizer matches the performance of existing optimizers on one gate set for which they are tuned, and outperforms them on the two other gate sets."}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://quantumpl.github.io/bib/publication/Xu2022/"},"headline":"Quartz: Superoptimization of Quantum Circuits","datePublished":"2022-05-01T00:00:00Z","dateModified":"2022-04-07T20:34:41-05:00","author":{"@type":"Person","name":"Mingkuan Xu"},"publisher":{"@type":"Organization","name":"Quantum PL \u0026 Verification Bibliography","logo":{"@type":"ImageObject","url":"https://quantumpl.github.io/bib/media/logo_hu18592104feffac20f675f2d84225d529_16137_192x192_fit_lanczos_3.png"}},"description":"Existing quantum compilers optimize quantum circuits by applying circuit transformations designed by experts. This approach requires significant manual effort to design and implement circuit transformations for different quantum devices, which use different gate sets, and can miss subtle optimizations that are hard to find manually.  We propose Quartz, a quantum circuit superoptimizer that automatically generates and verifies circuit transformations for arbitrary quantum gate sets. Quartz takes as input the set of quantum gates supported by a quantum processor and generates candidate circuit transformations for the target processor by enumerating small circuits over the given gate set. Quartz then formally verifies the candidate transformations using an automated theorem prover. Finally, to optimize a quantum circuit, Quartz uses a cost-based backtracking search, applying the verified transformations to the input circuit.  Our evaluation on three gate sets supported by existing quantum processors shows that Quartz can effectively generate and verify transformations for different gate sets. The generated transformations cover manually designed transformations used by existing optimizers, and also include new transformations. By using these transformations, Quartz's optimizer matches the performance of existing optimizers on one gate set for which they are tuned, and outperforms them on the two other gate sets."}</script>
 <title>Quartz: Superoptimization of Quantum Circuits | Quantum PL & Verification Bibliography</title>
 </head>
 <body id=top data-spy=scroll data-offset=70 data-target=#TableOfContents class=page-wrapper data-wc-page-id=4b685e5631a0764bed7fb8cd2356865e>
@@ -137,12 +137,18 @@
 <a href=/bib/author/Zhihao-Jia/>Zhihao Jia</a></span>
 </div>
 <span class=article-date>
-April 2022
+May 2022
 </span>
 </div>
 <div class="btn-links mb-3">
+<a class="btn btn-outline-primary btn-page-header" href=https://theory.stanford.edu/~aiken/publications/papers/pldi22b.pdf target=_blank rel=noopener>
+PDF
+</a>
 <a href=# class="btn btn-outline-primary btn-page-header js-cite-modal" data-filename=/bib/publication/Xu2022/cite.bib>
 Cite
+</a>
+<a class="btn btn-outline-primary btn-page-header" href=https://doi.org/10.1145/3519939.3523433 target=_blank rel=noopener>
+DOI
 </a>
 <a class="btn btn-outline-primary btn-page-header" href=https://arxiv.org/abs/2111.11387 target=_blank rel=noopener>
 arXiv
@@ -182,7 +188,7 @@ Conference paper
 </div>
 <div class="d-md-none space-below"></div>
 <div class=space-below></div>
-<div class=article-style><p>PLDI &lsquo;22. Previously known as Quanto. To appear at PLDI 2022</p>
+<div class=article-style><p>PLDI &lsquo;22. Previously known as Quanto. To appear at PLDI 2022.</p>
 </div>
 </div>
 </div>
