@@ -1370,7 +1370,7 @@ Keywords: category theory, quantum theory, monoidal category
 David Ittah, Thomas H&auml;ner, Vadym Kliuchnikov, and Torsten Hoefler.
  <b>QIRO: A Static Single Assignment-Based Quantum Program
   Representation for Optimization</b>.
- <em>ACM Transactions on Quantum Computing</em>, 3(2), June 2022.
+ <em>ACM Transactions on Quantum Computing</em>, 3(2), February 2022.
 [&nbsp;<a href="bbt_bib.html#Ittah2022">bib</a>&nbsp;| 
 <a href="https://doi.org/10.1145/3491247">DOI</a>&nbsp;]
 <blockquote>
@@ -2117,6 +2117,9 @@ Yuxiang Peng, Mingsheng Ying, and Xiaodi Wu.
 <blockquote>
 We investigate the algebraic reasoning of quantum programs inspired by the success of classical program analysis based on Kleene algebra. One prominent example of such is the famous Kleene Algebra with Tests (KAT), which has furnished both theoretical insights and practical tools. The succinctness of algebraic reasoning would be especially desirable for scalable analysis of quantum programs, given the involvement of exponential-size matrices in most of the existing methods. A few key features of KAT including the idempotent law and the nice properties of classical tests, however, fail to hold in the context of quantum programs due to their unique quantum features, especially in branching. We propose the Non-idempotent Kleena Algebra (NKA) as a natural alternative, and identify complete and sound semantic models for NKA as well as their quantum interpretations. In light of applications of KAT, we demonstrate algebraic proofs in NKA of quantum compiler optimization and the normal form of quantum <b>while</b>-programs. Moreover, we extend NKA with Tests (i.e., NKAT), where tests model quantum predicates following effect algebra, and illustrate how to encode propositional quantum Hoare logic as NKAT theorems.
 </blockquote>
+<blockquote>
+Keywords: non-idempotent kleene algebra, compiler optimization, normal form theorem, quantum hoare logic
+</blockquote>
 
 </td>
 </tr>
@@ -2855,16 +2858,20 @@ Keywords: domain specific language, functional programming, quantum computing
 <td class="bibtexitem">
 Runzhou Tao, Yunong Shi, Jianan Yao, Xupeng Li, Ali Javadi-Abhari, Andrew&nbsp;W.
   Cross, Frederic&nbsp;T. Chong, and Ronghui Gu.
- <b>Giallar: Push-button Verification for the Qiskit Quantum
+ <b>Giallar: Push-Button Verification for the Qiskit Quantum
   Compiler</b>.
  In <em>Proceedings of the 43rd ACM SIGPLAN International Conference
   on Programming Language Design and Implementation</em>, PLDI '22, New York,
   NY, USA, June 2022. Association for Computing Machinery.
  To appear at PLDI 2022.
 [&nbsp;<a href="bbt_bib.html#Tao2022">bib</a>&nbsp;| 
-<a href="http://arxiv.org/abs/1908.08963">arXiv</a>&nbsp;]
+<a href="https://doi.org/10.1145/3519939.3523431">DOI</a>&nbsp;| 
+<a href="http://arxiv.org/abs/2205.00661">arXiv</a>&nbsp;]
 <blockquote>
 This paper presents Giallar, a fully-automated verification toolkit for quantum compilers. Giallar requires no manual specifications, invariants, or proofs, and can automatically verify that a compiler pass preserves the semantics of quantum circuits. To deal with unbounded loops in quantum compilers, Giallar abstracts three loop templates, whose loop invariants can be automatically inferred. To efficiently check the equivalence of arbitrary input and output circuits that have complicated matrix semantics representation, Giallar introduces a symbolic representation for quantum circuits and a set of rewriting rules for reducing symbolic quantum circuits. With Giallar, we implemented and verified 44 (out of 56) compiler passes in 13 versions of the Qiskit compiler, the open-source quantum compiler standard, during which three bugs were detected in and confirmed by Qiskit. Our evaluation shows that most of Qiskit compiler passes can be automatically verified in seconds and verification imposes only a modest overhead to compilation performance.
+</blockquote>
+<blockquote>
+Keywords: quantum computing, compiler verification, automated verification
 </blockquote>
 
 </td>
@@ -3107,6 +3114,9 @@ Existing quantum compilers optimize quantum circuits by applying circuit transfo
                    We propose Quartz, a quantum circuit superoptimizer that automatically generates and verifies circuit transformations for arbitrary quantum gate sets. Quartz takes as input the set of quantum gates supported by a quantum processor and generates candidate circuit transformations for the target processor by enumerating small circuits over the given gate set. Quartz then formally verifies the candidate transformations using an automated theorem prover. Finally, to optimize a quantum circuit, Quartz uses a cost-based backtracking search, applying the verified transformations to the input circuit.<p>
                    Our evaluation on three gate sets supported by existing quantum processors shows that Quartz can effectively generate and verify transformations for different gate sets. The generated transformations cover manually designed transformations used by existing optimizers, and also include new transformations. By using these transformations, Quartz's optimizer matches the performance of existing optimizers on one gate set for which they are tuned, and outperforms them on the two other gate sets.
 </blockquote>
+<blockquote>
+Keywords: quantum computing, superoptimization
+</blockquote>
 
 </td>
 </tr>
@@ -3120,7 +3130,7 @@ Existing quantum compilers optimize quantum circuits by applying circuit transfo
 Peng Yan, Hanru Jiang, and Nengkun Yu.
  <b>On Incorrectness Logic for Quantum Programs</b>.
  <em>Proceedings of the ACM on Programming Languages</em>, 6(OOPSLA1):72,
-  December 2022.
+  April 2022.
 [&nbsp;<a href="bbt_bib.html#Yan2022">bib</a>&nbsp;| 
 <a href="https://doi.org/10.1145/3527316">DOI</a>&nbsp;]
 <blockquote>

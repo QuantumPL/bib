@@ -1155,7 +1155,7 @@
   title = {QIRO: A Static Single Assignment-Based Quantum Program Representation for Optimization},
   author = {Ittah, David and H{\"a}ner, Thomas and Kliuchnikov, Vadym and Hoefler, Torsten},
   year = {2022},
-  month = jun,
+  month = feb,
   journal = {ACM Transactions on Quantum Computing},
   publisher = {{Association for Computing Machinery}},
   address = {New York, NY, USA},
@@ -1766,13 +1766,14 @@
   address = {New York, NY, USA},
   series = {{{PLDI}} '22},
   pages = {},
-  numpages = {},
+  numpages = {14},
   doi = {10.1145/3519939.3523713},
   archiveprefix = {arXiv},
   eprint = {2110.07018},
   abstract = {We investigate the algebraic reasoning of quantum programs inspired by the success of classical program analysis based on Kleene algebra. One prominent example of such is the famous Kleene Algebra with Tests (KAT), which has furnished both theoretical insights and practical tools. The succinctness of algebraic reasoning would be especially desirable for scalable analysis of quantum programs, given the involvement of exponential-size matrices in most of the existing methods. A few key features of KAT including the idempotent law and the nice properties of classical tests, however, fail to hold in the context of quantum programs due to their unique quantum features, especially in branching. We propose the Non-idempotent Kleena Algebra (NKA) as a natural alternative, and identify complete and sound semantic models for NKA as well as their quantum interpretations. In light of applications of KAT, we demonstrate algebraic proofs in NKA of quantum compiler optimization and the normal form of quantum \textbf{while}-programs. Moreover, we extend NKA with Tests (i.e., NKAT), where tests model quantum predicates following effect algebra, and illustrate how to encode propositional quantum Hoare logic as NKAT theorems.},
+  keywords = {non-idempotent kleene algebra, compiler optimization, normal form theorem, quantum hoare logic},
   note = {To appear at PLDI 2022},
-  webnote = {To appear at PLDI 2022},
+  webnote = {See arXiv for extended version. To appear at PLDI 2022},
   bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
 }
 </pre>
@@ -2387,7 +2388,7 @@
 
 <a name="Tao2022"></a><pre>
 @inproceedings{<a href="bbt.html#Tao2022">Tao2022</a>,
-  title = {Giallar: Push-button Verification for the Qiskit Quantum Compiler},
+  title = {Giallar: Push-Button Verification for the Qiskit Quantum Compiler},
   author = {Tao, Runzhou and Shi, Yunong and Yao, Jianan and Li, Xupeng and Javadi-Abhari, Ali and Cross, Andrew W. and Chong, Frederic T. and Gu, Ronghui},
   year = {2022},
   month = jun,
@@ -2396,12 +2397,14 @@
   address = {New York, NY, USA},
   series = {{{PLDI}} '22},
   pages = {},
-  numpages = {},
+  numpages = {16},
+  doi = {10.1145/3519939.3523431},
   archiveprefix = {arXiv},
-  eprint = {1908.08963},
+  eprint = {2205.00661},
   abstract = {This paper presents Giallar, a fully-automated verification toolkit for quantum compilers. Giallar requires no manual specifications, invariants, or proofs, and can automatically verify that a compiler pass preserves the semantics of quantum circuits. To deal with unbounded loops in quantum compilers, Giallar abstracts three loop templates, whose loop invariants can be automatically inferred. To efficiently check the equivalence of arbitrary input and output circuits that have complicated matrix semantics representation, Giallar introduces a symbolic representation for quantum circuits and a set of rewriting rules for reducing symbolic quantum circuits. With Giallar, we implemented and verified 44 (out of 56) compiler passes in 13 versions of the Qiskit compiler, the open-source quantum compiler standard, during which three bugs were detected in and confirmed by Qiskit. Our evaluation shows that most of Qiskit compiler passes can be automatically verified in seconds and verification imposes only a modest overhead to compilation performance.},
+  keywords = {quantum computing, compiler verification, automated verification},
   note = {To appear at PLDI 2022},
-  webnote = {Previously known as CertiQ. To appear at PLDI 2022},
+  webnote = {Previously known as [CertiQ (arXiv:1908.08963)](https://arxiv.org/abs/1908.08963). To appear at PLDI 2022},
   bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
 }
 </pre>
@@ -2602,6 +2605,7 @@
                    We propose Quartz, a quantum circuit superoptimizer that automatically generates and verifies circuit transformations for arbitrary quantum gate sets. Quartz takes as input the set of quantum gates supported by a quantum processor and generates candidate circuit transformations for the target processor by enumerating small circuits over the given gate set. Quartz then formally verifies the candidate transformations using an automated theorem prover. Finally, to optimize a quantum circuit, Quartz uses a cost-based backtracking search, applying the verified transformations to the input circuit.
 
                    Our evaluation on three gate sets supported by existing quantum processors shows that Quartz can effectively generate and verify transformations for different gate sets. The generated transformations cover manually designed transformations used by existing optimizers, and also include new transformations. By using these transformations, Quartz's optimizer matches the performance of existing optimizers on one gate set for which they are tuned, and outperforms them on the two other gate sets.},
+  keywords = {quantum computing, superoptimization},
   note = {To appear at PLDI 2022},
   webnote = {Previously known as Quanto. To appear at PLDI 2022. Source code: https://github.com/quantum-compiler/quartz},
   bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
@@ -2613,7 +2617,7 @@
   title = {On Incorrectness Logic for Quantum Programs},
   author = {Yan, Peng and Jiang, Hanru and Yu, Nengkun},
   year = {2022},
-  month = dec,
+  month = apr,
   journal = {Proceedings of the ACM on Programming Languages},
   volume = {6},
   number = {OOPSLA1},
