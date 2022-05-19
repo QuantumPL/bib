@@ -43,7 +43,12 @@
     "stefanzweifel",
     "urldate",
     "valiron",
-    "venv"
+    "venv",
+    "journaltitle",
+    "mastersthesis",
+    "phdthesis",
+    "techreport",
+    "techreports"
   ],
   "version": "0.2"
 }
