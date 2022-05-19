@@ -396,7 +396,7 @@
   eprint = {2003.05841},
   abstract = {While recent progress in quantum hardware open the door for significant speedup in certain key areas, quantum algorithms are still hard to implement right, and the validation of such quantum programs is a challenge. In this paper we propose Qbricks, a formal verification environment for circuit-building quantum programs, featuring both parametric specifications and a high degree of proof automation. We propose a logical framework based on first-order logic, and develop the main tool we rely upon for achieving the automation of proofs of quantum specification: PPS, a parametric extension of the recently developed path sum semantics. To back-up our claims, we implement and verify parametric versions of several famous and non-trivial quantum algorithms, including the quantum parts of Shor's integer factoring, quantum phase estimation (QPE) and Grover's search.},
   keywords = {deductive verification, quantum programming, quantum circuits},
-  webnote = {See extended version for additional technical material.},
+  webnote = {See extended version on arXiv for additional technical material.},
   bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
 }
 </pre>
@@ -1041,7 +1041,7 @@
   url = {<a href="https://github.com/inQWIRE/SQIR">https://github.com/inQWIRE/SQIR</a>},
   abstract = {We present VOQC, the first fully verified optimizer for quantum circuits, written using the Coq proof assistant. Quantum circuits are expressed as programs in a simple, low-level language called SQIR, a simple quantum intermediate representation, which is deeply embedded in Coq. Optimizations and other transformations are expressed as Coq functions, which are proved correct with respect to a semantics of SQIR programs. SQIR uses a semantics of matrices of complex numbers, which is the standard for quantum computation, but treats matrices symbolically in order to reason about programs that use an arbitrary number of quantum bits. SQIR's careful design and our provided automation make it possible to write and verify a broad range of optimizations in VOQC, including full-circuit transformations from cutting-edge optimizers.},
   keywords = {programming languages, formal verification, certified compilation, quantum computing, circuit optimization},
-  webnote = {POPL '21},
+  webnote = {POPL '21. See arXiv version for full paper with appendix.},
   bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
 }
 </pre>
@@ -1224,7 +1224,7 @@
   eprint = {2107.13347},
   abstract = {We consider a programming language that can manipulate both classical and quantum information. Our language is type-safe and designed for variational quantum programming, which is a hybrid classical-quantum computational paradigm. The classical subsystem of the language is the Probabilistic FixPoint Calculus (PFPC), which is a lambda calculus with mixed-variance recursive types, term recursion and probabilistic choice. The quantum subsystem is a first-order linear type system that can manipulate quantum information. The two subsystems are related by mixed classical/quantum terms that specify how classical probabilistic effects are induced by quantum measurements, and conversely, how classical (probabilistic) programs can influence the quantum dynamics. We also describe a sound and computationally adequate denotational semantics for the language. Classical probabilistic effects are interpreted using a recently-described commutative probabilistic monad on DCPO. Quantum effects and resources are interpreted in a category of von Neumann algebras that we show is enriched over (continuous) domains. This strong sense of enrichment allows us to develop novel semantic methods that we use to interpret the relationship between the quantum and classical probabilistic effects. By doing so we provide a very detailed denotational analysis that relates domain-theoretic models of classical probabilistic programming to models of quantum programming.},
   keywords = {semantics, probabilistic programming, variational quantum programming},
-  webnote = {POPL '22},
+  webnote = {POPL '22. See extended version on arXiv.},
   bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
 }
 </pre>
@@ -2422,9 +2422,11 @@
   pages = {33},
   numpages = {31},
   doi = {10.1145/3290346},
+  archiveprefix = {arXiv},
+  eprint = {1802.03188},
   abstract = {We present a logic for reasoning about pairs of interactive quantum programs -- quantum relational Hoare logic (qRHL). This logic follows the spirit of probabilistic relational Hoare logic (Barthe et al. 2009) and allows us to formulate how the outputs of two quantum programs relate given the relationship of their inputs. Probabilistic RHL was used extensively for computer-verified security proofs of classical cryptographic protocols. Since pRHL is not suitable for analyzing quantum cryptography, we present qRHL as a replacement, suitable for the security analysis of post-quantum cryptography and quantum protocols. The design of qRHL poses some challenges unique to the quantum setting, e.g., the definition of equality on quantum registers. Finally, we implemented a tool for verifying proofs in qRHL and developed several example security proofs in it.},
   keywords = {formal verification, quantum cryptography, hoare logic},
-  webnote = {POPL '19},
+  webnote = {POPL '19. See extended version on arXiv.},
   bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
 }
 </pre>
@@ -2849,10 +2851,12 @@
   pages = {30},
   numpages = {32},
   doi = {10.1145/3498691},
+  archiveprefix = {arXiv},
+  eprint = {2205.02287},
   url = {<a href="https://github.com/psg-mit/twist-popl22">https://github.com/psg-mit/twist-popl22</a>},
   abstract = {Quantum programming languages enable developers to implement algorithms for quantum computers that promise computational breakthroughs in classically intractable tasks. Programming quantum computers requires awareness of entanglement, the phenomenon in which measurement outcomes of qubits are correlated. Entanglement can determine the correctness of algorithms and suitability of programming patterns. In this work, we formalize purity as a central tool for automating reasoning about entanglement in quantum programs. A pure expression is one whose evaluation is unaffected by the measurement outcomes of qubits that it does not own, implying freedom from entanglement with any other expression in the computation. We present Twist, the first language that features a type system for sound reasoning about purity. The type system enables the developer to identify pure expressions using type annotations. Twist also features purity assertion operators that state the absence of entanglement in the output of quantum gates. To soundly check these assertions, Twist uses a combination of static analysis and runtime verification. We evaluate Twist's type system and analyses on a benchmark suite of quantum programs in simulation, demonstrating that Twist can express quantum algorithms, catch programming errors in them, and support programs that existing languages disallow, while incurring runtime verification overhead of less than 3.5\%.},
   keywords = {entanglement, purity, quantum programming, type systems},
-  webnote = {POPL '22},
+  webnote = {POPL '22. The extended version on arXiv includes the appendix and differs from ACM Proceedings in that it includes a more refined comparison to prior work, specifically in Sections 3.5 and 9.6.},
   bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
 }
 </pre>
