@@ -909,7 +909,7 @@
   url          = {https://github.com/inQWIRE/SQIR},
   abstract     = {We present VOQC, the first fully verified optimizer for quantum circuits, written using the Coq proof assistant. Quantum circuits are expressed as programs in a simple, low-level language called SQIR, a simple quantum intermediate representation, which is deeply embedded in Coq. Optimizations and other transformations are expressed as Coq functions, which are proved correct with respect to a semantics of SQIR programs. SQIR uses a semantics of matrices of complex numbers, which is the standard for quantum computation, but treats matrices symbolically in order to reason about programs that use an arbitrary number of quantum bits. SQIR's careful design and our provided automation make it possible to write and verify a broad range of optimizations in VOQC, including full-circuit transformations from cutting-edge optimizers.},
   keywords     = {programming languages, formal verification, certified compilation, quantum computing, circuit optimization},
-  webnote      = {POPL '21},
+  webnote      = {POPL '21. See arXiv version for full paper with appendix.},
   bibsource    = qplbib
 }
 
@@ -1059,7 +1059,7 @@
   eprint       = {2107.13347},
   abstract     = {We consider a programming language that can manipulate both classical and quantum information. Our language is type-safe and designed for variational quantum programming, which is a hybrid classical-quantum computational paradigm. The classical subsystem of the language is the Probabilistic FixPoint Calculus (PFPC), which is a lambda calculus with mixed-variance recursive types, term recursion and probabilistic choice. The quantum subsystem is a first-order linear type system that can manipulate quantum information. The two subsystems are related by mixed classical/quantum terms that specify how classical probabilistic effects are induced by quantum measurements, and conversely, how classical (probabilistic) programs can influence the quantum dynamics. We also describe a sound and computationally adequate denotational semantics for the language. Classical probabilistic effects are interpreted using a recently-described commutative probabilistic monad on DCPO. Quantum effects and resources are interpreted in a category of von Neumann algebras that we show is enriched over (continuous) domains. This strong sense of enrichment allows us to develop novel semantic methods that we use to interpret the relationship between the quantum and classical probabilistic effects. By doing so we provide a very detailed denotational analysis that relates domain-theoretic models of classical probabilistic programming to models of quantum programming.},
   keywords     = {semantics, probabilistic programming, variational quantum programming},
-  webnote      = {POPL '22},
+  webnote      = {POPL '22. See extended version on arXiv.},
   bibsource    = qplbib
 }
 
@@ -2192,8 +2192,8 @@
   pages      = {},
   doi        = {10.1145/3519939.3523433},
   eprinttype = {arXiv},
-  eprint     = {2111.11387},
-  url        = {https://theory.stanford.edu/~aiken/publications/papers/pldi22b.pdf},
+  eprint     = {2204.09033},
+  url        = {https://github.com/quantum-compiler/quartz},
   abstract   = {Existing quantum compilers optimize quantum circuits by applying circuit transformations designed by experts. This approach requires significant manual effort to design and implement circuit transformations for different quantum devices, which use different gate sets, and can miss subtle optimizations that are hard to find manually.
 
                 We propose Quartz, a quantum circuit superoptimizer that automatically generates and verifies circuit transformations for arbitrary quantum gate sets. Quartz takes as input the set of quantum gates supported by a quantum processor and generates candidate circuit transformations for the target processor by enumerating small circuits over the given gate set. Quartz then formally verifies the candidate transformations using an automated theorem prover. Finally, to optimize a quantum circuit, Quartz uses a cost-based backtracking search, applying the verified transformations to the input circuit.
@@ -2201,7 +2201,7 @@
                 Our evaluation on three gate sets supported by existing quantum processors shows that Quartz can effectively generate and verify transformations for different gate sets. The generated transformations cover manually designed transformations used by existing optimizers, and also include new transformations. By using these transformations, Quartz's optimizer matches the performance of existing optimizers on one gate set for which they are tuned, and outperforms them on the two other gate sets.},
   keywords   = {quantum computing, superoptimization},
   note       = {To appear at PLDI 2022},
-  webnote    = {Previously known as Quanto. To appear at PLDI 2022. Source code: https://github.com/quantum-compiler/quartz},
+  webnote    = {Previously known as Quanto, arXiv:2111.11387. To appear at PLDI 2022.},
   bibsource  = qplbib
 }
 
@@ -2399,7 +2399,7 @@
   url          = {https://github.com/psg-mit/twist-popl22},
   abstract     = {Quantum programming languages enable developers to implement algorithms for quantum computers that promise computational breakthroughs in classically intractable tasks. Programming quantum computers requires awareness of entanglement, the phenomenon in which measurement outcomes of qubits are correlated. Entanglement can determine the correctness of algorithms and suitability of programming patterns. In this work, we formalize purity as a central tool for automating reasoning about entanglement in quantum programs. A pure expression is one whose evaluation is unaffected by the measurement outcomes of qubits that it does not own, implying freedom from entanglement with any other expression in the computation. We present Twist, the first language that features a type system for sound reasoning about purity. The type system enables the developer to identify pure expressions using type annotations. Twist also features purity assertion operators that state the absence of entanglement in the output of quantum gates. To soundly check these assertions, Twist uses a combination of static analysis and runtime verification. We evaluate Twist's type system and analyses on a benchmark suite of quantum programs in simulation, demonstrating that Twist can express quantum algorithms, catch programming errors in them, and support programs that existing languages disallow, while incurring runtime verification overhead of less than 3.5\%.},
   keywords     = {entanglement, purity, quantum programming, type systems},
-  webnote      = {POPL '22. The extended version on arXiv differs from ACM Proceedings in that it includes a more refined comparison to prior work, specifically in Sections 3.5 and 9.6.},
+  webnote      = {POPL '22. The extended version on arXiv includes the appendix and differs from ACM Proceedings in that it includes a more refined comparison to prior work, specifically in Sections 3.5 and 9.6.},
   bibsource    = qplbib
 }
 
