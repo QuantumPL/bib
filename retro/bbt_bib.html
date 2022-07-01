@@ -1561,7 +1561,6 @@
   author = {Nielsen, Michael A. and Chuang, Isaac L.},
   year = {2010},
   month = dec,
-  booktitle = {Quantum Computation and Quantum Information: 10th Anniversary Edition},
   publisher = {{Cambridge University Press}},
   address = {{Cambridge}},
   doi = {10.1017/CBO9780511976667},
@@ -2254,6 +2253,21 @@
 }
 </pre>
 
+<a name="Singhal2022"></a><pre>
+@inproceedings{<a href="bbt.html#Singhal2022">Singhal2022</a>,
+  title = {{Q\# as a Quantum Algorithmic Language}},
+  author = {Singhal, Kartik and Hietala, Kesha and Marshall, Sarah and Rand, Robert},
+  year = {2022},
+  month = jun,
+  booktitle = {Proceedings of the 19th International Conference on Quantum Physics and Logic (QPL), Oxford, U.K., June 27--July 1, 2022},
+  url = {<a href="https://ks.cs.uchicago.edu/publication/q-algol/">https://ks.cs.uchicago.edu/publication/q-algol/</a>},
+  abstract = {Q\# is a standalone domain-specific programming language from Microsoft for writing and running quantum programs. Like most industrial languages, it was designed without a formal specification, which can naturally lead to ambiguity in its interpretation. We aim to provide a formal language definition for Q\#, placing the language on a solid mathematical foundation and enabling further evolution of its design and type system. This paper presents λ-Q\#, an idealized version of Q\# that illustrates how we may view Q\# as a quantum Algol (algorithmic language). We show the safety properties enforced by λ-Q\#'s type system and present its equational semantics based on a fully complete algebraic theory by Staton.},
+  keywords = {quantum computing, quantum computation, programming languages, formal specification, formal language definitions, type systems, semantics and reasoning, quantum programming languages, language design, q\#},
+  note = {To appear},
+  bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
+}
+</pre>
+
 <a name="Sivarajah2020"></a><pre>
 @article{<a href="bbt.html#Sivarajah2020">Sivarajah2020</a>,
   title = {t$|$ket$\rangle$: a retargetable compiler for {NISQ} devices},
@@ -2811,6 +2825,19 @@
   abstract = {In this paper, we define the operational and denotational semantics of a special class of parallel quantum programs, namely disjoint parallel quantum programs. Based on them, a proof system for reasoning about disjoint parallel quantum programs is developed, which is (relatively) complete even when entanglement between different processes appears in the preconditions and postconditions.},
   keywords = {quantum programming, quantum hoare logic, parallel programs, entanglement, hoare logic},
   webnote = {Essentially the first part of \cite{Ying2018}},
+  bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
+}
+</pre>
+
+<a name="Ying2022"></a><pre>
+@misc{<a href="bbt.html#Ying2022">Ying2022</a>,
+  title = {{Birkhoff-von Neumann Quantum Logic as an Assertion Language for Quantum Programs}},
+  author = {Ying, Mingsheng},
+  year = {2022},
+  month = may,
+  archiveprefix = {arXiv},
+  eprint = {2205.01959},
+  abstract = {A first-order logic with quantum variables is needed as an assertion language for specifying and reasoning about various properties (e.g. correctness) of quantum programs. Surprisingly, such a logic is missing in the literature, and the existing first-order Birkhoff-von Neumann quantum logic deals with only classical variables and quantifications over them. In this paper, we fill in this gap by introducing a first-order extension of Birkhoff-von Neumann quantum logic with universal and existential quantifiers over quantum variables. Examples are presented to show our logic is particularly suitable for specifying some important properties studied in quantum computation and quantum information. We further incorporate this logic into quantum Hoare logic as an assertion logic so that it can play a role similar to that of first-order logic for classical Hoare logic and BI-logic for separation logic. In particular, we show how it can be used to define and derive quantum generalisations of some adaptation rules that have been applied to significantly simplify verification of classical programs. It is expected that the assertion logic defined in this paper - first-order quantum logic with quantum variables - can be combined with various quantum program logics to serve as a solid logical foundation upon which verification tools can be built using proof assistants such as Coq and Isabelle/HOL.},
   bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
 }
 </pre>
