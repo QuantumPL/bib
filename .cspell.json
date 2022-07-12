@@ -48,7 +48,10 @@
     "mastersthesis",
     "phdthesis",
     "techreport",
-    "techreports"
+    "techreports",
+    "datamodel",
+    "configfile",
+    "biber"
   ],
   "version": "0.2"
 }
