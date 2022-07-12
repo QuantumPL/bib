@@ -11,3 +11,9 @@ An alternate and more accessible rendering using `Hugo` at <https://quantumpl.gi
 Hugo Source: <https://github.com/QuantumPL/site>
 
 Corrections, additions, suggestions are all welcome! Please see [our contribution guide](./CONTRIBUTING.md).
+
+## Note
+BibLaTeX validation can be done using:
+```
+biber --tool --no-default-datamodel --validate-datamodel --configfile=biber-tool.conf biblatex.bib
+```
