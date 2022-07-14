@@ -2,7 +2,7 @@
 
 ## Easiest Method
 
-Just use the this [webform](https://forms.gle/watgbhcDa5jkf85T7).
+Just use the this [web form](https://forms.gle/watgbhcDa5jkf85T7).
 
 ## Detailed Method
 
