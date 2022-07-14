@@ -1,15 +1,16 @@
 # How to contribute to QPLV Bib
 
-## Organization
-- Currently `bibtex` style bib entries are supported in `bbt.bib`. Please send all PRs for changes to this file.
-- We would love to have a `biblatex` style of entries as well in the file `bblt.bib`, but for now it is not up to date. There is a [tracking issue for BibLaTeX](https://github.com/QuantumPL/bib/issues/6) support; PRs welcome.
+## Easiest Method
+
+Just use the this [webform]([AddUp](https://forms.gle/watgbhcDa5jkf85T7)).
+
+## Detailed Method
+
+`bibtex` entries are in `bbt.bib` while `biblatex` ones are in `biblatex.bib`. Please send all PRs for changes to both these files.
 
 ## Style
 - I prefer to edit using VSCode, keeping the bib file organized using [LaTeX Workshop's](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) "Align and sort bibliography".
-- When sorting the fields of a bibentry, use the following sorting order:
-  > `title shorttitle author year month day journal booktitle editor location on publisher school institution address series volume number pages numpages crossref doi archiveprefix eprint howpublished url urldate abstract keywords copyright category note metadata timestamp`
-
-  For mass sort, I have been using the `bibtex-tidy` tool at <https://flamingtempura.github.io/bibtex-tidy/> with the above sorting order.
+- When sorting the fields of a bibentry, use the sorting order specified at the beginning of each `.bib` file. For mass sort, I have been using the `bibtex-tidy` tool at <https://flamingtempura.github.io/bibtex-tidy/>.
 
 ## Building and Testing (optional)
 You **do not have to** test the website for contributing here, I have added the steps if you would like to, however. I will test the site for issues before I merge a PR.
@@ -31,9 +32,8 @@ QuantumPL/
 ```
 
 ### Instructions
-- `make` command does two things, runs `bibtex2html` and migrates the HTML generated to a local copy of the [`site` repo](https://github.com/QuantumPL/site).
 - If you'd also like to test the Hugo-based site:
   1. First ensure you have `academic-cli` ready using the instructions at <https://github.com/QuantumPL/academic-cli/tree/qpl-bib#contribute>
-  2. Go to `site` and issue `academic import --overwrite --bibtex ../bib/bbt.bib`
+  2. Go to `site` and issue `./build.sh`
   3. Try launching the site by issuing `hugo serve` and see if your entries look okay.
 - Send a PR (be careful not to add any additional files especially `Wecker2014` that has some custom changes in the HTML).
