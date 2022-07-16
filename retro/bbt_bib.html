@@ -1070,6 +1070,20 @@
 }
 </pre>
 
+<a name="Hietala2022"></a><pre>
+@phdthesis{<a href="bbt.html#Hietala2022">Hietala2022</a>,
+  title = {A Verified Software Toolchain For Quantum Programming},
+  author = {Hietala, Kesha},
+  year = {2022},
+  month = jul,
+  school = {University of Maryland},
+  address = {College Park, MD, USA},
+  url = {<a href="https://khieta.github.io/files/dissertation.pdf">https://khieta.github.io/files/dissertation.pdf</a>},
+  abstract = {Quantum computing is steadily moving from theory into practice, with small-scale quantum computers available for public use. Now quantum programmers are faced with a classical problem: How can they be sure that their code does what they intend it to do? I aim to show that techniques for classical program verification can be adapted to the quantum setting, allowing for the development of high-assurance quantum software, without sacrificing performance or programmability. In support of this thesis, I present several results in the application of formal methods to the domain of quantum programming, aiming to provide a high-assurance software toolchain for quantum programming. I begin by presenting SQIR, a small quantum intermediate representation deeply embedded in the Coq proof assistant, which has been used to implement and prove correct quantum algorithms such as Grover's search and Shor's factorization algorithm. Next, I present VOQC, a verified optimizer for quantum circuits that contains state-of-the-art SQIR program optimizations with performance on par with unverified tools. I additionally discuss VQO, a framework for specifying and verifying oracle programs, which can then be optimized with VOQC. Finally, I present developing work on providing assurance for a high-level industry quantum programming language, Q\#, in the F* proof assistant.},
+  bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
+}
+</pre>
+
 <a name="Honda2015"></a><pre>
 @inproceedings{<a href="bbt.html#Honda2015">Honda2015</a>,
   title = {Analysis of Quantum Entanglement in Quantum Programs using Stabilizer Formalism},
@@ -1765,7 +1779,7 @@
   publisher = {{Association for Computing Machinery}},
   address = {New York, NY, USA},
   series = {{{PLDI}} '22},
-  pages = {},
+  pages = {657--670},
   numpages = {14},
   doi = {10.1145/3519939.3523713},
   archiveprefix = {arXiv},
@@ -2398,7 +2412,7 @@
   archiveprefix = {arXiv},
   eprint = {1803.00652},
   abstract = {Quantum computing exploits quantum phenomena such as superposition and entanglement to realize a form of parallelism that is not available to traditional computing. It offers the potential of significant computational speed-ups in quantum chemistry, materials science, cryptography, and machine learning. The dominant approach to programming quantum computers is to provide an existing high-level language with libraries that allow for the expression of quantum programs. This approach can permit computations that are meaningless in a quantum context; prohibits succinct expression of interaction between classical and quantum logic; and does not provide important constructs that are required for quantum programming. We present Q\#, a quantum-focused domain-specific language explicitly designed to correctly, clearly and completely express quantum algorithms. Q\# provides a type system; a tightly constrained environment to safely interleave classical and quantum computations; specialized syntax; symbolic code manipulation to automatically generate correct transformations of quantum operations; and powerful functional constructs which aid composition.},
-  keywords = {domain specific language, functional programming, quantum computing},
+  keywords = {domain specific language, functional programming, quantum computing, q\#},
   webnote = {See also Ch. 8 of \cite{Heim2020}},
   bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
 }
@@ -2414,7 +2428,7 @@
   publisher = {{Association for Computing Machinery}},
   address = {New York, NY, USA},
   series = {{{PLDI}} '22},
-  pages = {},
+  pages = {641--656},
   numpages = {16},
   doi = {10.1145/3519939.3523431},
   archiveprefix = {arXiv},
@@ -2613,7 +2627,7 @@
   publisher = {{Association for Computing Machinery}},
   address = {New York, NY, USA},
   series = {{{PLDI}} '22},
-  pages = {},
+  pages = {625--640},
   numpages = {16},
   doi = {10.1145/3519939.3523433},
   archiveprefix = {arXiv},
