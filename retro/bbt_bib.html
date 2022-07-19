@@ -515,16 +515,26 @@
 </pre>
 
 <a name="Cross2021"></a><pre>
-@misc{<a href="bbt.html#Cross2021">Cross2021</a>,
-  title = {OpenQASM 3: A broader and deeper quantum assembly language},
-  author = {Cross, Andrew W. and Javadi-Abhari, Ali and Alexander, Thomas and de Beaudrap, Niel and Bishop, Lev S. and Heidel, Steven and Ryan, Colm A. and Smolin, John and Gambetta, Jay M. and Johnson, Blake R.},
+@article{<a href="bbt.html#Cross2021">Cross2021</a>,
+  title = {OpenQASM 3: A Broader and Deeper Quantum Assembly Language},
+  author = {Cross, Andrew W. and Javadi-Abhari, Ali and Alexander, Thomas and de Beaudrap, Niel and Bishop, Lev S. and Heidel, Steven and Ryan, Colm A. and Sivarajah, Prasahnt and Smolin, John and Gambetta, Jay M. and Johnson, Blake R.},
   year = {2021},
-  month = apr,
+  month = dec,
+  journal = {ACM Transactions on Quantum Computing},
+  publisher = {{Association for Computing Machinery}},
+  address = {{New York, NY, USA}},
+  volume = {},
+  number = {},
+  eid = {},
+  pages = {},
+  numpages = {},
+  doi = {10.1145/3505636},
   archiveprefix = {arXiv},
   eprint = {2104.14722},
   url = {<a href="https://qiskit.github.io/openqasm/">https://qiskit.github.io/openqasm/</a>},
-  abstract = {Quantum assembly languages are machine-independent languages that traditionally describe quantum computation in the circuit model. Open quantum assembly language (OpenQASM 2) was proposed as an imperative programming language for quantum circuits based on earlier QASM dialects. In principle, any quantum computation could be described using OpenQASM 2, but there is a need to describe a broader set of quantum circuits beyond the language of qubits and gates. By examining interactive use cases, we recognize two different timescales of quantum-classical interactions: real-time classical computations that must be performed within the coherence times of the qubits, and near-time computations with less stringent timing. Since the near-time domain is adequately described by existing programming frameworks, we choose in OpenQASM 3 to focus on the real-time domain, which must be more tightly coupled to the execution of quantum operations. Motivated by the need for real-time classical computation, we add support for arbitrary control flow as well as calling external classical functions. In addition, we recognize the need to describe circuits at multiple levels of specificity, and therefore we extend the language to include timing, pulse control, and gate modifiers. These new language features create a multi-level intermediate representation for circuit development and optimization, as well as control sequence implementation for calibration, characterization, and error mitigation.},
+  abstract = {Quantum assembly languages are machine-independent languages that traditionally describe quantum computation in the circuit model. Open quantum assembly language (OpenQASM 2) was proposed as an imperative programming language for quantum circuits based on earlier QASM dialects. In principle, any quantum computation could be described using OpenQASM 2, but there is a need to describe a broader set of circuits beyond the language of qubits and gates. By examining interactive use cases, we recognize two different timescales of quantum-classical interactions: real-time classical computations that must be performed within the coherence times of the qubits, and near-time computations with less stringent timing. Since the near-time domain is adequately described by existing programming frameworks, we choose in OpenQASM 3 to focus on the real-time domain, which must be more tightly coupled to the execution of quantum operations. We add support for arbitrary control flow as well as calling external classical functions. In addition, we recognize the need to describe circuits at multiple levels of specificity, and therefore we extend the language to include timing, pulse control, and gate modifiers. These new language features create a multi-level intermediate representation for circuit development and optimization, as well as control sequence implementation for calibration, characterization, and error mitigation.},
   keywords = {qasm, quantum assembly language, openqasm, quantum computing, quantum information},
+  note = {Just Accepted},
   webnote = {See \cite{Cross2017} for OpenQASM 2.0},
   bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
 }
@@ -949,6 +959,7 @@
   numpages = {202},
   doi = {10.3929/ethz-b-000468201},
   abstract = {The aim of this thesis is to identify practical applications where quantum computing could have an advantage over what is achievable with conventional means of computing, and what advances are needed in order to actualize that potential. We investigate the possibilities on both quantum annealing devices (analogue quantum computers) as well as on gate-based devices (digital quantum computers). Quantum annealing devices in particular have grown in size and capabilities over the last decade. While they are natural candidates for providing improved solvers for NP-complete optimization problems, the number of qubits, accuracies and available couplings are still limited and their aptitude has yet to be confirmed. We use Monte Carlo methods and conceive an adaptive annealing schedule to assess the options to leverage them for the construction of satisfiability filters. We furthermore investigate their prospective as heuristic solvers for the traveling salesman problem, and what future enhancements in terms of geometries and couplings would be beneficial for that. Based on our simulations there is no reason to expect any benefits to leveraging analogue quantum computers over state-of-the-art classical methods. However, we see an implementation of annealing schemes on future digital devices as a promising approach that doesn't suffer from the same issues that impede performance on analogue devises. To that effect, we construct and implement an efficient quantization of the Metropolis-Hastings algorithm. Opposed to following the common way of quantization {\`a} la Szegedy that is usually defined with respect to an oracle, we reformulate the walk to closely mimic the classical algorithm and thus circumvent having to rely on costly quantum arithmetics. Our proposed realization thereby can lead to substantial savings. While theoretical arguments promise a quadratic speedup in the asymptotic limit, we numerically confirm that a polynomial speedup in terms of minimal total time to solution can be achieved for pragmatic use. We explore the prospects of using quantum walks in a heuristic setting and estimate the gate times the would be required to outperform a classical supercomputer. Finally, we elaborate on the role of programming languages, and how software tools can accelerate the advancement of the field. We discuss unique aspects of quantum programming and the purpose of Q\# in particular, and conclude by highlighting what developments are needed for quantum computing to live up to its potential.},
+  keywords = {programming languages, quantum programming, quantum computing, q\#},
   bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
 }
 </pre>
@@ -1279,8 +1290,8 @@
 
 <a name="Kong2021"></a><pre>
 @article{<a href="bbt.html#Kong2021">Kong2021</a>,
-  author = {Kong, Martin},
   title = {On the Impact of Affine Loop Transformations in Qubit Allocation},
+  author = {Kong, Martin},
   year = {2021},
   month = sep,
   journal = {ACM Transactions on Quantum Computing},
