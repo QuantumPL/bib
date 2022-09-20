@@ -655,22 +655,21 @@
 }
 
 @inproceedings{Fu2020,
-  title         = {Linear {{Dependent Type Theory}} for {{Quantum Programming Languages}}: {{Extended Abstract}}},
-  shorttitle    = {Linear {{Dependent Type Theory}} for {{Quantum Programming Languages}}},
-  author        = {Fu, Peng and Kishida, Kohei and Selinger, Peter},
-  year          = {2020},
-  month         = jul,
-  booktitle     = {Proceedings of the 35th Annual ACM/IEEE Symposium on Logic in Computer Science},
-  publisher     = acm,
-  address       = {{New York, NY, USA}},
-  series        = {{{LICS}} '20},
-  pages         = {440--453},
-  doi           = {10.1145/3373718.3394765},
-  archiveprefix = {arXiv},
-  eprint        = {2004.13472},
-  abstract      = {Modern quantum programming languages integrate quantum resources and classical control. They must, on the one hand, be linearly typed to reflect the no-cloning property of quantum resources. On the other hand, high-level and practical languages should also support quantum circuits as first-class citizens, as well as families of circuits that are indexed by some classical parameters. Quantum programming languages thus need linear dependent type theory. This paper defines a general semantic structure for such a type theory via certain fibrations of monoidal categories. The categorical model of the quantum circuit description language Proto-Quipper-M by Rios & Selinger constitutes an example of such a fibration, which means that the language can readily be integrated with dependent types. We then devise both a general linear dependent type system and a dependently typed extension of Proto-Quipper-M, and provide them with operational semantics as well as a prototype implementation.},
-  keywords      = {proto-quipper-d, fibration, categorical model, quantum programming languages, linear dependent types, proto-quipper-m},
-  bibsource     = qplbib
+  title      = {Linear {{Dependent Type Theory}} for {{Quantum Programming Languages}}: {{Extended Abstract}}},
+  shorttitle = {Linear {{Dependent Type Theory}} for {{Quantum Programming Languages}}},
+  author     = {Fu, Peng and Kishida, Kohei and Selinger, Peter},
+  year       = {2020},
+  month      = jul,
+  booktitle  = {Proceedings of the 35th Annual ACM/IEEE Symposium on Logic in Computer Science},
+  publisher  = acm,
+  address    = {{New York, NY, USA}},
+  series     = {{{LICS}} '20},
+  pages      = {440--453},
+  doi        = {10.1145/3373718.3394765},
+  abstract   = {Modern quantum programming languages integrate quantum resources and classical control. They must, on the one hand, be linearly typed to reflect the no-cloning property of quantum resources. On the other hand, high-level and practical languages should also support quantum circuits as first-class citizens, as well as families of circuits that are indexed by some classical parameters. Quantum programming languages thus need linear dependent type theory. This paper defines a general semantic structure for such a type theory via certain fibrations of monoidal categories. The categorical model of the quantum circuit description language Proto-Quipper-M by Rios & Selinger constitutes an example of such a fibration, which means that the language can readily be integrated with dependent types. We then devise both a general linear dependent type system and a dependently typed extension of Proto-Quipper-M, and provide them with operational semantics as well as a prototype implementation.},
+  keywords   = {proto-quipper-d, fibration, categorical model, quantum programming languages, linear dependent types, proto-quipper-m},
+  webnote    = {See expanded version at \cite{Fu2022b}},
+  bibsource  = qplbib
 }
 
 @inproceedings{Fu2020a,
@@ -717,6 +716,23 @@
   keywords      = {proto-quipper-dyn, proto-quipper, quipper, categorical semantics},
   webnote       = {See the companion paper \cite{Fu2022}},
   bibsource     = qplbib
+}
+
+@article{Fu2022b,
+  title     = {{Linear Dependent Type Theory for Quantum Programming Languages}},
+  author    = {Fu, Peng and Kishida, Kohei and Selinger, Peter},
+  year      = {2022},
+  month     = sep,
+  journal   = lmcs,
+  volume    = {18},
+  number    = {3},
+  eid       = {28},
+  pages     = {28},
+  doi       = {10.46298/lmcs-18(3:28)2022},
+  abstract  = {Modern quantum programming languages integrate quantum resources and classical control. They must, on the one hand, be linearly typed to reflect the no-cloning property of quantum resources. On the other hand, high-level and practical languages should also support quantum circuits as first-class citizens, as well as families of circuits that are indexed by some classical parameters. Quantum programming languages thus need linear dependent type theory. This paper defines a general semantic structure for such a type theory via certain fibrations of monoidal categories. The categorical model of the quantum circuit description language Proto-Quipper-M by Rios and Selinger (2017) constitutes an example of such a fibration, which means that the language can readily be integrated with dependent types. We then devise both a general linear dependent type system and a dependently typed extension of Proto-Quipper-M, and provide them with operational semantics as well as a prototype implementation.},
+  keywords  = {proto-quipper-d, fibration, categorical model, quantum programming languages, linear dependent types, proto-quipper-m},
+  webnote   = {Expanded version of \cite{Fu2020}},
+  bibsource = qplbib
 }
 
 @inproceedings{Gay2005,
@@ -1871,7 +1887,7 @@
   author    = {Rennela, Mathys and Staton, Sam},
   year      = {2020},
   month     = mar,
-  journal   = {{Logical Methods in Computer Science}},
+  journal   = lmcs,
   volume    = {16},
   number    = {1},
   eid       = {30},
@@ -2673,6 +2689,35 @@
   abstract      = {Quantum programming languages enable developers to implement algorithms for quantum computers that promise computational breakthroughs in classically intractable tasks. Programming quantum computers requires awareness of entanglement, the phenomenon in which measurement outcomes of qubits are correlated. Entanglement can determine the correctness of algorithms and suitability of programming patterns. In this work, we formalize purity as a central tool for automating reasoning about entanglement in quantum programs. A pure expression is one whose evaluation is unaffected by the measurement outcomes of qubits that it does not own, implying freedom from entanglement with any other expression in the computation. We present Twist, the first language that features a type system for sound reasoning about purity. The type system enables the developer to identify pure expressions using type annotations. Twist also features purity assertion operators that state the absence of entanglement in the output of quantum gates. To soundly check these assertions, Twist uses a combination of static analysis and runtime verification. We evaluate Twist's type system and analyses on a benchmark suite of quantum programs in simulation, demonstrating that Twist can express quantum algorithms, catch programming errors in them, and support programs that existing languages disallow, while incurring runtime verification overhead of less than 3.5\%.},
   keywords      = {entanglement, purity, quantum programming, type systems},
   webnote       = {POPL '22. The extended version on arXiv includes the appendix and differs from ACM Proceedings in that it includes a more refined comparison to prior work, specifically in Sections 3.5 and 9.6.},
+  bibsource     = qplbib
+}
+
+@article{Yuan2022a,
+  title         = {Tower: Data Structures in Quantum Superposition},
+  author        = {Yuan, Charles and Carbin, Michael},
+  year          = {2022},
+  month         = sep,
+  journal       = pacmpl,
+  volume        = {6},
+  number        = {OOPSLA2},
+  eid           = {134},
+  pages         = {134},
+  numpages      = {30},
+  doi           = {10.1145/3563297},
+  archiveprefix = {arXiv},
+  eprint        = {2205.10255},
+  url           = {https://github.com/psg-mit/tower-oopsla22},
+  abstract      = {Emerging quantum algorithms for problems such as element distinctness, subset sum, and closest pair demonstrate computational advantages by relying on abstract data structures. Practically realizing such an algorithm as a program for a quantum computer requires an efficient implementation of the data structure whose operations correspond to unitary operators that manipulate quantum superpositions of data.
+
+                   To correctly operate in superposition, an implementation must satisfy three properties -- reversibility, history independence, and bounded-time execution. Standard implementations, such as the representation of an abstract set as a hash table, fail these properties, calling for tools to develop specialized implementations.
+
+                   In this work, we present Core Tower, the first language for quantum programming with random-access memory. Core Tower enables the developer to implement data structures as pointer-based, linked data. It features a reversible semantics enabling every valid program to be translated to a unitary quantum circuit.
+
+                   We present Boson, the first memory allocator that supports reversible, history-independent, and constant-time dynamic memory allocation in quantum superposition. We also present Tower, a language for quantum programming with recursively defined data structures. Tower features a type system that bounds all recursion using classical parameters as is necessary for a program to execute on a quantum computer.
+
+                   Using Tower, we implement Ground, the first quantum library of data structures, including lists, stacks, queues, strings, and sets. We provide the first executable implementation of sets that satisfies all three mandated properties of reversibility, history independence, and bounded-time execution.},
+  keywords      = {quantum programming, data structures, quantum random-access memory, reversible programming, history independence},
+  webnote       = {OOPSLA '22. See arXiv version for full paper with appendix.},
   bibsource     = qplbib
 }
 
