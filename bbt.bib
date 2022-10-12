@@ -654,6 +654,26 @@
   bibsource     = qplbib
 }
 
+@article{Feng2022,
+  title         = {Verification of Distributed Quantum Programs},
+  author        = {Feng, Yuan and Li, Sanjiang and Ying, Mingsheng},
+  year          = {2022},
+  month         = jul,
+  journal       = tocl,
+  publisher     = acm,
+  address       = {New York, NY, USA},
+  volume        = {23},
+  number        = {3},
+  eid           = {19},
+  pages         = {19},
+  doi           = {10.1145/3517145},
+  archiveprefix = {arXiv},
+  eprint        = {2104.14796},
+  abstract      = {Distributed quantum systems and especially the Quantum Internet have the ever-increasing potential to fully demonstrate the power of quantum computation. This is particularly true given that developing a general-purpose quantum computer is much more difficult than connecting many small quantum devices. One major challenge of implementing distributed quantum systems is programming them and verifying their correctness. In this paper, we propose a CSP-like distributed programming language to facilitate the specification and verification of such systems. After presenting its operational and denotational semantics, we develop a Hoare-style logic for distributed quantum programs and establish its soundness and (relative) completeness with respect to both partial and total correctness. The effectiveness of the logic is demonstrated by its applications in the verification of quantum teleportation and local implementation of non-local CNOT gates, two important algorithms widely used in distributed quantum systems.},
+  keywords      = {distributed computing, quantum programming, formal verification, hoare logic},
+  bibsource     = qplbib
+}
+
 @inproceedings{Fu2020,
   title      = {Linear {{Dependent Type Theory}} for {{Quantum Programming Languages}}: {{Extended Abstract}}},
   shorttitle = {Linear {{Dependent Type Theory}} for {{Quantum Programming Languages}}},
@@ -887,6 +907,18 @@
   eprint        = {1304.5485},
   abstract      = {Quipper is a recently developed programming language for expressing quantum computations. This paper gives a brief tutorial introduction to the language, through a demonstration of how to make use of some of its key features. We illustrate many of Quipper's language features by developing a few well known examples of Quantum computation, including quantum teleportation, the quantum Fourier transform, and a quantum circuit for addition.},
   keywords      = {quantum computation, programming languages, quipper},
+  bibsource     = qplbib
+}
+
+@misc{Haner2022,
+  title         = {QParallel: Explicit Parallelism for Programming Quantum Computers},
+  author        = {H{\"a}ner, Thomas and Kliuchnikov, Vadym and Roetteler, Martin and Soeken, Mathias and Vaschillo, Alexander},
+  year          = {2022},
+  month         = oct,
+  archiveprefix = {arXiv},
+  eprint        = {2210.03680},
+  abstract      = {We present a language extension for parallel quantum programming to (1) remove ambiguities concerning parallelism in current quantum programming languages and (2) facilitate space-time tradeoff investigations in quantum computing. While the focus of similar libraries in the domain of classical computing (OpenMP, OpenACC, etc.) is to divide a computation into multiple threads, the main goal of QParallel is to keep the compiler and the runtime system from introducing parallelism-inhibiting dependencies, e.g., through reuse of qubits in automatic qubit management. We describe the syntax and semantics of the proposed language extension, implement a prototype based on Q\#, and present several examples and use cases to illustrate its performance benefits. Moreover, we introduce a tool that guides programmers in the placement of parallel regions by identifying the subroutines that profit most from parallelization, which is especially useful if the programmer's knowledge of the source code is limited. Support for QParallel can be added to any multithreading library and language extension, including OpenMP and OpenACC.},
+  keywords      = {quantum computing, parallel quantum computing, space-time tradeoffs},
   bibsource     = qplbib
 }
 
@@ -1458,6 +1490,24 @@
   abstract      = {We present qcor—a language extension to C++ and compiler implementation that enables heterogeneous quantum-classical programming, compilation, and execution in a single-source context. Our work provides a first-of-its-kind C++ compiler enabling high-level quantum kernel (function) expression in a quantum-language agnostic manner, as well as a hardware-agnostic, retargetable compiler workflow targeting a number of physical and virtual quantum computing backends. qcor leverages novel Clang plugin interfaces and builds upon the XACC system-level quantum programming framework to provide a state-of-the-art integration mechanism for quantum-classical compilation that leverages the best from the community at-large. qcor translates quantum kernels ultimately to the XACC intermediate representation, and provides user-extensible hooks for quantum compilation routines like circuit optimization, analysis, and placement. This work details the overall architecture and compiler workflow for qcor, and provides a number of illuminating programming examples demonstrating its utility for near-term variational tasks, quantum algorithm expression, and feed-forward error correction schemes.},
   keywords      = {domain specific languages, quantum programming, quantum computing, compilers},
   bibsource     = qplbib
+}
+
+@article{Meuli2020,
+  title     = {Enabling Accuracy-Aware Quantum Compilers Using Symbolic Resource Estimation},
+  author    = {Meuli, Giulia and Soeken, Mathias and Roetteler, Martin and H\"{a}ner, Thomas},
+  year      = {2020},
+  month     = nov,
+  journal   = pacmpl,
+  publisher = acm,
+  address   = {New York, NY, USA},
+  volume    = {4},
+  number    = {OOPSLA},
+  eid       = {130},
+  pages     = {130},
+  doi       = {10.1145/3428198},
+  abstract  = {Approximation errors must be taken into account when compiling quantum programs into a low-level gate set. We present a methodology that tracks such errors automatically and then optimizes accuracy parameters to guarantee a specified overall accuracy while aiming to minimize the implementation cost in terms of quantum gates. The core idea of our approach is to extract functions that specify the optimization problem directly from the high-level description of the quantum program. Then, custom compiler passes optimize these functions, turning them into (near-)symbolic expressions for (1) the total error and (2) the implementation cost (e.g., total quantum gate count). All unspecified parameters of the quantum program will show up as variables in these expressions, including accuracy parameters. After solving the corresponding optimization problem, a circuit can be instantiated from the found solution. We develop two prototype implementations, one in C++ based on Clang/LLVM, and another using the Q\# compiler infrastructure. We benchmark our prototypes on typical quantum computing programs, including the quantum Fourier transform, quantum phase estimation, and Shor's algorithm.},
+  keywords  = {quantum algorithms, approximation errors, resource estimation, quantum programming, quantum computing},
+  bibsource = qplbib
 }
 
 @article{Mosca2019,
