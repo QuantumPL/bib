@@ -615,7 +615,7 @@
   eprint       = {2104.14796},
   abstract     = {Distributed quantum systems and especially the Quantum Internet have the ever-increasing potential to fully demonstrate the power of quantum computation. This is particularly true given that developing a general-purpose quantum computer is much more difficult than connecting many small quantum devices. One major challenge of implementing distributed quantum systems is programming them and verifying their correctness. In this paper, we propose a CSP-like distributed programming language to facilitate the specification and verification of such systems. After presenting its operational and denotational semantics, we develop a Hoare-style logic for distributed quantum programs and establish its soundness and (relative) completeness with respect to both partial and total correctness. The effectiveness of the logic is demonstrated by its applications in the verification of quantum teleportation and local implementation of non-local CNOT gates, two important algorithms widely used in distributed quantum systems.},
   keywords     = {distributed computing, quantum programming, formal verification, hoare logic},
-  bibsource     = qplbib
+  bibsource    = qplbib
 }
 
 @inproceedings{Fu2020,
@@ -654,16 +654,23 @@
   bibsource  = qplbib
 }
 
-@misc{Fu2022,
-  title      = {Proto-Quipper with dynamic lifting},
-  author     = {Fu, Peng and Kishida, Kohei and Ross, Neil J. and Selinger, Peter},
-  date       = {2022-04},
-  eprinttype = {arXiv},
-  eprint     = {2204.13041},
-  abstract   = {Quipper is a functional programming language for quantum computing. Proto-Quipper is a family of languages aiming to provide a formal foundation for Quipper. In this paper, we extend Proto-Quipper-M with a construct called dynamic lifting, which is present in Quipper. By virtue of being a circuit description language, Proto-Quipper has two separate runtimes: circuit generation time and circuit execution time. Values that are known at circuit generation time are called parameters, and values that are known at circuit execution time are called states. Dynamic lifting is an operation that enables a state, such as the result of a measurement, to be lifted to a parameter, where it can influence the generation of the next portion of the circuit. As a result, dynamic lifting enables Proto-Quipper programs to interleave classical and quantum computation. We describe the syntax of a language we call Proto-Quipper-Dyn. Its type system uses a system of modalities to keep track of the use of dynamic lifting. We also provide an operational semantics, as well as an abstract categorical semantics for dynamic lifting based on enriched category theory. We prove that both the type system and the operational semantics are sound with respect to our categorical semantics. Finally, we give some examples of Proto-Quipper-Dyn programs that make essential use of dynamic lifting. A concrete categorical model is given in a companion paper [FKRS2022b].},
-  keywords   = {proto-quipper-dyn, proto-quipper-m, proto-quipper, quipper},
-  webnote    = {See the companion paper \cite{Fu2022a}},
-  bibsource  = qplbib
+@article{Fu2022,
+  title         = {Proto-Quipper with dynamic lifting},
+  author        = {Fu, Peng and Kishida, Kohei and Ross, Neil J. and Selinger, Peter},
+  date          = {2022-04},
+  journaltitle  = pacmpl,
+  volume        = {7},
+  number        = {POPL},
+  eid           = {},
+  doi           = {},
+  archiveprefix = {arXiv},
+  eprint        = {2204.13041},
+  url           = {https://gitlab.com/frank-peng-fu/dpq-remake},
+  abstract      = {Quipper is a functional programming language for quantum computing. Proto-Quipper is a family of languages aiming to provide a formal foundation for Quipper. In this paper, we extend Proto-Quipper-M with a construct called dynamic lifting, which is present in Quipper. By virtue of being a circuit description language, Proto-Quipper has two separate runtimes: circuit generation time and circuit execution time. Values that are known at circuit generation time are called parameters, and values that are known at circuit execution time are called states. Dynamic lifting is an operation that enables a state, such as the result of a measurement, to be lifted to a parameter, where it can influence the generation of the next portion of the circuit. As a result, dynamic lifting enables Proto-Quipper programs to interleave classical and quantum computation. We describe the syntax of a language we call Proto-Quipper-Dyn. Its type system uses a system of modalities to keep track of the use of dynamic lifting. We also provide an operational semantics, as well as an abstract categorical semantics for dynamic lifting based on enriched category theory. We prove that both the type system and the operational semantics are sound with respect to our categorical semantics. Finally, we give some examples of Proto-Quipper-Dyn programs that make essential use of dynamic lifting. A concrete categorical model is given in a companion paper [FKRS2022b].},
+  keywords      = {proto-quipper-dyn, proto-quipper-m, proto-quipper, quipper},
+  note          = {To appear POPL '23.},
+  webnote       = {See the companion paper \cite{Fu2022a}},
+  bibsource     = qplbib
 }
 
 @misc{Fu2022a,
@@ -2254,6 +2261,25 @@
   bibsource = qplbib
 }
 
+@article{Voichick2023,
+  title         = {Qunity: A Unified Language for Quantum and Classical Computing},
+  author        = {Voichick, Finn and Li, Liyi and Rand, Robert and Hicks, Michael},
+  date          = {2022-04},
+  journaltitle  = pacmpl,
+  volume        = {7},
+  number        = {POPL},
+  eid           = {},
+  doi           = {},
+  archiveprefix = {arXiv},
+  eprint        = {2204.12384},
+  url           = {https://gitlab.umiacs.umd.edu/finn/qunity},
+  abstract      = {We introduce Qunity, a new quantum programming language designed to treat quantum computing as a natural generalization of classical computing. Qunity presents a unified syntax where familiar programming constructs can have both quantum and classical effects. For example, one can use sum types to implement the direct sum of linear operators, exception handling syntax to implement projective measurements, and aliasing to induce entanglement. Further, Qunity takes advantage of the overlooked BQP subroutine theorem, allowing one to construct reversible subroutines from irreversible quantum algorithms through the uncomputation of "garbage" outputs. Unlike existing languages that enable quantum aspects with separate add-ons (like a classical language with quantum gates bolted on), Qunity provides a unified syntax along with a novel denotational semantics that guarantees that programs are quantum mechanically valid. We present Qunity's syntax, type system, and denotational semantics, showing how it can cleanly express several quantum algorithms. We also detail how Qunity can be compiled to a low-level qubit circuit language like OpenQASM, proving the realizability of our design.},
+  keywords      = {},
+  note          = {To appear POPL '23.},
+  webnote       = {See extended version on arXiv.},
+  bibsource     = qplbib
+}
+
 @misc{Wecker2014,
   title      = {\textup{LIQ$Ui|$⟩}: {{A Software Design Architecture}} and {{Domain}}-{{Specific Language}} for {{Quantum Computing}}},
   author     = {Wecker, Dave and Svore, Krysta M.},
@@ -2562,6 +2588,24 @@
   abstract   = {We propose a model of the substructural logic of Bunched Implications (BI) that is suitable for reasoning about quantum states. In our model, the separating conjunction of BI describes separable quantum states. We develop a program logic where pre- and post-conditions are BI formulas describing quantum states---the program logic can be seen as a counterpart of separation logic for imperative quantum programs. We exercise the logic for proving the security of quantum one-time pad and secret sharing, and we show how the program logic can be used to discover a flaw in Google Cirq's tutorial on the Variational Quantum Algorithm (VQA).},
   keywords   = {formal logic, quantum computing, substructural logic, separating conjunction, separable quantum states, program logic, imperative quantum programs, variational quantum algorithm, quantum interpretation, bunched logic, separation logic},
   bibsource  = qplbib
+}
+
+@article{Zhou2023,
+  title         = {CoqQ: Foundational Verification of Quantum Programs},
+  author        = {Zhou, Li and Barthe, Gilles and Strub, Pierre-Yves and Liu, Junyi and Ying, Mingsheng},
+  date          = {2022-07},
+  journaltitle  = pacmpl,
+  volume        = {7},
+  number        = {POPL},
+  eid           = {},
+  doi           = {},
+  archiveprefix = {arXiv},
+  eprint        = {2207.11350},
+  url           = {https://github.com/coq-quantum/CoqQ},
+  abstract      = {CoqQ is a framework for reasoning about quantum programs in the Coq proof assistant. Its main components are: a deeply embedded quantum programming language, in which classic quantum algorithms are easily expressed, and an expressive program logic for proving properties of programs. CoqQ is foundational: the program logic is formally proved sound with respect to a denotational semantics based on state-of-art mathematical libraries (mathcomp and mathcomp analysis). CoqQ is also practical: assertions can use Dirac expressions, which eases concise specifications, and proofs can exploit local and parallel reasoning, which minimizes verification effort. We illustrate the applicability of CoqQ with many examples from the literature.},
+  keywords      = {quantum programs, program logics, proof assistants, mathematical libraries},
+  note          = {To appear POPL '23.},
+  bibsource     = qplbib
 }
 
 @article{Zorzi2019,
