@@ -668,7 +668,7 @@
   url           = {https://gitlab.com/frank-peng-fu/dpq-remake},
   abstract      = {Quipper is a functional programming language for quantum computing. Proto-Quipper is a family of languages aiming to provide a formal foundation for Quipper. In this paper, we extend Proto-Quipper-M with a construct called dynamic lifting, which is present in Quipper. By virtue of being a circuit description language, Proto-Quipper has two separate runtimes: circuit generation time and circuit execution time. Values that are known at circuit generation time are called parameters, and values that are known at circuit execution time are called states. Dynamic lifting is an operation that enables a state, such as the result of a measurement, to be lifted to a parameter, where it can influence the generation of the next portion of the circuit. As a result, dynamic lifting enables Proto-Quipper programs to interleave classical and quantum computation. We describe the syntax of a language we call Proto-Quipper-Dyn. Its type system uses a system of modalities to keep track of the use of dynamic lifting. We also provide an operational semantics, as well as an abstract categorical semantics for dynamic lifting based on enriched category theory. We prove that both the type system and the operational semantics are sound with respect to our categorical semantics. Finally, we give some examples of Proto-Quipper-Dyn programs that make essential use of dynamic lifting. A concrete categorical model is given in a companion paper [FKRS2022b].},
   keywords      = {proto-quipper-dyn, proto-quipper-m, proto-quipper, quipper},
-  note          = {To appear POPL '23.},
+  note          = {To appear at POPL '23.},
   webnote       = {See the companion paper \cite{Fu2022a}},
   bibsource     = qplbib
 }
@@ -2275,7 +2275,7 @@
   url           = {https://gitlab.umiacs.umd.edu/finn/qunity},
   abstract      = {We introduce Qunity, a new quantum programming language designed to treat quantum computing as a natural generalization of classical computing. Qunity presents a unified syntax where familiar programming constructs can have both quantum and classical effects. For example, one can use sum types to implement the direct sum of linear operators, exception handling syntax to implement projective measurements, and aliasing to induce entanglement. Further, Qunity takes advantage of the overlooked BQP subroutine theorem, allowing one to construct reversible subroutines from irreversible quantum algorithms through the uncomputation of "garbage" outputs. Unlike existing languages that enable quantum aspects with separate add-ons (like a classical language with quantum gates bolted on), Qunity provides a unified syntax along with a novel denotational semantics that guarantees that programs are quantum mechanically valid. We present Qunity's syntax, type system, and denotational semantics, showing how it can cleanly express several quantum algorithms. We also detail how Qunity can be compiled to a low-level qubit circuit language like OpenQASM, proving the realizability of our design.},
   keywords      = {},
-  note          = {To appear POPL '23.},
+  note          = {To appear at POPL '23.},
   webnote       = {See extended version on arXiv.},
   bibsource     = qplbib
 }
@@ -2604,7 +2604,7 @@
   url           = {https://github.com/coq-quantum/CoqQ},
   abstract      = {CoqQ is a framework for reasoning about quantum programs in the Coq proof assistant. Its main components are: a deeply embedded quantum programming language, in which classic quantum algorithms are easily expressed, and an expressive program logic for proving properties of programs. CoqQ is foundational: the program logic is formally proved sound with respect to a denotational semantics based on state-of-art mathematical libraries (mathcomp and mathcomp analysis). CoqQ is also practical: assertions can use Dirac expressions, which eases concise specifications, and proofs can exploit local and parallel reasoning, which minimizes verification effort. We illustrate the applicability of CoqQ with many examples from the literature.},
   keywords      = {quantum programs, program logics, proof assistants, mathematical libraries},
-  note          = {To appear POPL '23.},
+  note          = {To appear at POPL '23.},
   bibsource     = qplbib
 }
 
