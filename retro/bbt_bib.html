@@ -681,6 +681,28 @@
 }
 </pre>
 
+<a name="Feng2022"></a><pre>
+@article{<a href="bbt.html#Feng2022">Feng2022</a>,
+  title = {Verification of Distributed Quantum Programs},
+  author = {Feng, Yuan and Li, Sanjiang and Ying, Mingsheng},
+  year = {2022},
+  month = jul,
+  journal = {ACM Transactions on Computational Logic},
+  publisher = {{Association for Computing Machinery}},
+  address = {New York, NY, USA},
+  volume = {23},
+  number = {3},
+  eid = {19},
+  pages = {19},
+  doi = {10.1145/3517145},
+  archiveprefix = {arXiv},
+  eprint = {2104.14796},
+  abstract = {Distributed quantum systems and especially the Quantum Internet have the ever-increasing potential to fully demonstrate the power of quantum computation. This is particularly true given that developing a general-purpose quantum computer is much more difficult than connecting many small quantum devices. One major challenge of implementing distributed quantum systems is programming them and verifying their correctness. In this paper, we propose a CSP-like distributed programming language to facilitate the specification and verification of such systems. After presenting its operational and denotational semantics, we develop a Hoare-style logic for distributed quantum programs and establish its soundness and (relative) completeness with respect to both partial and total correctness. The effectiveness of the logic is demonstrated by its applications in the verification of quantum teleportation and local implementation of non-local CNOT gates, two important algorithms widely used in distributed quantum systems.},
+  keywords = {distributed computing, quantum programming, formal verification, hoare logic},
+  bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
+}
+</pre>
+
 <a name="Fu2020"></a><pre>
 @inproceedings{<a href="bbt.html#Fu2020">Fu2020</a>,
   title = {Linear {{Dependent Type Theory}} for {{Quantum Programming Languages}}: {{Extended Abstract}}},
@@ -724,16 +746,24 @@
 </pre>
 
 <a name="Fu2022"></a><pre>
-@misc{<a href="bbt.html#Fu2022">Fu2022</a>,
+@article{<a href="bbt.html#Fu2022">Fu2022</a>,
   title = {Proto-Quipper with dynamic lifting},
   author = {Fu, Peng and Kishida, Kohei and Ross, Neil J. and Selinger, Peter},
   year = {2022},
   month = apr,
+  journal = {Proceedings of the ACM on Programming Languages},
+  volume = {7},
+  number = {POPL},
+  eid = {},
+  pages = {},
+  doi = {},
   archiveprefix = {arXiv},
   eprint = {2204.13041},
+  url = {<a href="https://gitlab.com/frank-peng-fu/dpq-remake">https://gitlab.com/frank-peng-fu/dpq-remake</a>},
   abstract = {Quipper is a functional programming language for quantum computing. Proto-Quipper is a family of languages aiming to provide a formal foundation for Quipper. In this paper, we extend Proto-Quipper-M with a construct called dynamic lifting, which is present in Quipper. By virtue of being a circuit description language, Proto-Quipper has two separate runtimes: circuit generation time and circuit execution time. Values that are known at circuit generation time are called parameters, and values that are known at circuit execution time are called states. Dynamic lifting is an operation that enables a state, such as the result of a measurement, to be lifted to a parameter, where it can influence the generation of the next portion of the circuit. As a result, dynamic lifting enables Proto-Quipper programs to interleave classical and quantum computation. We describe the syntax of a language we call Proto-Quipper-Dyn. Its type system uses a system of modalities to keep track of the use of dynamic lifting. We also provide an operational semantics, as well as an abstract categorical semantics for dynamic lifting based on enriched category theory. We prove that both the type system and the operational semantics are sound with respect to our categorical semantics. Finally, we give some examples of Proto-Quipper-Dyn programs that make essential use of dynamic lifting. A concrete categorical model is given in a companion paper [FKRS2022b].},
   keywords = {proto-quipper-dyn, proto-quipper-m, proto-quipper, quipper},
-  webnote = {See the companion paper \cite{Fu2022a}},
+  note = {To appear at POPL '23.},
+  webnote = {To appear at POPL '23. See the companion paper \cite{Fu2022a}},
   bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
 }
 </pre>
@@ -941,6 +971,20 @@
   eprint = {1304.5485},
   abstract = {Quipper is a recently developed programming language for expressing quantum computations. This paper gives a brief tutorial introduction to the language, through a demonstration of how to make use of some of its key features. We illustrate many of Quipper's language features by developing a few well known examples of Quantum computation, including quantum teleportation, the quantum Fourier transform, and a quantum circuit for addition.},
   keywords = {quantum computation, programming languages, quipper},
+  bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
+}
+</pre>
+
+<a name="Haner2022"></a><pre>
+@misc{<a href="bbt.html#Haner2022">Haner2022</a>,
+  title = {QParallel: Explicit Parallelism for Programming Quantum Computers},
+  author = {H{\"a}ner, Thomas and Kliuchnikov, Vadym and Roetteler, Martin and Soeken, Mathias and Vaschillo, Alexander},
+  year = {2022},
+  month = oct,
+  archiveprefix = {arXiv},
+  eprint = {2210.03680},
+  abstract = {We present a language extension for parallel quantum programming to (1) remove ambiguities concerning parallelism in current quantum programming languages and (2) facilitate space-time tradeoff investigations in quantum computing. While the focus of similar libraries in the domain of classical computing (OpenMP, OpenACC, etc.) is to divide a computation into multiple threads, the main goal of QParallel is to keep the compiler and the runtime system from introducing parallelism-inhibiting dependencies, e.g., through reuse of qubits in automatic qubit management. We describe the syntax and semantics of the proposed language extension, implement a prototype based on Q\#, and present several examples and use cases to illustrate its performance benefits. Moreover, we introduce a tool that guides programmers in the placement of parallel regions by identifying the subroutines that profit most from parallelization, which is especially useful if the programmer's knowledge of the source code is limited. Support for QParallel can be added to any multithreading library and language extension, including OpenMP and OpenACC.},
+  keywords = {quantum computing, parallel quantum computing, space-time tradeoffs},
   bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
 }
 </pre>
@@ -1577,6 +1621,26 @@
   eprint = {2010.03935},
   abstract = {We present qcor—a language extension to C++ and compiler implementation that enables heterogeneous quantum-classical programming, compilation, and execution in a single-source context. Our work provides a first-of-its-kind C++ compiler enabling high-level quantum kernel (function) expression in a quantum-language agnostic manner, as well as a hardware-agnostic, retargetable compiler workflow targeting a number of physical and virtual quantum computing backends. qcor leverages novel Clang plugin interfaces and builds upon the XACC system-level quantum programming framework to provide a state-of-the-art integration mechanism for quantum-classical compilation that leverages the best from the community at-large. qcor translates quantum kernels ultimately to the XACC intermediate representation, and provides user-extensible hooks for quantum compilation routines like circuit optimization, analysis, and placement. This work details the overall architecture and compiler workflow for qcor, and provides a number of illuminating programming examples demonstrating its utility for near-term variational tasks, quantum algorithm expression, and feed-forward error correction schemes.},
   keywords = {domain specific languages, quantum programming, quantum computing, compilers},
+  bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
+}
+</pre>
+
+<a name="Meuli2020"></a><pre>
+@article{<a href="bbt.html#Meuli2020">Meuli2020</a>,
+  title = {Enabling Accuracy-Aware Quantum Compilers Using Symbolic Resource Estimation},
+  author = {Meuli, Giulia and Soeken, Mathias and Roetteler, Martin and H{\"a}ner, Thomas},
+  year = {2020},
+  month = nov,
+  journal = {Proceedings of the ACM on Programming Languages},
+  publisher = {{Association for Computing Machinery}},
+  address = {New York, NY, USA},
+  volume = {4},
+  number = {OOPSLA},
+  eid = {130},
+  pages = {130},
+  doi = {10.1145/3428198},
+  abstract = {Approximation errors must be taken into account when compiling quantum programs into a low-level gate set. We present a methodology that tracks such errors automatically and then optimizes accuracy parameters to guarantee a specified overall accuracy while aiming to minimize the implementation cost in terms of quantum gates. The core idea of our approach is to extract functions that specify the optimization problem directly from the high-level description of the quantum program. Then, custom compiler passes optimize these functions, turning them into (near-)symbolic expressions for (1) the total error and (2) the implementation cost (e.g., total quantum gate count). All unspecified parameters of the quantum program will show up as variables in these expressions, including accuracy parameters. After solving the corresponding optimization problem, a circuit can be instantiated from the found solution. We develop two prototype implementations, one in C++ based on Clang/LLVM, and another using the Q\# compiler infrastructure. We benchmark our prototypes on typical quantum computing programs, including the quantum Fourier transform, quantum phase estimation, and Shor's algorithm.},
+  keywords = {quantum algorithms, approximation errors, resource estimation, quantum programming, quantum computing},
   bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
 }
 </pre>
@@ -2664,6 +2728,29 @@
 }
 </pre>
 
+<a name="Voichick2023"></a><pre>
+@article{<a href="bbt.html#Voichick2023">Voichick2023</a>,
+  title = {Qunity: A Unified Language for Quantum and Classical Computing},
+  author = {Voichick, Finn and Li, Liyi and Rand, Robert and Hicks, Michael},
+  year = {2022},
+  month = apr,
+  journal = {Proceedings of the ACM on Programming Languages},
+  volume = {7},
+  number = {POPL},
+  eid = {},
+  pages = {},
+  doi = {},
+  archiveprefix = {arXiv},
+  eprint = {2204.12384},
+  url = {<a href="https://gitlab.umiacs.umd.edu/finn/qunity">https://gitlab.umiacs.umd.edu/finn/qunity</a>},
+  abstract = {We introduce Qunity, a new quantum programming language designed to treat quantum computing as a natural generalization of classical computing. Qunity presents a unified syntax where familiar programming constructs can have both quantum and classical effects. For example, one can use sum types to implement the direct sum of linear operators, exception handling syntax to implement projective measurements, and aliasing to induce entanglement. Further, Qunity takes advantage of the overlooked BQP subroutine theorem, allowing one to construct reversible subroutines from irreversible quantum algorithms through the uncomputation of "garbage" outputs. Unlike existing languages that enable quantum aspects with separate add-ons (like a classical language with quantum gates bolted on), Qunity provides a unified syntax along with a novel denotational semantics that guarantees that programs are quantum mechanically valid. We present Qunity's syntax, type system, and denotational semantics, showing how it can cleanly express several quantum algorithms. We also detail how Qunity can be compiled to a low-level qubit circuit language like OpenQASM, proving the realizability of our design.},
+  keywords = {},
+  note = {To appear at POPL '23.},
+  webnote = {To appear at POPL '23. See extended version on arXiv.},
+  bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
+}
+</pre>
+
 <a name="Wecker2014"></a><pre>
 @misc{<a href="bbt.html#Wecker2014">Wecker2014</a>,
   title = {{{LIQ}}$Ui|\rangle$: {{A Software Design Architecture}} and {{Domain}}-{{Specific Language}} for {{Quantum Computing}}},
@@ -3046,6 +3133,29 @@
   eprint = {2102.00329},
   abstract = {We propose a model of the substructural logic of Bunched Implications (BI) that is suitable for reasoning about quantum states. In our model, the separating conjunction of BI describes separable quantum states. We develop a program logic where pre- and post-conditions are BI formulas describing quantum states---the program logic can be seen as a counterpart of separation logic for imperative quantum programs. We exercise the logic for proving the security of quantum one-time pad and secret sharing, and we show how the program logic can be used to discover a flaw in Google Cirq's tutorial on the Variational Quantum Algorithm (VQA).},
   keywords = {formal logic, quantum computing, substructural logic, separating conjunction, separable quantum states, program logic, imperative quantum programs, variational quantum algorithm, quantum interpretation, bunched logic, separation logic},
+  bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
+}
+</pre>
+
+<a name="Zhou2023"></a><pre>
+@article{<a href="bbt.html#Zhou2023">Zhou2023</a>,
+  title = {CoqQ: Foundational Verification of Quantum Programs},
+  author = {Zhou, Li and Barthe, Gilles and Strub, Pierre-Yves and Liu, Junyi and Ying, Mingsheng},
+  year = {2022},
+  month = jul,
+  journal = {Proceedings of the ACM on Programming Languages},
+  volume = {7},
+  number = {POPL},
+  eid = {},
+  pages = {},
+  doi = {},
+  archiveprefix = {arXiv},
+  eprint = {2207.11350},
+  url = {<a href="https://github.com/coq-quantum/CoqQ">https://github.com/coq-quantum/CoqQ</a>},
+  abstract = {CoqQ is a framework for reasoning about quantum programs in the Coq proof assistant. Its main components are: a deeply embedded quantum programming language, in which classic quantum algorithms are easily expressed, and an expressive program logic for proving properties of programs. CoqQ is foundational: the program logic is formally proved sound with respect to a denotational semantics based on state-of-art mathematical libraries (mathcomp and mathcomp analysis). CoqQ is also practical: assertions can use Dirac expressions, which eases concise specifications, and proofs can exploit local and parallel reasoning, which minimizes verification effort. We illustrate the applicability of CoqQ with many examples from the literature.},
+  keywords = {quantum programs, program logics, proof assistants, mathematical libraries},
+  note = {To appear at POPL '23.},
+  webnote = {To appear at POPL '23.},
   bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
 }
 </pre>
