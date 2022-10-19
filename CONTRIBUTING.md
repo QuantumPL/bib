@@ -1,5 +1,7 @@
 # How to contribute to QPLV Bib
 
+NOTE: ZX-calculus papers are not suitable here as [a comprehensive database]([url](https://zxcalculus.com/publications.html)) already exists.
+
 ## Easiest Method
 
 Just use the this [web form](https://forms.gle/watgbhcDa5jkf85T7).
