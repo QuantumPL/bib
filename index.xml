@@ -154,7 +154,7 @@
 &lt;p>This project was started by Kartik, a PhD student in Quantum PL, while attending his advisor &lt;a href="https://rand.cs.uchicago.edu/" target="_blank" rel="noopener">Robert Rand&lt;/a>&amp;rsquo;s &lt;a href="https://ks.cs.uchicago.edu/qpl-bib/qpv.html" target="_blank" rel="noopener">seminar&lt;/a> on the subject in Spring 2021. Contributions from the community are most welcome. See our &lt;a href="https://github.com/QuantumPL/bib/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">contributing guide&lt;/a>.&lt;/p>
 &lt;p>Other resources:&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="../retro/bbt.html">A rendering&lt;/a> of this bib database using &lt;code>bibtex2html&lt;/code> (linked in navigation menu as &lt;a href="../retro/bbt.html">Retro&lt;/a>).&lt;/li>
+&lt;li>&lt;a href="../retro/bbt.html">A rendering&lt;/a> of this bib database using &lt;code>bibtex2html&lt;/code> (linked in navigation menu as &lt;a href="../retro/bbt.html">bibtex2html&lt;/a>).&lt;/li>
 &lt;li>&lt;a href="../base">A rendering&lt;/a> using &lt;a href="https://bibbase.org/" target="_blank" rel="noopener">BibBase&lt;/a> (&lt;em>NOTE: Some entries seem to be missing in this render.&lt;/em>).&lt;/li>
 &lt;li>An &lt;a href="https://zxcalculus.com/publications.html" target="_blank" rel="noopener">external bibliography&lt;/a> of &lt;a href="../tag/zx-calculus">ZX-calculus&lt;/a> publications.&lt;/li>
 &lt;/ul>
