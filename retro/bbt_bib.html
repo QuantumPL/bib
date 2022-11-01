@@ -1546,15 +1546,14 @@
   journal = {Proceedings of the ACM on Programming Languages},
   volume = {6},
   number = {OOPSLA2},
-  eid = {},
-  pages = {},
+  eid = {146},
+  pages = {146},
   doi = {10.1145/3563309},
   archiveprefix = {arXiv},
   eprint = {2112.06700},
   url = {<a href="https://github.com/inQWIRE/VQO">https://github.com/inQWIRE/VQO</a>},
   abstract = {Quantum algorithms often apply classical operations, such as arithmetic or predicate checks, over a quantum superposition of classical data; these so-called oracles are often the largest components of a quantum program. To ease the construction of efficient, correct oracle functions, this paper presents VQO, a high-assurance framework implemented with the Coq proof assistant. The core of VQO is OQASM, the oracle quantum assembly language. OQASM operations move qubits between two different bases via the quantum Fourier transform, thus admitting important optimizations, but without inducing entanglement and the exponential blowup that comes with it. OQASM's design enabled us to prove correct VQO's compilers—from a simple imperative language called OQIMP to OQASM, and from OQASM to SQIR, a general-purpose quantum assembly language—and allowed us to efficiently test properties of OQASM programs using the QuickChick property-based testing framework. We have used VQO to implement a variety of arithmetic and geometric operators that are building blocks for important oracles, including those used in Shor's and Grover's algorithms. We found that VQO's QFT-based arithmetic oracles require fewer qubits, sometimes substantially fewer, than those constructed using ``classical'' gates; VQO's versions of the latter were nevertheless on par with or better than (in terms of both qubit and gate counts) oracles produced by Quipper, a state-of-the-art but unverified quantum programming platform.},
-  keywords = {},
-  note = {To appear},
+  keywords = {quantum oracle, type system, compiler verification, programming language design},
   webnote = {OOPSLA '22. See arXiv version for full paper with appendix.},
   bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
 }
@@ -1759,6 +1758,7 @@
   doi = {10.1145/3527330},
   abstract = {The interest in quantum computing is growing, and with it, the importance of software platforms to develop quantum programs. Ensuring the correctness of such platforms is important, and it requires a thorough understanding of the bugs they typically suffer from. To address this need, this paper presents the first in-depth study of bugs in quantum computing platforms. We gather and inspect a set of 223 real-world bugs from 18 open-source quantum computing platforms. Our study shows that a significant fraction of these bugs (39.9\%) are quantum-specific, calling for dedicated approaches to prevent and find them. The bugs are spread across various components, but quantum-specific bugs occur particularly often in components that represent, compile, and optimize quantum programming abstractions. Many quantum-specific bugs manifest through unexpected outputs, rather than more obvious signs of misbehavior, such as crashes. Finally, we present a hierarchy of recurrent bug patterns, including ten novel, quantum-specific patterns. Our findings not only show the importance and prevalence bugs in quantum computing platforms, but they help developers to avoid common mistakes and tool builders to tackle the challenge of preventing, finding, and fixing these bugs.},
   keywords = {quantum computing platform, empirical study, software bugs},
+  webnote = {OOPSLA '22},
   bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
 }
 </pre>
@@ -3101,7 +3101,7 @@
   title = {Tower: Data Structures in Quantum Superposition},
   author = {Yuan, Charles and Carbin, Michael},
   year = {2022},
-  month = sep,
+  month = oct,
   journal = {Proceedings of the ACM on Programming Languages},
   volume = {6},
   number = {OOPSLA2},
@@ -3121,7 +3121,6 @@
 
                    Using Tower, we implement Ground, the first quantum library of data structures, including lists, stacks, queues, strings, and sets. We provide the first executable implementation of sets that satisfies all three mandated properties of reversibility, history independence, and bounded-time execution.},
   keywords = {quantum programming, data structures, quantum random-access memory, reversible programming, history independence},
-  note = {To appear},
   webnote = {OOPSLA '22. See arXiv version for full paper with appendix.},
   bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
 }

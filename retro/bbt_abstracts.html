@@ -1801,9 +1801,8 @@ Keywords: assertion, quantum computing, program testing, quantum programming
 Liyi Li, Finn Voichick, Kesha Hietala, Yuxiang Peng, Xiaodi Wu, and Michael
   Hicks.
  <b>Verified Compilation of Quantum Oracles</b>.
- <em>Proceedings of the ACM on Programming Languages</em>, 6(OOPSLA2),
-  October 2022.
- To appear.
+ <em>Proceedings of the ACM on Programming Languages</em>,
+  6(OOPSLA2):146, October 2022.
 [&nbsp;<a href="bbt_bib.html#Li2022">bib</a>&nbsp;| 
 <a href="https://doi.org/10.1145/3563309">DOI</a>&nbsp;| 
 <a href="http://arxiv.org/abs/2112.06700">arXiv</a>&nbsp;| 
@@ -1812,7 +1811,7 @@ Liyi Li, Finn Voichick, Kesha Hietala, Yuxiang Peng, Xiaodi Wu, and Michael
 Quantum algorithms often apply classical operations, such as arithmetic or predicate checks, over a quantum superposition of classical data; these so-called oracles are often the largest components of a quantum program. To ease the construction of efficient, correct oracle functions, this paper presents VQO, a high-assurance framework implemented with the Coq proof assistant. The core of VQO is OQASM, the oracle quantum assembly language. OQASM operations move qubits between two different bases via the quantum Fourier transform, thus admitting important optimizations, but without inducing entanglement and the exponential blowup that comes with it. OQASM's design enabled us to prove correct VQO's compilers—from a simple imperative language called OQIMP to OQASM, and from OQASM to SQIR, a general-purpose quantum assembly language—and allowed us to efficiently test properties of OQASM programs using the QuickChick property-based testing framework. We have used VQO to implement a variety of arithmetic and geometric operators that are building blocks for important oracles, including those used in Shor's and Grover's algorithms. We found that VQO's QFT-based arithmetic oracles require fewer qubits, sometimes substantially fewer, than those constructed using &ldquo;classical&rdquo; gates; VQO's versions of the latter were nevertheless on par with or better than (in terms of both qubit and gate counts) oracles produced by Quipper, a state-of-the-art but unverified quantum programming platform.
 </blockquote>
 <blockquote>
-Keywords: 
+Keywords: quantum oracle, type system, compiler verification, programming language design
 </blockquote>
 
 </td>
@@ -3715,8 +3714,7 @@ Keywords: quantum programming, scalability, abstract interpretation
 Charles Yuan and Michael Carbin.
  <b>Tower: Data Structures in Quantum Superposition</b>.
  <em>Proceedings of the ACM on Programming Languages</em>,
-  6(OOPSLA2):134, September 2022.
- To appear.
+  6(OOPSLA2):134, October 2022.
 [&nbsp;<a href="bbt_bib.html#Yuan2022a">bib</a>&nbsp;| 
 <a href="https://doi.org/10.1145/3563297">DOI</a>&nbsp;| 
 <a href="http://arxiv.org/abs/2205.10255">arXiv</a>&nbsp;| 
