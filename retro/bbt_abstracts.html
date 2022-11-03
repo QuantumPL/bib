@@ -1492,7 +1492,8 @@ David Ittah, Thomas H&auml;ner, Vadym Kliuchnikov, and Torsten Hoefler.
   Representation for Optimization</b>.
  <em>ACM Transactions on Quantum Computing</em>, 3(3):14, July 2022.
 [&nbsp;<a href="bbt_bib.html#Ittah2022">bib</a>&nbsp;| 
-<a href="https://doi.org/10.1145/3491247">DOI</a>&nbsp;]
+<a href="https://doi.org/10.1145/3491247">DOI</a>&nbsp;| 
+<a href="http://arxiv.org/abs/2101.11030">arXiv</a>&nbsp;]
 <blockquote>
 We propose an IR for quantum computing that directly exposes quantum and classical data dependencies for the purpose of optimization. The Quantum Intermediate Representation for Optimization (QIRO) consists of two dialects, one input dialect and one that is specifically tailored to enable quantum-classical co-optimization. While the first employs a perhaps more intuitive memory-semantics (quantum operations act on qubits via side-effects), the latter uses value-semantics (operations consume and produce states) to integrate quantum dataflow in the IR's Static Single Assignment (SSA) graph. Crucially, this allows for a host of optimizations that leverage dataflow analysis. We discuss how to map existing quantum programming languages to the input dialect and how to lower the resulting IR to the optimization dialect. We present a prototype implementation based on MLIR that includes several quantum-specific optimization passes. Our benchmarks show that significant improvements in resource requirements are possible even through static optimization. In contrast to circuit optimization at run time, this is achieved while incurring only a small constant overhead in compilation time, making this a compelling approach for quantum program optimization at application scale.
 </blockquote>
@@ -1964,7 +1965,31 @@ Keywords: proto-quipper, quantum programming languages, linear logic, hybrid, hi
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="McCaskey2021">88</a>]
+[<a name="McCaskey2021a">88</a>]
+</td>
+<td class="bibtexitem">
+Alexander McCaskey and Thien Nguyen.
+ <b>A MLIR Dialect for Quantum Assembly Languages</b>.
+ In <em>2021 IEEE International Conference on Quantum Computing and
+  Engineering (QCE)</em>, pages 255&#x2013;264, Los Alamitos, CA, USA, oct 2021. IEEE
+  Computer Society.
+[&nbsp;<a href="bbt_bib.html#McCaskey2021a">bib</a>&nbsp;| 
+<a href="https://doi.org/10.1109/QCE52317.2021.00043">DOI</a>&nbsp;| 
+<a href="http://arxiv.org/abs/2101.11365">arXiv</a>&nbsp;]
+<blockquote>
+We demonstrate the utility of the Multi-Level Intermediate Representation (MLIR) for quantum computing. Specifically, we extend MLIR with a new quantum dialect that enables the expression and compilation of common quantum assembly languages. The true utility of this dialect is in its ability to be lowered to the LLVM intermediate representation (IR) in a manner that is adherent to the quantum intermediate representation (QIR) specification recently proposed by Microsoft. We leverage a qcor-enabled implementation of the QIR quantum runtime API to enable a retargetable (quantum hardware agnostic) compiler workflow mapping quantum languages to hybrid quantum-classical binary executables and object code. We evaluate and demonstrate this novel compiler workflow with quantum programs written in OpenQASM 2.0. We provide concrete examples detailing the generation of MLIR from OpenQASM source files, the lowering process from MLIR to LLVM IR, and ultimately the generation of executable binaries targeting available quantum processors.
+</blockquote>
+<blockquote>
+Keywords: quantum computing, quantum programming, quantum simulation, programming languages, mlir
+</blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="McCaskey2021">89</a>]
 </td>
 <td class="bibtexitem">
 Alexander McCaskey, Thien Nguyen, Anthony Santana, Daniel Claudino, Tyler
@@ -1987,7 +2012,7 @@ Keywords: domain specific languages, quantum programming, quantum computing, com
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Meuli2020">89</a>]
+[<a name="Meuli2020">90</a>]
 </td>
 <td class="bibtexitem">
 Giulia Meuli, Mathias Soeken, Martin Roetteler, and Thomas H&auml;ner.
@@ -2010,7 +2035,7 @@ Keywords: quantum algorithms, approximation errors, resource estimation, quantum
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="QsSpec2020">90</a>]
+[<a name="QsSpec2020">91</a>]
 </td>
 <td class="bibtexitem">
 Microsoft.
@@ -2029,7 +2054,7 @@ Q# is part of Microsoft's Quantum Development Kit and provides rich IDE support 
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Mosca2019">91</a>]
+[<a name="Mosca2019">92</a>]
 </td>
 <td class="bibtexitem">
 Michele Mosca, Martin Roetteler, and Peter Selinger.
@@ -2051,7 +2076,30 @@ Keywords: compilers, functional programming, quantum computing, reversible compu
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Nielsen2010">92</a>]
+[<a name="Nguyen2022">93</a>]
+</td>
+<td class="bibtexitem">
+Thien Nguyen and Alexander McCaskey.
+ <b>Retargetable Optimizing Compilers for Quantum Accelerators via a
+  Multilevel Intermediate Representation</b>.
+ <em>IEEE Micro</em>, 42(5):17&#x2013;33, September 2022.
+[&nbsp;<a href="bbt_bib.html#Nguyen2022">bib</a>&nbsp;| 
+<a href="https://doi.org/10.1109/MM.2022.3179654">DOI</a>&nbsp;| 
+<a href="http://arxiv.org/abs/2109.00506">arXiv</a>&nbsp;]
+<blockquote>
+We present a multilevel quantum-classical intermediate representation (IR) that enables an optimizing, retargetable compiler for available quantum languages. Our work builds upon the multilevel intermediate representation (MLIR) framework and leverages its unique progressive lowering capabilities to map quantum languages to the low-level virtual machine (LLVM) machine-level IR. We provide both quantum and classical optimizations via the MLIR pattern rewriting subsystem and standard LLVM optimization passes, and demonstrate the programmability, compilation, and execution of our approach via standard benchmarks and test cases. In comparison to other standalone language and compiler efforts available today, our work results in compile times that are 1,000× faster than standard Pythonic approaches, and 5-10× faster than comparative standalone quantum language compilers. Our compiler provides quantum resource optimizations via standard programming patterns that result in a 10× reduction in entangling operations, a common source of program noise. We see this work as a vehicle for rapid quantum compiler prototyping.
+</blockquote>
+<blockquote>
+Keywords: quantum computing, quantum programming, programming languages, mlir
+</blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Nielsen2010">94</a>]
 </td>
 <td class="bibtexitem">
 Michael&nbsp;A. Nielsen and Isaac&nbsp;L. Chuang.
@@ -2070,7 +2118,7 @@ One of the most cited books in physics of all time, Quantum Computation and Quan
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Oemer2003">93</a>]
+[<a name="Oemer2003">95</a>]
 </td>
 <td class="bibtexitem">
 Bernhard &Ouml;mer.
@@ -2085,7 +2133,7 @@ Bernhard &Ouml;mer.
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Pagani2014">94</a>]
+[<a name="Pagani2014">96</a>]
 </td>
 <td class="bibtexitem">
 Michele Pagani, Peter Selinger, and Beno&icirc;t Valiron.
@@ -2110,7 +2158,7 @@ Keywords: higher-order, quantum computation, completely positive maps, categoric
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Paltenghi2022">95</a>]
+[<a name="Paltenghi2022">97</a>]
 </td>
 <td class="bibtexitem">
 Matteo Paltenghi and Michael Pradel.
@@ -2132,7 +2180,7 @@ Keywords: quantum computing platform, empirical study, software bugs
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Paolini2019a">96</a>]
+[<a name="Paolini2019a">98</a>]
 </td>
 <td class="bibtexitem">
 Luca Paolini, Mauro Piccolo, and Margherita Zorzi.
@@ -2152,7 +2200,7 @@ qPCF is a paradigmatic quantum programming language that extends PCF with quantu
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Paolini2019">97</a>]
+[<a name="Paolini2019">99</a>]
 </td>
 <td class="bibtexitem">
 Luca Paolini, Luca Roversi, and Margherita Zorzi.
@@ -2175,7 +2223,7 @@ We present IQu, namely a quantum programming language that extends Reynold's Ide
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Paolini2017">98</a>]
+[<a name="Paolini2017">100</a>]
 </td>
 <td class="bibtexitem">
 Luca Paolini and Margherita Zorzi.
@@ -2198,7 +2246,7 @@ Keywords: quantum circuits, classical control, quantum programming languages
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Paradis2021">99</a>]
+[<a name="Paradis2021">101</a>]
 </td>
 <td class="bibtexitem">
 Anouk Paradis, Benjamin Bichsel, Samuel Steffen, and Martin Vechev.
@@ -2222,7 +2270,7 @@ Keywords: quantum Circuits, uncomputation, synthesis
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Paykin2018">100</a>]
+[<a name="Paykin2018">102</a>]
 </td>
 <td class="bibtexitem">
 Jennifer Paykin.
@@ -2245,7 +2293,7 @@ Domain-specific languages are often embedded inside of general-purpose host lang
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Paykin2017">101</a>]
+[<a name="Paykin2017">103</a>]
 </td>
 <td class="bibtexitem">
 Jennifer Paykin, Robert Rand, and Steve Zdancewic.
@@ -2270,7 +2318,7 @@ Keywords: linear types, denotational semantics, quantum circuits, quantum progra
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Paykin2019">102</a>]
+[<a name="Paykin2019">104</a>]
 </td>
 <td class="bibtexitem">
 Jennifer Paykin and Steve Zdancewic.
@@ -2289,7 +2337,7 @@ This paper presents an equational theory for the QRAM model of quantum computati
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Pechoux2020">103</a>]
+[<a name="Pechoux2020">105</a>]
 </td>
 <td class="bibtexitem">
 Romain P&eacute;choux, Simon Perdrix, Mathys Rennela, and Vladimir Zamdzhiev.
@@ -2314,7 +2362,31 @@ Keywords: quantum programming, inductive types, adequacy
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Peng2022a">104</a>]
+[<a name="Peduri2022">106</a>]
+</td>
+<td class="bibtexitem">
+Anurudh Peduri, Siddharth Bhat, and Tobias Grosser.
+ <b>QSSA: An SSA-Based IR for Quantum Computing</b>.
+ In <em>Proceedings of the 31st ACM SIGPLAN International Conference
+  on Compiler Construction</em>, pages 2&#x2013;14, New York, NY, USA, March 2022.
+  Association for Computing Machinery.
+[&nbsp;<a href="bbt_bib.html#Peduri2022">bib</a>&nbsp;| 
+<a href="https://doi.org/10.1145/3497776.3517772">DOI</a>&nbsp;| 
+<a href="http://arxiv.org/abs/2109.02409">arXiv</a>&nbsp;]
+<blockquote>
+Quantum computing hardware has progressed rapidly. Simultaneously, there has been a proliferation of programming languages and program optimization tools for quantum computing. Existing quantum compilers use intermediate representations (IRs) where quantum programs are described as circuits. Such IRs fail to leverage existing work on compiler optimizations. In such IRs, it is non-trivial to statically check for physical constraints such as the no-cloning theorem, which states that qubits cannot be copied. We introduce QSSA, a novel quantum IR based on static single assignment (SSA) that enables decades of research in compiler optimizations to be applied to quantum compilation. QSSA models quantum operations as being side-effect-free. The inputs and outputs of the operation are in one-to-one correspondence; qubits cannot be created or destroyed. As a result, our IR supports a static analysis pass that verifies no-cloning at compile-time. The quantum circuit is fully encoded within the def-use chain of the IR, allowing us to leverage existing optimization passes on SSA representations such as redundancy elimination and dead-code elimination. Running our QSSA-based compiler on the QASMBench and IBM Quantum Challenge datasets, we show that our optimizations perform comparably to IBM's Qiskit quantum compiler infrastructure. QSSA allows us to represent, analyze, and transform quantum programs using the robust theory of SSA representations, bringing quantum compilation into the realm of well-understood theory and practice.
+</blockquote>
+<blockquote>
+Keywords: ssa, quantum circuits, compilers, intermediate representations, optimization, mlir
+</blockquote>
+
+</td>
+</tr>
+
+
+<tr valign="top">
+<td align="right" class="bibtexnumber">
+[<a name="Peng2022a">107</a>]
 </td>
 <td class="bibtexitem">
 Yuxiang Peng, Kesha Hietala, Runzhou Tao, Liyi Li, Robert Rand, Michael Hicks,
@@ -2334,7 +2406,7 @@ Quantum computing technology may soon deliver revolutionary improvements in algo
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Peng2022">105</a>]
+[<a name="Peng2022">108</a>]
 </td>
 <td class="bibtexitem">
 Yuxiang Peng, Mingsheng Ying, and Xiaodi Wu.
@@ -2360,7 +2432,7 @@ Keywords: non-idempotent kleene algebra, compiler optimization, normal form theo
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="QIRSpec2021">106</a>]
+[<a name="QIRSpec2021">109</a>]
 </td>
 <td class="bibtexitem">
 QIR Alliance.
@@ -2378,7 +2450,7 @@ The QIR specification is an effort of the QIR Alliance. It defines how to repres
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="QiskitCommunity2017">107</a>]
+[<a name="QiskitCommunity2017">110</a>]
 </td>
 <td class="bibtexitem">
 Qiskit Community.
@@ -2397,7 +2469,7 @@ Qiskit is an open-source framework for working with noisy quantum computers at t
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="QuingoTeam2021">108</a>]
+[<a name="QuingoTeam2021">111</a>]
 </td>
 <td class="bibtexitem">
 Quingo Development Team.
@@ -2420,7 +2492,7 @@ Keywords: nisq, quantum compilation, timing control, quantum programming framewo
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Rand2016">109</a>]
+[<a name="Rand2016">112</a>]
 </td>
 <td class="bibtexitem">
 Robert Rand.
@@ -2442,7 +2514,7 @@ Keywords: hoare logic
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Rand2018a">110</a>]
+[<a name="Rand2018a">113</a>]
 </td>
 <td class="bibtexitem">
 Robert Rand.
@@ -2465,7 +2537,7 @@ The field of quantum mechanics predates computer science by at least ten years, 
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Rand2019a">111</a>]
+[<a name="Rand2019a">114</a>]
 </td>
 <td class="bibtexitem">
 Robert Rand, Kesha Hietala, and Michael Hicks.
@@ -2490,7 +2562,7 @@ Keywords: formal verification, quantum computing, programming languages, quantum
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Rand2019">112</a>]
+[<a name="Rand2019">115</a>]
 </td>
 <td class="bibtexitem">
 Robert Rand, Jennifer Paykin, Dongho Lee, and Steve Zdancewic.
@@ -2513,7 +2585,7 @@ Common quantum algorithms make heavy use of ancillae: scratch qubits that are in
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Rand2018b">113</a>]
+[<a name="Rand2018b">116</a>]
 </td>
 <td class="bibtexitem">
 Robert Rand, Jennifer Paykin, and Steve Zdancewic.
@@ -2532,7 +2604,7 @@ We explore the design space of using dependent types to type check and verify qu
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Rand2018">114</a>]
+[<a name="Rand2018">117</a>]
 </td>
 <td class="bibtexitem">
 Robert Rand, Jennifer Paykin, and Steve Zdancewic.
@@ -2555,7 +2627,7 @@ We describe an embedding of the QWIRE quantum circuit language in the Coq proof 
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Rand2021">115</a>]
+[<a name="Rand2021">118</a>]
 </td>
 <td class="bibtexitem">
 Robert Rand, Aarthi Sundaram, Kartik Singhal, and Brad Lackey.
@@ -2582,7 +2654,7 @@ Keywords: quantum computing, type systems, gottesman types
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Rennela2018">116</a>]
+[<a name="Rennela2018">119</a>]
 </td>
 <td class="bibtexitem">
 Mathys Rennela and Sam Staton.
@@ -2606,7 +2678,7 @@ Keywords: enriched categories, categorical semantics, linear type theory, quantu
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Rennela2020">117</a>]
+[<a name="Rennela2020">120</a>]
 </td>
 <td class="bibtexitem">
 Mathys Rennela and Sam Staton.
@@ -2628,7 +2700,7 @@ Keywords: programming languages, category theory, operator algebras
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Rios2021">118</a>]
+[<a name="Rios2021">121</a>]
 </td>
 <td class="bibtexitem">
 Francisco Rios.
@@ -2653,7 +2725,7 @@ Keywords: quantum programming languages, categorical model, quantum circuits, pr
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Rios2018">119</a>]
+[<a name="Rios2018">122</a>]
 </td>
 <td class="bibtexitem">
 Francisco Rios and Peter Selinger.
@@ -2679,7 +2751,7 @@ Keywords: proto-quipper-m, quipper
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Ross2015">120</a>]
+[<a name="Ross2015">123</a>]
 </td>
 <td class="bibtexitem">
 Neil&nbsp;J. Ross.
@@ -2701,7 +2773,7 @@ Keywords: proto-quipper-s, proto-quipper, quipper
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Ruediger2007">121</a>]
+[<a name="Ruediger2007">124</a>]
 </td>
 <td class="bibtexitem">
 Roland R&uuml;diger.
@@ -2720,7 +2792,7 @@ The present article gives an introductory overview of the novel field of quantum
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Sabry2018">122</a>]
+[<a name="Sabry2018">125</a>]
 </td>
 <td class="bibtexitem">
 Amr Sabry, Beno&icirc;t Valiron, and Juliana&nbsp;Kaizer Vizzotto.
@@ -2742,7 +2814,7 @@ One perspective on quantum algorithms is that they are classical algorithms havi
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Selinger2004">123</a>]
+[<a name="Selinger2004">126</a>]
 </td>
 <td class="bibtexitem">
 Peter Selinger.
@@ -2766,7 +2838,7 @@ Keywords: quantum computation, quantum algorithm, linear logic, denotational sem
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Selinger2004a">124</a>]
+[<a name="Selinger2004a">127</a>]
 </td>
 <td class="bibtexitem">
 Peter Selinger.
@@ -2786,7 +2858,7 @@ We propose the design of a programming language for quantum computing. Tradition
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Selinger2007">125</a>]
+[<a name="Selinger2007">128</a>]
 </td>
 <td class="bibtexitem">
 Peter Selinger.
@@ -2812,7 +2884,7 @@ Keywords: categorical model, quantum computing, dagger categories, cpm construct
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Selinger2006">126</a>]
+[<a name="Selinger2006">129</a>]
 </td>
 <td class="bibtexitem">
 Peter Selinger and Beno&icirc;t Valiron.
@@ -2833,7 +2905,7 @@ In this paper we develop a functional programming language for quantum computers
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Selinger2009">127</a>]
+[<a name="Selinger2009">130</a>]
 </td>
 <td class="bibtexitem">
 Peter Selinger and Beno&icirc;t Valiron.
@@ -2852,7 +2924,7 @@ We discuss the design of a typed lambda calculus for quantum computation. After 
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Singhal2020a">128</a>]
+[<a name="Singhal2020a">131</a>]
 </td>
 <td class="bibtexitem">
 Kartik Singhal.
@@ -2874,7 +2946,7 @@ Keywords: formal verification, program proof, programming languages, quantum com
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Singhal2022">129</a>]
+[<a name="Singhal2022">132</a>]
 </td>
 <td class="bibtexitem">
 Kartik Singhal, Kesha Hietala, Sarah Marshall, and Robert Rand.
@@ -2899,7 +2971,7 @@ Keywords: quantum computing, quantum computation, programming languages, formal 
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Singhal2021">130</a>]
+[<a name="Singhal2021">133</a>]
 </td>
 <td class="bibtexitem">
 Kartik Singhal, Sarah Marshall, Kesha Hietala, and Robert Rand.
@@ -2922,7 +2994,7 @@ Keywords: quantum computing, quantum computation, programming languages, formal 
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Singhal2020">131</a>]
+[<a name="Singhal2020">134</a>]
 </td>
 <td class="bibtexitem">
 Kartik Singhal, Robert Rand, and Michael Hicks.
@@ -2944,7 +3016,7 @@ Keywords: formal verification, nisq, program proof, programming languages, seman
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Singhal2021a">132</a>]
+[<a name="Singhal2021a">135</a>]
 </td>
 <td class="bibtexitem">
 Kartik Singhal and John Reppy.
@@ -2971,7 +3043,7 @@ Keywords: formal verification, program proof, programming languages, quantum com
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Sivarajah2020">133</a>]
+[<a name="Sivarajah2020">136</a>]
 </td>
 <td class="bibtexitem">
 Seyon Sivarajah, Silas Dilkes, Alexander Cowtan, Will Simmons, Alec Edgington,
@@ -2992,7 +3064,7 @@ We present t|ket&#X27e9;, a quantum software development platform produced by Ca
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Smith2016">134</a>]
+[<a name="Smith2016">137</a>]
 </td>
 <td class="bibtexitem">
 Robert&nbsp;S. Smith, Michael&nbsp;J. Curtis, and William&nbsp;J. Zeng.
@@ -3011,7 +3083,7 @@ We introduce an abstract machine architecture for classical/quantum computations
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Staton2015">135</a>]
+[<a name="Staton2015">138</a>]
 </td>
 <td class="bibtexitem">
 Sam Staton.
@@ -3036,7 +3108,7 @@ Keywords: monads, quantum computation, algebraic effects
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Steiger2018">136</a>]
+[<a name="Steiger2018">139</a>]
 </td>
 <td class="bibtexitem">
 Damian&nbsp;S. Steiger, Thomas H&auml;ner, and Matthias Troyer.
@@ -3055,7 +3127,7 @@ We introduce ProjectQ, an open source software effort for quantum computing. The
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Svore2006">137</a>]
+[<a name="Svore2006">140</a>]
 </td>
 <td class="bibtexitem">
 Krysta&nbsp;M. Svore, Alfred&nbsp;V. Aho, Andrew&nbsp;W. Cross, Isaac&nbsp;L. Chuang, and Igor&nbsp;L.
@@ -3079,7 +3151,7 @@ Keywords: quantum computing, design tools, programming languages, software archi
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Svore2004">138</a>]
+[<a name="Svore2004">141</a>]
 </td>
 <td class="bibtexitem">
 Krysta&nbsp;M. Svore, Andrew&nbsp;W. Cross, Alfred&nbsp;V. Aho, Isaac&nbsp;L. Chuang, and Igor&nbsp;L.
@@ -3101,7 +3173,7 @@ Compilers and computer-aided design tools will be essential for quantum computin
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Svore2018">139</a>]
+[<a name="Svore2018">142</a>]
 </td>
 <td class="bibtexitem">
 Krysta&nbsp;M. Svore, Alan Geller, Matthias Troyer, John Azariah, Christopher&nbsp;E.
@@ -3128,7 +3200,7 @@ Keywords: domain specific language, functional programming, quantum computing, q
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Tao2022">140</a>]
+[<a name="Tao2022">143</a>]
 </td>
 <td class="bibtexitem">
 Runzhou Tao, Yunong Shi, Jianan Yao, Xupeng Li, Ali Javadi-Abhari, Andrew&nbsp;W.
@@ -3155,7 +3227,7 @@ Keywords: quantum computing, compiler verification, automated verification
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Unruh2019a">141</a>]
+[<a name="Unruh2019a">144</a>]
 </td>
 <td class="bibtexitem">
 Dominique Unruh.
@@ -3179,7 +3251,7 @@ Keywords: quantum entanglement, quantum computing, probabilistic logic, cryptogr
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Unruh2019">142</a>]
+[<a name="Unruh2019">145</a>]
 </td>
 <td class="bibtexitem">
 Dominique Unruh.
@@ -3202,7 +3274,7 @@ Keywords: formal verification, quantum cryptography, hoare logic
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Unruh2021">143</a>]
+[<a name="Unruh2021">146</a>]
 </td>
 <td class="bibtexitem">
 Dominique Unruh.
@@ -3221,7 +3293,7 @@ We present a generic theory of &ldquo;registers&rdquo; in imperative programs an
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Unruh2021a">144</a>]
+[<a name="Unruh2021a">147</a>]
 </td>
 <td class="bibtexitem">
 Dominique Unruh.
@@ -3239,7 +3311,7 @@ A formalization of the theory of quantum and classical registers as developed by
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Valiron2015">145</a>]
+[<a name="Valiron2015">148</a>]
 </td>
 <td class="bibtexitem">
 Beno&icirc;t Valiron, Neil&nbsp;J. Ross, Peter Selinger, D.&nbsp;Scott Alexander, and
@@ -3261,7 +3333,7 @@ Keywords: quipper
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Vandewetering2020">146</a>]
+[<a name="Vandewetering2020">149</a>]
 </td>
 <td class="bibtexitem">
 John van&nbsp;de Wetering.
@@ -3282,7 +3354,7 @@ Keywords: zx-calculus, category theory
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Vizzotto2006">147</a>]
+[<a name="Vizzotto2006">150</a>]
 </td>
 <td class="bibtexitem">
 Juliana&nbsp;Kaizer Vizzotto, Thorsten Altenkirch, and Amr Sabry.
@@ -3305,7 +3377,7 @@ Keywords: arrows
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Vizzotto2009">148</a>]
+[<a name="Vizzotto2009">151</a>]
 </td>
 <td class="bibtexitem">
 Juliana&nbsp;Kaizer Vizzotto, Andr&eacute;&nbsp;Rauber Du&nbsp;Bois, and Amr Sabry.
@@ -3328,7 +3400,7 @@ Keywords: density matrix, quantum computation, quantum algorithm, functional pro
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Vizzotto2009a">149</a>]
+[<a name="Vizzotto2009a">152</a>]
 </td>
 <td class="bibtexitem">
 Juliana&nbsp;Kaizer Vizzotto, Giovani&nbsp;Rubert Librelotto, and Amr Sabry.
@@ -3353,7 +3425,7 @@ Keywords: density matrix, quantum computation, quantum algorithm, quantum circui
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Voichick2023">150</a>]
+[<a name="Voichick2023">153</a>]
 </td>
 <td class="bibtexitem">
 Finn Voichick, Liyi Li, Robert Rand, and Michael Hicks.
@@ -3378,7 +3450,7 @@ Keywords:
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Wecker2014">151</a>]
+[<a name="Wecker2014">154</a>]
 </td>
 <td class="bibtexitem">
 Dave Wecker and Krysta&nbsp;M. Svore.
@@ -3396,7 +3468,7 @@ Languages, compilers, and computer-aided design tools will be essential for scal
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Xu2022">152</a>]
+[<a name="Xu2022">155</a>]
 </td>
 <td class="bibtexitem">
 Mingkuan Xu, Zikun Li, Oded Padon, Sina Lin, Jessica Pointing, Auguste Hirth,
@@ -3425,7 +3497,7 @@ Keywords: quantum computing, superoptimization
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Yan2022">153</a>]
+[<a name="Yan2022">156</a>]
 </td>
 <td class="bibtexitem">
 Peng Yan, Hanru Jiang, and Nengkun Yu.
@@ -3448,7 +3520,7 @@ Keywords: quantum programming languages, projective quantum predicates, incorrec
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Ying2009a">154</a>]
+[<a name="Ying2009a">157</a>]
 </td>
 <td class="bibtexitem">
 Mingsheng Ying.
@@ -3465,7 +3537,7 @@ Hoare logic is a foundation of axiomatic semantics of classical programs and it 
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Ying2012">155</a>]
+[<a name="Ying2012">158</a>]
 </td>
 <td class="bibtexitem">
 Mingsheng Ying.
@@ -3487,7 +3559,7 @@ Keywords: quantum computation, programming languages, axiomatic semantics, floyd
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Ying2014a">156</a>]
+[<a name="Ying2014a">159</a>]
 </td>
 <td class="bibtexitem">
 Mingsheng Ying.
@@ -3505,7 +3577,7 @@ This paper introduces a new notion of quantum recursion of which the control flo
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Ying2016">157</a>]
+[<a name="Ying2016">160</a>]
 </td>
 <td class="bibtexitem">
 Mingsheng Ying.
@@ -3523,7 +3595,7 @@ Foundations of Quantum Programming discusses how new programming methodologies a
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Ying2022">158</a>]
+[<a name="Ying2022">161</a>]
 </td>
 <td class="bibtexitem">
 Mingsheng Ying.
@@ -3541,7 +3613,7 @@ A first-order logic with quantum variables is needed as an assertion language fo
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Ying2009">159</a>]
+[<a name="Ying2009">162</a>]
 </td>
 <td class="bibtexitem">
 Mingsheng Ying, Runyao Duan, Yuan Feng, and Zhengfeng Ji.
@@ -3560,7 +3632,7 @@ This chapter presents a systematic exposition of predicate transformer semantics
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Ying2021">160</a>]
+[<a name="Ying2021">163</a>]
 </td>
 <td class="bibtexitem">
 Mingsheng Ying and Yuan Feng.
@@ -3581,7 +3653,7 @@ Keywords: model checking, quantum computing
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Ying2017">161</a>]
+[<a name="Ying2017">164</a>]
 </td>
 <td class="bibtexitem">
 Mingsheng Ying, Shenggang Ying, and Xiaodi Wu.
@@ -3606,7 +3678,7 @@ Keywords: inductive assertions, quantum programming, partial correctness, invari
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Ying2014">162</a>]
+[<a name="Ying2014">165</a>]
 </td>
 <td class="bibtexitem">
 Mingsheng Ying, Nengkun Yu, and Yuan Feng.
@@ -3624,7 +3696,7 @@ We extract a novel quantum programming paradigm - superposition of programs - fr
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Ying2013">163</a>]
+[<a name="Ying2013">166</a>]
 </td>
 <td class="bibtexitem">
 Mingsheng Ying, Nengkun Yu, Yuan Feng, and Runyao Duan.
@@ -3645,7 +3717,7 @@ This paper develops verification methodology for quantum programs, and the contr
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Ying2018">164</a>]
+[<a name="Ying2018">167</a>]
 </td>
 <td class="bibtexitem">
 Mingsheng Ying, Li&nbsp;Zhou, and Yangjia Li.
@@ -3662,7 +3734,7 @@ We initiate the study of parallel quantum programming by defining the operationa
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Ying2021a">165</a>]
+[<a name="Ying2021a">168</a>]
 </td>
 <td class="bibtexitem">
 Mingsheng Ying, Li&nbsp;Zhou, Yangjia Li, and Yuan Feng.
@@ -3683,7 +3755,7 @@ Keywords: quantum programming, quantum hoare logic, parallel programs, entanglem
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Yu2021">166</a>]
+[<a name="Yu2021">169</a>]
 </td>
 <td class="bibtexitem">
 Nengkun Yu and Jens Palsberg.
@@ -3708,7 +3780,7 @@ Keywords: quantum programming, scalability, abstract interpretation
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Yuan2022a">167</a>]
+[<a name="Yuan2022a">170</a>]
 </td>
 <td class="bibtexitem">
 Charles Yuan and Michael Carbin.
@@ -3736,7 +3808,7 @@ Keywords: quantum programming, data structures, quantum random-access memory, re
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Yuan2022">168</a>]
+[<a name="Yuan2022">171</a>]
 </td>
 <td class="bibtexitem">
 Charles Yuan, Christopher McNally, and Michael Carbin.
@@ -3761,7 +3833,7 @@ Keywords: entanglement, purity, quantum programming, type systems
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Zhao2020">169</a>]
+[<a name="Zhao2020">172</a>]
 </td>
 <td class="bibtexitem">
 Jianjun Zhao.
@@ -3779,7 +3851,7 @@ Quantum software plays a critical role in exploiting the full potential of quant
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Zhou2021">170</a>]
+[<a name="Zhou2021">173</a>]
 </td>
 <td class="bibtexitem">
 Li&nbsp;Zhou, Gilles Barthe, Justin Hsu, Mingsheng Ying, and Nengkun Yu.
@@ -3804,7 +3876,7 @@ Keywords: formal logic, quantum computing, substructural logic, separating conju
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Zhou2023">171</a>]
+[<a name="Zhou2023">174</a>]
 </td>
 <td class="bibtexitem">
 Li&nbsp;Zhou, Gilles Barthe, Pierre-Yves Strub, Junyi Liu, and Mingsheng Ying.
@@ -3829,7 +3901,7 @@ Keywords: quantum programs, program logics, proof assistants, mathematical libra
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Zhou2019">172</a>]
+[<a name="Zhou2019">175</a>]
 </td>
 <td class="bibtexitem">
 Li&nbsp;Zhou, Nengkun Yu, and Mingsheng Ying.
@@ -3853,7 +3925,7 @@ Keywords: quantum computation, hoare logic, robustness, projections, programming
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Zorzi2019">173</a>]
+[<a name="Zorzi2019">176</a>]
 </td>
 <td class="bibtexitem">
 Margherita Zorzi.

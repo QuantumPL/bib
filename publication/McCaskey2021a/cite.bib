@@ -1,0 +1,17 @@
+@inproceedings{McCaskey2021a,
+ title = {A MLIR Dialect for Quantum Assembly Languages},
+ author = {McCaskey, Alexander and Nguyen, Thien},
+ year = {2021},
+ month = {oct},
+ booktitle = {2021 IEEE International Conference on Quantum Computing and Engineering (QCE)},
+ publisher = {IEEE Computer Society},
+ address = {Los Alamitos, CA, USA},
+ pages = {255--264},
+ doi = {10.1109/QCE52317.2021.00043},
+ archiveprefix = {arXiv},
+ eprint = {2101.11365},
+ abstract = {We demonstrate the utility of the Multi-Level Intermediate Representation (MLIR) for quantum computing. Specifically, we extend MLIR with a new quantum dialect that enables the expression and compilation of common quantum assembly languages. The true utility of this dialect is in its ability to be lowered to the LLVM intermediate representation (IR) in a manner that is adherent to the quantum intermediate representation (QIR) specification recently proposed by Microsoft. We leverage a qcor-enabled implementation of the QIR quantum runtime API to enable a retargetable (quantum hardware agnostic) compiler workflow mapping quantum languages to hybrid quantum-classical binary executables and object code. We evaluate and demonstrate this novel compiler workflow with quantum programs written in OpenQASM 2.0. We provide concrete examples detailing the generation of MLIR from OpenQASM source files, the lowering process from MLIR to LLVM IR, and ultimately the generation of executable binaries targeting available quantum processors.},
+ keywords = {quantum computing, quantum programming, quantum simulation, programming languages, mlir},
+ bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
+}
+

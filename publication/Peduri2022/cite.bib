@@ -1,0 +1,18 @@
+@inproceedings{Peduri2022,
+ title = {QSSA: An SSA-Based IR for Quantum Computing},
+ author = {Peduri, Anurudh and Bhat, Siddharth and Grosser, Tobias},
+ year = {2022},
+ month = {March},
+ booktitle = {Proceedings of the 31st ACM SIGPLAN International Conference on Compiler Construction},
+ publisher = {{Association for Computing Machinery}},
+ address = {New York, NY, USA},
+ pages = {2--14},
+ doi = {10.1145/3497776.3517772},
+ archiveprefix = {arXiv},
+ eprint = {2109.02409},
+ abstract = {Quantum computing hardware has progressed rapidly. Simultaneously, there has been a proliferation of programming languages and program optimization tools for quantum computing. Existing quantum compilers use intermediate representations (IRs) where quantum programs are described as circuits. Such IRs fail to leverage existing work on compiler optimizations. In such IRs, it is non-trivial to statically check for physical constraints such as the no-cloning theorem, which states that qubits cannot be copied. We introduce QSSA, a novel quantum IR based on static single assignment (SSA) that enables decades of research in compiler optimizations to be applied to quantum compilation. QSSA models quantum operations as being side-effect-free. The inputs and outputs of the operation are in one-to-one correspondence; qubits cannot be created or destroyed. As a result, our IR supports a static analysis pass that verifies no-cloning at compile-time. The quantum circuit is fully encoded within the def-use chain of the IR, allowing us to leverage existing optimization passes on SSA representations such as redundancy elimination and dead-code elimination. Running our QSSA-based compiler on the QASMBench and IBM Quantum Challenge datasets, we show that our optimizations perform comparably to IBM's Qiskit quantum compiler infrastructure. QSSA allows us to represent, analyze, and transform quantum programs using the robust theory of SSA representations, bringing quantum compilation into the realm of well-understood theory and practice.},
+ keywords = {ssa, quantum circuits, compilers, intermediate representations, optimization, mlir},
+ webnote = {CC 2022},
+ bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
+}
+
