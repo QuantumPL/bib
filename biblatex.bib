@@ -1082,6 +1082,8 @@
   number       = {3},
   eid          = {14},
   doi          = {10.1145/3491247},
+  eprinttype   = {arXiv},
+  eprint       = {2101.11030},
   abstract     = {We propose an IR for quantum computing that directly exposes quantum and classical data dependencies for the purpose of optimization. The Quantum Intermediate Representation for Optimization (QIRO) consists of two dialects, one input dialect and one that is specifically tailored to enable quantum-classical co-optimization. While the first employs a perhaps more intuitive memory-semantics (quantum operations act on qubits via side-effects), the latter uses value-semantics (operations consume and produce states) to integrate quantum dataflow in the IR's Static Single Assignment (SSA) graph. Crucially, this allows for a host of optimizations that leverage dataflow analysis. We discuss how to map existing quantum programming languages to the input dialect and how to lower the resulting IR to the optimization dialect. We present a prototype implementation based on MLIR that includes several quantum-specific optimization passes. Our benchmarks show that significant improvements in resource requirements are possible even through static optimization. In contrast to circuit optimization at run time, this is achieved while incurring only a small constant overhead in compilation time, making this a compelling approach for quantum program optimization at application scale.},
   keywords     = {intermediate representation, dataflow optimization, quantum compilation, mlir},
   bibsource    = qplbib
@@ -1404,17 +1406,19 @@
 }
 
 @inproceedings{McCaskey2021a,
-  title     = {A MLIR Dialect for Quantum Assembly Languages},
-  author    = {McCaskey, Alexander and Nguyen, Thien},
-  date      = {2021-10},
-  booktitle = {2021 IEEE International Conference on Quantum Computing and Engineering (QCE)},
-  publisher = {IEEE Computer Society},
-  address   = {Los Alamitos, CA, USA},
-  pages     = {255--264},
-  doi       = {10.1109/QCE52317.2021.00043},
-  abstract  = {We demonstrate the utility of the Multi-Level Intermediate Representation (MLIR) for quantum computing. Specifically, we extend MLIR with a new quantum dialect that enables the expression and compilation of common quantum assembly languages. The true utility of this dialect is in its ability to be lowered to the LLVM intermediate representation (IR) in a manner that is adherent to the quantum intermediate representation (QIR) specification recently proposed by Microsoft. We leverage a qcor-enabled implementation of the QIR quantum runtime API to enable a retargetable (quantum hardware agnostic) compiler workflow mapping quantum languages to hybrid quantum-classical binary executables and object code. We evaluate and demonstrate this novel compiler workflow with quantum programs written in OpenQASM 2.0. We provide concrete examples detailing the generation of MLIR from OpenQASM source files, the lowering process from MLIR to LLVM IR, and ultimately the generation of executable binaries targeting available quantum processors.},
-  keywords  = {quantum computing, quantum programming, quantum simulation, programming languages, mlir},
-  bibsource = qplbib
+  title      = {A MLIR Dialect for Quantum Assembly Languages},
+  author     = {McCaskey, Alexander and Nguyen, Thien},
+  date       = {2021-10},
+  booktitle  = {2021 IEEE International Conference on Quantum Computing and Engineering (QCE)},
+  publisher  = {IEEE Computer Society},
+  address    = {Los Alamitos, CA, USA},
+  pages      = {255--264},
+  doi        = {10.1109/QCE52317.2021.00043},
+  eprinttype = {arXiv},
+  eprint     = {2101.11365},
+  abstract   = {We demonstrate the utility of the Multi-Level Intermediate Representation (MLIR) for quantum computing. Specifically, we extend MLIR with a new quantum dialect that enables the expression and compilation of common quantum assembly languages. The true utility of this dialect is in its ability to be lowered to the LLVM intermediate representation (IR) in a manner that is adherent to the quantum intermediate representation (QIR) specification recently proposed by Microsoft. We leverage a qcor-enabled implementation of the QIR quantum runtime API to enable a retargetable (quantum hardware agnostic) compiler workflow mapping quantum languages to hybrid quantum-classical binary executables and object code. We evaluate and demonstrate this novel compiler workflow with quantum programs written in OpenQASM 2.0. We provide concrete examples detailing the generation of MLIR from OpenQASM source files, the lowering process from MLIR to LLVM IR, and ultimately the generation of executable binaries targeting available quantum processors.},
+  keywords   = {quantum computing, quantum programming, quantum simulation, programming languages, mlir},
+  bibsource  = qplbib
 }
 
 @article{Meuli2020,
@@ -1456,6 +1460,8 @@
   number       = {5},
   pages        = {17--33},
   doi          = {10.1109/MM.2022.3179654},
+  eprinttype   = {arXiv},
+  eprint       = {2109.00506},
   abstract     = {We present a multilevel quantum-classical intermediate representation (IR) that enables an optimizing, retargetable compiler for available quantum languages. Our work builds upon the multilevel intermediate representation (MLIR) framework and leverages its unique progressive lowering capabilities to map quantum languages to the low-level virtual machine (LLVM) machine-level IR. We provide both quantum and classical optimizations via the MLIR pattern rewriting subsystem and standard LLVM optimization passes, and demonstrate the programmability, compilation, and execution of our approach via standard benchmarks and test cases. In comparison to other standalone language and compiler efforts available today, our work results in compile times that are 1,000× faster than standard Pythonic approaches, and 5-10× faster than comparative standalone quantum language compilers. Our compiler provides quantum resource optimizations via standard programming patterns that result in a 10× reduction in entangling operations, a common source of program noise. We see this work as a vehicle for rapid quantum compiler prototyping.},
   keywords     = {quantum computing, quantum programming, programming languages, mlir},
   bibsource    = qplbib
