@@ -929,29 +929,6 @@
 }
 </pre>
 
-<a name="Fu2022"></a><pre>
-@article{<a href="bbt.html#Fu2022">Fu2022</a>,
-  title = {Proto-Quipper with dynamic lifting},
-  author = {Fu, Peng and Kishida, Kohei and Ross, Neil J. and Selinger, Peter},
-  year = {2022},
-  month = apr,
-  journal = {Proceedings of the ACM on Programming Languages},
-  volume = {7},
-  number = {POPL},
-  eid = {},
-  pages = {},
-  doi = {},
-  archiveprefix = {arXiv},
-  eprint = {2204.13041},
-  url = {<a href="https://gitlab.com/frank-peng-fu/dpq-remake">https://gitlab.com/frank-peng-fu/dpq-remake</a>},
-  abstract = {Quipper is a functional programming language for quantum computing. Proto-Quipper is a family of languages aiming to provide a formal foundation for Quipper. In this paper, we extend Proto-Quipper-M with a construct called dynamic lifting, which is present in Quipper. By virtue of being a circuit description language, Proto-Quipper has two separate runtimes: circuit generation time and circuit execution time. Values that are known at circuit generation time are called parameters, and values that are known at circuit execution time are called states. Dynamic lifting is an operation that enables a state, such as the result of a measurement, to be lifted to a parameter, where it can influence the generation of the next portion of the circuit. As a result, dynamic lifting enables Proto-Quipper programs to interleave classical and quantum computation. We describe the syntax of a language we call Proto-Quipper-Dyn. Its type system uses a system of modalities to keep track of the use of dynamic lifting. We also provide an operational semantics, as well as an abstract categorical semantics for dynamic lifting based on enriched category theory. We prove that both the type system and the operational semantics are sound with respect to our categorical semantics. Finally, we give some examples of Proto-Quipper-Dyn programs that make essential use of dynamic lifting. A concrete categorical model is given in a companion paper [FKRS2022b].},
-  keywords = {proto-quipper-dyn, proto-quipper-m, proto-quipper, quipper},
-  note = {To appear at POPL '23.},
-  webnote = {To appear at POPL '23. See the companion paper \cite{Fu2022a}},
-  bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
-}
-</pre>
-
 <a name="Fu2022a"></a><pre>
 @inproceedings{<a href="bbt.html#Fu2022a">Fu2022a</a>,
   title = {A biset-enriched categorical model for Proto-Quipper with dynamic lifting},
@@ -965,7 +942,7 @@
   abstract = {Quipper and Proto-Quipper are a family of quantum programming languages that, by their nature as circuit description languages, involve two runtimes: one at which the program generates a circuit and one at which the circuit is executed, normally with probabilistic results due to measurements. Accordingly, the language distinguishes two kinds of data: parameters, which are known at circuit generation time, and states, which are known at circuit execution time. Sometimes, it is desirable for the results of measurements to control the generation of the next part of the circuit. Therefore, the language needs to turn states, such as measurement outcomes, into parameters, an operation we call dynamic lifting. The goal of this paper is to model this interaction between the runtimes by providing a general categorical structure enriched in what we call "bisets". We demonstrate that the biset-enriched structure achieves a proper semantics of the two runtimes and their interaction, by showing that it models a variant of Proto-Quipper with dynamic lifting. The present paper deals with the concrete categorical semantics of this language, whereas a companion paper [FKRS2022a] deals with the syntax, type system, operational semantics, and abstract categorical semantics.},
   keywords = {proto-quipper-dyn, proto-quipper, quipper, categorical semantics},
   note = {To appear},
-  webnote = {See the companion paper \cite{Fu2022}},
+  webnote = {See the companion paper \cite{Fu2023}},
   bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
 }
 </pre>
@@ -985,6 +962,28 @@
   abstract = {Modern quantum programming languages integrate quantum resources and classical control. They must, on the one hand, be linearly typed to reflect the no-cloning property of quantum resources. On the other hand, high-level and practical languages should also support quantum circuits as first-class citizens, as well as families of circuits that are indexed by some classical parameters. Quantum programming languages thus need linear dependent type theory. This paper defines a general semantic structure for such a type theory via certain fibrations of monoidal categories. The categorical model of the quantum circuit description language Proto-Quipper-M by Rios and Selinger (2017) constitutes an example of such a fibration, which means that the language can readily be integrated with dependent types. We then devise both a general linear dependent type system and a dependently typed extension of Proto-Quipper-M, and provide them with operational semantics as well as a prototype implementation.},
   keywords = {proto-quipper-d, fibration, categorical model, quantum programming languages, linear dependent types, proto-quipper-m},
   webnote = {Expanded version of \cite{Fu2020}},
+  bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
+}
+</pre>
+
+<a name="Fu2023"></a><pre>
+@article{<a href="bbt.html#Fu2023">Fu2023</a>,
+  title = {Proto-Quipper with Dynamic Lifting},
+  author = {Fu, Peng and Kishida, Kohei and Ross, Neil J. and Selinger, Peter},
+  year = {2023},
+  month = jan,
+  journal = {Proceedings of the ACM on Programming Languages},
+  volume = {7},
+  number = {POPL},
+  eid = {11},
+  pages = {11},
+  doi = {10.1145/3571204},
+  archiveprefix = {arXiv},
+  eprint = {2204.13041},
+  url = {<a href="https://gitlab.com/frank-peng-fu/dpq-remake">https://gitlab.com/frank-peng-fu/dpq-remake</a>},
+  abstract = {Quipper is a functional programming language for quantum computing. Proto-Quipper is a family of languages aiming to provide a formal foundation for Quipper. In this paper, we extend Proto-Quipper-M with a construct called dynamic lifting, which is present in Quipper. By virtue of being a circuit description language, Proto-Quipper has two separate runtimes: circuit generation time and circuit execution time. Values that are known at circuit generation time are called parameters, and values that are known at circuit execution time are called states. Dynamic lifting is an operation that enables a state, such as the result of a measurement, to be lifted to a parameter, where it can influence the generation of the next portion of the circuit. As a result, dynamic lifting enables Proto-Quipper programs to interleave classical and quantum computation. We describe the syntax of a language we call Proto-Quipper-Dyn. Its type system uses a system of modalities to keep track of the use of dynamic lifting. We also provide an operational semantics, as well as an abstract categorical semantics for dynamic lifting based on enriched category theory. We prove that both the type system and the operational semantics are sound with respect to our categorical semantics. Finally, we give some examples of Proto-Quipper-Dyn programs that make essential use of dynamic lifting.},
+  keywords = {proto-quipper-dyn, proto-quipper-m, proto-quipper, quipper, quantum programming languages, categorical semantics, dynamic lifting},
+  webnote = {POPL '23. Also see the companion paper \cite{Fu2022a}},
   bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
 }
 </pre>
@@ -3000,21 +2999,20 @@
 @article{<a href="bbt.html#Voichick2023">Voichick2023</a>,
   title = {Qunity: A Unified Language for Quantum and Classical Computing},
   author = {Voichick, Finn and Li, Liyi and Rand, Robert and Hicks, Michael},
-  year = {2022},
-  month = apr,
+  year = {2023},
+  month = jan,
   journal = {Proceedings of the ACM on Programming Languages},
   volume = {7},
   number = {POPL},
-  eid = {},
-  pages = {},
-  doi = {},
+  eid = {32},
+  pages = {32},
+  doi = {10.1145/3571225},
   archiveprefix = {arXiv},
   eprint = {2204.12384},
   url = {<a href="https://gitlab.umiacs.umd.edu/finn/qunity">https://gitlab.umiacs.umd.edu/finn/qunity</a>},
   abstract = {We introduce Qunity, a new quantum programming language designed to treat quantum computing as a natural generalization of classical computing. Qunity presents a unified syntax where familiar programming constructs can have both quantum and classical effects. For example, one can use sum types to implement the direct sum of linear operators, exception handling syntax to implement projective measurements, and aliasing to induce entanglement. Further, Qunity takes advantage of the overlooked BQP subroutine theorem, allowing one to construct reversible subroutines from irreversible quantum algorithms through the uncomputation of "garbage" outputs. Unlike existing languages that enable quantum aspects with separate add-ons (like a classical language with quantum gates bolted on), Qunity provides a unified syntax along with a novel denotational semantics that guarantees that programs are quantum mechanically valid. We present Qunity's syntax, type system, and denotational semantics, showing how it can cleanly express several quantum algorithms. We also detail how Qunity can be compiled to a low-level qubit circuit language like OpenQASM, proving the realizability of our design.},
-  keywords = {},
-  note = {To appear at POPL '23.},
-  webnote = {To appear at POPL '23. See extended version on arXiv.},
+  keywords = {algebraic data types, reversible computing, quantum subroutines, kraus operators},
+  webnote = {POPL '23. See extended version on arXiv.},
   bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
 }
 </pre>
@@ -3404,21 +3402,20 @@
 @article{<a href="bbt.html#Zhou2023">Zhou2023</a>,
   title = {CoqQ: Foundational Verification of Quantum Programs},
   author = {Zhou, Li and Barthe, Gilles and Strub, Pierre-Yves and Liu, Junyi and Ying, Mingsheng},
-  year = {2022},
-  month = jul,
+  year = {2023},
+  month = jan,
   journal = {Proceedings of the ACM on Programming Languages},
   volume = {7},
   number = {POPL},
-  eid = {},
-  pages = {},
-  doi = {},
+  eid = {29},
+  pages = {29},
+  doi = {10.1145/3571222},
   archiveprefix = {arXiv},
   eprint = {2207.11350},
   url = {<a href="https://github.com/coq-quantum/CoqQ">https://github.com/coq-quantum/CoqQ</a>},
   abstract = {CoqQ is a framework for reasoning about quantum programs in the Coq proof assistant. Its main components are: a deeply embedded quantum programming language, in which classic quantum algorithms are easily expressed, and an expressive program logic for proving properties of programs. CoqQ is foundational: the program logic is formally proved sound with respect to a denotational semantics based on state-of-art mathematical libraries (mathcomp and mathcomp analysis). CoqQ is also practical: assertions can use Dirac expressions, which eases concise specifications, and proofs can exploit local and parallel reasoning, which minimizes verification effort. We illustrate the applicability of CoqQ with many examples from the literature.},
   keywords = {quantum programs, program logics, proof assistants, mathematical libraries},
-  note = {To appear at POPL '23.},
-  webnote = {To appear at POPL '23.},
+  webnote = {POPL '23},
   bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
 }
 </pre>

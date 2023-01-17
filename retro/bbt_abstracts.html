@@ -1104,23 +1104,22 @@ Keywords: proto-quipper-dyn, proto-quipper, quipper, categorical semantics
 
 <tr valign="top">
 <td align="right" class="bibtexnumber">
-[<a name="Fu2022">50</a>]
+[<a name="Fu2023">50</a>]
 </td>
 <td class="bibtexitem">
 Peng Fu, Kohei Kishida, Neil&nbsp;J. Ross, and Peter Selinger.
- <b>Proto-Quipper with dynamic lifting</b>.
- <em>Proceedings of the ACM on Programming Languages</em>, 7(POPL), April
-  2022.
- To appear at POPL '23.
-[&nbsp;<a href="bbt_bib.html#Fu2022">bib</a>&nbsp;| 
-<a href="https://doi.org/">DOI</a>&nbsp;| 
+ <b>Proto-Quipper with Dynamic Lifting</b>.
+ <em>Proceedings of the ACM on Programming Languages</em>, 7(POPL):11,
+  January 2023.
+[&nbsp;<a href="bbt_bib.html#Fu2023">bib</a>&nbsp;| 
+<a href="https://doi.org/10.1145/3571204">DOI</a>&nbsp;| 
 <a href="http://arxiv.org/abs/2204.13041">arXiv</a>&nbsp;| 
 <a href="https://gitlab.com/frank-peng-fu/dpq-remake">https</a>&nbsp;]
 <blockquote>
-Quipper is a functional programming language for quantum computing. Proto-Quipper is a family of languages aiming to provide a formal foundation for Quipper. In this paper, we extend Proto-Quipper-M with a construct called dynamic lifting, which is present in Quipper. By virtue of being a circuit description language, Proto-Quipper has two separate runtimes: circuit generation time and circuit execution time. Values that are known at circuit generation time are called parameters, and values that are known at circuit execution time are called states. Dynamic lifting is an operation that enables a state, such as the result of a measurement, to be lifted to a parameter, where it can influence the generation of the next portion of the circuit. As a result, dynamic lifting enables Proto-Quipper programs to interleave classical and quantum computation. We describe the syntax of a language we call Proto-Quipper-Dyn. Its type system uses a system of modalities to keep track of the use of dynamic lifting. We also provide an operational semantics, as well as an abstract categorical semantics for dynamic lifting based on enriched category theory. We prove that both the type system and the operational semantics are sound with respect to our categorical semantics. Finally, we give some examples of Proto-Quipper-Dyn programs that make essential use of dynamic lifting. A concrete categorical model is given in a companion paper [FKRS2022b].
+Quipper is a functional programming language for quantum computing. Proto-Quipper is a family of languages aiming to provide a formal foundation for Quipper. In this paper, we extend Proto-Quipper-M with a construct called dynamic lifting, which is present in Quipper. By virtue of being a circuit description language, Proto-Quipper has two separate runtimes: circuit generation time and circuit execution time. Values that are known at circuit generation time are called parameters, and values that are known at circuit execution time are called states. Dynamic lifting is an operation that enables a state, such as the result of a measurement, to be lifted to a parameter, where it can influence the generation of the next portion of the circuit. As a result, dynamic lifting enables Proto-Quipper programs to interleave classical and quantum computation. We describe the syntax of a language we call Proto-Quipper-Dyn. Its type system uses a system of modalities to keep track of the use of dynamic lifting. We also provide an operational semantics, as well as an abstract categorical semantics for dynamic lifting based on enriched category theory. We prove that both the type system and the operational semantics are sound with respect to our categorical semantics. Finally, we give some examples of Proto-Quipper-Dyn programs that make essential use of dynamic lifting.
 </blockquote>
 <blockquote>
-Keywords: proto-quipper-dyn, proto-quipper-m, proto-quipper, quipper
+Keywords: proto-quipper-dyn, proto-quipper-m, proto-quipper, quipper, quantum programming languages, categorical semantics, dynamic lifting
 </blockquote>
 
 </td>
@@ -3623,18 +3622,17 @@ Keywords: density matrix, quantum computation, quantum algorithm, quantum circui
 <td class="bibtexitem">
 Finn Voichick, Liyi Li, Robert Rand, and Michael Hicks.
  <b>Qunity: A Unified Language for Quantum and Classical Computing</b>.
- <em>Proceedings of the ACM on Programming Languages</em>, 7(POPL), April
-  2022.
- To appear at POPL '23.
+ <em>Proceedings of the ACM on Programming Languages</em>, 7(POPL):32,
+  January 2023.
 [&nbsp;<a href="bbt_bib.html#Voichick2023">bib</a>&nbsp;| 
-<a href="https://doi.org/">DOI</a>&nbsp;| 
+<a href="https://doi.org/10.1145/3571225">DOI</a>&nbsp;| 
 <a href="http://arxiv.org/abs/2204.12384">arXiv</a>&nbsp;| 
 <a href="https://gitlab.umiacs.umd.edu/finn/qunity">https</a>&nbsp;]
 <blockquote>
 We introduce Qunity, a new quantum programming language designed to treat quantum computing as a natural generalization of classical computing. Qunity presents a unified syntax where familiar programming constructs can have both quantum and classical effects. For example, one can use sum types to implement the direct sum of linear operators, exception handling syntax to implement projective measurements, and aliasing to induce entanglement. Further, Qunity takes advantage of the overlooked BQP subroutine theorem, allowing one to construct reversible subroutines from irreversible quantum algorithms through the uncomputation of "garbage" outputs. Unlike existing languages that enable quantum aspects with separate add-ons (like a classical language with quantum gates bolted on), Qunity provides a unified syntax along with a novel denotational semantics that guarantees that programs are quantum mechanically valid. We present Qunity's syntax, type system, and denotational semantics, showing how it can cleanly express several quantum algorithms. We also detail how Qunity can be compiled to a low-level qubit circuit language like OpenQASM, proving the realizability of our design.
 </blockquote>
 <blockquote>
-Keywords: 
+Keywords: algebraic data types, reversible computing, quantum subroutines, kraus operators
 </blockquote>
 
 </td>
@@ -4074,11 +4072,10 @@ Keywords: formal logic, quantum computing, substructural logic, separating conju
 <td class="bibtexitem">
 Li&nbsp;Zhou, Gilles Barthe, Pierre-Yves Strub, Junyi Liu, and Mingsheng Ying.
  <b>CoqQ: Foundational Verification of Quantum Programs</b>.
- <em>Proceedings of the ACM on Programming Languages</em>, 7(POPL), July
-  2022.
- To appear at POPL '23.
+ <em>Proceedings of the ACM on Programming Languages</em>, 7(POPL):29,
+  January 2023.
 [&nbsp;<a href="bbt_bib.html#Zhou2023">bib</a>&nbsp;| 
-<a href="https://doi.org/">DOI</a>&nbsp;| 
+<a href="https://doi.org/10.1145/3571222">DOI</a>&nbsp;| 
 <a href="http://arxiv.org/abs/2207.11350">arXiv</a>&nbsp;| 
 <a href="https://github.com/coq-quantum/CoqQ">https</a>&nbsp;]
 <blockquote>
