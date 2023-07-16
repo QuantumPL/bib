@@ -3,3 +3,5 @@
 *.blg
 *.tmp
 *_bibertool.bib
+*.aux
+bib2html*
