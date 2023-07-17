@@ -396,6 +396,20 @@
   bibsource  = qplbib
 }
 
+@article{Chen2023,
+  title        = {An Automata-Based Framework for Verification and Bug Hunting in Quantum Circuits},
+  author       = {Chen, Yu-Fang and Chung, Kai-Min and Leng{\'a}l, Ond{\v r}ej and Lin, Jyun-Ao and Tsai, Wei-Lun and Yen, Di-De},
+  date         = {2023-06},
+  journaltitle = pacmpl,
+  volume       = {7},
+  number       = {PLDI},
+  eid          = {156},
+  doi          = {10.1145/3591270},
+  abstract     = {We introduce a new paradigm for analysing and finding bugs in quantum circuits. In our approach, the problem is given by a ‍triple {P} C {Q} and the question is whether, given a set P of quantum states on the input of a circuit C, the set of quantum states on the output is equal to (or included in) a set Q. While this is not suitable to specify, e.g., functional correctness of a quantum circuit, it is sufficient to detect many bugs in quantum circuits. We propose a technique based on tree automata to compactly represent sets of quantum states and develop transformers to implement the semantics of quantum gates over this representation. Our technique computes with an algebraic representation of quantum states, avoiding the inaccuracy of working with floating-point numbers. We implemented the proposed approach in a prototype tool and evaluated its performance against various benchmarks from the literature. The evaluation shows that our approach is quite scalable, e.g., we managed to verify a large circuit with 40 qubits and 141,527 gates, or catch bugs injected into a circuit with 320 qubits and 1,758 gates, where all tools we compared with failed. In addition, our work establishes a connection between quantum program verification and automata, opening new possibilities to exploit the richness of automata theory and automata-based verification in the world of quantum computing.},
+  keywords     = {quantum circuits, tree automata, verification},
+  bibsource    = qplbib
+}
+
 @article{Chong2017,
   title        = {Programming languages and compiler design for realistic quantum hardware},
   author       = {Chong, Frederic T. and Franklin, Diana and Martonosi, Margaret},
@@ -1282,6 +1296,21 @@
   abstract  = {In this chapter, we present applications of abstract interpretation techniques in quantum computing. Quantum computing is a now well-established domain of computer science, and the recent developments of semantic techniques show the vitality of this rapidly growing area. On the other hand, the proof has been made that abstract interpretation is a powerful theory (of ``classical'' computer science) for comparing more or less precise semantics of the same programming language. In a more general picture, abstract interpretation can be seen as a framework for comparing the precision of several representations of the same dynamic system evolution. In this paper, we point out that abstract interpretation can be fruitfully used in quantum computing: (i) for establishing a hierarchy of quantum semantics and (ii) for analyzing entanglement evolution.},
   keywords  = {abstract interpretation},
   bibsource = qplbib
+}
+
+@article{Kang2023,
+  title        = {Modular Component-Based Quantum Circuit Synthesis},
+  author       = {Kang, Chan Gu and Oh, Hakjoo},
+  date         = {2023-04},
+  journaltitle = pacmpl,
+  volume       = {7},
+  number       = {OOPSLA1},
+  eid          = {87},
+  doi          = {10.1145/3586039},
+  url          = {https://github.com/kupl/qsyn},
+  abstract     = {In this article, we present a novel method for synthesizing quantum circuits from user-supplied components. Given input-output state vectors and component quantum gates, our synthesizer aims to construct a quantum circuit that implements the provided functionality in terms of the supplied component gates.&nbsp;To achieve this, we basically use an enumerative search with pruning. To accelerate the procedure, however, we perform the search and pruning at the module level; instead of simply enumerating candidate circuits by appending component gates in sequence, we stack modules, which are groups of gate operations. With this modular approach, we can effectively reduce the search space by directing the search in a way that bridges the gap between the current circuit and the input-output specification. Evaluation on 17 benchmark problems shows that our technique is highly effective at synthesizing quantum circuits. Our method successfully synthesized 16 out of 17 benchmark circuits in 96.6 seconds on average. On the other hand, the conventional, gate-level synthesis algorithm succeeded in 10 problems with an average time of 639.1 seconds. Our algorithm increased the speed of the baseline by 20.3x for the 10 problems commonly solved by both approaches.},
+  keywords     = {quantum programming, quantum circuit synthesis},
+  bibsource    = qplbib
 }
 
 @techreport{Knill1996,
@@ -2371,6 +2400,21 @@
   bibsource  = qplbib
 }
 
+@inproceedings{Tao2021,
+  title     = {Gleipnir: Toward Practical Error Analysis for Quantum Programs},
+  author    = {Tao, Runzhou and Shi, Yunong and Yao, Jianan and Hui, John and Chong, Frederic T. and Gu, Ronghui},
+  date      = {2021-06},
+  booktitle = {Proceedings of the 42nd ACM SIGPLAN International Conference on Programming Language Design and Implementation},
+  publisher = acm,
+  location  = {New York, NY, USA},
+  series    = {PLDI 2021},
+  pages     = {48--64},
+  doi       = {10.1145/3453483.3454029},
+  abstract  = {Practical error analysis is essential for the design, optimization, and evaluation of Noisy Intermediate-Scale Quantum(NISQ) computing. However, bounding errors in quantum programs is a grand challenge, because the effects of quantum errors depend on exponentially large quantum states. In this work, we present Gleipnir, a novel methodology toward practically computing verified error bounds in quantum programs. Gleipnir introduces the (ρ,δ)-diamond norm, an error metric constrained by a quantum predicate consisting of the approximate state ρ and its distance δ to the ideal state ρ. This predicate (ρ,δ) can be computed adaptively using tensor networks based on the Matrix Product States. Gleipnir features a lightweight logic for reasoning about error bounds in noisy quantum programs, based on the (ρ,δ)-diamond norm metric. Our experimental results show that Gleipnir is able to efficiently generate tight error bounds for real-world quantum programs with 10 to 100 qubits, and can be used to evaluate the error mitigation performance of quantum compiler transformations.},
+  keywords  = {quantum programming, error analysis, approximate computing},
+  bibsource = qplbib
+}
+
 @inproceedings{Tao2022,
   title      = {Giallar: Push-Button Verification for the Qiskit Quantum Compiler},
   author     = {Tao, Runzhou and Shi, Yunong and Yao, Jianan and Li, Xupeng and Javadi-Abhari, Ali and Cross, Andrew W. and Chong, Frederic T. and Gu, Ronghui},
@@ -2570,6 +2614,20 @@
   keywords   = {quantum computing, superoptimization},
   webnote    = {The extended version on arXiv includes an additional appendix with detailed results. Previously known as [Quanto (arXiv:2111.11387)](https://arxiv.org/abs/2111.11387).},
   bibsource  = qplbib
+}
+
+@article{Xu2023,
+  title        = {Synthesizing Quantum-Circuit Optimizers},
+  author       = {Xu, Amanda and Molavi, Abtin and Pick, Lauren and Tannu, Swamit and Albarghouthi, Aws},
+  date         = {2023-06},
+  journaltitle = pacmpl,
+  volume       = {7},
+  number       = {PLDI},
+  eid          = {140},
+  doi          = {10.1145/3591254},
+  abstract     = {Near-term quantum computers are expected to work in an environment where each operation is noisy, with no error correction. Therefore, quantum-circuit optimizers are applied to minimize the number of noisy operations. Today, physicists are constantly experimenting with novel devices and architectures. For every new physical substrate and for every modification of a quantum computer, we need to modify or rewrite major pieces of the optimizer to run successful experiments. In this paper, we present QUESO, an efficient approach for automatically synthesizing a quantum-circuit optimizer for a given quantum device. For instance, in 1.2 minutes, QUESO can synthesize an optimizer with high-probability correctness guarantees for IBM computers that significantly outperforms leading compilers, such as IBM's Qiskit and TKET, on the majority (85\%) of the circuits in a diverse benchmark suite.A number of theoretical and algorithmic insights underlie QUESO: (1) An algebraic approach for representing rewrite rules and their semantics. This facilitates reasoning about complex symbolic rewrite rules that are beyond the scope of existing techniques. (2) A fast approach for probabilistically verifying equivalence of quantum circuits by reducing the problem to a special form of polynomial identity testing. (3) A novel probabilistic data structure, called a polynomial identity filter (PIF), for efficiently synthesizing rewrite rules. (4) A beam-search-based algorithm that efficiently applies the synthesized symbolic rewrite rules to optimize quantum circuits.},
+  keywords     = {probabilistic verification, quantum computing},
+  bibsource    = qplbib
 }
 
 @article{Yan2022,
