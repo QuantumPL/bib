@@ -1,0 +1,16 @@
+@article{Chen2023,
+ title = {An Automata-Based Framework for Verification and Bug Hunting in Quantum Circuits},
+ author = {Chen, Yu-Fang and Chung, Kai-Min and Leng{\'a}l, Ond{\v r}ej and Lin, Jyun-Ao and Tsai, Wei-Lun and Yen, Di-De},
+ year = {2023},
+ month = {June},
+ journal = {Proceedings of the ACM on Programming Languages},
+ volume = {7},
+ number = {PLDI},
+ eid = {156},
+ pages = {156},
+ doi = {10.1145/3591270},
+ abstract = {We introduce a new paradigm for analysing and finding bugs in quantum circuits. In our approach, the problem is given by a ‍triple {P} C {Q} and the question is whether, given a set P of quantum states on the input of a circuit C, the set of quantum states on the output is equal to (or included in) a set Q. While this is not suitable to specify, e.g., functional correctness of a quantum circuit, it is sufficient to detect many bugs in quantum circuits. We propose a technique based on tree automata to compactly represent sets of quantum states and develop transformers to implement the semantics of quantum gates over this representation. Our technique computes with an algebraic representation of quantum states, avoiding the inaccuracy of working with floating-point numbers. We implemented the proposed approach in a prototype tool and evaluated its performance against various benchmarks from the literature. The evaluation shows that our approach is quite scalable, e.g., we managed to verify a large circuit with 40 qubits and 141,527 gates, or catch bugs injected into a circuit with 320 qubits and 1,758 gates, where all tools we compared with failed. In addition, our work establishes a connection between quantum program verification and automata, opening new possibilities to exploit the richness of automata theory and automata-based verification in the world of quantum computing.},
+ keywords = {quantum circuits, tree automata, verification},
+ bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
+}
+
