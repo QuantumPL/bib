@@ -1,6 +1,6 @@
-[![DOI](https://zenodo.org/badge/359320795.svg)](https://zenodo.org/badge/latestdoi/359320795)
-
 # QPL Bib
+
+[![DOI](https://zenodo.org/badge/359320795.svg)](https://zenodo.org/badge/latestdoi/359320795)
 
 A Quantum Programming Languages and Verification Literature Bibliography
 
@@ -10,10 +10,12 @@ An alternate and more accessible rendering using `Hugo` at <https://quantumpl.gi
 
 Hugo Source: <https://github.com/QuantumPL/site>
 
-Corrections, additions, suggestions are all welcome! Please see [our contribution guide](./CONTRIBUTING.md).
+Corrections, additions, and suggestions are all welcome! Please see [our contribution guide](./CONTRIBUTING.md).
 
 ## Note
+
 BibLaTeX validation can be done using:
-```
+
+```sh
 biber --tool --no-default-datamodel --validate-datamodel --configfile=biber-tool.conf biblatex.bib
 ```
