@@ -1,0 +1,12 @@
+[default.extend-words]
+# Don't correct the surname "Ono"
+Ono = "Ono"
+Ond = "Ond"
+ois = "ois"
+Fo = "Fo"
+ket = "ket"
+Certi = "Certi"
+
+[type.conf]
+extend-glob = ["*.conf"]
+check-file = false
