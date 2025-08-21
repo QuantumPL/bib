@@ -1,0 +1,20 @@
+@article{Paradis2024,
+ title = {Synthetiq: Fast and Versatile Quantum Circuit Synthesis},
+ author = {Paradis, Anouk and Dekoninck, Jasper and Bichsel, Benjamin and Vechev, Martin},
+ year = {2024},
+ month = {April},
+ journal = {Proceedings of the ACM on Programming Languages},
+ publisher = {{Association for Computing Machinery}},
+ address = {New York, NY, USA},
+ volume = {8},
+ number = {OOPSLA1},
+ eid = {96},
+ pages = {96},
+ numpages = {28},
+ doi = {10.1145/3649813},
+ abstract = {To implement quantum algorithms on quantum computers it is crucial to decompose their operators into the limited gate set supported by those computers. Unfortunately, existing works automating this essential task are generally slow and only applicable to narrow use cases. We present Synthetiq, a method to synthesize quantum circuits implementing a given specification over arbitrary finite gate sets, which is faster and more versatile than existing works. Synthetiq utilizes Simulated Annealing instantiated with a novel, domain-specific energy function that allows developers to leverage partial specifications for better efficiency. Synthetiq further couples this synthesis method with a custom simplification pass, to ensure efficiency of the found circuits.We experimentally demonstrate that Synthetiq can generate better implementations than were previously known for multiple relevant quantum operators including RCCCX, CCT, CCiSWAP, C SWAP, and CiSWAP Our extensive evaluation also demonstrates Synthetiq frequently outperforms a wide variety of more specialized tools in their own domains, including (i) the well-studied task of synthesizing fully specified operators in the Clifford+T gate set, (ii) ϵ-approximate synthesis of multi-qubit operators in the same gate set, and (iii) synthesis tasks with custom gate sets. On all those tasks, Synthetiq is typically one to two orders of magnitude faster than previous state-of-the-art and can tackle problems that were previously out of the reach of any synthesis tool.},
+ keywords = {Quantum Circuits, Synthesis, Clifford+T},
+ webnote = {OOPSLA '24},
+ bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
+}
+

@@ -1,0 +1,20 @@
+@article{Li2025,
+ title = {A Haskell Adiabatic DSL: Solving Classical Optimization Problems on Quantum Hardware},
+ author = {Li, Liyi and Young, David and Graves, James Bryan and Dissanayake, Chandeepa and Sabry, Amr},
+ year = {2025},
+ month = {August},
+ journal = {Proceedings of the ACM on Programming Languages},
+ publisher = {{Association for Computing Machinery}},
+ address = {New York, NY, USA},
+ volume = {9},
+ number = {ICFP},
+ eid = {252},
+ pages = {252},
+ numpages = {31},
+ doi = {10.1145/3747521},
+ abstract = {In physics and chemistry, quantum systems are typically modeled using energy constraints formulated as Hamiltonians. Investigations into such systems often focus on the evolution of the Hamiltonians under various initial conditions, an approach summarized as Adiabatic Quantum Computing (AQC). Although this perspective may initially seem foreign to functional programmers, we demonstrate that conventional functional programming abstractions—specifically, the Traversable and Monad type classes—naturally capture the essence of AQC. To illustrate this connection, we introduce EnQ, a functional programming library designed to express diverse optimization problems as energy constraint computations (ECC). The library comprises three core components: generating the solution space, associating energy costs with potential solutions, and searching for optimal or near-optimal solutions. Because EnQ is implemented using standard Haskell, it can be executed directly through conventional classical Haskell compilers. More interestingly, we develop and implement a process to compile EnQ programs into circuits executable on quantum hardware. We validate EnQ's effectiveness through a number of case studies, demonstrating its capacity to express and solve classical optimization problems on quantum hardware, including search problems, type inference, number partitioning, clique finding, and graph coloring.},
+ keywords = {Adiabatic Quantum Computation, Energy Constraint Computation, Functional Programming},
+ webnote = {ICFP '25},
+ bibsource = {Quantum Programming Languages \& Verification Bibliography, https://git.io/qpl-bib}
+}
+
