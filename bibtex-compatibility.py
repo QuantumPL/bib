@@ -30,34 +30,36 @@ db_name = os.path.basename(sys.argv[1])
 old_db = open(db_name + ".bib","r")
 new_db = open("bibtex.bib","w")
 
-for line in old_db.readlines():
-    date_pattern = re.search(r"date.*{(\d+)-?(\d+)?.*}",line)
+date_re = re.compile(r"date.*{(\d+)-?(\d+)?.*}")
+
+for line in old_db:
+    date_pattern = date_re.search(line)
     if date_pattern:
         new_db.write("  year = {{{0:s}}},\n".format(date_pattern.group(1)))
         # print "  year = {{{0:s}}},\n".format(date_pattern.group(1)),
         if date_pattern.group(2) is not None:
             month = month_names[int(date_pattern.group(2))];
             new_db.write("  month = {},\n".format(month))
-    elif re.search("journaltitle",line):
+    elif "journaltitle" in line:
         new_db.write(line.replace("journaltitle","journal"))
-    elif re.search("location",line):
+    elif "location" in line:
         new_db.write(line.replace("location","address"))
-    elif re.search("eprinttype",line):
+    elif "eprinttype" in line:
         new_db.write(line.replace("eprinttype","archiveprefix"))
     # the following change is not suitable for techreports
-    # elif re.search("institution",line):
+    # elif "institution" in line:
     #     new_db.write(line.replace("institution","school"))
-    elif re.search("@online",line):
+    elif "@online" in line:
         new_db.write(line.replace("@online","@unpublished"))
-    elif re.search("@report",line):
+    elif "@report" in line:
         new_db.write(line.replace("@report","@techreport"))
-    elif re.search("@inbook",line):
+    elif "@inbook" in line:
         new_db.write(line.replace("@inbook","@incollection"))
-    elif re.search("@collection",line):
+    elif "@collection" in line:
         new_db.write(line.replace("@collection","@book"))
-    elif re.search("@thesis{Singhal2020",line):
+    elif "@thesis{Singhal2020" in line:
         new_db.write(line.replace("@thesis","@mastersthesis"))
-    elif re.search("@thesis",line):
+    elif "@thesis" in line:
         new_db.write(line.replace("@thesis","@phdthesis"))
     else:
       new_db.write(line)
