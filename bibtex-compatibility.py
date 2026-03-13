@@ -2,6 +2,7 @@
 # Original source: https://github.com/jonsterling/bibtex-references
 # Modified by Kartik for use in qpl-bib
 
+import os
 import re
 import sys
 
@@ -20,7 +21,11 @@ month_names = {
   12: "dec"
 }
 
-db_name = sys.argv[1]
+if len(sys.argv) < 2:
+    print("Usage: python3 bibtex-compatibility.py <db_name>")
+    sys.exit(1)
+
+db_name = os.path.basename(sys.argv[1])
 
 old_db = open(db_name + ".bib","r")
 new_db = open("bibtex.bib","w")
