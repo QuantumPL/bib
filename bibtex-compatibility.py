@@ -33,7 +33,7 @@ new_db = open("bibtex.bib","w")
 date_re = re.compile(r"date.*{(\d+)-?(\d+)?.*}")
 
 for line in old_db:
-    date_pattern = date_re.search(line)
+    date_pattern = date_re.search(line) if "date" in line else None
     if date_pattern:
         new_db.write("  year = {{{0:s}}},\n".format(date_pattern.group(1)))
         # print "  year = {{{0:s}}},\n".format(date_pattern.group(1)),
