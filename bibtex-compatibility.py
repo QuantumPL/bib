@@ -27,8 +27,28 @@ if len(sys.argv) < 2:
 
 db_name = os.path.basename(sys.argv[1])
 
-old_db = open(db_name + ".bib","r")
-new_db = open("bibtex.bib","w")
+try:
+    with open(db_name + ".bib", "r") as old_db:
+        with open("bibtex.bib", "w") as new_db:
+            for line in old_db:
+                # Check for date field (specifically excluding urldate)
+                # Use ^\s*date to match from start of line, ensuring we don't match urldate
+                date_match = re.search(r"^(\s*)date\s*=\s*{(\d+)-?(\d+)?.*}", line)
+                if date_match:
+                    indent = date_match.group(1)
+                    new_db.write("{0}year = {{{1:s}}},\n".format(indent, date_match.group(2)))
+                    if date_match.group(3) is not None:
+                        month = month_names[int(date_match.group(3))]
+                        new_db.write("{0}month = {1},\n".format(indent, month))
+                    continue
+
+                # Field name replacements - only when they appear as keys
+                if re.search(r"^\s*journaltitle\s*=", line):
+                    new_db.write(re.sub(r"journaltitle", "journal", line, count=1))
+                elif re.search(r"^\s*location\s*=", line):
+                    new_db.write(re.sub(r"location", "address", line, count=1))
+                elif re.search(r"^\s*eprinttype\s*=", line):
+                    new_db.write(re.sub(r"eprinttype", "archiveprefix", line, count=1))
 
 date_re = re.compile(r"date.*{(\d+)-?(\d+)?.*}")
 
